@@ -97,7 +97,7 @@ They can then use this knowledge for their interests and expertise.
 
 <!-- Potential tools -->
 ## Potential tools
-
+<!--
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
 .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
@@ -109,6 +109,7 @@ They can then use this knowledge for their interests and expertise.
 .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
+-->
 <table class="tg">
 <thead>
   <tr>
