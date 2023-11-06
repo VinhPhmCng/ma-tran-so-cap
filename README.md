@@ -63,6 +63,8 @@ The beginning of an interactive book about Linear Algebra.
 
 Current stage: Brainstorming
 
+Adapted from this [Google Docs](https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit?usp=sharing).
+
 ### Mission
 
 Contribute to the community by spreading knowledge
