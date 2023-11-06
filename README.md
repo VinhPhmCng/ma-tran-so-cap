@@ -80,6 +80,14 @@ They can then use this knowledge for their interests and expertise.
 <!-- REFERENCE MATERIALS -->
 ## Reference Materials
 
+1. Interactive Linear Algebra
+   - [HTML](https://textbooks.math.gatech.edu/ila/)
+   - [Github](https://github.com/QBobWatson/ila)
+   - [PDF](reference-materials/ila.pdf)
+
+2. LAFF-On Programming for Correctness
+   - [PDF](reference-materials/LAFF.pdf)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,7 +118,7 @@ They can then use this knowledge for their interests and expertise.
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" rowspan="4"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Used in </span><a href="https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit#heading=h.2vkttfcfz2f4"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Interactive Linear Algebra</span></a></td>
+    <td class="tg-0lax" rowspan="4"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Used in </span><a href="https://github.com/VinhPhmCng/LAFD/blob/50981d2161f4b0e14f404696a36de98ade04bb3e/Reference%20Materials/ila.pdf"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Interactive Linear Algebra</span></a></td>
     <td class="tg-baqh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PreTeXt</span></td>
     <td class="tg-kry2"><a href="https://github.com/PreTeXtBook/pretext"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://pretextbook.org/index.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
     <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">An authoring and publishing system for authors</span></td>
