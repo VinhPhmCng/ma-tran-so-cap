@@ -61,7 +61,7 @@
 
 The beginning of an interactive book about Linear Algebra.
 
-Current stage: Brainstorming
+Current stage: Brainstorming & Compiling the alpha
 
 Adapted from this [Google Docs](https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit?usp=sharing).
 
@@ -113,220 +113,230 @@ They can then use this knowledge for their interests and expertise.
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 -->
-<table class="tg">
+
+<table>
 <thead>
   <tr>
-    <th class="tg-7btt"></th>
-    <th class="tg-7btt"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Tool</span></th>
-    <th class="tg-7btt"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Links</span></th>
-    <th class="tg-7btt"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Usage</span></th>
+    <th></th>
+    <th>Tool</th>
+    <th>Links</th>
+    <th>Usage</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky" rowspan="4"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Used in </span><a href="https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit#heading=h.2vkttfcfz2f4"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Interactive Linear Algebra</span></a></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PreTeXt</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/PreTeXtBook/pretext"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://pretextbook.org/index.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">An authoring and publishing system for authors</span></td>
+    <td rowspan="4">Used in <a href="https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit#heading=h.2vkttfcfz2f4">Interactive Linear Algebra</a></td>
+    <td>PreTeXt</td>
+    <td><a href="https://github.com/PreTeXtBook/pretext">Github</a><br><a href="https://pretextbook.org/index.html">Website</a></td>
+    <td>An authoring and publishing system for authors</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Inkscape</span></td>
-    <td class="tg-yjjj"><a href="https://inkscape.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PDF encoding</span></td>
+    <td>Inkscape</td>
+    <td><a href="https://inkscape.org/">Website</a></td>
+    <td>PDF encoding</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FontForge</span></td>
-    <td class="tg-yjjj"><a href="https://fontforge.org/en-US/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a><br><a href="https://github.com/fontforge/fontforge"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Font embedding</span></td>
+    <td>FontForge</td>
+    <td><a href="https://fontforge.org/en-US/">Website</a><br><a href="https://github.com/fontforge/fontforge">Github</a></td>
+    <td>Font embedding</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">MathBox</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/unconed/mathbox"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Math presentation in the browser</span></td>
+    <td>MathBox</td>
+    <td><a href="https://github.com/unconed/mathbox">Github</a></td>
+    <td>Math presentation in the browser</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Management</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Slack</span></td>
-    <td class="tg-yjjj"><a href="https://slack.com/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Communication and productivity</span></td>
+    <td rowspan="3">Management</td>
+    <td>Slack</td>
+    <td><a href="https://slack.com/">Website</a></td>
+    <td>Communication and productivity</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Github</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Version control</span></td>
+    <td>Github</td>
+    <td><a href="https://github.com/">Website</a></td>
+    <td>Version control</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Trello</span></td>
-    <td class="tg-yjjj"><a href="https://trello.com/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Managing tasks and productivity</span></td>
+    <td>Trello</td>
+    <td><a href="https://trello.com/">Website</a></td>
+    <td>Managing tasks and productivity</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LaTex</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LaTex</span></td>
-    <td class="tg-yjjj"><a href="https://www.latex-project.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A high-quality typesetting system</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Designed for technical and scientific documentation</span></td>
+    <td rowspan="6">LaTex</td>
+    <td>LaTex</td>
+    <td><a href="https://www.latex-project.org/">Website</a></td>
+    <td>A high-quality typesetting system<br>Designed for technical and scientific documentation</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">TexMaker</span></td>
-    <td class="tg-yjjj"><a href="https://www.xm1math.net/texmaker/doc.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A LaTex editor</span></td>
+    <td>TexMaker</td>
+    <td><a href="https://www.xm1math.net/texmaker/doc.html">Website</a></td>
+    <td>A LaTex editor</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Overleaf</span></td>
-    <td class="tg-yjjj"><a href="https://www.overleaf.com/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A collaborative LaTex editor</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Not free for 3+ collaborators</span></td>
+    <td>Overleaf</td>
+    <td><a href="https://www.overleaf.com/">Website</a></td>
+    <td>A collaborative LaTex editor<br>Not free for 3+ collaborators</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">WebLaTex</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/sanjib-sen/WebLaTex"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">VSCode extension for collaborative LaTex editing</span></td>
+    <td>WebLaTex</td>
+    <td><a href="https://github.com/sanjib-sen/WebLaTex">Github</a></td>
+    <td>VSCode extension for collaborative LaTex editing</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">TexStudio</span></td>
-    <td class="tg-yjjj"><a href="https://www.texstudio.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a><br><a href="https://github.com/texstudio-org/texstudio"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">An integrated writing environment for LaTeX</span></td>
+    <td>TexStudio</td>
+    <td><a href="https://www.texstudio.org/">Website</a><br><a href="https://github.com/texstudio-org/texstudio">Github</a></td>
+    <td>An integrated writing environment for LaTeX</td>
   </tr>
   <tr>
-    <td class="tg-baqh">KaTeX</td>
-    <td class="tg-baqh"><a href="https://katex.org/" target="_blank" rel="noopener noreferrer">Website</a><br><a href="https://github.com/KaTeX/KaTeX" target="_blank" rel="noopener noreferrer">Github</a><br></td>
-    <td class="tg-0lax">A JavaScript library for TeX math rendering on the web</td>
+    <td>KaTeX</td>
+    <td><a href="https://katex.org/" target="_blank" rel="noopener noreferrer">Website</a><br><a href="https://github.com/KaTeX/KaTeX" target="_blank" rel="noopener noreferrer">Github</a><br></td>
+    <td>A JavaScript library for TeX math rendering on the web</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Markdown</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Marktext</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/marktext/marktext"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A markdown editor</span></td>
+    <td rowspan="4">Markdown</td>
+    <td>Marktext</td>
+    <td><a href="https://github.com/marktext/marktext">Github</a></td>
+    <td>A markdown editor</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Markdown guide</span></td>
-    <td class="tg-yjjj"><a href="https://www.markdownguide.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A reference markdown guide</span></td>
+    <td>Markdown guide</td>
+    <td><a href="https://www.markdownguide.org/">Website</a></td>
+    <td>A reference markdown guide</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pandoc</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/jgm/pandoc"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://pandoc.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A document converter (between markup formats)</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A tool for writing books in markdown</span></td>
+    <td>Pandoc</td>
+    <td><a href="https://github.com/jgm/pandoc">Github</a><br><a href="https://pandoc.org/">Website</a></td>
+    <td>A document converter (between markup formats)<br>A tool for writing books in markdown</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Gitbook</span></td>
-    <td class="tg-yjjj"><a href="https://www.gitbook.com/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A document converter (between markup formats)</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A tool for writing books in markdown</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Not free</span></td>
+    <td>Gitbook</td>
+    <td><a href="https://www.gitbook.com/">Website</a></td>
+    <td>A document converter (between markup formats)<br>A tool for writing books in markdown<br>Not free</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Visualization</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">D3</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/d3/d3"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://d3js.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A JavaScript library for visualizing data</span></td>
+    <td rowspan="4">Math</td>
+    <td>math</td>
+    <td><a href="https://github.com/ossu/math" target="_blank" rel="noopener noreferrer">Github</a></td>
+    <td>By OSSU - Open Source Society University</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Matplotlib</span></td>
-    <td class="tg-yjjj"><a href="https://matplotlib.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a><br><a href="https://github.com/matplotlib/matplotlib"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Visualization with Python</span></td>
+    <td>freecodecamp</td>
+    <td><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">Github</a><br><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td>Courses about coding and relevant math</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Matlab</span></td>
-    <td class="tg-yjjj"><a href="https://www.mathworks.com/products/matlab.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A programming and numeric computing platform to analyze data, develop algorithms, and create models.</span></td>
+    <td>numpy</td>
+    <td><a href="https://github.com/numpy/numpy" target="_blank" rel="noopener noreferrer">Github</a><br><a href="https://numpy.org/" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td>A package for scientific computing with Python</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Presentation</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Slidev</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/slidevjs/slidev"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://sli.dev/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Presentation slides for developers</span></td>
+    <td>MIT OpenCourseWare</td>
+    <td><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td><a href="https://ocw.mit.edu/search/?q=linear+algebra" target="_blank" rel="noopener noreferrer">Linear Algebra courses</a><a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/" target="_blank" rel="noopener noreferrer">Prof. Gilbert Strang's Linear Algebra course</a></td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Manim</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/3b1b/manim"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://docs.manim.community/en/stable/index.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">An engine for precise programmatic animations</span></td>
+    <td rowspan="3">Visualization</td>
+    <td>D3</td>
+    <td><a href="https://github.com/d3/d3">Github</a><br><a href="https://d3js.org/">Website</a></td>
+    <td>A JavaScript library for visualizing data</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Motion Canvas</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/motion-canvas/motion-canvas"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://motioncanvas.io/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A Typescript library to create informative vector animations and synchronize them with voice-overs</span></td>
+    <td>Matplotlib</td>
+    <td><a href="https://matplotlib.org/">Website</a><br><a href="https://github.com/matplotlib/matplotlib">Github</a></td>
+    <td>Visualization with Python</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="2"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Site generator</span></td>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Jekyll</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/jekyll/jekyll"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A static site generator</span></td>
+    <td>Matlab</td>
+    <td><a href="https://www.mathworks.com/products/matlab.html">Website</a></td>
+    <td>A programming and numeric computing platform to analyze data, develop algorithms, and create models.</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Hugo</span></td>
-    <td class="tg-yjjj"><a href="https://github.com/gohugoio/hugo"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
-    <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A static site generator</span></td>
+    <td rowspan="3">Presentation</td>
+    <td>Slidev</td>
+    <td><a href="https://github.com/slidevjs/slidev">Github</a><br><a href="https://sli.dev/">Website</a></td>
+    <td>Presentation slides for developers</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="9">Useful Github topics</td>
-    <td class="tg-c3ow"><a href="https://github.com/topics/latex" target="_blank" rel="noopener noreferrer">LaTex</a></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>Manim</td>
+    <td><a href="https://github.com/3b1b/manim">Github</a><br><a href="https://docs.manim.community/en/stable/index.html">Website</a></td>
+    <td>An engine for precise programmatic animations</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><a href="https://github.com/topics/linear-algebra" target="_blank" rel="noopener noreferrer">linear-algebra</a></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>Motion Canvas</td>
+    <td><a href="https://github.com/motion-canvas/motion-canvas">Github</a><br><a href="https://motioncanvas.io/">Website</a></td>
+    <td>A Typescript library to create informative vector animations and synchronize them with voice-overs</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><a href="https://github.com/topics/markdown" target="_blank" rel="noopener noreferrer">markdown</a></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td rowspan="2">Site generator</td>
+    <td>Jekyll</td>
+    <td><a href="https://github.com/jekyll/jekyll">Github</a></td>
+    <td>A static site generator</td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/latex-editor" target="_blank" rel="noopener noreferrer">latex-editor</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td>Hugo</td>
+    <td><a href="https://github.com/gohugoio/hugo">Github</a></td>
+    <td>A static site generator</td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/parsing" target="_blank" rel="noopener noreferrer">parsing</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td rowspan="9">Useful Github topics</td>
+    <td colspan="2"><a href="https://github.com/topics/latex" target="_blank" rel="noopener noreferrer">LaTex</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/documentation" target="_blank" rel="noopener noreferrer">documentation</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/linear-algebra" target="_blank" rel="noopener noreferrer">linear-algebra</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/presentation" target="_blank" rel="noopener noreferrer">presentation</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/markdown" target="_blank" rel="noopener noreferrer">markdown</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/animation" target="_blank" rel="noopener noreferrer">animation</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/latex-editor" target="_blank" rel="noopener noreferrer">latex-editor</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-baqh"><a href="https://github.com/topics/visualization" target="_blank" rel="noopener noreferrer">visualization</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/parsing" target="_blank" rel="noopener noreferrer">parsing</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/documentation" target="_blank" rel="noopener noreferrer">documentation</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/presentation" target="_blank" rel="noopener noreferrer">presentation</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/animation" target="_blank" rel="noopener noreferrer">animation</a></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
+    <td colspan="2"><a href="https://github.com/topics/visualization" target="_blank" rel="noopener noreferrer">visualization</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </tbody>
 </table>
