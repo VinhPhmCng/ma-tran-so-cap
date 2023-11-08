@@ -162,10 +162,25 @@ They can then use this knowledge for their interests and expertise.
     <td>Managing tasks and productivity</td>
   </tr>
   <tr>
-    <td rowspan="6">LaTex</td>
-    <td>LaTex</td>
+    <td rowspan="9">LaTeX</td>
+    <td>LaTeX</td>
     <td><a href="https://www.latex-project.org/">Website</a></td>
     <td>A high-quality typesetting system<br>Designed for technical and scientific documentation</td>
+  </tr>
+  <tr>
+    <td>TUG's Resources</td>
+    <td><a href="https://www.tug.org/interest.html#free" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td>TeX Users Group</td>
+  </tr>
+  <tr>
+    <td>TeX Live</td>
+    <td><a href="https://www.tug.org/texlive/" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td>A distribution provided by most TeX user groups<br>Essential</td>
+  </tr>
+  <tr>
+    <td>LaTex Workshop</td>
+    <td><a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td>A LaTeX extension for VSCode</td>
   </tr>
   <tr>
     <td>TexMaker</td>
@@ -178,12 +193,12 @@ They can then use this knowledge for their interests and expertise.
     <td>A collaborative LaTex editor<br>Not free for 3+ collaborators</td>
   </tr>
   <tr>
-    <td>WebLaTex</td>
+    <td>WebLaTeX</td>
     <td><a href="https://github.com/sanjib-sen/WebLaTex">Github</a></td>
     <td>VSCode extension for collaborative LaTex editing</td>
   </tr>
   <tr>
-    <td>TexStudio</td>
+    <td>TeXstudio</td>
     <td><a href="https://www.texstudio.org/">Website</a><br><a href="https://github.com/texstudio-org/texstudio">Github</a></td>
     <td>An integrated writing environment for LaTeX</td>
   </tr>
