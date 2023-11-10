@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>Testing sync 2</subtitle>
 
 
     <!-- Include frontmatter -->
