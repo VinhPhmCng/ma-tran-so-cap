@@ -32,8 +32,8 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='lemma'>Bổ đề</localization>
     <localization string-id='algorithm'>Thuật toán</localization>
     <localization string-id='proposition'>Mệnh đề</localization>
-    <localization string-id='claim'></localization>
-    <localization string-id='fact'></localization>
+    <localization string-id='claim'>Khẳng định</localization>
+    <localization string-id='fact'>Sự thật</localization>
     <localization string-id='identity'>Hằng đẳng thức</localization>
     <localization string-id='proof'>Chứng minh</localization>
     <localization string-id='case'>Trường hợp</localization>
@@ -44,79 +44,80 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='conjecture'>Phỏng đoán</localization>
     <localization string-id='principle'>Nguyên lý</localization>
     <localization string-id='heuristic'>Quy tắc ngón tay cái</localization>
-    <localization string-id='hypothesis'>Giả thuyết</localization>
+    <localization string-id='hypothesis'>Giả thiết</localization>
     <localization string-id='assumption'>Giả định</localization>
     <!-- Definitions -->
     <localization string-id='definition'>Định nghĩa</localization>
     <!-- Single Line Mathematics -->
-    <localization string-id='me'>Equation</localization>
-    <localization string-id='men'>Equation</localization>
-    <localization string-id='mrow'>Equation</localization>
+    <!-- Todo: Discern the following 5 tags-->
+    <localization string-id='me'>Phương trình</localization>
+    <localization string-id='men'>Phương trình</localization>
+    <localization string-id='mrow'>Phương trình</localization>
     <!-- Display Mathematics -->
-    <localization string-id='md'>Display Mathematics</localization>
-    <localization string-id='mdn'>Display Mathematics</localization>
+    <localization string-id='md'>Hiển thị biểu thức</localization>
+    <localization string-id='mdn'>Hiển thị biểu thức</localization>
     <!-- Types of documents, mostly for informational messages -->
-    <localization string-id='volume'>Volume</localization>
-    <localization string-id='book'>Book</localization>
-    <localization string-id='article'>Article</localization>
-    <localization string-id='letter'>Letter</localization>
-    <localization string-id='slideshow'>Slideshow</localization>
-    <localization string-id='memo'>Memo</localization>
-    <localization string-id='presentation'>Presentation</localization>
+    <localization string-id='volume'>Tập</localization>
+    <localization string-id='book'>Quyển</localization>
+    <localization string-id='article'>Bài viết</localization>
+    <localization string-id='letter'>Thư</localization>
+    <localization string-id='slideshow'>Trình chiếu</localization>
+    <localization string-id='memo'>Ghi nhớ</localization>
+    <localization string-id='presentation'>Thuyết trình</localization>
     <!-- Parts of a document -->
     <!-- "part" will also be used for a "stage" of a WeBWorK problem -->
-    <localization string-id='frontmatter'>Front Matter</localization>
-    <localization string-id='part'>Part</localization>
-    <localization string-id='chapter'>Chapter</localization>
-    <localization string-id='appendix'>Appendix</localization>
+    <localization string-id='frontmatter'></localization>
+    <localization string-id='part'>Phần</localization>
+    <localization string-id='chapter'>Chương</localization>
+    <localization string-id='appendix'>Phụ lục</localization>
     <!-- Next is the plural of Appendix, used to identify a group of appendix -->
-    <localization string-id='appendices'>Appendices</localization>
-    <localization string-id='section'>Section</localization>
-    <localization string-id='subsection'>Subsection</localization>
-    <localization string-id='subsubsection'>Subsubsection</localization>
+    <localization string-id='appendices'>Những phụ lục</localization>
+    <localization string-id='section'>Mục</localization>
+    <localization string-id='subsection'>Tiểu mục</localization>
+    <localization string-id='subsubsection'>Tiểu tiểu mục</localization>
     <!-- A "slide" is a screenful of a presentation (Powerpoint, Beamer) -->
-    <localization string-id='slide'>Slide</localization>
-    <localization string-id='introduction'>Introduction</localization>
-    <localization string-id='conclusion'>Conclusion</localization>
-    <localization string-id='exercises'>Exercises</localization>
-    <localization string-id='worksheet'>Worksheet</localization>
-    <localization string-id='reading-questions'>Reading Questions</localization>
-    <localization string-id='solutions'>Solutions</localization>
-    <localization string-id='glossary'>Glossary</localization>
-    <localization string-id='references'>References</localization>
-    <localization string-id='backmatter'>Back Matter</localization>
+    <localization string-id='slide'>Slide trình chiếu</localization>
+    <localization string-id='introduction'>Giới thiệu</localization>
+    <localization string-id='conclusion'>Kết luận</localization>
+    <localization string-id='exercises'>Thực hành</localization>
+    <localization string-id='worksheet'>Phiếu bài tập</localization>
+    <localization string-id='reading-questions'></localization>
+    <localization string-id='solutions'>Lời giải</localization>
+    <localization string-id='glossary'>Bảng thuật ngữ</localization>
+    <localization string-id='references'>Tham khảo</localization>
+    <localization string-id='backmatter'></localization>
     <!-- paragraph is deprecated, getting plural correct is not super critical, just in messages -->
-    <localization string-id='paragraphs'>Paragraphs</localization>
-    <localization string-id='commentary'>Commentary</localization>
-    <localization string-id='subparagraph'>Subparagraph</localization>
+    <localization string-id='paragraphs'>Đoạn</localization>
+    <localization string-id='commentary'>Lời bình</localization>
+    <localization string-id='subparagraph'>Tiểu đoạn</localization>
     <!-- Components of the narrative -->
     <!-- REMARK-LIKE blocks -->
     <!-- "note" is used within "biblio", likely to change -->
-    <localization string-id='remark'>Remark</localization>
-    <localization string-id='convention'>Convention</localization>
-    <localization string-id='note'>Note</localization>
-    <localization string-id='observation'>Observation</localization>
-    <localization string-id='warning'>Warning</localization>
-    <localization string-id='insight'>Insight</localization>
-    <localization string-id='computation'>Computation</localization>
-    <localization string-id='technology'>Technology</localization>
+    <localization string-id='remark'>Nhận xét</localization>
+    <localization string-id='convention'>Quy ước</localization>
+    <localization string-id='note'></localization>
+    <localization string-id='observation'>Quan sát</localization>
+    <localization string-id='warning'></localization>
+    <localization string-id='insight'></localization>
+    <localization string-id='computation'></localization>
+    <localization string-id='technology'></localization>
     <!-- ASIDE-LIKE blocks -->
-    <localization string-id='aside'>Aside</localization>
+    <localization string-id='aside'></localization>
     <localization string-id='biographical'>Biographical Aside</localization>
     <localization string-id='historical'>Historical Aside</localization>
     <!-- EXAMPLE-LIKE blocks -->
-    <localization string-id='example'>Example</localization>
-    <localization string-id='question'>Question</localization>
-    <localization string-id='problem'>Problem</localization>
+    <localization string-id='example'>Ví dụ</localization>
+    <localization string-id='question'>Câu hỏi</localization>
+    <localization string-id='problem'>Vấn đề</localization>
     <!-- PROJECT-LIKE blocks -->
-    <localization string-id='project'>Project</localization>
-    <localization string-id='activity'>Activity</localization>
+    <localization string-id='project'>Dự án</localization>
+    <localization string-id='activity'>Hoạt động</localization>
     <localization string-id='exploration'>Exploration</localization>
-    <localization string-id='task'>Task</localization>
+    <localization string-id='task'>Nhiệm vụ</localization>
     <localization string-id='investigation'>Investigation</localization>
     <!-- assemblages are collections of minimally structured material -->
     <localization string-id='assemblage'>Assemblage</localization>
-    <localization string-id='poem'>Poem</localization>
+    <localization string-id='poem'>Thơ</localization>
     <!-- Objectives is the block, objective is a list item within -->
     <localization string-id='objectives'>Objectives</localization>
     <localization string-id='objective'>Objective</localization>
@@ -126,18 +127,18 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='outcome'>Outcome</localization>
     <!--  -->
     <localization string-id='figure'>Figure</localization>
-    <localization string-id='table'>Table</localization>
+    <localization string-id='table'>Bảng</localization>
     <localization string-id='listing'>Listing</localization>
-    <localization string-id='fn'>Footnote</localization>
-    <localization string-id='contributor'>Contributor</localization>
+    <localization string-id='fn'>Chú thích</localization>
+    <localization string-id='contributor'>Người đóng góp</localization>
     <!-- Lists and their items -->
     <localization string-id='list'>List</localization>
     <localization string-id='li'>Item</localization>
     <!-- A term (word) defined in a glossary item -->
-    <localization string-id='gi'>Term</localization>
+    <localization string-id='gi'>Thuật ngữ</localization>
     <!-- A regular paragraph, not the old sectioning structure -->
     <localization string-id='p'>Paragraph</localization>
-    <localization string-id='blockquote'>Quotation</localization>
+    <localization string-id='blockquote'>Trích dẫn</localization>
     <!-- Literate programming, a chunk of computer code -->
     <localization string-id='fragment'>Fragment</localization>
     <!-- Parts of an exercise and its solution -->
@@ -186,27 +187,27 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <!-- index-part is deprecated, but not abandoned          -->
     <!-- NB: repurpose translations, maybe move appendix here -->
     <localization string-id='index-part'>Index</localization>
-    <localization string-id='jump-to'>Jump to:</localization>
+    <localization string-id='jump-to'>Đi đến:</localization>
     <!-- Parts of the Index -->
     <localization string-id='index'>Index</localization>
     <localization string-id='see'>See</localization>
     <localization string-id='also'>See also</localization>
     <!-- Notation List headings/foot -->
-    <localization string-id='symbol'>Symbol</localization>
+    <localization string-id='symbol'>Ký hiệu</localization>
     <localization string-id='description'>Description</localization>
     <localization string-id='location'>Location</localization>
-    <localization string-id='page'>Page</localization>
-    <localization string-id='continued'>Continued on next page</localization>
+    <localization string-id='page'>Trang</localization>
+    <localization string-id='continued'>Tiếp tục ở trang sau</localization>
     <!-- Navigation Interface elements -->
     <!-- Assistive "skip to content" link -->
-    <localization string-id='skip-to-content'>Skip to main content</localization>
-    <localization string-id='previous'>Previous</localization>
-    <localization string-id='up'>Up</localization>
-    <localization string-id='next'>Next</localization>
+    <localization string-id='skip-to-content'>Đi đến nội dung chính</localization>
+    <localization string-id='previous'>Trước</localization>
+    <localization string-id='up'>Lên</localization>
+    <localization string-id='next'>Tiếp</localization>
     <!-- Keep these short, so buttons are not overly wide, 4 characters maximum -->
-    <localization string-id='previous-short'>Prev</localization>
-    <localization string-id='up-short'>Up</localization>
-    <localization string-id='next-short'>Next</localization>
+    <localization string-id='previous-short'>Trc.</localization>
+    <localization string-id='up-short'>Lên</localization>
+    <localization string-id='next-short'>Tiếp</localization>
     <!-- NB: Use toc from above for both headings and navigation sidebar-->
     <localization string-id='annotations'>Annotations</localization>
     <localization string-id='feedback'>Feedback</localization>
