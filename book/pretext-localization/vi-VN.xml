@@ -132,8 +132,8 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='fn'>Chú thích</localization>
     <localization string-id='contributor'>Người đóng góp</localization>
     <!-- Lists and their items -->
-    <localization string-id='list'>List</localization>
-    <localization string-id='li'>Item</localization>
+    <localization string-id='list'>Danh sách</localization>
+    <localization string-id='li'>Mục</localization>
     <!-- A term (word) defined in a glossary item -->
     <localization string-id='gi'>Thuật ngữ</localization>
     <!-- A regular paragraph, not the old sectioning structure -->
@@ -164,38 +164,38 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='worksheetexercise'>Worksheet Exercise</localization>
     <localization string-id='readingquestion'>Reading Question</localization>
     <localization string-id='webwork'>WeBWorK</localization>
-    <localization string-id='hint'>Hint</localization>
-    <localization string-id='answer'>Answer</localization>
-    <localization string-id='solution'>Solution</localization>
+    <localization string-id='hint'>Gợi ý</localization>
+    <localization string-id='answer'>Đáp án</localization>
+    <localization string-id='solution'>Lời giải</localization>
     <!-- A group of divisional exercises (with introduction and conclusion) -->
     <localization string-id='exercisegroup'>Exercise Group</localization>
     <!-- Bibliographic items (note is distinct from sidebar "Annotations" below) -->
     <localization string-id='biblio'>Bibliographic Entry</localization>
     <!-- Front matter components -->
-    <localization string-id='toc'>Contents</localization>
-    <localization string-id='abstract'>Abstract</localization>
-    <localization string-id='preface'>Preface</localization>
-    <localization string-id='acknowledgement'>Acknowledgements</localization>
+    <localization string-id='toc'>Mục lục</localization>
+    <localization string-id='abstract'>Tóm tắt</localization>
+    <localization string-id='preface'>Lời nói đầu</localization>
+    <localization string-id='acknowledgement'>Lời cảm ơn</localization>
     <localization string-id='biography'>Author Biography</localization>
     <!-- singular and plural titles for biography subdivision -->
     <localization string-id='about-author'>About the Author</localization>
     <localization string-id='about-authors'>About the Authors</localization>
-    <localization string-id='foreword'>Foreword</localization>
-    <localization string-id='dedication'>Dedication</localization>
+    <localization string-id='foreword'>Lời nói đầu</localization>
+    <localization string-id='dedication'>Đề tặng</localization>
     <localization string-id='colophon'>Colophon</localization>
     <!-- Back matter components -->
     <!-- index-part is deprecated, but not abandoned          -->
     <!-- NB: repurpose translations, maybe move appendix here -->
-    <localization string-id='index-part'>Index</localization>
+    <localization string-id='index-part'>Mục lục</localization>
     <localization string-id='jump-to'>Đi đến:</localization>
     <!-- Parts of the Index -->
     <localization string-id='index'>Index</localization>
-    <localization string-id='see'>See</localization>
-    <localization string-id='also'>See also</localization>
+    <localization string-id='see'>Xem</localization>
+    <localization string-id='also'>Xem thêm</localization>
     <!-- Notation List headings/foot -->
     <localization string-id='symbol'>Ký hiệu</localization>
-    <localization string-id='description'>Description</localization>
-    <localization string-id='location'>Location</localization>
+    <localization string-id='description'>Miêu tả</localization>
+    <localization string-id='location'>Vị trí</localization>
     <localization string-id='page'>Trang</localization>
     <localization string-id='continued'>Tiếp tục ở trang sau</localization>
     <!-- Navigation Interface elements -->
@@ -213,22 +213,22 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='feedback'>Feedback</localization>
     <!-- This phrase should suggest that PreTeXt is the source -->
     <!-- language that makes a particular output possible      -->
-    <localization string-id='authored'>Authored in PreTeXt</localization>
+    <localization string-id='authored'>Được biên soạn với PreTeXt</localization>
     <!-- Parts of memos and letters -->
-    <localization string-id='to'>To</localization>
-    <localization string-id='from'>From</localization>
-    <localization string-id='subject'>Subject</localization>
-    <localization string-id='date'>Date</localization>
+    <localization string-id='to'>Người nhận</localization>
+    <localization string-id='from'>Người gửi</localization>
+    <localization string-id='subject'>Chủ đề</localization>
+    <localization string-id='date'>Ngày</localization>
     <localization string-id='copy'>cc</localization>
     <localization string-id='enclosure'>encl</localization>
     <!-- Various -->
-    <localization string-id='todo'>To Do</localization>
-    <localization string-id='editor'>Editor</localization>
-    <localization string-id='edition'>Edition</localization>
-    <localization string-id='website'>Website</localization>
-    <localization string-id='copyright'>Copyright</localization>
+    <localization string-id='todo'>Việc cần làm</localization>
+    <localization string-id='editor'>Biên tập</localization>
+    <localization string-id='edition'>Ấn bản</localization>
+    <localization string-id='website'>Trang web</localization>
+    <localization string-id='copyright'>Bản quyền</localization>
     <!-- HTML clickables (lowercase strings to click on) -->
-    <localization string-id='permalink'>permalink</localization>
+    <localization string-id='permalink'>liên kết tĩnh</localization>
     <localization string-id='incontext'>in-context</localization>
     <!-- Sage Cell evaluate button      -->
     <!-- eg, "Evaluate (Maxima)"        -->
