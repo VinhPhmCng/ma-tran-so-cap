@@ -176,7 +176,7 @@ They can then use this knowledge for their interests and expertise.
   </tr>
   <tr>
     <td class="tg-c3ow">LaTex Workshop</td>
-    <td class="tg-c3ow"><a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop" target="_blank" rel="noopener noreferrer">Website</a></td>
+    <td class="tg-c3ow">Website</td>
     <td class="tg-0pky">A LaTeX extension for VSCode</td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ They can then use this knowledge for their interests and expertise.
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A document converter (between markup formats)</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A tool for writing books in markdown</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Not free</span></td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="4">Math</td>
+    <td class="tg-c3ow" rowspan="5">Math</td>
     <td class="tg-c3ow">math</td>
     <td class="tg-c3ow"><a href="https://github.com/ossu/math" target="_blank" rel="noopener noreferrer">Github</a></td>
     <td class="tg-0pky">By OSSU - Open Source Society University</td>
@@ -247,17 +247,24 @@ They can then use this knowledge for their interests and expertise.
     <td class="tg-0pky"><a href="https://ocw.mit.edu/search/?q=linear+algebra" target="_blank" rel="noopener noreferrer">Linear Algebra courses</a><a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/" target="_blank" rel="noopener noreferrer">Prof. Gilbert Strang's Linear Algebra course</a></td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Visualization</span></td>
+    <td class="tg-baqh">3Blue1Brown</td>
+    <td class="tg-0lax"><a href="https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&si=Uzdqbj-bRBEX8Yhi" target="_blank" rel="noopener noreferrer">Youtube</a></td>
+    <td class="tg-0lax">A Youtube playlist - Visualization of Linear Algebra Concepts</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Visualization</span></td>
     <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">D3</span></td>
     <td class="tg-yjjj"><a href="https://github.com/d3/d3"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a><br><a href="https://d3js.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A JavaScript library for visualizing data</span></td>
   </tr>
   <tr>
+    <td class="tg-c3ow"></td>
     <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Matplotlib</span></td>
     <td class="tg-yjjj"><a href="https://matplotlib.org/"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a><br><a href="https://github.com/matplotlib/matplotlib"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Github</span></a></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Visualization with Python</span></td>
   </tr>
   <tr>
+    <td class="tg-c3ow"></td>
     <td class="tg-c3ow"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Matlab</span></td>
     <td class="tg-yjjj"><a href="https://www.mathworks.com/products/matlab.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Website</span></a></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A programming and numeric computing platform to analyze data, develop algorithms, and create models.</span></td>
