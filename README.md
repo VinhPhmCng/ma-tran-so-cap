@@ -48,7 +48,9 @@
   <ol>
 	<li><a href="#about-the-project">About The Project</a></li>
 	<li><a href="#reference-materials">Reference Materials</a></li>
-	<li><a href="#potential-tools">Potential tools</a></li>
+	<li><a href="#potential-tools">Potential Tools</a></li>
+	<li><a href="#current-index">Current Index</a></li>
+	<li><a href="#workflow">Workflow</a></li>
 	<li><a href="#contribute">Contribute</a></li>
 	<li><a href="#license">License</a></li>
   </ol>
@@ -95,8 +97,10 @@ They can then use this knowledge for their interests and expertise.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- Potential tools -->
-## Potential tools
+<!-- POTENTIAL TOOLS -->
+## Potential Tools
+<details>
+<summary>Here</summary>
 
 <!--
 <style type="text/css">
@@ -359,6 +363,100 @@ They can then use this knowledge for their interests and expertise.
   </tr>
 </tbody>
 </table>
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CURRENT INDEX -->
+## Current Index
+
+### Part I
+
+<details>
+<summary>Here</summary>
+
+Chapter 1: Số thực và vector cột
+1. Số thực và các tính chất
+1. Vector cột
+1. Không gian vector
+
+Chapter 2: Ma trận
+1. Ma trận
+2. Các ma trận cơ sở
+3. Các phép biến đổi hàng
+4. Ma trận hoán vị
+5. Ma trận bậc thang
+6. Trụ của hàng và hạng của ma trận
+
+Chapter 3: Các phép toán đối với ma trận
+1. Tổng của hai ma trận
+2. Nhân ma trận với một số
+3. Nhân hai ma trận
+4. Ma trận khối (*)
+5. Nhân ma trận theo khối
+
+Chapter 4: Định thức
+1. Định thức
+2. Ma trận con và phần phụ đại số
+3. Tính định thức
+
+Chapter 5: Giải hệ phương trình tuyến tính
+1. Phương pháp khử Gauss
+2. Phương pháp Cramer đối với hệ phương trình có số phương trình bằng số ẩn
+3. Một số ứng dụng
+
+
+Chương 6: Phân tích ma trận
+1. Phân tích A = LU
+2. Phân tích A = CR
+3. Ma trận nghịch đảo
+4. Ứng dụng để giải hệ phương trình tuyến tính
+
+
+</details>
+
+
+### Part 2
+Work in progress
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- WORKFLOW -->
+## Workflow
+
+<details>
+<summary>Written in Manim</summary>
+
+```python
+class WorkFlow(Scene):
+    def construct(self):
+        goal = Arrow(start=LEFT * 3, end=RIGHT * 3, color=GREEN).shift(UP * 2)
+        composing = Arrow(start=LEFT * 3, end=RIGHT * 3, color=BLUE)
+        adopting = Arrow(start=LEFT * 3, end=RIGHT * 3, color=YELLOW).shift(DOWN * 2)
+        
+        goal_label = Text("Goal: Chapter being worked on").scale(0.5).next_to(goal, UP)
+        composing_label = Text("Composing it").scale(0.5).next_to(composing, UP)
+        adopting_label = Text("Adopting it into PreTeXt").scale(0.5).next_to(adopting, UP)
+        
+        self.add(goal, composing, adopting)
+        self.add(goal_label, composing_label, adopting_label)
+        
+        composing.put_start_and_end_on(LEFT * 3, LEFT * 2.8)
+        adopting.put_start_and_end_on(LEFT * 3, LEFT * 2.8).shift(DOWN * 2)
+        
+        self.wait(1)
+        
+        self.play(
+            composing.animate(run_time=3, rate_func=linear).put_start_and_end_on(LEFT * 3, RIGHT * 3),
+            adopting.animate(run_time=5, rate_func=linear).put_start_and_end_on(LEFT * 3, RIGHT * 3).shift(DOWN * 2)
+        )
+```
+
+</details>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
