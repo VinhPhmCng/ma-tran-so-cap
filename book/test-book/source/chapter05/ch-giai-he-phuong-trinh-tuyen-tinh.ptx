@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-giai-he-phuong-trinh-tuyen-tinh" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Giải Hệ Phương Trình Tuyến Tính</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-phuong-phap-khu-gauss.ptx" />
+  <xi:include href="sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an.ptx" />
+  <xi:include href="sec-mot-so-ung-dung.ptx" />
+
+</chapter>
