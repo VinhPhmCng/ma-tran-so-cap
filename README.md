@@ -427,6 +427,8 @@ Work in progress
 <!-- WORKFLOW -->
 ## Workflow
 
+https://github.com/VinhPhmCng/LAFD/assets/111203113/d2c34026-b3ff-4d87-8267-412e7a2d95bd
+
 <details>
 <summary>Written in Manim</summary>
 
