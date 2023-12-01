@@ -67,6 +67,8 @@ Current stage: Brainstorming & Compiling the alpha
 
 Adapted from this [Google Docs](https://docs.google.com/document/d/1BVfNwVEL7drSP9Yg6MMZRFXMC2-ba1qlUfBPgy4pzKY/edit?usp=sharing).
 
+**Deployment:** [Github Pages](https://vinhphmcng.github.io/LAFD/)
+
 ### Mission
 
 Contribute to the community by spreading knowledge
