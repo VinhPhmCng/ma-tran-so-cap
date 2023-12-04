@@ -429,13 +429,13 @@ Work in progress
 <!-- WORKFLOW -->
 ## Workflow
 
-https://github.com/VinhPhmCng/LAFD/assets/111203113/d2c34026-b3ff-4d87-8267-412e7a2d95bd
+
 
 <details>
 <summary>Written in Manim</summary>
 
 ```python
-class WorkFlow(Scene):
+class Workflow(Scene):
     def construct(self):
         goal = Arrow(start=LEFT * 3, end=RIGHT * 3, color=GREEN).shift(UP * 2)
         composing = Arrow(start=LEFT * 3, end=RIGHT * 3, color=BLUE)
@@ -445,18 +445,14 @@ class WorkFlow(Scene):
         composing_label = Text("Composing it").scale(0.5).next_to(composing, UP)
         adopting_label = Text("Adopting it into PreTeXt").scale(0.5).next_to(adopting, UP)
         
-        self.add(goal, composing, adopting)
-        self.add(goal_label, composing_label, adopting_label)
-        
-        composing.put_start_and_end_on(LEFT * 3, LEFT * 2.8)
-        adopting.put_start_and_end_on(LEFT * 3, LEFT * 2.8).shift(DOWN * 2)
+        self.play(GrowArrow(goal), Write(goal_label), run_time=1.0)
+        self.play(
+            GrowArrow(composing, run_time=3.0, rate_func=rate_functions.linear), Write(composing_label, run_time=1.5), 
+            GrowArrow(adopting, run_time=5.0, rate_func=rate_functions.linear), Write(adopting_label, run_time=1.5), 
+        )
         
         self.wait(1)
-        
-        self.play(
-            composing.animate(run_time=3, rate_func=linear).put_start_and_end_on(LEFT * 3, RIGHT * 3),
-            adopting.animate(run_time=5, rate_func=linear).put_start_and_end_on(LEFT * 3, RIGHT * 3).shift(DOWN * 2)
-        )
+        return super().construct()
 ```
 
 </details>
