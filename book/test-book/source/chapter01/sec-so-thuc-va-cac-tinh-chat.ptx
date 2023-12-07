@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<preamble>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathbox@latest/build/bundle/mathbox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathbox@latest/build/mathbox.css"></script>
+</preamble>
+
 <section xml:id="sec-so-thuc-va-cac-tinh-chat" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Số Thực Và Các Tính Chất</title>
 
-  <p> Text of section. </p>
+  <p>
+    Testing.
+  </p>  
+
+  <exercise>
+    <title>MathBox Example</title>
+    <verbatim>
+    <![CDATA[ 
+      <div id="mathbox-container" style="width:800px; height:600px;"></div>
+      <script>
+        var mathbox = mathBox({
+          plugins: ['core', 'controls'],
+        }).start();
+
+
+        var three = mathbox.three;
+        three.camera.position.set(2, 1, 3);
+        three.controls.noRotate = true;
+
+        var view = mathbox.cartesian({
+          range: [[-2, 2], [-2, 2], [-2, 2]],
+          scale: [1, 1, 1],
+        });
+
+        view.grid({
+          width: 1,
+          divideX: 10,
+          divideY: 10,
+        });
+
+        view.axis({ axis: 1 });
+        view.axis({ axis: 2 });
+        view.axis({ axis: 3 });
+      </script>
+    ]]>
+    </verbatim>
+  </exercise>
 
 </section>
