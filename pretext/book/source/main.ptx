@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="linear-algebra-for-dummies">
+    <title>Linear Algebra for Dummies</title>
+    <!-- <subtitle>Testing sync 2</subtitle> -->
+
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./chapter01/ch-so-thuc-va-vector-cot.ptx" />
+    <xi:include href="./chapter02/ch-ma-tran.ptx" />
+    <xi:include href="./chapter03/ch-cac-phep-toan-doi-voi-ma-tran.ptx" />
+    <xi:include href="./chapter04/ch-dinh-thuc.ptx" />
+    <xi:include href="./chapter05/ch-giai-he-phuong-trinh-tuyen-tinh.ptx" />
+    <xi:include href="./chapter06/ch-phan-tich-ma-tran.ptx" />
+
+
+    <!-- Include backmatter -->
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+</pretext>

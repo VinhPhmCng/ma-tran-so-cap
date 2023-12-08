@@ -1,0 +1,13 @@
+INFO    : PreTeXt project found in `E:\LAFD\git-project\LAFD\book\test-book`.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `E:\LAFD\git-project\LAFD\book\test-book\output\web` at `E:\LAFD\git-project\LAFD\book\test-book\output\stage`.
+INFO    : 
+INFO    : Deployment is now staged at `E:\LAFD\git-project\LAFD\book\test-book\output\stage`.
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+ERROR   : Either add and commit these changes with Git, or run
+ERROR   : `pretext deploy -u` to have these changes updated automatically.
+INFO    : While running pretext, the following errors occurred:
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-dinh-thuc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Định Thức</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-dinh-thuc.ptx" />
+  <xi:include href="sec-ma-tran-con-va-phan-phu-dai-so.ptx" />
+  <xi:include href="sec-tinh-dinh-thuc.ptx" />
+
+</chapter>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Linear Algebra for Dummies">
+<meta property="book:author" content="You">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Linear Algebra for Dummies</span></a></h1>
+<p class="byline">You</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-phuong-phap-khu-gauss.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-giai-he-phuong-trinh-tuyen-tinh.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-mot-so-ung-dung.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\pN}{\mathbb{N}^{*}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pZ}{\mathbb{Z}^{+}}
+\newcommand{\mZ}{\mathbb{Z}^{-}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\nQ}{\bar{\mathbb{Q}}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-so-thuc-va-vector-cot.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực Và Vector Cột</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Tập Số Thực</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Các Phép Toán Trên Tập Số Thực <span class="process-math">\(\R\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Tính Chất Của Các Phép Toán</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vector-cot.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Vector Cột</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Không Gian Vector</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-ma-tran.html" class="internal"><span class="codenumber">2</span> <span class="title">Ma Trận</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Ma Trận</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cac-ma-tran-co-so.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Các Ma Trận Cơ Sở</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cac-phep-bien-doi-hang.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Các Phép Biến Đổi Hàng</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Ma Trận Hoán Vị</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-bac-thang.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Ma Trận Bậc Thang</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tru-cua-hang-va-hang-cua-ma-tran.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Trụ Của Hàng Và Hạng Của Ma Trận</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-cac-phep-toan-doi-voi-ma-tran.html" class="internal"><span class="codenumber">3</span> <span class="title">Các Phép Toán Đối Với Ma Trận</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tong-cua-hai-ma-tran.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tổng Của Hai Ma Trận</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-mot-so.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Nhân Ma Trận Với Một Số</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-nhan-hai-ma-tran.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Nhân Hai Ma Trận</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-khoi.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Ma Trận Khối</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-nhan-ma-tran-theo-khoi.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Nhân Ma Trận Theo Khối</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-dinh-thuc.html" class="internal"><span class="codenumber">4</span> <span class="title">Định Thức</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-dinh-thuc.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Định Thức</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-con-va-phan-phu-dai-so.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Ma Trận Con Và Phần Phụ Đại Số</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tinh-dinh-thuc.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Tính Định Thức</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-giai-he-phuong-trinh-tuyen-tinh.html" class="internal"><span class="codenumber">5</span> <span class="title">Giải Hệ Phương Trình Tuyến Tính</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-phuong-phap-khu-gauss.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Phương Pháp Khử Gauss</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-mot-so-ung-dung.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Một Số Ứng Dụng</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-phan-tich-ma-tran.html" class="internal"><span class="codenumber">6</span> <span class="title">Phân Tích Ma Trận</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-phan-tich-a-lu.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Phân Tích A = LU</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-phan-tich-a-cr.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Phân Tích A = CR</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-nghich-dao.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Ma Trận Nghịch Đảo</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ung-dung-de-giai-he-phuong-trinh-tuyen-tinh.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn</span>
+</h2>
+<div class="para" id="sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an-2">Text of section.</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-phuong-phap-khu-gauss.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-mot-so-ung-dung.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
