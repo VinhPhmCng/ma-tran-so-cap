@@ -1,51 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<preamble>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathbox@latest/build/bundle/mathbox.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathbox@latest/build/mathbox.css"></script>
-</preamble>
-
 <section xml:id="sec-so-thuc-va-cac-tinh-chat" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Số Thực Và Các Tính Chất</title>
 
-  <p>
-    Testing.
-  </p>  
+  <subsection xml:id="subsec-tap-so-thuc">
+    <title>Tập Số Thực</title>
 
-  <exercise>
-    <title>MathBox Example</title>
-    <verbatim>
-    <![CDATA[ 
-      <div id="mathbox-container" style="width:800px; height:600px;"></div>
-      <script>
-        var mathbox = mathBox({
-          plugins: ['core', 'controls'],
-        }).start();
+    <p><term>Số Tự Nhiên</term></p>
+    <p>
+      Tập số tự nhiên (hay tập số nguyên dương), kí hiệu <m>\mathbb{N}</m>.
+      <me>
+        \mathbb{N} = \{0, 1, 2, 3, \ldots, n, \ldots \}
+      </me>
+      Tập số tự nhiên dương, kí hiệu <m>\mathbb{N}^{*}</m>.
+      <md>
+        <mrow>\mathbb{N}^{*} \amp = \{1, 2, 3, \ldots, n, \ldots \}</mrow>
+        <mrow>\amp =\mathbb{N} \setminus \{0\}</mrow>
+      </md>
+    </p>
+
+      
+    <p><term>Số Nguyên</term></p>
+    <p>
+      Tập số nguyên, kí hiệu <m>\mathbb{Z}</m>.
+      <me>
+        \mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}
+      </me>
+    </p>
+      
+      
+    <p><term>Số Hữu Tỷ</term></p>
+    <p>
+      Tập số hữu tỷ, kí hiệu <m>\mathbb{Q}</m>.
+      <me>
+        \mathbb{Q} = \{r: r = \frac{m}{n}, m \in \mathbb{Z}, n \in \mathbb{N}^{*} \}
+      </me>
+    </p>
+    <p>Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.</p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\frac{1}{5} = 0.2</mrow>
+        <mrow>\frac{1}{3} = 0.333\ldots = 0.(3)</mrow>
+      </md>
+    </p>
+      
+      
+    <p><term>Số Vô Tỷ</term></p>
+    <p>
+      Tập số vô tỷ, kí hiệu <m>\bar{\mathbb{Q}}</m>, là tập các số thập phân vô hạn <em>không</em> tuần hoàn.
+      <me>
+        \bar{\mathbb{Q}} = \mathbb{R} \setminus \mathbb{Q}
+      </me>
+    </p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\sqrt{2} = 1,41421356\ldots</mrow>
+        <mrow>\pi = 3.14159265\ldots</mrow>
+      </md>
+    </p>
+      
+      
+    <p><term>Số Thực</term></p>
+    <p>
+      Tập số thực, kí hiệu <m>{\mathbb{R}}</m>, là tập bao gồm các số hữu tỷ và các số vô tỷ.
+      <me>
+        \mathbb{R} = \mathbb{Q} \cup \bar{\mathbb{Q}}
+      </me>
+    </p>
+      
+  </subsection>
 
 
-        var three = mathbox.three;
-        three.camera.position.set(2, 1, 3);
-        three.controls.noRotate = true;
+  <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
+    <title>Các phép toán trên tập số thực <m>\mathbb{R}</m></title>
 
-        var view = mathbox.cartesian({
-          range: [[-2, 2], [-2, 2], [-2, 2]],
-          scale: [1, 1, 1],
-        });
+    <p>Với 2 số <m>x, y \in \mathbb{R}</m></p>
 
-        view.grid({
-          width: 1,
-          divideX: 10,
-          divideY: 10,
-        });
+    <p><term>Phép cộng</term></p>
+    <p>Cộng 2 số thực <m>x, y</m> ta được 1 số thực <m>\delta</m>, gọi là tổng của <m>x \text{ và } y</m>.</p>
+    <p>Ký hiệu:
+      <me>
+        \delta = x + y
+      </me>
+    </p>
+    
+    <p><term>Phép nhân</term></p>
+    <p>Nhân 2 số thực <m>x, y</m> ta được 1 số thực <m>\rho</m>, gọi là tích của <m>x \text{ và } y</m>.</p>
+    <p>Ký hiệu:
+      <me>
+        \rho = x \cdot y = x \times y = xy
+      </me>
+    </p>
+    
+  </subsection>
 
-        view.axis({ axis: 1 });
-        view.axis({ axis: 2 });
-        view.axis({ axis: 3 });
-      </script>
-    ]]>
-    </verbatim>
-  </exercise>
 
+  <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
+    <title>Tính chất của các phép toán</title>
+
+    <p><m>\forall x, y, z \in \mathbb{R}</m></p>
+
+    <p>Phép cộng có các tính chất:
+      <ol marker="i">
+        <li><p>Giao hoán: <me>x + y = y + x</me></p></li>
+        <li><p>Kết hợp: <me>(x + y) + z = x + (y + z)</me></p></li>
+        <li><p>Số <m>0</m>: <me>x + 0 = 0 + x = x</me></p></li>
+        <li><p>Số đối: <me>x + (-x) = -x + x = 0</me></p></li>
+      </ol>
+    </p>
+    
+    <p>Phép nhân có các tính chất:
+      <ol marker="a">
+        <li><p>Giao hoán: <me>x \cdot y = y \cdot x</me></p></li>
+        <li><p>Kết hợp: <me>(x \cdot y)z = x(y \cdot z)</me></p></li>
+        <li><p>Số <m>1</m>: <me>x \cdot 1 = 1 \cdot x = x</me></p></li>
+      </ol>
+    </p>
+    
+    <p>Tính chất phân phối của 2 phép toán:
+      <me>x(y + z) = xy + xz</me>
+    </p>
+    <observation>
+      <title>Nhận xét</title>
+      <p>Do tính chất giao hoán i) và a), ta có:
+        <md>
+          <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
+          <mrow>\amp = xz + yz</mrow>
+        </md>
+      </p>
+    </observation>
+    
+    
+  </subsection>
 </section>
