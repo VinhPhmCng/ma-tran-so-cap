@@ -16,7 +16,151 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Số Thực Và Các Tính Chất",
-  "body": " Số Thực Và Các Tính Chất  Text of section.  "
+  "body": " Số Thực Và Các Tính Chất   Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.     Các Phép Toán Trên Tập Số Thực  Với 2 số  Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của .  Ký hiệu:     Tính Chất Của Các Phép Toán   Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:    Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :    Tính chất phân phối của 2 phép toán:    Tính chất giao hoán  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán      Tính đóng của 1 phép toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.   Phép nhân không có tính đóng.         Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian véc tơ .    "
+},
+{
+  "id": "subsec-tap-so-thuc-2",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số tự nhiên "
+},
+{
+  "id": "subsec-tap-so-thuc-3",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số tự nhiên dương "
+},
+{
+  "id": "subsec-tap-so-thuc-4",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số nguyên "
+},
+{
+  "id": "subsec-tap-so-thuc-5",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số hữu tỷ "
+},
+{
+  "id": "subsec-tap-so-thuc-7",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số vô tỷ "
+},
+{
+  "id": "subsec-tap-so-thuc-9",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tập số thực "
+},
+{
+  "id": "subsec-cac-phep-toan-tren-tap-so-thuc-3",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Phép cộng "
+},
+{
+  "id": "subsec-cac-phep-toan-tren-tap-so-thuc-6",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Phép nhân "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-3",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Phép cộng "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-4",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Phép nhân "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-5",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tính chất phân phối "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-6",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-6",
+  "type": "Observation",
+  "number": "1.1.1",
+  "title": "Tính chất giao hoán.",
+  "body": " Tính chất giao hoán  Do tính giao hoán và , ta có:   "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-7",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-7",
+  "type": "Example",
+  "number": "1.1.2",
+  "title": "Tính phân phối và giao hoán.",
+  "body": " Tính phân phối và giao hoán     "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-8",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Tính đóng "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-11",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-11",
+  "type": "Note",
+  "number": "1.1.3",
+  "title": "Sự phụ thuộc của tính đóng với tập số.",
+  "body": " Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.   Phép nhân không có tính đóng.       "
+},
+{
+  "id": "subsec-tinh-chat-cua-cac-phep-toan-12",
+  "level": "2",
+  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-12",
+  "type": "Remark",
+  "number": "1.1.5",
+  "title": "Sự quan trọng của tính đóng.",
+  "body": " Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian véc tơ .  "
 },
 {
   "id": "sec-vector-cot",
