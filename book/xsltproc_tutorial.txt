@@ -1,0 +1,6 @@
+~/xsltproc/xsltproc.exe ../../xsl/pretext-html.xsl minimal.xml
+
+~/xsltproc/xsltproc.exe ../../xsl/pretext-html.xsl project.ptx
+
+The following worked:
+~/xsltproc/xsltproc.exe ../../xsl/pretext-html.xsl source/main.ptx
