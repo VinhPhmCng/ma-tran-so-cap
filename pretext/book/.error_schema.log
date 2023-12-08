@@ -1,0 +1,5 @@
+file:/E:/LAFD/git-project/LAFD/pretext/book/source/main.ptx:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element biography, got colophon
+file:/E:/LAFD/git-project/LAFD/pretext/book/source/main.ptx:6:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
+file:/E:/LAFD/git-project/LAFD/pretext/book/source/main.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+file:/E:/LAFD/git-project/LAFD/pretext/book/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+file:/E:/LAFD/git-project/LAFD/pretext/book/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there

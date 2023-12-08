@@ -1,0 +1,8 @@
+INFO    : PreTeXt project found in `E:\LAFD\git-project\LAFD\book\test-book`.
+INFO    : Since no target was supplied, we will use "web".
+
+CRITICAL: could not load file:/E:/LAFD/git-project/LAFD/book/test-book/source/chapter06/sec-ma-tran-nghich-dao.ptx, and no fallback was found, line 13
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : While running pretext, the following errors occurred:
+

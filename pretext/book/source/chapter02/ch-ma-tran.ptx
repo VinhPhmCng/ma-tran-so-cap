@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Ma Trận</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-ma-tran.ptx" />
+  <xi:include href="sec-cac-ma-tran-co-so.ptx" />
+  <xi:include href="sec-cac-phep-bien-doi-hang.ptx" />
+  <xi:include href="sec-ma-tran-hoan-vi.ptx" />
+  <xi:include href="sec-ma-tran-bac-thang.ptx" />
+  <xi:include href="sec-tru-cua-hang-va-hang-cua-ma-tran.ptx" />
+
+</chapter>

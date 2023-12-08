@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-so-thuc-va-cac-tinh-chat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Số Thực Và Các Tính Chất</title>
+
+  <subsection xml:id="subsec-tap-so-thuc">
+    <title>Tập Số Thực</title>
+
+    <p>
+      <term>Tập số tự nhiên</term> (hay tập số nguyên không âm), kí hiệu <m>\N</m>
+      <me>
+        \N = \{0, 1, 2, 3, \ldots, n, \ldots \}
+      </me>
+    </p>
+
+    <p>
+      <term>Tập số tự nhiên dương</term>, kí hiệu <m>\pN</m>.
+      <md>
+        <mrow>\pN \amp = \{1, 2, 3, \ldots, n, \ldots \}</mrow>
+        <mrow>\amp =\N \setminus \{0\}</mrow>
+      </md>
+    </p>
+
+    <p>
+      <term>Tập số nguyên</term>, kí hiệu <m>\Z</m>
+      <me>
+        \Z = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}
+      </me>
+    </p>
+      
+    <p>
+      <term>Tập số hữu tỷ</term>, kí hiệu <m>\Q</m>.
+      <me>
+        \Q = \{r: r = \frac{m}{n}, m \in \Z, n \in \pN\}
+      </me>
+      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng 
+      <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
+    </p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\frac{1}{5} = 0.2</mrow>
+        <mrow>\frac{1}{3} = 0.333\ldots = 0.(3)</mrow>
+      </md>
+    </p>
+      
+    <p>
+      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là 
+      tập các số thập phân vô hạn <em>không</em> tuần hoàn.
+      <me>
+        \nQ = \R \setminus \Q
+      </me>
+    </p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\sqrt{2} = 1.41421356\ldots</mrow>
+        <mrow>\pi = 3.14159265\ldots</mrow>
+      </md>
+    </p>
+      
+    <p>
+      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là 
+      tập bao gồm các số hữu tỷ và các số vô tỷ.
+      <me>
+        \R = \Q \cup \nQ
+      </me>
+    </p>
+      
+  </subsection>
+
+
+  <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
+    <title>Các Phép Toán Trên Tập Số Thực <m>\R</m></title>
+
+    <p>Với 2 số <m>x, y \in \R</m></p>
+
+    <p><term>Phép cộng</term></p>
+    <p>
+      Cộng 2 số thực <m>x, y</m> ta được 1 số thực <m>\delta</m>, 
+      gọi là tổng của <m>x \text{ và } y</m>.
+    </p>
+    <p>Ký hiệu:
+      <me>
+        \delta = x + y
+      </me>
+    </p>
+    
+    <p><term>Phép nhân</term></p>
+    <p>
+      Nhân 2 số thực <m>x, y</m> ta được 1 số thực <m>\rho</m>, 
+      gọi là tích của <m>x \text{ và } y</m>.
+    </p>
+    <p>Ký hiệu:
+      <me>
+        \rho = x \cdot y = x \times y = xy
+      </me>
+    </p>
+    
+  </subsection>
+
+
+  <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
+    <title>Tính Chất Của Các Phép Toán</title>
+
+    <p><m>\forall x, y, z \in \R</m></p>
+
+    <p><term>Phép cộng</term> có các tính chất:
+      <ol marker="i">
+        <li xml:id="giao-hoan-phep-cong"><p>Giao hoán: <me>x + y = y + x</me></p></li>
+        <li><p>Kết hợp: <me>(x + y) + z = x + (y + z)</me></p></li>
+        <li><p>Số <m>0</m>: <me>x + 0 = 0 + x = x</me></p></li>
+        <li><p>Số đối: <me>x + (-x) = -x + x = 0</me></p></li>
+      </ol>
+    </p>
+    
+    <p><term>Phép nhân</term> có các tính chất:
+      <ol marker="a">
+        <li xml:id="giao-hoan-phep-nhan"><p>Giao hoán: <me>x \cdot y = y \cdot x</me></p></li>
+        <li><p>Kết hợp: <me>(x \cdot y)z = x(y \cdot z)</me></p></li>
+        <li><p>Số <m>1</m>: <me>x \cdot 1 = 1 \cdot x = x</me></p></li>
+      </ol>
+    </p>
+    
+    <p><term>Tính chất phân phối</term> của 2 phép toán:
+      <me>x(y + z) = xy + xz</me>
+    </p>
+    
+    <observation>
+      <title>Tính chất giao hoán</title>
+      <p>
+        Do tính giao hoán <xref ref="giao-hoan-phep-cong"/> và 
+        <xref ref="giao-hoan-phep-nhan"/>, ta có:
+        <md>
+          <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
+          <mrow>\amp = xz + yz</mrow>
+        </md>
+      </p>
+    </observation>
+    
+    <example>
+      <title>Tính phân phối và giao hoán</title>
+      <p>
+        <md>
+          <mrow>2(3 + 4) \amp = 2 \cdot 3 + 2 \cdot 4 = 6 + 8 = 14 </mrow>
+          <mrow>= (4 + 3)2 \amp = 4 \cdot 2 + 3 \cdot 2 = 8 + 6 = 14 </mrow>
+        </md>
+      </p>
+    </example>
+    
+    <p><term>Tính đóng</term> của 1 phép toán</p> 
+    <p>Với mọi <m>x, y \in \R</m>, khi:</p>
+    <p>
+      <ul>
+        <li>
+          <p>Tổng <m>x + y = \delta \in \R</m>, ta nói phép cộng các số thực có tính đóng.</p>
+        </li>
+        <li>
+          <p>Tích <m>x \cdot y = \rho \in \R</m>, ta nói phép nhân các số thực có tính đóng.</p>
+        </li>
+      </ul>
+    </p>
+
+    <note>
+      <title>Sự phụ thuộc của tính đóng với tập số</title>
+      <p>
+        Với phép cộng và phép nhân, tính đóng phụ thuộc vào 
+        tập chứa các phần tử mà ta thực hiện phép toán.
+      </p>
+
+      <example>
+        <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
+        <p>
+          Trên tập các số nguyên âm <m>\mZ = \{\ldots, -n, \ldots, -3, -2, -1\}</m>    
+          <ul>
+            <li>
+              <p>
+                Phép cộng có tính đóng. 
+                <me>
+                  (-3) + (-2) = -5 \in \mZ
+                </me>
+              </p>
+              <p>
+                Phép nhân <em>không</em> có tính đóng. 
+                <me>
+                  (-3) \cdot (-2) = 6 \notin \mZ
+                </me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </example>
+    </note>
+
+    <remark>
+      <title>Sự quan trọng của tính đóng</title>
+      <p>
+        Tính đóng đối với phép toán có mối quan hệ mật thiết với 
+        một đặc tính khái niệm của không gian véc tơ 
+        <xref provisional="section-dac-tinh-khong-gian-vector"/>.
+      </p>
+    </remark>
+    
+    
+  </subsection>
+</section>

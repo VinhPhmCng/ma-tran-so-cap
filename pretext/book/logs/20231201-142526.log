@@ -1,0 +1,21 @@
+INFO    : PreTeXt project found in `E:\LAFD\git-project\LAFD\book\test-book`.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Preparing to build into E:\LAFD\git-project\LAFD\book\test-book\output\web.
+INFO    : discovering source file's directory name: E:\LAFD\git-project\LAFD\book\test-book\source
+INFO    : verifying and expanding input directory: E:\LAFD\git-project\LAFD\book\test-book\source\../generated-assets
+INFO    : input directory expanded to absolute path: E:\LAFD\git-project\LAFD\book\test-book\generated-assets
+INFO    : verifying and expanding input directory: E:\LAFD\git-project\LAFD\book\test-book\source\../assets
+INFO    : input directory expanded to absolute path: E:\LAFD\git-project\LAFD\book\test-book\assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.1.2
+INFO    : Runestone Services (using newer, via online CDN query): version 7.2.8
+INFO    : converting E:\LAFD\git-project\LAFD\book\test-book\source\main.ptx to HTML in C:\Users\ADMIN\AppData\Local\Temp\tmpvnaloull
+INFO    : XSL conversion of E:\LAFD\git-project\LAFD\book\test-book\source\main.ptx by C:\Users\ADMIN\.ptx\xsl\pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    :     * PTX:ERROR: the @xml:id value "sec-section-name" should be unique, but is authored 3 times.
+INFO    :     *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    :     *              located within: "sec-section-name" (xml:id), "Không Gian Vector" (title)
+INFO    : successful application of C:\Users\ADMIN\.ptx\xsl\pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+
