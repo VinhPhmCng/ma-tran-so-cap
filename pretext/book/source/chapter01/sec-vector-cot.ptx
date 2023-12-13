@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-vector-cot" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Vectơ Cột</title>
+  <title>Vector Cột</title>
 
   <objectives>
     <ol>
@@ -13,30 +13,30 @@
   
 
   <subsection xml:id="subsec-vector-cot">
-    <title>Vectơ cột</title>
+    <title>Vector cột</title>
 
     <definition xml:id="def-vector-cot">
       <statement>
         <p>
-          <term>Vectơ cột</term> là bộ các số thực được sắp xếp theo chiều dọc. 
+          <term>Vector cột</term> là bộ các số thực được sắp xếp theo chiều dọc. 
         </p>
       </statement>
     </definition>
 
     <p>
-      Để biểu diễn vectơ cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.
+      Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.
     </p>
     <p>
       Ví dụ:
       <ul>
         <li>
           <p>
-            Sắp xếp bộ 2 số thực <m>x, y</m> thành 1 cột ta được vectơ cột <m>\sbmat{x \\ y}</m>.
+            Sắp xếp bộ 2 số thực <m>x, y</m> thành 1 cột ta được vector cột <m>\sbmat{x \\ y}</m>.
           </p>
         </li>
         <li>
           <p>
-            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được vectơ cột <m>\sbmat{x \\ y \\ z}</m>
+            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được vector cột <m>\sbmat{x \\ y \\ z}</m>
           </p>
         </li>
       </ul>
@@ -45,13 +45,13 @@
     <convention>
       <p>
         Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 cột
-        ta được vectơ cột <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</m>
+        ta được vector cột <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</m>
       </p>
     </convention>
 
     <convention>
       <p>
-        Vectơ cột có n hàng (và 1 cột) được kí 
+        Vector cột có n hàng (và 1 cột) được kí 
         hiệu <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}</m>
       </p>
     </convention>
@@ -67,12 +67,12 @@
 
 
   <subsection xml:id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
-    <title>Các Phép Toán Cộng Vectơ Cột Và Nhân Vectơ Cột Với 1 Số Thực</title>
+    <title>Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
 
     <p>Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</p>
 
     <note>
-      <p>Để cộng 2 hoặc nhiều vectơ cột thì các vectơ đó phải có cùng số hàng.</p>
+      <p>Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</p>
     </note>
 
     <p>
@@ -92,7 +92,7 @@
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vectơ cột và phép nhân vectơ cột với 1 số có 8 tính chất đã nêu 
+        Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu 
         ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
@@ -102,13 +102,13 @@
 
 
   <subsection xml:id="subsec-vector-hang">
-    <title>Vectơ hàng</title>
+    <title>Vector hàng</title>
 
     <definition xml:id="def-vector-hang">
       <statement>
         <p>
           Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng
-          thì sẽ thu được <term>vectơ hàng</term>.
+          thì sẽ thu được <term>vector hàng</term>.
         </p>
       </statement>
     </definition>
@@ -116,27 +116,27 @@
     <convention>
       <p>
         Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 hàng
-        ta được vectơ hàng <m>\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
+        ta được vector hàng <m>\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
       </p>
     </convention>
 
     <convention>
       <p>
-        Vectơ hàng có n cột (và 1 hàng) được kí 
+        Vector hàng có n cột (và 1 hàng) được kí 
         hiệu <m>\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}</m>
       </p>
     </convention>
     
     <remark>
       <p>
-        Ta cũng có thể thực hiện phép cộng các vectơ hàng (có cùng số thành phần) và
-         phép nhân vectơ hàng với 1 số như đối với các vectơ cột.
+        Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và
+         phép nhân vector hàng với 1 số như đối với các vector cột.
       </p>
     </remark>
 
     <convention>
       <p>
-        Trong tài liệu này, khi nói đến <term>vectơ</term> ta sẽ sử dụng ký hiệu <term>vectơ cột</term>.
+        Trong tài liệu này, khi nói đến <term>vector</term> ta sẽ sử dụng ký hiệu <term>vector cột</term>.
       </p>
     </convention>
     
@@ -148,8 +148,8 @@
     <definition xml:id="def-phep-chuyen-vi-vector">
       <statement>
         <p>
-          <term>Phép chuyển vị</term> 1 vectơ là sự biến đổi vị trí bộ các số
-           thuộc vectơ đó từ cột thành hàng hoặc từ hàng thành cột
+          <term>Phép chuyển vị</term> 1 vector là sự biến đổi vị trí bộ các số
+           thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
            nhưng giữ nguyên thứ tự các số.
            <me>
             \bmat{\text{trên} \\ \downarrow \\ \text{dưới}}
@@ -183,21 +183,21 @@
     <ol marker="a">
       <li>
         <p>
-          Như vậy, ta có thể coi vectơ cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc.
-           Tương tự, vectơ hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
+          Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc.
+           Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
         </p>
       </li>
 
       <li>
         <p>
-          Tiếp theo, khi mở rộng các vectơ cột theo chiều ngang (hoặc các vectơ hàng theo chiều dọc)
+          Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc)
            ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
         </p>
       </li>
 
       <li>
         <p>
-          Ngoài phép nhân vectơ với 1 số, ta có thể thực hiện phép nhân giữa các vectơ như thế nào? 
+          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào? 
         </p>
       </li>
 
