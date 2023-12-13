@@ -3,6 +3,14 @@
 <section xml:id="sec-so-thuc-va-cac-tinh-chat" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Số Thực Và Các Tính Chất</title>
 
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+
   <subsection xml:id="subsec-tap-so-thuc">
     <title>Tập Số Thực</title>
 
@@ -31,7 +39,7 @@
     <p>
       <term>Tập số hữu tỷ</term>, kí hiệu <m>\Q</m>.
       <me>
-        \Q = \{r: r = \frac{m}{n}, m \in \Z, n \in \pN\}
+        \Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}
       </me>
       Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng 
       <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
