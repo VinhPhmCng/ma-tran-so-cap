@@ -36,7 +36,8 @@
         </li>
         <li>
           <p>
-            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được vector cột <m>\sbmat{x \\ y \\ z}</m>
+            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được
+             vector cột <m>\sbmat{x \\ y \\ z}</m>
           </p>
         </li>
       </ul>
@@ -164,9 +165,9 @@
       Phép chuyển vị được kí hiệu bằng chữ <m>T</m>.
       <md>
         <mrow>\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}^{T} =
-           \bmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</mrow>
+           \hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</mrow>
         <mrow></mrow>
-        <mrow>\bmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} =
+        <mrow>\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} =
            \bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</mrow>
       </md>
     </p>
