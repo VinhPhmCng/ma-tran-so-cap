@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-khong-gian-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Không Gian Vectơ</title>
+  <title>Không Gian Vector</title>
 
   <p> Text of section. </p>
   
@@ -26,25 +26,10 @@
     HELLO WOORLD.
   </p>
 
-  <figure>
-    <caption>Testing</caption>
-    <interactive xml:id="example1" platform="jsxgraph" aspect="6:7" source="code/jsxmatrix1.js">
-        <sidebyside width="70%" margins="15%">
-            <stack>
-                <slate xml:id="jxgbox" surface="jsxboard" aspect="6:3" />
-            </stack>
-        </sidebyside>
-        <instructions>
-            <p>Test online example</p>
-        </instructions>
-      </interactive>
-  </figure>
-
-
   <figure xml:id="fig-tikz">
-  <caption>A figure generated with TikZ in
-  <latex /></caption>
-  <image width="15%" xml:id="poset">
+    <caption>A figure generated with TikZ in
+    <latex /></caption>
+    <image width="15%" xml:id="poset">
     <latex-image >
       \begin{tikzpicture}
       \draw (0,0) -- (0,1);
@@ -65,7 +50,7 @@
       \node [right] at (1,3) {$d$};
       \end{tikzpicture}
     </latex-image>
-  </image>
-</figure>
+    </image>
+  </figure>
 
 </section>
