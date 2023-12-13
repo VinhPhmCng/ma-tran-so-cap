@@ -26,21 +26,6 @@
     HELLO WOORLD.
   </p>
 
-  <figure>
-    <caption>Testing</caption>
-    <interactive xml:id="example1" platform="jsxgraph" aspect="6:7" source="code/jsxmatrix1.js">
-        <sidebyside width="70%" margins="15%">
-            <stack>
-                <slate xml:id="jxgbox" surface="jsxboard" aspect="6:3" />
-            </stack>
-        </sidebyside>
-        <instructions>
-            <p>Test online example</p>
-        </instructions>
-      </interactive>
-  </figure>
-
-
   <figure xml:id="fig-tikz">
     <caption>A figure generated with TikZ in
     <latex /></caption>
