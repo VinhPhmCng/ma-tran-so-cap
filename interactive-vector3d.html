@@ -32,9 +32,60 @@
 <link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.2.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runtime.ec55fa20f167401c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<a class="assistive" href="#ptx-content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+\newcommand{\pN}{\mathbb{N}^{*}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pZ}{\mathbb{Z}^{+}}
+\newcommand{\mZ}{\mathbb{Z}^{-}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\nQ}{\bar{\mathbb{Q}}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
+
+\newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
+\newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
+\newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
+\newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -46,6 +97,12 @@
 <h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Linear Algebra for Dummies</span></a></h1>
 <p class="byline">You</p>
 </div>
-</div></header><div class="ptx-page"><main class="ptx-main"><div id="ptx-content" class="ptx-content" style="max-width: 1600px"><iframe id="interactive-d3-collision" width="480" height="480" src="interactive-d3-collision-if.html"></iframe></div></main></div>
+</div></header><div class="ptx-page"><main class="ptx-main"><div id="ptx-content" class="ptx-content" style="max-width: 1600px">
+<iframe id="interactive-vector3d" width="600" height="450" src="interactive-vector3d-if.html"></iframe><div class="instructions"><details id="interactive-vector3d-2" class="solution-like born-hidden-knowl"><summary><h5 class="heading"><span class="type">Instructions<span class="period">.</span></span></h5></summary><div class="solution-like">
+<div class="para" id="interactive-vector3d-2-1">Thay đổi giá trị của 3 số thực <span class="process-math">\(u_{1}, u_{2}, u_{3}\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{u_{1} \\ u_{2} \\ u_{3}}\)</span> trên không gian 3 chiều.</div>
+<div class="para" id="interactive-vector3d-2-2">Giữ và di chuột trái để di chuyển góc nhìn 3D.</div>
+<div class="para" id="interactive-vector3d-2-3">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 3<span class="times-sign">×</span>1 trong không gian 3D.</div>
+</div></details></div>
+</div></main></div>
 </body>
 </html>
