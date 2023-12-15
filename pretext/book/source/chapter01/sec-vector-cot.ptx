@@ -63,6 +63,60 @@
         ngoặc nhọn <m>\samat{x \\ y}</m>.
       </p>
     </note>
+
+    <example xml:id="example-vector2d">
+      <title>Biểu diễn vector 2<times/>1 trong không gian 2 chiều với JSXGraph</title>
+
+      <interactive xml:id="interactive-vector2d" platform="jsxgraph" width="80%" aspect="1:1" source="code/vector2d.js">
+        <slate xml:id="vector2d" surface="jsxboard" aspect="1:1"/>
+        <instructions>
+          <p>
+            Thay đổi giá trị của 2 số thực <m>x, y</m> và quan sát sự biểu diễn của
+             vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
+          </p>
+          <p>
+            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
+             1 vector 2<times/>1 trong không gian 2D.
+          </p>
+        </instructions>
+      </interactive>
+    </example>
+
+    <example xml:id="example-vector3d">
+      <title>Biểu diễn vector 3<times/>1 trong không gian 3 chiều với GeoGebra</title>
+      <interactive xml:id="interactive-vector3d" platform="geogebra" width="100%" aspect="4:3">
+        <slate xml:id="slate-vector3d" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="4:3">
+          setPerspective("GT");
+          setSize(800, 600);
+          enableRightClick(false);
+          enableCAS(false);
+          enable3D(true);
+        </slate>
+
+        <instructions>
+          <p>
+            Thay đổi giá trị của 3 số thực <m>u_{1}, u_{2}, u_{3}</m> và quan sát sự biểu diễn của
+             vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
+          </p>
+          <p>
+            Giữ và di chuột trái để di chuyển góc nhìn 3D.
+          </p>
+          <p>
+            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
+             1 vector 3<times/>1 trong không gian 3D.
+          </p>
+        </instructions>
+      </interactive>
+    </example>
+    
+    <!-- JSXGraph of PreTeXt is severely outdated -> Doesn't support 3D -->
+<!--     <example xml:id="example-vector3d">
+      <title>Biểu diễn vector trong không gian 3 chiều</title>
+
+      <interactive xml:id="interactive-vector3d" platform="jsxgraph" width="60%" aspect="5:5" source="code/vector3d.js">
+        <slate xml:id="vector3d" surface="jsxboard" aspect="5:5"/>
+      </interactive>
+    </example> -->
     
   </subsection>
 

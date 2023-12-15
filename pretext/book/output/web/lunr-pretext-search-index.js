@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Vector Cột",
-  "body": " Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .     Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "body": " Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
   "id": "sec-vector-cot-2",
@@ -253,11 +253,29 @@ var ptx_lunr_docs = [
   "body": " Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .  "
 },
 {
+  "id": "example-vector2d",
+  "level": "2",
+  "url": "sec-vector-cot.html#example-vector2d",
+  "type": "Example",
+  "number": "1.2.5",
+  "title": "Biểu diễn vector 2<span class=\"times-sign\">×<\/span>1 trong không gian 2 chiều với JSXGraph.",
+  "body": " Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph   "
+},
+{
+  "id": "example-vector3d",
+  "level": "2",
+  "url": "sec-vector-cot.html#example-vector3d",
+  "type": "Example",
+  "number": "1.2.6",
+  "title": "Biểu diễn vector 3<span class=\"times-sign\">×<\/span>1 trong không gian 3 chiều với GeoGebra.",
+  "body": " Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra   "
+},
+{
   "id": "subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
   "level": "2",
   "url": "sec-vector-cot.html#subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
   "type": "Note",
-  "number": "1.2.5",
+  "number": "1.2.7",
   "title": "",
   "body": " Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.  "
 },
@@ -266,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
   "type": "Remark",
-  "number": "1.2.6",
+  "number": "1.2.8",
   "title": "Tính chất.",
   "body": " Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
 },
@@ -275,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#def-vector-hang",
   "type": "Definition",
-  "number": "1.2.7",
+  "number": "1.2.9",
   "title": "",
   "body": "  Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .   "
 },
@@ -284,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-3",
   "type": "Convention",
-  "number": "1.2.8",
+  "number": "1.2.10",
   "title": "",
   "body": " Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng   "
 },
@@ -293,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-4",
   "type": "Convention",
-  "number": "1.2.9",
+  "number": "1.2.11",
   "title": "",
   "body": " Vector hàng có n cột (và 1 hàng) được kí hiệu   "
 },
@@ -302,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-5",
   "type": "Remark",
-  "number": "1.2.10",
+  "number": "1.2.12",
   "title": "",
   "body": " Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.  "
 },
@@ -311,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-6",
   "type": "Convention",
-  "number": "1.2.11",
+  "number": "1.2.13",
   "title": "",
   "body": " Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .  "
 },
@@ -320,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#def-phep-chuyen-vi-vector",
   "type": "Definition",
-  "number": "1.2.12",
+  "number": "1.2.14",
   "title": "",
   "body": "   Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.    "
 },
@@ -329,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-phep-chuyen-vi-vector-4",
   "type": "Observation",
-  "number": "1.2.13",
+  "number": "1.2.15",
   "title": "",
   "body": "  "
 },
@@ -349,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Không Gian Vector",
-  "body": " Không Gian Vector  Text of section.   Testing    HELLO WOORLD.   A figure generated with TikZ in latex      "
+  "body": " Không Gian Vector  Text of section.   Testing    HELLO WOORLD.   A figure generated with TikZ in latex       Learning JSXGraph     Testing ONLINE GeoGebra     Testing OFFLINE GeoGebra     Vector3D     My Vector3D    "
 },
 {
   "id": "sec-khong-gian-vector-3",
@@ -368,6 +386,51 @@ var ptx_lunr_docs = [
   "number": "1.3.2",
   "title": "",
   "body": " A figure generated with TikZ in latex     "
+},
+{
+  "id": "sec-khong-gian-vector-6",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-6",
+  "type": "Figure",
+  "number": "1.3.3",
+  "title": "",
+  "body": " Learning JSXGraph   "
+},
+{
+  "id": "sec-khong-gian-vector-7",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-7",
+  "type": "Figure",
+  "number": "1.3.4",
+  "title": "",
+  "body": " Testing ONLINE GeoGebra   "
+},
+{
+  "id": "sec-khong-gian-vector-8",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-8",
+  "type": "Figure",
+  "number": "1.3.5",
+  "title": "",
+  "body": " Testing OFFLINE GeoGebra   "
+},
+{
+  "id": "sec-khong-gian-vector-9",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-9",
+  "type": "Figure",
+  "number": "1.3.6",
+  "title": "",
+  "body": " Vector3D   "
+},
+{
+  "id": "sec-khong-gian-vector-10",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-10",
+  "type": "Figure",
+  "number": "1.3.7",
+  "title": "",
+  "body": " My Vector3D   "
 },
 {
   "id": "sec-ma-tran",
