@@ -152,7 +152,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
-\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
 
 \newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
 \newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
@@ -280,12 +280,23 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-cot-7-1">Kí hiệu trên khác việc sử dụng ngoặc tròn <span class="process-math">\(\spmat{x \\ y}\)</span> hoặc ngoặc nhọn <span class="process-math">\(\samat{x \\ y}\text{.}\)</span>
-</div></article></section><section class="subsection" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc"><h3 class="heading hide-type">
+</div></article><details id="example-vector2d" class="example example-like born-hidden-knowl"><summary><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 2<span class="times-sign">×</span>1 trong không gian 2 chiều với JSXGraph.</span>
+</h4></summary><article class="example example-like"> <iframe id="interactive-vector2d" width="480" height="480" src="interactive-vector2d-if.html"></iframe><div class="instructions"><details id="interactive-vector2d-2" class="solution-like born-hidden-knowl"><summary><h5 class="heading"><span class="type">Instructions<span class="period">.</span></span></h5></summary><div class="solution-like">
+<div class="para" id="interactive-vector2d-2-1">Thay đổi giá trị của 2 số thực <span class="process-math">\(x, y\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{x \\ y}\)</span> trên không gian 2 chiều.</div>
+<div class="para" id="interactive-vector2d-2-2">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 2<span class="times-sign">×</span>1 trong không gian 2D.</div>
+</div></details></div></article></details><details id="example-vector3d" class="example example-like born-hidden-knowl"><summary><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 3<span class="times-sign">×</span>1 trong không gian 3 chiều với GeoGebra.</span>
+</h4></summary><article class="example example-like"> <iframe id="interactive-vector3d" width="600" height="450" src="interactive-vector3d-if.html"></iframe><div class="instructions"><details id="interactive-vector3d-2" class="solution-like born-hidden-knowl"><summary><h5 class="heading"><span class="type">Instructions<span class="period">.</span></span></h5></summary><div class="solution-like">
+<div class="para" id="interactive-vector3d-2-1">Thay đổi giá trị của 3 số thực <span class="process-math">\(u_{1}, u_{2}, u_{3}\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{u_{1} \\ u_{2} \\ u_{3}}\)</span> trên không gian 3 chiều.</div>
+<div class="para" id="interactive-vector3d-2-2">Giữ và di chuột trái để di chuyển góc nhìn 3D.</div>
+<div class="para" id="interactive-vector3d-2-3">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 3<span class="times-sign">×</span>1 trong không gian 3D.</div>
+</div></details></div></article></details></section><section class="subsection" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span>
 </h3>
 <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-2">Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</div>
 <article class="note remark-like" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3-1">Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</div></article><div class="para logical" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-4">
 <div class="para">Ví dụ:</div>
@@ -302,32 +313,32 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <article class="remark remark-like" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Tính chất.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Tính chất.</span>
 </h4> <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5-2">Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở <a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal" title="Subsection 1.1.3: Tính Chất Của Các Phép Toán">Subsection 1.1.3</a>.</div></article></section><section class="subsection" id="subsec-vector-hang"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Vector hàng</span>
 </h3>
 <article class="definition definition-like" id="def-vector-hang"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-vector-hang-1-1">Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được <dfn class="terminology">vector hàng</dfn>.</div></article><article class="convention remark-like" id="subsec-vector-hang-3"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-3-1">Sắp xếp bộ n số thực <span class="process-math">\(x_{1}, x_{2}, \ldots, x_{n}\)</span> thành 1 hàng ta được vector hàng <span class="process-math">\(\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}\)</span>
 </div></article><article class="convention remark-like" id="subsec-vector-hang-4"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-4-1">Vector hàng có n cột (và 1 hàng) được kí hiệu <span class="process-math">\(\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}\)</span>
 </div></article><article class="remark remark-like" id="subsec-vector-hang-5"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-5-1">Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.</div></article><article class="convention remark-like" id="subsec-vector-hang-6"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-6-1">Trong tài liệu này, khi nói đến <dfn class="terminology">vector</dfn> ta sẽ sử dụng ký hiệu <dfn class="terminology">vector cột</dfn>.</div></article></section><section class="subsection" id="subsec-phep-chuyen-vi-vector"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Phép Chuyển Vị</span>
 </h3>
 <article class="definition definition-like" id="def-phep-chuyen-vi-vector"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def-phep-chuyen-vi-vector-1-1">
 <div class="para">
@@ -353,7 +364,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <article class="observation remark-like" id="subsec-phep-chuyen-vi-vector-4"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-phep-chuyen-vi-vector-4-1"><span class="process-math">\((A^{T})^{T} = A\)</span></div></article></section><section class="subsection" id="subsec-van-de-tiep-theo"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Vấn Đề Tiếp Theo</span>

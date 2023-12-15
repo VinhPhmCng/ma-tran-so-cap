@@ -52,5 +52,55 @@
     </latex-image>
     </image>
   </figure>
+  
+  <figure>
+    <caption>Learning JSXGraph</caption>
+
+    <interactive xml:id="learn-jsxgraph" platform="jsxgraph" width="80%" aspect="5:5" source="code/jsxLearn.js">
+      <slate xml:id="jxgbox" surface="jsxboard" aspect="5:5"/>
+      <instructions>
+        <p>
+          This is an instruction.
+        </p>
+      </instructions>
+    </interactive>
+  </figure>
+
+  <figure>
+    <caption>Testing ONLINE GeoGebra</caption>
+
+    <interactive xml:id="test-online-geogebra" platform="geogebra" width="100%" aspect="2:1" material-width="1850">
+      <slate xml:id="test-online-linear-algebra" surface="geogebra" material="YCZa8TAH" aspect="2:1"/>
+    </interactive>
+  </figure>
+
+  <figure>
+    <caption>Testing OFFLINE GeoGebra</caption>
+
+    <interactive xml:id="test-geogebra" platform="geogebra" width="100%" aspect="2:1">
+      <slate xml:id="test-linear-algebra" surface="geogebra" source="code/geogebra/LATest.ggb" aspect="2:1"/>
+    </interactive>
+  </figure>
+
+  <figure>
+    <caption>Vector3D</caption>
+
+    <interactive xml:id="interactive-vector3d-geogebra" platform="geogebra" width="100%" aspect="2:1">
+      <slate xml:id="slate-vector3d-geogebra" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="2:1"/>
+    </interactive>
+  </figure>
+
+  <figure>
+    <caption>My Vector3D</caption>
+
+    <interactive xml:id="interactive-my-vector3d-geogebra" platform="geogebra" width="100%" aspect="4:3">
+      <slate xml:id="slate-my-vector3d-geogebra" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="4:3">
+        setPerspective("GT");
+        setSize(800, 600);
+        enableRightClick(false);
+        enableCAS(false);
+      </slate>
+    </interactive>
+  </figure>
 
 </section>
