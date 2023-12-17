@@ -3,29 +3,8 @@
 <section xml:id="sec-khong-gian-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Không Gian Vector</title>
 
-  <p> Text of section. </p>
+  <p> Coming soon. </p>
   
-  <figure>
-    <caption>Testing</caption>
-    <interactive xml:id="kinematics" platform="jsxgraph" aspect="6:7" source="code/jsxtest.js">
-        <sidebyside width="70%" margins="15%">
-            <stack>
-                <slate xml:id="box_t" surface="jsxboard" aspect="6:1" />
-                <slate xml:id="box_s" surface="jsxboard" aspect="6:3" />
-                <slate xml:id="box_v" surface="jsxboard" aspect="6:3" />
-                <slate xml:id="box_a" surface="jsxboard" aspect="6:3" />
-            </stack>
-        </sidebyside>
-        <instructions>
-            <p>Use the time slider in the top panel to vary the time from 0 sec to 6 sec. Observe how the displacement, velocity, and acceleration vary with time.</p>
-        </instructions>
-      </interactive>
-  </figure>
-
-  <p>
-    HELLO WOORLD.
-  </p>
-
   <figure xml:id="fig-tikz">
     <caption>A figure generated with TikZ in
     <latex /></caption>
@@ -53,37 +32,21 @@
     </image>
   </figure>
   
-  <figure>
-    <caption>Learning JSXGraph</caption>
-
-    <interactive xml:id="learn-jsxgraph" platform="jsxgraph" width="80%" aspect="5:5" source="code/jsxLearn.js">
-      <slate xml:id="jxgbox" surface="jsxboard" aspect="5:5"/>
-      <instructions>
-        <p>
-          This is an instruction.
-        </p>
-      </instructions>
-    </interactive>
-  </figure>
 
   <figure>
     <caption>Testing ONLINE GeoGebra</caption>
 
-    <interactive xml:id="test-online-geogebra" platform="geogebra" width="100%" aspect="2:1" material-width="1850">
-      <slate xml:id="test-online-linear-algebra" surface="geogebra" material="YCZa8TAH" aspect="2:1"/>
+    <interactive xml:id="test-online-geogebra" platform="geogebra" width="100%" aspect="4:3" material-width="1850">
+      <slate xml:id="test-online-linear-algebra" surface="geogebra" material="YCZa8TAH" aspect="4:3">
+        setPerspective("GD");
+        setCoordSystem(-8, 10, -7, 10);
+      </slate>
     </interactive>
   </figure>
 
-  <figure>
-    <caption>Testing OFFLINE GeoGebra</caption>
-
-    <interactive xml:id="test-geogebra" platform="geogebra" width="100%" aspect="2:1">
-      <slate xml:id="test-linear-algebra" surface="geogebra" source="code/geogebra/LATest.ggb" aspect="2:1"/>
-    </interactive>
-  </figure>
 
   <figure>
-    <caption>Vector3D</caption>
+    <caption>No configurations.</caption>
 
     <interactive xml:id="interactive-vector3d-geogebra" platform="geogebra" width="100%" aspect="2:1">
       <slate xml:id="slate-vector3d-geogebra" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="2:1"/>

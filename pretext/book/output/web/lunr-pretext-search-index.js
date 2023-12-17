@@ -367,68 +367,41 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Không Gian Vector",
-  "body": " Không Gian Vector  Text of section.   Testing    HELLO WOORLD.   A figure generated with TikZ in latex       Learning JSXGraph     Testing ONLINE GeoGebra     Testing OFFLINE GeoGebra     Vector3D     My Vector3D    "
-},
-{
-  "id": "sec-khong-gian-vector-3",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-3",
-  "type": "Figure",
-  "number": "1.3.1",
-  "title": "",
-  "body": " Testing   "
+  "body": " Không Gian Vector  Coming soon.   A figure generated with TikZ in latex       Testing ONLINE GeoGebra     No configurations.     My Vector3D    "
 },
 {
   "id": "fig-tikz",
   "level": "2",
   "url": "sec-khong-gian-vector.html#fig-tikz",
   "type": "Figure",
-  "number": "1.3.2",
+  "number": "1.3.1",
   "title": "",
   "body": " A figure generated with TikZ in latex     "
+},
+{
+  "id": "sec-khong-gian-vector-4",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-4",
+  "type": "Figure",
+  "number": "1.3.2",
+  "title": "",
+  "body": " Testing ONLINE GeoGebra   "
+},
+{
+  "id": "sec-khong-gian-vector-5",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-5",
+  "type": "Figure",
+  "number": "1.3.3",
+  "title": "",
+  "body": " No configurations.   "
 },
 {
   "id": "sec-khong-gian-vector-6",
   "level": "2",
   "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-6",
   "type": "Figure",
-  "number": "1.3.3",
-  "title": "",
-  "body": " Learning JSXGraph   "
-},
-{
-  "id": "sec-khong-gian-vector-7",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-7",
-  "type": "Figure",
   "number": "1.3.4",
-  "title": "",
-  "body": " Testing ONLINE GeoGebra   "
-},
-{
-  "id": "sec-khong-gian-vector-8",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-8",
-  "type": "Figure",
-  "number": "1.3.5",
-  "title": "",
-  "body": " Testing OFFLINE GeoGebra   "
-},
-{
-  "id": "sec-khong-gian-vector-9",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-9",
-  "type": "Figure",
-  "number": "1.3.6",
-  "title": "",
-  "body": " Vector3D   "
-},
-{
-  "id": "sec-khong-gian-vector-10",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-10",
-  "type": "Figure",
-  "number": "1.3.7",
   "title": "",
   "body": " My Vector3D   "
 },
@@ -439,7 +412,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Ma Trận",
-  "body": " Ma Trận  Text of section.  "
+  "body": " Ma Trận  Coming soon.  "
 },
 {
   "id": "sec-cac-ma-tran-co-so",
@@ -448,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Các Ma Trận Cơ Sở",
-  "body": " Các Ma Trận Cơ Sở  Text of section.  "
+  "body": " Các Ma Trận Cơ Sở  Coming soon.  "
 },
 {
   "id": "sec-cac-phep-bien-doi-hang",
@@ -457,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Các Phép Biến Đổi Hàng",
-  "body": " Các Phép Biến Đổi Hàng  Text of section.  "
+  "body": " Các Phép Biến Đổi Hàng  Coming soon.  "
 },
 {
   "id": "sec-ma-tran-hoan-vi",
@@ -466,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị  Text of section.  "
+  "body": " Ma Trận Hoán Vị  Coming soon.  "
 },
 {
   "id": "sec-ma-tran-bac-thang",
@@ -475,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Ma Trận Bậc Thang",
-  "body": " Ma Trận Bậc Thang  Text of section.  "
+  "body": " Ma Trận Bậc Thang  Coming soon.  "
 },
 {
   "id": "sec-tru-cua-hang-va-hang-cua-ma-tran",
@@ -484,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Trụ Của Hàng Và Hạng Của Ma Trận",
-  "body": " Trụ Của Hàng Và Hạng Của Ma Trận  Text of section.  "
+  "body": " Trụ Của Hàng Và Hạng Của Ma Trận  Coming soon.  "
 },
 {
   "id": "sec-tong-cua-hai-ma-tran",
@@ -493,7 +466,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Tổng Của Hai Ma Trận",
-  "body": " Tổng Của Hai Ma Trận  Text of section.  "
+  "body": " Tổng Của Hai Ma Trận  Coming soon.  "
 },
 {
   "id": "sec-nhan-ma-tran-voi-mot-so",
@@ -502,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Nhân Ma Trận Với Một Số",
-  "body": " Nhân Ma Trận Với Một Số  Text of section.  "
+  "body": " Nhân Ma Trận Với Một Số  Coming soon.  "
 },
 {
   "id": "sec-nhan-hai-ma-tran",
@@ -511,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Nhân Hai Ma Trận",
-  "body": " Nhân Hai Ma Trận  Text of section.  "
+  "body": " Nhân Hai Ma Trận  Coming soon.  "
 },
 {
   "id": "sec-ma-tran-khoi",
@@ -520,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Ma Trận Khối",
-  "body": " Ma Trận Khối  Text of section.  "
+  "body": " Ma Trận Khối  Coming soon.  "
 },
 {
   "id": "sec-nhan-ma-tran-theo-khoi",
@@ -529,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.5",
   "title": "Nhân Ma Trận Theo Khối",
-  "body": " Nhân Ma Trận Theo Khối  Text of section.  "
+  "body": " Nhân Ma Trận Theo Khối  Coming soon.  "
 },
 {
   "id": "sec-dinh-thuc",
@@ -538,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Định Thức",
-  "body": " Định Thức  Text of section.  "
+  "body": " Định Thức  Coming soon.  "
 },
 {
   "id": "sec-ma-tran-con-va-phan-phu-dai-so",
@@ -547,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Ma Trận Con Và Phần Phụ Đại Số",
-  "body": " Ma Trận Con Và Phần Phụ Đại Số  Text of section.  "
+  "body": " Ma Trận Con Và Phần Phụ Đại Số  Coming soon.  "
 },
 {
   "id": "sec-tinh-dinh-thuc",
@@ -556,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Tính Định Thức",
-  "body": " Tính Định Thức  Text of section.  "
+  "body": " Tính Định Thức  Coming soon.  "
 },
 {
   "id": "sec-phuong-phap-khu-gauss",
@@ -565,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Phương Pháp Khử Gauss",
-  "body": " Phương Pháp Khử Gauss  Text of section.  "
+  "body": " Phương Pháp Khử Gauss  Coming soon.  "
 },
 {
   "id": "sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an",
@@ -574,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn",
-  "body": " Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn  Text of section.  "
+  "body": " Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn  Coming soon.  "
 },
 {
   "id": "sec-mot-so-ung-dung",
@@ -583,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Một Số Ứng Dụng",
-  "body": " Một Số Ứng Dụng  Text of section.  "
+  "body": " Một Số Ứng Dụng  Coming soon.  "
 },
 {
   "id": "sec-phan-tich-a-lu",
@@ -592,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Phân Tích A = LU",
-  "body": " Phân Tích A = LU  Text of section.  "
+  "body": " Phân Tích A = LU  Coming soon.  "
 },
 {
   "id": "sec-phan-tich-a-cr",
@@ -601,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Phân Tích A = CR",
-  "body": " Phân Tích A = CR  Text of section.  "
+  "body": " Phân Tích A = CR  Coming soon.  "
 },
 {
   "id": "sec-ma-tran-nghich-dao",
@@ -610,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Ma Trận Nghịch Đảo",
-  "body": " Ma Trận Nghịch Đảo  Text of section.  "
+  "body": " Ma Trận Nghịch Đảo  Coming soon.  "
 },
 {
   "id": "sec-ung-dung-de-giai-he-phuong-trinh-tuyen-tinh",
@@ -619,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính",
-  "body": " Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính  Text of section.  "
+  "body": " Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính  Coming soon.  "
 },
 {
   "id": "backmatter-2",
