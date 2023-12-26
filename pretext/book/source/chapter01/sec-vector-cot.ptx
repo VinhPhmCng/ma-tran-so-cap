@@ -122,95 +122,6 @@
   </subsection>
 
 
-  <subsection xml:id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
-    <title>Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
-
-    <p>Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</p>
-
-    <note>
-      <p>Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</p>
-    </note>
-
-    <p>
-      Ví dụ:
-      <md>
-        <mrow>\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
-        <mrow></mrow>
-        <mrow>3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}</mrow>
-        <mrow></mrow>
-        <mrow>(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
-        <mrow></mrow>
-        <mrow>4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}</mrow>
-        <mrow></mrow>
-        <mrow xml:id="mrow-vi-du-vector-co-so">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}</mrow>
-      </md>
-    </p>
-
-    <remark>
-      <title>Tính chất</title>
-      
-      <p>
-        Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu 
-        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
-      </p>
-      
-    </remark>
-    
-  </subsection>
-
-  <subsection xml:id="subsec-vector-co-so">
-    <title>Vector cơ sở</title>
-
-    <p>
-      Giả sử ta có 1 vector <m>a = \sbmat{3 \\ 2}</m>. Để hình dung vector này trong không gian 2D
-      , ta có thể sử dụng đến sự hỗ trợ của 2 <term>vectors cơ sở</term> cơ bản  <m>\vec{i} = \sbmat{1 \\ 0}</m>
-       và <m>\vec{j} = \sbmat{0 \\ 1}</m>.
-    </p>
-
-    <image xml:id="image-vector-co-so-2d-1" source="images/vector-co-so-2d-1.png" width="80%">
-      <shortdescription>Hai vectors cở sở cơ bản trong không gian 2D</shortdescription>
-    </image>
-
-    <p>
-      Ta bắt đầu từ điểm <m>O(0, 0)</m>, còn được gọi là <term>gốc tọa độ</term>.
-    </p>
-
-    <p>
-      Đầu tiên, chúng ta có thể đi đến điểm <m>(3, 0)</m> trên trục <m>Ox</m>
-       bằng cách đi sang bên phải <m>3</m> đơn vị.
-       Vector <m>\vec{i}</m> sẽ giúp ta làm việc đó. 
-       Ta chỉ cần<q>kéo dài</q> <m>\vec{i}</m> lên <m>3</m> lần sẽ được 1 vector mới
-       <m>3\vec{i} = \sbmat{3 \\ 0}</m>.
-    </p>
-
-    <image xml:id="image-vector-co-so-2d-2" source="images/vector-co-so-2d-2.png" width="80%">
-      <shortdescription>Kéo dài vector i lên 3 lần</shortdescription>
-    </image>
-
-    <p>
-      Tiếp theo, chúng ta sẽ đi lên trên <m>2</m> đơn vị.
-       Tương tự, ta chỉ việc <q>kéo dài</q> <m>\vec{j}</m> lên <m>2</m> lần sẽ được
-       vector <m>2\vec{j} = \sbmat{0 \\ 2}</m>.
-    </p>
-
-    <image xml:id="image-vector-co-so-2d-3" source="images/vector-co-so-2d-3.png" width="80%">
-      <shortdescription>Kéo dài vector j lên 2 lần</shortdescription>
-    </image>
-
-    <p>
-      Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là 
-       <m>3\vec{i} + 2\vec{j} = a = \sbmat{3 \\ 2}</m>.
-    </p>
-
-    <image xml:id="image-vector-co-so-2d-4" source="images/vector-co-so-2d-4.png" width="80%">
-      <shortdescription>Cộng hai vectors 3i + 2j = a</shortdescription>
-    </image>
-
-
-
-  </subsection>
-
-
   <subsection xml:id="subsec-vector-hang">
     <title>Vector hàng</title>
 
@@ -252,6 +163,7 @@
     
   </subsection>
 
+
   <subsection xml:id="subsec-phep-chuyen-vi-vector">
     <title>Phép Chuyển Vị</title>
 
@@ -287,8 +199,59 @@
 
   </subsection>
 
-  <subsection xml:id="subsec-van-de-tiep-theo">
-    <title>Vấn Đề Tiếp Theo</title>
+  <subsection xml:id="subsec-nhap-xuat-vector">
+    <title>Nhập, Xuất Vector Trong Numpy (Python)</title>
+
+    <p>
+      Nhập, xuất vector trong Numpy (Python)
+    </p>
+
+    <sage xml:id="sage-python-nhap-xuat-vector" language="python">
+      <input>
+        import numpy as np # Sử dụng thư viện numpy
+        
+        cot = np.matrix([
+          [1],
+          [2],
+          [3]
+        ])
+
+        hang = np.matrix([
+          [4, 5, 6]
+        ])
+
+        print("Vector cot:")
+        print(cot)
+
+        print("\n\nVector hang:")
+        print(hang)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Tính chuyển vị trong Numpy (Python)
+    </p>
+    
+    <sage xml:id="sage-python-chuyen-vi-vector" language="python">
+      <input>
+        print("Chuyen vi cua 'cot':")
+        print(cot.transpose())
+
+        print("\n\nChuyen vi cua 'hang':")
+        print(hang.transpose())
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+  </subsection>
+
+  <subsection xml:id="subsec-vdtt-vector-cot">
+    <title>Vấn Đề Tiếp Theo (Cũ)</title>
 
     <ol marker="a">
       <li>

@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Đại Số Tuyến Tính Cho Người Mới Bắt Đầu">
 <meta property="book:author" content="You">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -69,7 +86,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-python",
+  "linked": true,
+  "linkKey": "linked-python",
+  "autoeval": false,
+  "languages": [
+    "python"
+  ],
+  "evalButtonText": "Evaluate (Python)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -186,16 +215,21 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-vector-cot.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Vector Cột</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-cot" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Vector cột</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-co-so" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Vector cơ sở</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-hang" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Vector hàng</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-phep-chuyen-vi-vector" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Phép Chuyển Vị</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-van-de-tiep-theo" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Vấn Đề Tiếp Theo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-hang" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector hàng</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-phep-chuyen-vi-vector" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Phép Chuyển Vị</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-nhap-xuat-vector" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Nhập, Xuất Vector Trong Numpy (Python)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vdtt-vector-cot" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Vấn Đề Tiếp Theo (Cũ)</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Các Phép Toán Đối Với Vector</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Các Phép Toán Đối Với Vector</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thtt-vector.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Tổ Hợp Tuyến Tính Của Các Vectors</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Không Gian Vector</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Không Gian Vector</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-khong-gian-vector.html#subsec-vector-co-so" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Vector cơ sở</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -294,71 +328,31 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="interactive-vector3d-2-1">Thay đổi giá trị của 3 số thực <span class="process-math">\(u_{1}, u_{2}, u_{3}\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{u_{1} \\ u_{2} \\ u_{3}}\)</span> trên không gian 3 chiều.</div>
 <div class="para" id="interactive-vector3d-2-2">Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.</div>
 <div class="para" id="interactive-vector3d-2-3">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 3<span class="times-sign">×</span>1 trong không gian 3D.</div>
-</div></details></div></article></details></section><section class="subsection" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span>
-</h3>
-<div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-2">Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</div>
-<article class="note remark-like" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
-</h4>
-<div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3-1">Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</div></article><div class="para logical" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-4">
-<div class="para">Ví dụ:</div>
-<div class="displaymath process-math" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-4-1">
-\begin{gather*}
-\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}\\
-\\
-3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}\\
-\\
-(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}\\
-\\
-4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}\\
-\\
-5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}
-\end{gather*}
-</div>
-</div>
-<article class="remark remark-like" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Tính chất.</span>
-</h4> <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5-2">Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở <a href="sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal" title="Subsection 1.1.3: Tính Chất Của Các Phép Toán">Subsection 1.1.3</a>.</div></article></section><section class="subsection" id="subsec-vector-co-so"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Vector cơ sở</span>
-</h3>
-<div class="para" id="subsec-vector-co-so-2">Giả sử ta có 1 vector <span class="process-math">\(a = \sbmat{3 \\ 2}\text{.}\)</span> Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 <dfn class="terminology">vectors cơ sở</dfn> cơ bản  <span class="process-math">\(\vec{i} = \sbmat{1 \\ 0}\)</span> và <span class="process-math">\(\vec{j} = \sbmat{0 \\ 1}\text{.}\)</span>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/vector-co-so-2d-1.png" class="contained" alt="Hai vectors cở sở cơ bản trong không gian 2D"></div>
-<div class="para" id="subsec-vector-co-so-4">Ta bắt đầu từ điểm <span class="process-math">\(O(0, 0)\text{,}\)</span> còn được gọi là <dfn class="terminology">gốc tọa độ</dfn>.</div>
-<div class="para" id="subsec-vector-co-so-5">Đầu tiên, chúng ta có thể đi đến điểm <span class="process-math">\((3, 0)\)</span> trên trục <span class="process-math">\(Ox\)</span> bằng cách đi sang bên phải <span class="process-math">\(3\)</span> đơn vị. Vector <span class="process-math">\(\vec{i}\)</span> sẽ giúp ta làm việc đó. Ta chỉ cần“kéo dài” <span class="process-math">\(\vec{i}\)</span> lên <span class="process-math">\(3\)</span> lần sẽ được 1 vector mới <span class="process-math">\(3\vec{i} = \sbmat{3 \\ 0}\text{.}\)</span>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/vector-co-so-2d-2.png" class="contained" alt="Kéo dài vector i lên 3 lần"></div>
-<div class="para" id="subsec-vector-co-so-7">Tiếp theo, chúng ta sẽ đi lên trên <span class="process-math">\(2\)</span> đơn vị. Tương tự, ta chỉ việc “kéo dài” <span class="process-math">\(\vec{j}\)</span> lên <span class="process-math">\(2\)</span> lần sẽ được vector <span class="process-math">\(2\vec{j} = \sbmat{0 \\ 2}\text{.}\)</span>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/vector-co-so-2d-3.png" class="contained" alt="Kéo dài vector j lên 2 lần"></div>
-<div class="para" id="subsec-vector-co-so-9">Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là <span class="process-math">\(3\vec{i} + 2\vec{j} = a = \sbmat{3 \\ 2}\text{.}\)</span>
-</div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/vector-co-so-2d-4.png" class="contained" alt="Cộng hai vectors 3i + 2j = a"></div></section><section class="subsection" id="subsec-vector-hang"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Vector hàng</span>
+</div></details></div></article></details></section><section class="subsection" id="subsec-vector-hang"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Vector hàng</span>
 </h3>
 <article class="definition definition-like" id="def-vector-hang"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-vector-hang-1-1">Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được <dfn class="terminology">vector hàng</dfn>.</div></article><article class="convention remark-like" id="subsec-vector-hang-3"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-3-1">Sắp xếp bộ n số thực <span class="process-math">\(x_{1}, x_{2}, \ldots, x_{n}\)</span> thành 1 hàng ta được vector hàng <span class="process-math">\(\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}\)</span>
 </div></article><article class="convention remark-like" id="subsec-vector-hang-4"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-4-1">Vector hàng có n cột (và 1 hàng) được kí hiệu <span class="process-math">\(\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}\)</span>
 </div></article><article class="remark remark-like" id="subsec-vector-hang-5"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-5-1">Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.</div></article><article class="convention remark-like" id="subsec-vector-hang-6"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-6-1">Trong tài liệu này, khi nói đến <dfn class="terminology">vector</dfn> ta sẽ sử dụng ký hiệu <dfn class="terminology">vector cột</dfn>.</div></article></section><section class="subsection" id="subsec-phep-chuyen-vi-vector"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Phép Chuyển Vị</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Phép Chuyển Vị</span>
 </h3>
 <article class="definition definition-like" id="def-phep-chuyen-vi-vector"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def-phep-chuyen-vi-vector-1-1">
 <div class="para">
@@ -384,15 +378,43 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <article class="observation remark-like" id="subsec-phep-chuyen-vi-vector-4"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span>
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-phep-chuyen-vi-vector-4-1"><span class="process-math">\((A^{T})^{T} = A\)</span></div></article></section><section class="subsection" id="subsec-van-de-tiep-theo"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="space"> </span><span class="title">Vấn Đề Tiếp Theo</span>
+<div class="para" id="subsec-phep-chuyen-vi-vector-4-1"><span class="process-math">\((A^{T})^{T} = A\)</span></div></article></section><section class="subsection" id="subsec-nhap-xuat-vector"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Nhập, Xuất Vector Trong Numpy (Python)</span>
+</h3>
+<div class="para" id="subsec-nhap-xuat-vector-2">Nhập, xuất vector trong Numpy (Python)</div>
+<pre id="sage-python-nhap-xuat-vector" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Sử dụng thư viện numpy
+
+cot = np.matrix([
+  [1],
+  [2],
+  [3]
+])
+
+hang = np.matrix([
+  [4, 5, 6]
+])
+
+print("Vector cot:")
+print(cot)
+
+print("\n\nVector hang:")
+print(hang)
+</script></pre>
+<div class="para" id="subsec-nhap-xuat-vector-4">Tính chuyển vị trong Numpy (Python)</div>
+<pre id="sage-python-chuyen-vi-vector" class="ptx-sagecell sagecell-python"><script type="text/x-sage">print("Chuyen vi cua 'cot':")
+print(cot.transpose())
+
+print("\n\nChuyen vi cua 'hang':")
+print(hang.transpose())
+</script></pre></section><section class="subsection" id="subsec-vdtt-vector-cot"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Vấn Đề Tiếp Theo (Cũ)</span>
 </h3>
 <ol class="lower-alpha">
-<li id="subsec-van-de-tiep-theo-2-1"><div class="para" id="subsec-van-de-tiep-theo-2-1-1">Như vậy, ta có thể coi vector cột là sự “mở rộng” của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự “mở rộng” của các số thực theo chiều ngang.</div></li>
-<li id="subsec-van-de-tiep-theo-2-2"><div class="para" id="subsec-van-de-tiep-theo-2-2-1">Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là <dfn class="terminology">ma trận</dfn>.</div></li>
-<li id="subsec-van-de-tiep-theo-2-3"><div class="para" id="subsec-van-de-tiep-theo-2-3-1">Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?</div></li>
+<li id="subsec-vdtt-vector-cot-2-1"><div class="para" id="subsec-vdtt-vector-cot-2-1-1">Như vậy, ta có thể coi vector cột là sự “mở rộng” của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự “mở rộng” của các số thực theo chiều ngang.</div></li>
+<li id="subsec-vdtt-vector-cot-2-2"><div class="para" id="subsec-vdtt-vector-cot-2-2-1">Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là <dfn class="terminology">ma trận</dfn>.</div></li>
+<li id="subsec-vdtt-vector-cot-2-3"><div class="para" id="subsec-vdtt-vector-cot-2-3-1">Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?</div></li>
 </ol></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-cac-phep-toan-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

@@ -3,6 +3,41 @@
 <section xml:id="sec-cac-phep-toan-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Các Phép Toán Đối Với Vector</title>
 
-  <p> Coming soon. </p>
+  <subsection xml:id="subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
+    <title>Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
+
+    <p>Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</p>
+
+    <note>
+      <p>Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</p>
+    </note>
+
+    <p>
+      Ví dụ:
+      <md>
+        <mrow>\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
+        <mrow></mrow>
+        <mrow>3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}</mrow>
+        <mrow></mrow>
+        <mrow>(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
+        <mrow></mrow>
+        <mrow>4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}</mrow>
+        <mrow></mrow>
+        <mrow xml:id="mrow-vi-du-vector-co-so">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}</mrow>
+      </md>
+    </p>
+
+    <remark>
+      <title>Tính chất</title>
+      
+      <p>
+        Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu 
+        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+      </p>
+      
+    </remark>
+    
+  </subsection>
+
 
 </section>

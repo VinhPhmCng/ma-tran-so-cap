@@ -4,67 +4,56 @@
   <title>Không Gian Vector. Hạng Và Chuẩn Của Vector</title>
   <shorttitle>Không Gian Vector</shorttitle>
 
-  <p> Coming soon. </p>
-  
-  <figure xml:id="fig-tikz">
-    <caption>A figure generated with TikZ in
-    <latex /></caption>
-    <image width="15%" xml:id="poset">
-    <latex-image >
-      \begin{tikzpicture}
-      \draw (0,0) -- (0,1);
-      \draw (1,0) -- (1,1) -- (1,2) -- (1,3);
-      \draw (0,0) -- (1,2);
-      \draw (0,1) -- (1,0);
-      \draw [fill] (0,0) circle [radius=0.1];
-      \draw [fill] (0,1) circle [radius=0.1];
-      \draw [fill] (1,0) circle [radius=0.1];
-      \draw [fill] (1,1) circle [radius=0.1];
-      \draw [fill] (1,2) circle [radius=0.1];
-      \draw [fill] (1,3) circle [radius=0.1];
-      \node [left] at (0,0) {$x$};
-      \node [left] at (0,1) {$b$};
-      \node [right] at (1,0) {$a$};
-      \node [right] at (1,1) {$y$};
-      \node [right] at (1,2) {$c$};
-      \node [right] at (1,3) {$d$};
-      \end{tikzpicture}
-    </latex-image>
+  <subsection xml:id="subsec-vector-co-so">
+    <title>Vector cơ sở</title>
+
+    <p>
+      Giả sử ta có 1 vector <m>a = \sbmat{3 \\ 2}</m>. Để hình dung vector này trong không gian 2D
+      , ta có thể sử dụng đến sự hỗ trợ của 2 <term>vectors cơ sở</term> cơ bản  <m>\vec{i} = \sbmat{1 \\ 0}</m>
+       và <m>\vec{j} = \sbmat{0 \\ 1}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-1" source="images/vector-co-so-2d-1.png" width="80%">
+      <shortdescription>Hai vectors cở sở cơ bản trong không gian 2D</shortdescription>
     </image>
-  </figure>
-  
 
-  <figure>
-    <caption>Testing ONLINE GeoGebra</caption>
+    <p>
+      Ta bắt đầu từ điểm <m>O(0, 0)</m>, còn được gọi là <term>gốc tọa độ</term>.
+    </p>
 
-    <interactive xml:id="test-online-geogebra" platform="geogebra" width="100%" aspect="4:3" material-width="1850">
-      <slate xml:id="test-online-linear-algebra" surface="geogebra" material="YCZa8TAH" aspect="4:3">
-        setPerspective("GD");
-        setCoordSystem(-8, 10, -7, 10);
-      </slate>
-    </interactive>
-  </figure>
+    <p>
+      Đầu tiên, chúng ta có thể đi đến điểm <m>(3, 0)</m> trên trục <m>Ox</m>
+       bằng cách đi sang bên phải <m>3</m> đơn vị.
+       Vector <m>\vec{i}</m> sẽ giúp ta làm việc đó. 
+       Ta chỉ cần<q>kéo dài</q> <m>\vec{i}</m> lên <m>3</m> lần sẽ được 1 vector mới
+       <m>3\vec{i} = \sbmat{3 \\ 0}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-2" source="images/vector-co-so-2d-2.png" width="80%">
+      <shortdescription>Kéo dài vector i lên 3 lần</shortdescription>
+    </image>
+
+    <p>
+      Tiếp theo, chúng ta sẽ đi lên trên <m>2</m> đơn vị.
+       Tương tự, ta chỉ việc <q>kéo dài</q> <m>\vec{j}</m> lên <m>2</m> lần sẽ được
+       vector <m>2\vec{j} = \sbmat{0 \\ 2}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-3" source="images/vector-co-so-2d-3.png" width="80%">
+      <shortdescription>Kéo dài vector j lên 2 lần</shortdescription>
+    </image>
+
+    <p>
+      Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là 
+       <m>3\vec{i} + 2\vec{j} = a = \sbmat{3 \\ 2}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-4" source="images/vector-co-so-2d-4.png" width="80%">
+      <shortdescription>Cộng hai vectors 3i + 2j = a</shortdescription>
+    </image>
 
 
-  <figure>
-    <caption>No configurations.</caption>
 
-    <interactive xml:id="interactive-vector3d-geogebra" platform="geogebra" width="100%" aspect="2:1">
-      <slate xml:id="slate-vector3d-geogebra" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="2:1"/>
-    </interactive>
-  </figure>
-
-  <figure>
-    <caption>My Vector3D</caption>
-
-    <interactive xml:id="interactive-my-vector3d-geogebra" platform="geogebra" width="100%" aspect="4:3">
-      <slate xml:id="slate-my-vector3d-geogebra" surface="geogebra" source="code/geogebra/vector3d.ggb" aspect="4:3">
-        setPerspective("GT");
-        setSize(800, 600);
-        enableRightClick(false);
-        enableCAS(false);
-      </slate>
-    </interactive>
-  </figure>
+  </subsection>
 
 </section>
