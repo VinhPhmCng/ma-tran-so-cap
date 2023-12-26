@@ -75,14 +75,18 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 </head>
-<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:300px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
-<script>var test__online__linear__algebra_params = {
+<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:450px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">
+<script>var test__online__linear__algebra_onload = function(test__online__linear__algebra_applet) {
+test__online__linear__algebra_applet.setPerspective("GD");
+test__online__linear__algebra_applet.setCoordSystem(-8, 10, -7, 10);
+};
+var test__online__linear__algebra_params = {
 material_id:"YCZa8TAH",
 width:600,
-height:300,
-};
+height:450,
+appletOnLoad:test__online__linear__algebra_onload};
 var test__online__linear__algebra = new GGBApplet(test__online__linear__algebra_params, true);
 window.onload = function() { test__online__linear__algebra.inject('test-online-linear-algebra-container'); }
-</script><div class="geogebra-applet" id="test-online-linear-algebra-container" style="width:600px; height:300px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"></div>
+</script><div class="geogebra-applet" id="test-online-linear-algebra-container" style="width:600px; height:450px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"></div>
 </div></body>
 </html>
