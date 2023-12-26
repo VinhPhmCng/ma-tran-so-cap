@@ -10,18 +10,18 @@ var ptx_lunr_docs = [
   "body": "  My Website   copyright  "
 },
 {
-  "id": "sec-so-thuc-va-cac-tinh-chat",
+  "id": "sec-so-thuc-va-tc",
   "level": "1",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html",
+  "url": "sec-so-thuc-va-tc.html",
   "type": "Section",
   "number": "1.1",
   "title": "Số Thực Và Các Tính Chất",
   "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.     Các Phép Toán Trên Tập Số Thực  Với 2 số  Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của .  Ký hiệu:     Tính Chất Của Các Phép Toán       Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.         Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.      Ví dụ:     The conclusion of the exercise group.     Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng      Phép trừ      Phép nhân      Phép chia      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Alo    Các phép toán nào có tính đóng đối với tập số thực ?    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
 },
 {
-  "id": "sec-so-thuc-va-cac-tinh-chat-2",
+  "id": "sec-so-thuc-va-tc-2",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#sec-so-thuc-va-cac-tinh-chat-2",
+  "url": "sec-so-thuc-va-tc.html#sec-so-thuc-va-tc-2",
   "type": "Objectives",
   "number": "1.1",
   "title": "",
@@ -30,7 +30,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-2",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-2",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -39,7 +39,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-3",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-3",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -48,7 +48,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-4",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-4",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -57,7 +57,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-5",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-5",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -66,7 +66,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-7",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-7",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -75,7 +75,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tap-so-thuc-9",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc-9",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -84,7 +84,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-cac-phep-toan-tren-tap-so-thuc-3",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc-3",
+  "url": "sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -93,7 +93,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-cac-phep-toan-tren-tap-so-thuc-6",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc-6",
+  "url": "sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -102,7 +102,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tinh-chat-cua-cac-phep-toan-3",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-3",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -111,7 +111,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tinh-chat-cua-cac-phep-toan-4",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-4",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-4",
   "type": "Observation",
   "number": "1.1.1",
   "title": "Tính giao hoán và phân phối.",
@@ -120,7 +120,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tinh-chat-cua-cac-phep-toan-5",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan-5",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-5",
   "type": "Example",
   "number": "1.1.2",
   "title": "Tính phân phối và giao hoán.",
@@ -129,7 +129,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tinh-dong-cua-mot-phep-toan-4",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-dong-cua-mot-phep-toan-4",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-4",
   "type": "Note",
   "number": "1.1.3",
   "title": "Sự phụ thuộc của tính đóng với tập số.",
@@ -138,7 +138,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-tinh-dong-cua-mot-phep-toan-5",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-dong-cua-mot-phep-toan-5",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-5",
   "type": "Remark",
   "number": "1.1.5",
   "title": "Sự quan trọng của tính đóng.",
@@ -147,7 +147,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-phep-cong-so-tu-nhien",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-phep-cong-so-tu-nhien",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-phep-cong-so-tu-nhien",
   "type": "Exercise",
   "number": "1.1.4.1",
   "title": "",
@@ -156,7 +156,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-phep-tru-so-tu-nhien",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-phep-tru-so-tu-nhien",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-phep-tru-so-tu-nhien",
   "type": "Exercise",
   "number": "1.1.4.2",
   "title": "",
@@ -165,7 +165,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien",
   "type": "Exercise",
   "number": "1.1.4.3",
   "title": "",
@@ -174,7 +174,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-tap-so-nguyen",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-tap-so-nguyen",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-tap-so-nguyen",
   "type": "Exercise",
   "number": "1.1.4.4",
   "title": "",
@@ -183,7 +183,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-tap-so-huu-ty",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-tap-so-huu-ty",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-tap-so-huu-ty",
   "type": "Exercise",
   "number": "1.1.4.5",
   "title": "",
@@ -192,7 +192,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercise-tinh-dong-cua-tap-so-thuc",
   "level": "2",
-  "url": "sec-so-thuc-va-cac-tinh-chat.html#exercise-tinh-dong-cua-tap-so-thuc",
+  "url": "sec-so-thuc-va-tc.html#exercise-tinh-dong-cua-tap-so-thuc",
   "type": "Exercise",
   "number": "1.1.4.6",
   "title": "",
@@ -204,13 +204,13 @@ var ptx_lunr_docs = [
   "url": "sec-vector-cot.html",
   "type": "Section",
   "number": "1.2",
-  "title": "Vector Cột",
-  "body": " Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "title": "Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector",
+  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
-  "id": "sec-vector-cot-2",
+  "id": "sec-vector-cot-3",
   "level": "2",
-  "url": "sec-vector-cot.html#sec-vector-cot-2",
+  "url": "sec-vector-cot.html#sec-vector-cot-3",
   "type": "Objectives",
   "number": "1.2",
   "title": "",
@@ -379,47 +379,65 @@ var ptx_lunr_docs = [
   "body": "ma trận "
 },
 {
+  "id": "sec-cac-phep-toan-vector",
+  "level": "1",
+  "url": "sec-cac-phep-toan-vector.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "Các Phép Toán Đối Với Vector",
+  "body": " Các Phép Toán Đối Với Vector  Coming soon.  "
+},
+{
+  "id": "sec-thtt-vector",
+  "level": "1",
+  "url": "sec-thtt-vector.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Tổ Hợp Tuyến Tính Của Các Vectors",
+  "body": " Tổ Hợp Tuyến Tính Của Các Vectors  Coming soon.  "
+},
+{
   "id": "sec-khong-gian-vector",
   "level": "1",
   "url": "sec-khong-gian-vector.html",
   "type": "Section",
-  "number": "1.3",
-  "title": "Không Gian Vector",
-  "body": " Không Gian Vector  Coming soon.   A figure generated with TikZ in latex       Testing ONLINE GeoGebra     No configurations.     My Vector3D    "
+  "number": "1.5",
+  "title": "Không Gian Vector. Hạng Và Chuẩn Của Vector",
+  "body": " Không Gian Vector. Hạng Và Chuẩn Của Vector  Không Gian Vector  Coming soon.   A figure generated with TikZ in latex       Testing ONLINE GeoGebra     No configurations.     My Vector3D    "
 },
 {
   "id": "fig-tikz",
   "level": "2",
   "url": "sec-khong-gian-vector.html#fig-tikz",
   "type": "Figure",
-  "number": "1.3.1",
+  "number": "1.5.1",
   "title": "",
   "body": " A figure generated with TikZ in latex     "
-},
-{
-  "id": "sec-khong-gian-vector-4",
-  "level": "2",
-  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-4",
-  "type": "Figure",
-  "number": "1.3.2",
-  "title": "",
-  "body": " Testing ONLINE GeoGebra   "
 },
 {
   "id": "sec-khong-gian-vector-5",
   "level": "2",
   "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-5",
   "type": "Figure",
-  "number": "1.3.3",
+  "number": "1.5.2",
   "title": "",
-  "body": " No configurations.   "
+  "body": " Testing ONLINE GeoGebra   "
 },
 {
   "id": "sec-khong-gian-vector-6",
   "level": "2",
   "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-6",
   "type": "Figure",
-  "number": "1.3.4",
+  "number": "1.5.3",
+  "title": "",
+  "body": " No configurations.   "
+},
+{
+  "id": "sec-khong-gian-vector-7",
+  "level": "2",
+  "url": "sec-khong-gian-vector.html#sec-khong-gian-vector-7",
+  "type": "Figure",
+  "number": "1.5.4",
   "title": "",
   "body": " My Vector3D   "
 },

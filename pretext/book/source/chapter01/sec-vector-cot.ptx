@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-vector-cot" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Vector Cột</title>
+  <title>Vector Cột<mdash/>Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</title>
+  <shorttitle>Vector Cột</shorttitle>
 
   <objectives>
     <ol>

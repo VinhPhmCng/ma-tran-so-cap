@@ -8,11 +8,11 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Vector Cột</title>
+<title>Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Linear Algebra for Dummies">
+<meta property="book:title" content="Đại Số Tuyến Tính Cho Người Mới Bắt Đầu">
 <meta property="book:author" content="You">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
@@ -123,7 +123,7 @@ eBookConfig.enable_chatcodes =  false;
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
-<h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Linear Algebra for Dummies</span></a></h1>
+<h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Đại Số Tuyến Tính Cho Người Mới Bắt Đầu</span></a></h1>
 <p class="byline">You</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-so-thuc-va-cac-tinh-chat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-so-thuc-va-vector-cot.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-khong-gian-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-so-thuc.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-cac-phep-toan-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
 \newcommand{\pN}{\mathbb{N}^{*}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\pZ}{\mathbb{Z}^{+}}
@@ -168,17 +168,17 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="ch-so-thuc-va-vector-cot.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực Và Vector Cột</span></a></div>
+<div class="toc-title-box"><a href="ch-so-thuc.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></div>
+<div class="toc-title-box"><a href="sec-so-thuc-va-tc.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Tập Số Thực</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Các Phép Toán Trên Tập Số Thực <span class="process-math">\(\R\)</span></span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Tính Chất Của Các Phép Toán</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tap-so-thuc" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Tập Số Thực</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Các Phép Toán Trên Tập Số Thực <span class="process-math">\(\R\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Tính Chất Của Các Phép Toán</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-dong-cua-mot-phep-toan" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tính Đóng Của Một Phép Toán</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#exercises-tinh-dong-cua-cac-tap-so-co-ban" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Bài Tập Về Tính Đóng</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tính Đóng Của Một Phép Toán</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#exercises-tinh-dong-cua-cac-tap-so-co-ban" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Bài Tập Về Tính Đóng</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -193,7 +193,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-van-de-tiep-theo" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Vấn Đề Tiếp Theo</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Không Gian Vector</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Các Phép Toán Đối Với Vector</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thtt-vector.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Tổ Hợp Tuyến Tính Của Các Vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Không Gian Vector</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -245,13 +247,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-vector-cot"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Vector Cột</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</span>
 </h2>
-<article class="objectives goal-like" id="sec-vector-cot-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<article class="objectives goal-like" id="sec-vector-cot-3"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ol class="decimal">
-<li id="sec-vector-cot-2-1-1"><div class="para" id="p-derived-sec-vector-cot-2-1-1">Các mục tiêu của section.</div></li>
-<li id="sec-vector-cot-2-1-2"><div class="para" id="p-derived-sec-vector-cot-2-1-2"></div></li>
-<li id="sec-vector-cot-2-1-3"><div class="para" id="p-derived-sec-vector-cot-2-1-3"></div></li>
+<li id="sec-vector-cot-3-1-1"><div class="para" id="p-derived-sec-vector-cot-3-1-1">Các mục tiêu của section.</div></li>
+<li id="sec-vector-cot-3-1-2"><div class="para" id="p-derived-sec-vector-cot-3-1-2"></div></li>
+<li id="sec-vector-cot-3-1-3"><div class="para" id="p-derived-sec-vector-cot-3-1-3"></div></li>
 </ol></article><section class="subsection" id="subsec-vector-cot"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Vector cột</span>
 </h3>
@@ -317,10 +319,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <article class="remark remark-like" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Tính chất.</span>
-</h4> <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5-2">Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở <a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal" title="Subsection 1.1.3: Tính Chất Của Các Phép Toán">Subsection 1.1.3</a>.</div></article></section><section class="subsection" id="subsec-vector-co-so"><h3 class="heading hide-type">
+</h4> <div class="para" id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5-2">Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở <a href="sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal" title="Subsection 1.1.3: Tính Chất Của Các Phép Toán">Subsection 1.1.3</a>.</div></article></section><section class="subsection" id="subsec-vector-co-so"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Vector cơ sở</span>
 </h3>
-<div class="para" id="subsec-vector-co-so-2">Giả sử ta có 1 vector <span class="process-math">\(a = \sbmat{3 \\ -2}\text{.}\)</span> Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 <dfn class="terminology">vectors cơ sở</dfn> cơ bản  <span class="process-math">\(\vec{i} = \sbmat{1 \\ 0}\)</span> và <span class="process-math">\(\vec{j} = \sbmat{0 \\ 1}\text{.}\)</span>
+<div class="para" id="subsec-vector-co-so-2">Giả sử ta có 1 vector <span class="process-math">\(a = \sbmat{3 \\ 2}\text{.}\)</span> Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 <dfn class="terminology">vectors cơ sở</dfn> cơ bản  <span class="process-math">\(\vec{i} = \sbmat{1 \\ 0}\)</span> và <span class="process-math">\(\vec{j} = \sbmat{0 \\ 1}\text{.}\)</span>
 </div>
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/vector-co-so-2d-1.png" class="contained" alt="Hai vectors cở sở cơ bản trong không gian 2D"></div>
 <div class="para" id="subsec-vector-co-so-4">Ta bắt đầu từ điểm <span class="process-math">\(O(0, 0)\text{,}\)</span> còn được gọi là <dfn class="terminology">gốc tọa độ</dfn>.</div>
@@ -393,7 +395,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="subsec-van-de-tiep-theo-2-3"><div class="para" id="subsec-van-de-tiep-theo-2-3-1">Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?</div></li>
 </ol></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-so-thuc-va-cac-tinh-chat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-khong-gian-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-cac-phep-toan-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

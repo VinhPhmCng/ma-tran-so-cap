@@ -5,7 +5,7 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="linear-algebra-for-dummies">
-    <title>Linear Algebra for Dummies</title>
+    <title>Đại Số Tuyến Tính Cho Người Mới Bắt Đầu</title>
     <!-- <subtitle>Testing sync 2</subtitle> -->
 
 
@@ -13,7 +13,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./chapter01/ch-so-thuc-va-vector-cot.ptx" />
+    <xi:include href="./chapter01/ch-so-thuc.ptx" />
     <xi:include href="./chapter02/ch-ma-tran.ptx" />
     <xi:include href="./chapter03/ch-cac-phep-toan-doi-voi-ma-tran.ptx" />
     <xi:include href="./chapter04/ch-dinh-thuc.ptx" />
