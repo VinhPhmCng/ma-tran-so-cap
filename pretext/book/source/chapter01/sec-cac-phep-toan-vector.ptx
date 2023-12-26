@@ -3,6 +3,15 @@
 <section xml:id="sec-cac-phep-toan-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Các Phép Toán Đối Với Vector</title>
 
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+
   <subsection xml:id="subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
     <title>Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
 

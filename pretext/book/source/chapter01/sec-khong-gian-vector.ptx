@@ -4,6 +4,15 @@
   <title>Không Gian Vector. Hạng Và Chuẩn Của Vector</title>
   <shorttitle>Không Gian Vector</shorttitle>
 
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+
   <subsection xml:id="subsec-vector-co-so">
     <title>Vector cơ sở</title>
 
