@@ -140,6 +140,8 @@
         <mrow>(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
         <mrow></mrow>
         <mrow>4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}</mrow>
+        <mrow></mrow>
+        <mrow xml:id="mrow-vi-du-vector-co-so">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}</mrow>
       </md>
     </p>
 
@@ -153,6 +155,58 @@
       
     </remark>
     
+  </subsection>
+
+  <subsection xml:id="subsec-vector-co-so">
+    <title>Vector cơ sở</title>
+
+    <p>
+      Giả sử ta có 1 vector <m>a = \sbmat{3 \\ 2}</m>. Để hình dung vector này trong không gian 2D
+      , ta có thể sử dụng đến sự hỗ trợ của 2 <term>vectors cơ sở</term> cơ bản  <m>\vec{i} = \sbmat{1 \\ 0}</m>
+       và <m>\vec{j} = \sbmat{0 \\ 1}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-1" source="images/vector-co-so-2d-1.png" width="80%">
+      <shortdescription>Hai vectors cở sở cơ bản trong không gian 2D</shortdescription>
+    </image>
+
+    <p>
+      Ta bắt đầu từ điểm <m>O(0, 0)</m>, còn được gọi là <term>gốc tọa độ</term>.
+    </p>
+
+    <p>
+      Đầu tiên, chúng ta có thể đi đến điểm <m>(3, 0)</m> trên trục <m>Ox</m>
+       bằng cách đi sang bên phải <m>3</m> đơn vị.
+       Vector <m>\vec{i}</m> sẽ giúp ta làm việc đó. 
+       Ta chỉ cần<q>kéo dài</q> <m>\vec{i}</m> lên <m>3</m> lần sẽ được 1 vector mới
+       <m>3\vec{i} = \sbmat{3 \\ 0}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-2" source="images/vector-co-so-2d-2.png" width="80%">
+      <shortdescription>Kéo dài vector i lên 3 lần</shortdescription>
+    </image>
+
+    <p>
+      Tiếp theo, chúng ta sẽ đi lên trên <m>2</m> đơn vị.
+       Tương tự, ta chỉ việc <q>kéo dài</q> <m>\vec{j}</m> lên <m>2</m> lần sẽ được
+       vector <m>2\vec{j} = \sbmat{0 \\ 2}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-3" source="images/vector-co-so-2d-3.png" width="80%">
+      <shortdescription>Kéo dài vector j lên 2 lần</shortdescription>
+    </image>
+
+    <p>
+      Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là 
+       <m>3\vec{i} + 2\vec{j} = a = \sbmat{3 \\ 2}</m>.
+    </p>
+
+    <image xml:id="image-vector-co-so-2d-4" source="images/vector-co-so-2d-4.png" width="80%">
+      <shortdescription>Cộng hai vectors 3i + 2j = a</shortdescription>
+    </image>
+
+
+
   </subsection>
 
 

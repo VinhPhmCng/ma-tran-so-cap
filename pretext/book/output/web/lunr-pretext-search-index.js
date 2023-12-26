@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Vector Cột",
-  "body": " Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "body": " Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .     Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a     Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Vấn Đề Tiếp Theo    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
   "id": "sec-vector-cot-2",
@@ -287,6 +287,24 @@ var ptx_lunr_docs = [
   "number": "1.2.8",
   "title": "Tính chất.",
   "body": " Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
+},
+{
+  "id": "subsec-vector-co-so-2",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-co-so-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vectors cơ sở "
+},
+{
+  "id": "subsec-vector-co-so-4",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-co-so-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gốc tọa độ "
 },
 {
   "id": "def-vector-hang",
