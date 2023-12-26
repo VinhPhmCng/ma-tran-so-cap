@@ -12,9 +12,9 @@
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Linear Algebra for Dummies">
+<meta property="book:title" content="Đại Số Tuyến Tính Cho Người Mới Bắt Đầu">
 <meta property="book:author" content="You">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -110,20 +127,20 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.8';
+eBookConfig.runestone_version = '7.2.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runtime.ec55fa20f167401c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.8/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
-<h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Linear Algebra for Dummies</span></a></h1>
+<h1 class="heading"><a href="linear-algebra-for-dummies.html"><span class="title">Đại Số Tuyến Tính Cho Người Mới Bắt Đầu</span></a></h1>
 <p class="byline">You</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -168,17 +185,17 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="ch-so-thuc-va-vector-cot.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực Và Vector Cột</span></a></div>
+<div class="toc-title-box"><a href="ch-so-thuc.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></div>
+<div class="toc-title-box"><a href="sec-so-thuc-va-tc.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tap-so-thuc" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Tập Số Thực</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-cac-phep-toan-tren-tap-so-thuc" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Các Phép Toán Trên Tập Số Thực <span class="process-math">\(\R\)</span></span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Tính Chất Của Các Phép Toán</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tap-so-thuc" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Tập Số Thực</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Các Phép Toán Trên Tập Số Thực <span class="process-math">\(\R\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Tính Chất Của Các Phép Toán</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#subsec-tinh-dong-cua-mot-phep-toan" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tính Đóng Của Một Phép Toán</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-so-thuc-va-cac-tinh-chat.html#exercises-tinh-dong-cua-cac-tap-so-co-ban" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Bài Tập Về Tính Đóng</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tính Đóng Của Một Phép Toán</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-so-thuc-va-tc.html#exercises-tinh-dong-cua-cac-tap-so-co-ban" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Bài Tập Về Tính Đóng</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -186,13 +203,21 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-vector-cot.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Vector Cột</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-cot" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Vector cột</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-hang" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Vector hàng</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-phep-chuyen-vi-vector" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Phép Chuyển Vị</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-van-de-tiep-theo" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Vấn Đề Tiếp Theo</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vector-hang" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector hàng</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-phep-chuyen-vi-vector" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Phép Chuyển Vị</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-nhap-xuat-vector" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Nhập, Xuất Vector Trong Numpy (Python)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vector-cot.html#subsec-vdtt-vector-cot" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Vấn Đề Tiếp Theo (Cũ)</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Không Gian Vector</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Các Phép Toán Đối Với Vector</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cac-phep-toan-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thtt-vector.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Tổ Hợp Tuyến Tính Của Các Vectors</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-khong-gian-vector.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Không Gian Vector</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-khong-gian-vector.html#subsec-vector-co-so" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Vector cơ sở</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -246,7 +271,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ma-tran-khoi"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Ma Trận Khối</span>
 </h2>
-<div class="para" id="sec-ma-tran-khoi-2">Text of section.</div></section></div>
+<div class="para" id="sec-ma-tran-khoi-2">Coming soon.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-nhan-hai-ma-tran.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-nhan-ma-tran-theo-khoi.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
