@@ -199,14 +199,14 @@
 
   </subsection>
 
-  <subsection xml:id="subsec-nhap-xuat-vector">
+  <subsection xml:id="subsec-sage-python-nhap-xuat-vector">
     <title>Nhập, Xuất Vector Trong Numpy (Python)</title>
 
     <p>
       Nhập, xuất vector trong Numpy (Python)
     </p>
 
-    <sage xml:id="sage-python-nhap-xuat-vector" language="python">
+    <sage>
       <input>
         import numpy as np # Sử dụng thư viện numpy
         
@@ -223,7 +223,7 @@
         print("Vector cot:")
         print(cot)
 
-        print("\n\nVector hang:")
+        print("\nVector hang:")
         print(hang)
       </input>
       <output>
@@ -232,19 +232,104 @@
     </sage>
 
     <p>
-      Tính chuyển vị trong Numpy (Python)
+      Tính chuyển vị của vector trong Numpy (Python)
     </p>
     
-    <sage xml:id="sage-python-chuyen-vi-vector" language="python">
+    <sage>
       <input>
         print("Chuyen vi cua 'cot':")
         print(cot.transpose())
 
-        print("\n\nChuyen vi cua 'hang':")
+        print("\nChuyen vi cua 'hang':")
         print(hang.transpose())
       </input>
       <output>
         Provisional
+      </output>
+    </sage>
+
+  </subsection>
+
+  <subsection xml:id="subsec-sage-nhap-xuat-vector">
+    <title>Nhập, Xuất Vector Trong SageMath</title>
+    
+    <p>
+      Nhập, xuất vector, tính chuyển vị của vector trong SageMath
+    </p>
+
+    <sage>
+      <input>
+        cot = matrix([
+          [10/3],
+          [0],
+          [1.52]
+        ])
+
+        hang = matrix([
+          [2, 4, -6] 
+        ])
+
+        # Các cài đặt hiển thị của SageMath
+        matrix.options.format_numeric = '{:.{prec}f}' # Hiển thị số thập phân
+        matrix.options.precision = 2 # Số chữ số thập phân hiển thị
+
+        print("Vector cot:")
+        print(cot)
+
+        print("\nVector hang:")
+        print(hang)
+
+        print("\nChuyen vi cua 'cot':")
+        print(cot.transpose())
+
+        print("\nChuyen vi cua 'hang':")
+        print(hang.transpose())
+
+        matrix.options._reset()
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Biểu diễn vector bằng LaTeX
+    </p>
+
+    <sage>
+      <input>
+        latex.matrix_delimiters("[", "]") # Hiển thị ngoặc vuông thay vì mặc định là ngoặc tròn
+
+        show(cot)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        show(hang)
+      </input>
+      <output>
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        # Chuyển vị của 'cot'
+        show(cot.transpose())
+      </input>
+      <output>
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        # Chuyển vị của 'hang'
+        show(hang.transpose())
+      </input>
+      <output>
       </output>
     </sage>
 
