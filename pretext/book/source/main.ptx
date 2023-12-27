@@ -4,9 +4,9 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <book xml:id="linear-algebra-for-dummies">
-    <title>Đại Số Tuyến Tính Cho Người Mới Bắt Đầu</title>
-    <!-- <subtitle>Testing sync 2</subtitle> -->
+  <book xml:id="ma-tran-so-cap">
+    <title>Ma Trận Sơ Cấp</title>
+    <subtitle>Trực Quan Hóa Và Một Số Ứng Dụng</subtitle>
 
 
     <!-- Include frontmatter -->
@@ -15,10 +15,8 @@
     <!-- Include chapters -->
     <xi:include href="./chapter01/ch-so-thuc.ptx" />
     <xi:include href="./chapter02/ch-ma-tran.ptx" />
-    <xi:include href="./chapter03/ch-cac-phep-toan-doi-voi-ma-tran.ptx" />
-    <xi:include href="./chapter04/ch-dinh-thuc.ptx" />
-    <xi:include href="./chapter05/ch-giai-he-phuong-trinh-tuyen-tinh.ptx" />
-    <xi:include href="./chapter06/ch-phan-tich-ma-tran.ptx" />
+    <xi:include href="./chapter03/ch-khong-gian-vector.ptx" />
+    <xi:include href="./chapter04/ch-mot-so-ung-dung-ma-tran.ptx" />
 
 
     <!-- Include backmatter -->

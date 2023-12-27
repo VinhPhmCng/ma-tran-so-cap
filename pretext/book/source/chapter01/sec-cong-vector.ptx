@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-cac-phep-toan-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Các Phép Toán Đối Với Vector</title>
+<section xml:id="sec-cong-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Cộng Vector</title>
 
   <objectives>
     <ol>

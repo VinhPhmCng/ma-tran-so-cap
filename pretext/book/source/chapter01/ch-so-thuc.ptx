@@ -11,8 +11,9 @@
   <!-- include sections -->
   <xi:include href="sec-so-thuc-va-tc.ptx" />
   <xi:include href="sec-vector-cot.ptx" />
-  <xi:include href="sec-cac-phep-toan-vector.ptx" />
+  <xi:include href="sec-cong-vector.ptx" />
+  <xi:include href="sec-nhan-vector-voi-1-so.ptx" />
   <xi:include href="sec-thtt-vector.ptx" />
-  <xi:include href="sec-khong-gian-vector.ptx" />
+  <xi:include href="sec-khong-gian-vector-1.ptx" />
 
 </chapter>
