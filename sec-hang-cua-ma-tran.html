@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Số Thực. Mở Rộng Số Thực Theo Chiều Dọc Và Chiều Ngang</title>
+<title>Hạng Của Ma Trận</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -86,19 +86,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -166,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="frontmatter-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ma-tran-so-cap.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-so-thuc-va-tc.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-A-bang-CiRk.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ma-tran.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-AP-bang-LU.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
 \newcommand{\pN}{\mathbb{N}^{*}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\pZ}{\mathbb{Z}^{+}}
@@ -196,7 +184,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
-<li class="toc-item toc-chapter active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-so-thuc.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
@@ -234,9 +222,9 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-ma-tran.html" class="internal"><span class="codenumber">2</span> <span class="title">Ma Trận</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Ma Trận</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cong-ma-tran.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Cộng Ma Trận</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-1-so.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Nhân Ma Trận Với 1 Số</span></a></div></li>
@@ -244,7 +232,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-nhan-ma-tran-voi-vector.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Nhân Ma Trận Với Vector</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-hoan-vi.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Ma Trận Hoán Vị</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-A-bang-CiRk.html" class="internal"><span class="codenumber">2.7</span> <span class="title"><span class="process-math">\(A = \sum C_{i}R_{k}\)</span></span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hang-cua-ma-tran.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Hạng Của Ma Trận</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-hang-cua-ma-tran.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Hạng Của Ma Trận</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-AP-bang-LU.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Phân Tích <span class="process-math">\(AP = LU\)</span></span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ma-tran-nghich-dao.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Ma Trận Nghịch Đảo</span></a></div></li>
 </ul>
@@ -272,19 +260,17 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-so-thuc"><h2 class="heading">
-<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Số Thực. Mở Rộng Số Thực Theo Chiều Dọc Và Chiều Ngang</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hang-cua-ma-tran"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.8</span><span class="space"> </span><span class="title">Hạng Của Ma Trận</span>
 </h2>
-<section class="introduction" id="ch-so-thuc-3"><div class="para" id="ch-so-thuc-3-1">The introduction of the chapter.</div></section><nav class="summary-links"><ul>
-<li><a href="sec-so-thuc-va-tc.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Số Thực Và Các Tính Chất</span></a></li>
-<li><a href="sec-vector-cot.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Vector Cột</span></a></li>
-<li><a href="sec-cong-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Cộng Vector</span></a></li>
-<li><a href="sec-nhan-vector-voi-1-so.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Nhân Vector Với 1 Số</span></a></li>
-<li><a href="sec-thtt-vector.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Tổ Hợp Tuyến Tính Của Các Vectors</span></a></li>
-<li><a href="sec-khong-gian-vector-1.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Không Gian Vector</span></a></li>
-</ul></nav></section></div>
+<article class="objectives goal-like" id="sec-hang-cua-ma-tran-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ol class="decimal">
+<li id="sec-hang-cua-ma-tran-2-1-1"><div class="para" id="p-derived-sec-hang-cua-ma-tran-2-1-1">Các mục tiêu của section.</div></li>
+<li id="sec-hang-cua-ma-tran-2-1-2"><div class="para" id="p-derived-sec-hang-cua-ma-tran-2-1-2"></div></li>
+<li id="sec-hang-cua-ma-tran-2-1-3"><div class="para" id="p-derived-sec-hang-cua-ma-tran-2-1-3"></div></li>
+</ol></article><div class="para" id="sec-hang-cua-ma-tran-3">Coming soon.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="frontmatter-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-so-thuc-va-tc.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-A-bang-CiRk.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-AP-bang-LU.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
