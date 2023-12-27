@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector",
-  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Numpy (Python)  Nhập, xuất vector trong Numpy (Python)   Tính chuyển vị trong Numpy (Python)     Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Numpy (Python)  Nhập, xuất vector trong Numpy (Python)   Tính chuyển vị của vector trong Numpy (Python)     Nhập, Xuất Vector Trong SageMath  Nhập, xuất vector, tính chuyển vị của vector trong SageMath   Biểu diễn vector bằng LaTeX        Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
   "id": "sec-vector-cot-3",
@@ -343,18 +343,27 @@ var ptx_lunr_docs = [
   "body": "ma trận "
 },
 {
-  "id": "sec-cac-phep-toan-vector",
+  "id": "sec-cong-vector",
   "level": "1",
-  "url": "sec-cac-phep-toan-vector.html",
+  "url": "sec-cong-vector.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Các Phép Toán Đối Với Vector",
-  "body": " Các Phép Toán Đối Với Vector   Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    "
+  "title": "Cộng Vector",
+  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    "
+},
+{
+  "id": "sec-cong-vector-2",
+  "level": "2",
+  "url": "sec-cong-vector.html#sec-cong-vector-2",
+  "type": "Objectives",
+  "number": "1.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
   "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
   "level": "2",
-  "url": "sec-cac-phep-toan-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
   "type": "Note",
   "number": "1.3.1",
   "title": "",
@@ -363,34 +372,70 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
   "level": "2",
-  "url": "sec-cac-phep-toan-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
   "type": "Remark",
   "number": "1.3.2",
   "title": "Tính chất.",
   "body": " Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
 },
 {
+  "id": "sec-nhan-vector-voi-1-so",
+  "level": "1",
+  "url": "sec-nhan-vector-voi-1-so.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Nhân Vector Với 1 Số",
+  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-nhan-vector-voi-1-so-2",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-1-so.html#sec-nhan-vector-voi-1-so-2",
+  "type": "Objectives",
+  "number": "1.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
   "id": "sec-thtt-vector",
   "level": "1",
   "url": "sec-thtt-vector.html",
   "type": "Section",
-  "number": "1.4",
+  "number": "1.5",
   "title": "Tổ Hợp Tuyến Tính Của Các Vectors",
-  "body": " Tổ Hợp Tuyến Tính Của Các Vectors  Coming soon.  "
+  "body": " Tổ Hợp Tuyến Tính Của Các Vectors    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-khong-gian-vector",
-  "level": "1",
-  "url": "sec-khong-gian-vector.html",
-  "type": "Section",
+  "id": "sec-thtt-vector-2",
+  "level": "2",
+  "url": "sec-thtt-vector.html#sec-thtt-vector-2",
+  "type": "Objectives",
   "number": "1.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-khong-gian-vector-1",
+  "level": "1",
+  "url": "sec-khong-gian-vector-1.html",
+  "type": "Section",
+  "number": "1.6",
   "title": "Không Gian Vector. Hạng Và Chuẩn Của Vector",
-  "body": " Không Gian Vector. Hạng Và Chuẩn Của Vector  Không Gian Vector   Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a    "
+  "body": " Không Gian Vector. Hạng Và Chuẩn Của Vector  Không Gian Vector    Các mục tiêu của section.       Vector cơ sở  Giả sử ta có 1 vector . Để hình dung vector này trong không gian 2D , ta có thể sử dụng đến sự hỗ trợ của 2 vectors cơ sở cơ bản và .   Hai vectors cở sở cơ bản trong không gian 2D   Ta bắt đầu từ điểm , còn được gọi là gốc tọa độ .  Đầu tiên, chúng ta có thể đi đến điểm trên trục bằng cách đi sang bên phải đơn vị. Vector sẽ giúp ta làm việc đó. Ta chỉ cần kéo dài  lên lần sẽ được 1 vector mới .   Kéo dài vector i lên 3 lần   Tiếp theo, chúng ta sẽ đi lên trên đơn vị. Tương tự, ta chỉ việc kéo dài  lên lần sẽ được vector .   Kéo dài vector j lên 2 lần   Cuối cùng, ta cộng hai vectors mới với nhau để được kết quả là .   Cộng hai vectors 3i + 2j = a    "
+},
+{
+  "id": "sec-khong-gian-vector-1-3",
+  "level": "2",
+  "url": "sec-khong-gian-vector-1.html#sec-khong-gian-vector-1-3",
+  "type": "Objectives",
+  "number": "1.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
   "id": "subsec-vector-co-so-2",
   "level": "2",
-  "url": "sec-khong-gian-vector.html#subsec-vector-co-so-2",
+  "url": "sec-khong-gian-vector-1.html#subsec-vector-co-so-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -399,7 +444,7 @@ var ptx_lunr_docs = [
 {
   "id": "subsec-vector-co-so-4",
   "level": "2",
-  "url": "sec-khong-gian-vector.html#subsec-vector-co-so-4",
+  "url": "sec-khong-gian-vector-1.html#subsec-vector-co-so-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -412,187 +457,376 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Ma Trận",
-  "body": " Ma Trận  Coming soon.  "
+  "body": " Ma Trận    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-cac-ma-tran-co-so",
+  "id": "sec-ma-tran-2",
+  "level": "2",
+  "url": "sec-ma-tran.html#sec-ma-tran-2",
+  "type": "Objectives",
+  "number": "2.1",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-cong-ma-tran",
   "level": "1",
-  "url": "sec-cac-ma-tran-co-so.html",
+  "url": "sec-cong-ma-tran.html",
   "type": "Section",
   "number": "2.2",
-  "title": "Các Ma Trận Cơ Sở",
-  "body": " Các Ma Trận Cơ Sở  Coming soon.  "
+  "title": "Cộng Ma Trận",
+  "body": " Cộng Ma Trận    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-cac-phep-bien-doi-hang",
+  "id": "sec-cong-ma-tran-2",
+  "level": "2",
+  "url": "sec-cong-ma-tran.html#sec-cong-ma-tran-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-1-so",
   "level": "1",
-  "url": "sec-cac-phep-bien-doi-hang.html",
+  "url": "sec-nhan-ma-tran-voi-1-so.html",
   "type": "Section",
   "number": "2.3",
-  "title": "Các Phép Biến Đổi Hàng",
-  "body": " Các Phép Biến Đổi Hàng  Coming soon.  "
+  "title": "Nhân Ma Trận Với 1 Số",
+  "body": " Nhân Ma Trận Với 1 Số    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-1-so-2",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-1-so.html#sec-nhan-ma-tran-voi-1-so-2",
+  "type": "Objectives",
+  "number": "2.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-A-bang-Ciei",
+  "level": "1",
+  "url": "sec-A-bang-Ciei.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Biểu Diễn Cơ Bản Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Vectors Cột",
+  "body": " Biểu Diễn Cơ Bản Ma Trận Theo Các Vectors Cột     Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-A-bang-Ciei-3",
+  "level": "2",
+  "url": "sec-A-bang-Ciei.html#sec-A-bang-Ciei-3",
+  "type": "Objectives",
+  "number": "2.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-vector",
+  "level": "1",
+  "url": "sec-nhan-ma-tran-voi-vector.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Nhân Ma Trận Với Vector",
+  "body": " Nhân Ma Trận Với Vector    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-nhan-ma-tran-voi-vector-2",
+  "level": "2",
+  "url": "sec-nhan-ma-tran-voi-vector.html#sec-nhan-ma-tran-voi-vector-2",
+  "type": "Objectives",
+  "number": "2.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
   "id": "sec-ma-tran-hoan-vi",
   "level": "1",
   "url": "sec-ma-tran-hoan-vi.html",
   "type": "Section",
-  "number": "2.4",
-  "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị  Coming soon.  "
-},
-{
-  "id": "sec-ma-tran-bac-thang",
-  "level": "1",
-  "url": "sec-ma-tran-bac-thang.html",
-  "type": "Section",
-  "number": "2.5",
-  "title": "Ma Trận Bậc Thang",
-  "body": " Ma Trận Bậc Thang  Coming soon.  "
-},
-{
-  "id": "sec-tru-cua-hang-va-hang-cua-ma-tran",
-  "level": "1",
-  "url": "sec-tru-cua-hang-va-hang-cua-ma-tran.html",
-  "type": "Section",
   "number": "2.6",
-  "title": "Trụ Của Hàng Và Hạng Của Ma Trận",
-  "body": " Trụ Của Hàng Và Hạng Của Ma Trận  Coming soon.  "
+  "title": "Ma Trận Hoán Vị",
+  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-tong-cua-hai-ma-tran",
-  "level": "1",
-  "url": "sec-tong-cua-hai-ma-tran.html",
-  "type": "Section",
-  "number": "3.1",
-  "title": "Tổng Của Hai Ma Trận",
-  "body": " Tổng Của Hai Ma Trận  Coming soon.  "
+  "id": "sec-ma-tran-hoan-vi-2",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#sec-ma-tran-hoan-vi-2",
+  "type": "Objectives",
+  "number": "2.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-nhan-ma-tran-voi-mot-so",
+  "id": "sec-A-bang-CiRk",
   "level": "1",
-  "url": "sec-nhan-ma-tran-voi-mot-so.html",
+  "url": "sec-A-bang-CiRk.html",
   "type": "Section",
-  "number": "3.2",
-  "title": "Nhân Ma Trận Với Một Số",
-  "body": " Nhân Ma Trận Với Một Số  Coming soon.  "
+  "number": "2.7",
+  "title": "Biểu Diễn Rút Gọn Ma Trận <span class=\"process-math\">\\(A\\)<\/span> Theo Các Cột",
+  "body": " Biểu Diễn Rút Gọn Ma Trận Theo Các Cột     Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-nhan-hai-ma-tran",
-  "level": "1",
-  "url": "sec-nhan-hai-ma-tran.html",
-  "type": "Section",
-  "number": "3.3",
-  "title": "Nhân Hai Ma Trận",
-  "body": " Nhân Hai Ma Trận  Coming soon.  "
+  "id": "sec-A-bang-CiRk-3",
+  "level": "2",
+  "url": "sec-A-bang-CiRk.html#sec-A-bang-CiRk-3",
+  "type": "Objectives",
+  "number": "2.7",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-ma-tran-khoi",
+  "id": "sec-hang-cua-ma-tran",
   "level": "1",
-  "url": "sec-ma-tran-khoi.html",
+  "url": "sec-hang-cua-ma-tran.html",
   "type": "Section",
-  "number": "3.4",
-  "title": "Ma Trận Khối",
-  "body": " Ma Trận Khối  Coming soon.  "
+  "number": "2.8",
+  "title": "Hạng Của Ma Trận",
+  "body": " Hạng Của Ma Trận    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-nhan-ma-tran-theo-khoi",
-  "level": "1",
-  "url": "sec-nhan-ma-tran-theo-khoi.html",
-  "type": "Section",
-  "number": "3.5",
-  "title": "Nhân Ma Trận Theo Khối",
-  "body": " Nhân Ma Trận Theo Khối  Coming soon.  "
+  "id": "sec-hang-cua-ma-tran-2",
+  "level": "2",
+  "url": "sec-hang-cua-ma-tran.html#sec-hang-cua-ma-tran-2",
+  "type": "Objectives",
+  "number": "2.8",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "sec-dinh-thuc",
+  "id": "sec-AP-bang-LU",
   "level": "1",
-  "url": "sec-dinh-thuc.html",
+  "url": "sec-AP-bang-LU.html",
   "type": "Section",
-  "number": "4.1",
-  "title": "Định Thức",
-  "body": " Định Thức  Coming soon.  "
+  "number": "2.9",
+  "title": "Phân Tích <span class=\"process-math\">\\(AP = LU\\)<\/span>",
+  "body": " Phân Tích    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-ma-tran-con-va-phan-phu-dai-so",
-  "level": "1",
-  "url": "sec-ma-tran-con-va-phan-phu-dai-so.html",
-  "type": "Section",
-  "number": "4.2",
-  "title": "Ma Trận Con Và Phần Phụ Đại Số",
-  "body": " Ma Trận Con Và Phần Phụ Đại Số  Coming soon.  "
-},
-{
-  "id": "sec-tinh-dinh-thuc",
-  "level": "1",
-  "url": "sec-tinh-dinh-thuc.html",
-  "type": "Section",
-  "number": "4.3",
-  "title": "Tính Định Thức",
-  "body": " Tính Định Thức  Coming soon.  "
-},
-{
-  "id": "sec-phuong-phap-khu-gauss",
-  "level": "1",
-  "url": "sec-phuong-phap-khu-gauss.html",
-  "type": "Section",
-  "number": "5.1",
-  "title": "Phương Pháp Khử Gauss",
-  "body": " Phương Pháp Khử Gauss  Coming soon.  "
-},
-{
-  "id": "sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an",
-  "level": "1",
-  "url": "sec-phuong-phap-cramer-doi-voi-he-phuong-trinh-co-so-phuong-trinh-bang-so-an.html",
-  "type": "Section",
-  "number": "5.2",
-  "title": "Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn",
-  "body": " Phương Pháp Cramer Đối Với Hệ Phương Trình Có Số Phương Trình Bằng Số Ẩn  Coming soon.  "
-},
-{
-  "id": "sec-mot-so-ung-dung",
-  "level": "1",
-  "url": "sec-mot-so-ung-dung.html",
-  "type": "Section",
-  "number": "5.3",
-  "title": "Một Số Ứng Dụng",
-  "body": " Một Số Ứng Dụng  Coming soon.  "
-},
-{
-  "id": "sec-phan-tich-a-lu",
-  "level": "1",
-  "url": "sec-phan-tich-a-lu.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Phân Tích A = LU",
-  "body": " Phân Tích A = LU  Coming soon.  "
-},
-{
-  "id": "sec-phan-tich-a-cr",
-  "level": "1",
-  "url": "sec-phan-tich-a-cr.html",
-  "type": "Section",
-  "number": "6.2",
-  "title": "Phân Tích A = CR",
-  "body": " Phân Tích A = CR  Coming soon.  "
+  "id": "sec-AP-bang-LU-2",
+  "level": "2",
+  "url": "sec-AP-bang-LU.html#sec-AP-bang-LU-2",
+  "type": "Objectives",
+  "number": "2.9",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
   "id": "sec-ma-tran-nghich-dao",
   "level": "1",
   "url": "sec-ma-tran-nghich-dao.html",
   "type": "Section",
-  "number": "6.3",
+  "number": "2.10",
   "title": "Ma Trận Nghịch Đảo",
-  "body": " Ma Trận Nghịch Đảo  Coming soon.  "
+  "body": " Ma Trận Nghịch Đảo    Các mục tiêu của section.      Coming soon.  "
 },
 {
-  "id": "sec-ung-dung-de-giai-he-phuong-trinh-tuyen-tinh",
+  "id": "sec-ma-tran-nghich-dao-2",
+  "level": "2",
+  "url": "sec-ma-tran-nghich-dao.html#sec-ma-tran-nghich-dao-2",
+  "type": "Objectives",
+  "number": "2.10",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-khong-gian-vector-2",
   "level": "1",
-  "url": "sec-ung-dung-de-giai-he-phuong-trinh-tuyen-tinh.html",
+  "url": "sec-khong-gian-vector-2.html",
   "type": "Section",
-  "number": "6.4",
-  "title": "Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính",
-  "body": " Ứng Dụng Để Giải Hệ Phương Trình Tuyến Tính  Coming soon.  "
+  "number": "3.1",
+  "title": "Không Gian Vector",
+  "body": " Không Gian Vector    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-khong-gian-vector-2-2",
+  "level": "2",
+  "url": "sec-khong-gian-vector-2.html#sec-khong-gian-vector-2-2",
+  "type": "Objectives",
+  "number": "3.1",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-khong-gian-con",
+  "level": "1",
+  "url": "sec-khong-gian-con.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Không Gian Con",
+  "body": " Không Gian Con    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-khong-gian-con-2",
+  "level": "2",
+  "url": "sec-khong-gian-con.html#sec-khong-gian-con-2",
+  "type": "Objectives",
+  "number": "3.2",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-tinh-truc-giao",
+  "level": "1",
+  "url": "sec-tinh-truc-giao.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Tính Trực Giao",
+  "body": " Tính Trực Giao    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-tinh-truc-giao-2",
+  "level": "2",
+  "url": "sec-tinh-truc-giao.html#sec-tinh-truc-giao-2",
+  "type": "Objectives",
+  "number": "3.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-khong-gian-truc-giao",
+  "level": "1",
+  "url": "sec-khong-gian-truc-giao.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Không Gian Trực Giao. Không Gian Bù",
+  "body": " Không Gian Trực Giao. Không Gian Bù    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-khong-gian-truc-giao-2",
+  "level": "2",
+  "url": "sec-khong-gian-truc-giao.html#sec-khong-gian-truc-giao-2",
+  "type": "Objectives",
+  "number": "3.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-4-khong-gian-con",
+  "level": "1",
+  "url": "sec-4-khong-gian-con.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "Bốn Không Gian Con Của Ma Trận",
+  "body": " Bốn Không Gian Con Của Ma Trận    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-4-khong-gian-con-2",
+  "level": "2",
+  "url": "sec-4-khong-gian-con.html#sec-4-khong-gian-con-2",
+  "type": "Objectives",
+  "number": "3.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-section-name",
+  "level": "1",
+  "url": "sec-section-name.html",
+  "type": "Section",
+  "number": "3.6",
+  "title": "Phân Tích <span class=\"process-math\">\\(A = QR\\)<\/span>",
+  "body": " Phân Tích    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-section-name-2",
+  "level": "2",
+  "url": "sec-section-name.html#sec-section-name-2",
+  "type": "Objectives",
+  "number": "3.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-1",
+  "level": "1",
+  "url": "sec-giai-he-phuong-trinh-1.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Giải HPT Có Số Phương Trình Ít Hơn Số Ẩn",
+  "body": " Giải HPT Có Số Phương Trình Ít Hơn Số Ẩn  Giải Hệ Phương Trình (1)    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-1-3",
+  "level": "2",
+  "url": "sec-giai-he-phuong-trinh-1.html#sec-giai-he-phuong-trinh-1-3",
+  "type": "Objectives",
+  "number": "4.1",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-2",
+  "level": "1",
+  "url": "sec-giai-he-phuong-trinh-2.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Giải HPT Có Số Phương Trình Bằng Số Ẩn",
+  "body": " Giải HPT Có Số Phương Trình Bằng Số Ẩn  Giải Hệ Phương Trình (2)    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-2-3",
+  "level": "2",
+  "url": "sec-giai-he-phuong-trinh-2.html#sec-giai-he-phuong-trinh-2-3",
+  "type": "Objectives",
+  "number": "4.2",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-3",
+  "level": "1",
+  "url": "sec-giai-he-phuong-trinh-3.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Giải HPT Có Số Phương Trình Nhiều Hơn Số Ẩn",
+  "body": " Giải HPT Có Số Phương Trình Nhiều Hơn Số Ẩn  Giải Hệ Phương Trình (3)    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-giai-he-phuong-trinh-3-3",
+  "level": "2",
+  "url": "sec-giai-he-phuong-trinh-3.html#sec-giai-he-phuong-trinh-3-3",
+  "type": "Objectives",
+  "number": "4.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ma-hoa",
+  "level": "1",
+  "url": "sec-ma-hoa.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Bài Toán Mã Hóa",
+  "body": " Bài Toán Mã Hóa    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-ma-hoa-2",
+  "level": "2",
+  "url": "sec-ma-hoa.html#sec-ma-hoa-2",
+  "type": "Objectives",
+  "number": "4.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-binh-phuong-toi-thieu",
+  "level": "1",
+  "url": "sec-binh-phuong-toi-thieu.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "Phương Pháp Bình Phương Tối Thiểu",
+  "body": " Phương Pháp Bình Phương Tối Thiểu    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-binh-phuong-toi-thieu-2",
+  "level": "2",
+  "url": "sec-binh-phuong-toi-thieu.html#sec-binh-phuong-toi-thieu-2",
+  "type": "Objectives",
+  "number": "4.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
 },
 {
   "id": "backmatter-2",
