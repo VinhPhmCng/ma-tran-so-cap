@@ -72,6 +72,21 @@
         \R = \Q \cup \nQ
       </me>
     </p>
+
+    <remark>
+      <title>Mối quan hệ giữa 4 tập số cơ bản</title>
+      <p>
+        <me>\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \</me>
+      </p>
+    </remark>
+
+    <figure xml:id="figure-cac-tap-so-co-ban" width="75%" >
+      <caption>Bốn tập số cơ bản <m>\mathbb{N}, \, \mathbb{Z}, \, \mathbb{Q},  \, \mathbb{R}</m></caption>
+      <image xml:id="image-cac-tap-so-co-ban" source="images/cac-tap-so-co-ban.png">
+        <shortdescription>Hình biểu diễn bốn tập số cơ bản N, Z, Q, R</shortdescription>
+      </image>
+      
+    </figure>
       
   </subsection>
 

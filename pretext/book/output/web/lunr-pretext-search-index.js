@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Số Thực Và Các Tính Chất",
-  "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.     Các Phép Toán Trên Tập Số Thực  Với 2 số  Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của .  Ký hiệu:     Tính Chất Của Các Phép Toán       Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.         Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.      Ví dụ:     The conclusion of the exercise group.     Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng      Phép trừ      Phép nhân      Phép chia      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Alo    Các phép toán nào có tính đóng đối với tập số thực ?    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
+  "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.    Mối quan hệ giữa 4 tập số cơ bản       Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R      Các Phép Toán Trên Tập Số Thực  Với 2 số  Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của .  Ký hiệu:     Tính Chất Của Các Phép Toán       Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.         Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.      Ví dụ:     The conclusion of the exercise group.     Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng      Phép trừ      Phép nhân      Phép chia      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Alo    Các phép toán nào có tính đóng đối với tập số thực ?    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
 },
 {
   "id": "sec-so-thuc-va-tc-2",
@@ -82,6 +82,24 @@ var ptx_lunr_docs = [
   "body": "Tập số thực "
 },
 {
+  "id": "subsec-tap-so-thuc-10",
+  "level": "2",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-10",
+  "type": "Remark",
+  "number": "1.1.1",
+  "title": "Mối quan hệ giữa 4 tập số cơ bản.",
+  "body": " Mối quan hệ giữa 4 tập số cơ bản     "
+},
+{
+  "id": "figure-cac-tap-so-co-ban",
+  "level": "2",
+  "url": "sec-so-thuc-va-tc.html#figure-cac-tap-so-co-ban",
+  "type": "Figure",
+  "number": "1.1.2",
+  "title": "",
+  "body": " Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R   "
+},
+{
   "id": "subsec-cac-phep-toan-tren-tap-so-thuc-3",
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc-3",
@@ -113,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-4",
   "type": "Observation",
-  "number": "1.1.1",
+  "number": "1.1.3",
   "title": "Tính giao hoán và phân phối.",
   "body": " Tính giao hoán và phân phối  Do tính giao hoán và , ta có:   "
 },
@@ -122,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-5",
   "type": "Example",
-  "number": "1.1.2",
+  "number": "1.1.4",
   "title": "Tính phân phối và giao hoán.",
   "body": " Tính phân phối và giao hoán     "
 },
@@ -131,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-4",
   "type": "Note",
-  "number": "1.1.3",
+  "number": "1.1.5",
   "title": "Sự phụ thuộc của tính đóng với tập số.",
   "body": " Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.       "
 },
@@ -140,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-5",
   "type": "Remark",
-  "number": "1.1.5",
+  "number": "1.1.7",
   "title": "Sự quan trọng của tính đóng.",
   "body": " Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .  "
 },
