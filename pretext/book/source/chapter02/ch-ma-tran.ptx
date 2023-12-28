@@ -4,15 +4,20 @@
   <title>Ma Trận</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> The introduction of the chapter. </p>
   </introduction>
 
   <!-- include sections -->
   <xi:include href="sec-ma-tran.ptx" />
-  <xi:include href="sec-cac-ma-tran-co-so.ptx" />
-  <xi:include href="sec-cac-phep-bien-doi-hang.ptx" />
+  <xi:include href="sec-cong-ma-tran.ptx" />
+  <xi:include href="sec-nhan-ma-tran-voi-1-so.ptx" />
+  <xi:include href="sec-A-bang-Ciei.ptx" />
+  <xi:include href="sec-nhan-ma-tran-voi-vector.ptx" />
   <xi:include href="sec-ma-tran-hoan-vi.ptx" />
-  <xi:include href="sec-ma-tran-bac-thang.ptx" />
-  <xi:include href="sec-tru-cua-hang-va-hang-cua-ma-tran.ptx" />
+  <xi:include href="sec-A-bang-CiRk.ptx" />
+  <xi:include href="sec-hang-cua-ma-tran.ptx" />
+  <xi:include href="sec-AP-bang-LU.ptx" />
+  <xi:include href="sec-ma-tran-nghich-dao.ptx" />
+
 
 </chapter>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-mot-so-ung-dung-ma-tran" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Một Số Ứng Dụng Của Ma Trận</title>
+
+  <introduction>
+    <p> The introduction of the chapter. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-giai-he-phuong-trinh-1.ptx" />
+  <xi:include href="sec-giai-he-phuong-trinh-2.ptx" />
+  <xi:include href="sec-giai-he-phuong-trinh-3.ptx" />
+  <xi:include href="sec-ma-hoa.ptx" />
+  <xi:include href="sec-binh-phuong-toi-thieu.ptx" />
+
+</chapter>

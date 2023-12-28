@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-so-thuc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Số Thực. Mở Rộng Số Thực Theo Chiều Dọc Và Chiều Ngang</title>
+  <shorttitle>Số Thực</shorttitle>
+
+  <introduction>
+    <p> The introduction of the chapter. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-so-thuc-va-tc.ptx" />
+  <xi:include href="sec-vector-cot.ptx" />
+  <xi:include href="sec-cong-vector.ptx" />
+  <xi:include href="sec-nhan-vector-voi-1-so.ptx" />
+  <xi:include href="sec-thtt-vector.ptx" />
+  <xi:include href="sec-khong-gian-vector-1.ptx" />
+
+</chapter>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-khong-gian-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Không Gian Vector. Không Gian Con</title>
+
+  <introduction>
+    <p> The introduction of the chapter. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-khong-gian-vector-2.ptx" />
+  <xi:include href="sec-khong-gian-con.ptx" />
+  <xi:include href="sec-tinh-truc-giao.ptx" />
+  <xi:include href="sec-khong-gian-truc-giao.ptx" />
+  <xi:include href="sec-4-khong-gian-con.ptx" />
+  <xi:include href="sec-A-bang-QR.ptx" />
+
+</chapter>

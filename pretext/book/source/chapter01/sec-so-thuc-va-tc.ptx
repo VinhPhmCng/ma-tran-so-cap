@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-so-thuc-va-tc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Số Thực Và Các Tính Chất</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+
+  <subsection xml:id="subsec-tap-so-thuc">
+    <title>Tập Số Thực</title>
+
+    <p>
+      <term>Tập số tự nhiên</term> (hay tập số nguyên không âm), kí hiệu <m>\N</m>
+      <me>
+        \N = \{0, 1, 2, 3, \ldots, n, \ldots \}
+      </me>
+    </p>
+
+    <p>
+      <term>Tập số tự nhiên dương</term>, kí hiệu <m>\pN</m>.
+      <md>
+        <mrow>\pN \amp = \{1, 2, 3, \ldots, n, \ldots \}</mrow>
+        <mrow>\amp =\N \setminus \{0\}</mrow>
+      </md>
+    </p>
+
+    <p>
+      <term>Tập số nguyên</term>, kí hiệu <m>\Z</m>
+      <me>
+        \Z = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}
+      </me>
+    </p>
+      
+    <p>
+      <term>Tập số hữu tỷ</term>, kí hiệu <m>\Q</m>.
+      <me>
+        \Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}
+      </me>
+      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng 
+      <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
+    </p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\frac{1}{5} = 0.2</mrow>
+        <mrow>\frac{1}{3} = 0.333\ldots = 0.(3)</mrow>
+      </md>
+    </p>
+      
+    <p>
+      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là 
+      tập các số thập phân vô hạn <em>không</em> tuần hoàn.
+      <me>
+        \nQ = \R \setminus \Q
+      </me>
+    </p>
+    <p>Ví dụ:
+      <md>
+        <mrow>\sqrt{2} = 1.41421356\ldots</mrow>
+        <mrow>\pi = 3.14159265\ldots</mrow>
+      </md>
+    </p>
+      
+    <p>
+      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là 
+      tập bao gồm các số hữu tỷ và các số vô tỷ.
+      <me>
+        \R = \Q \cup \nQ
+      </me>
+    </p>
+      
+  </subsection>
+
+
+  <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
+    <title>Các Phép Toán Trên Tập Số Thực <m>\R</m></title>
+
+    <p>Với 2 số <m>x, y \in \R</m></p>
+
+    <p><term>Phép cộng</term></p>
+    <p>
+      Cộng 2 số thực <m>x, y</m> ta được 1 số thực <m>\delta</m>, 
+      gọi là tổng của <m>x \text{ và } y</m>.
+    </p>
+    <p>Ký hiệu:
+      <me>
+        \delta = x + y
+      </me>
+    </p>
+    
+    <p><term>Phép nhân</term></p>
+    <p>
+      Nhân 2 số thực <m>x, y</m> ta được 1 số thực <m>\rho</m>, 
+      gọi là tích của <m>x \text{ và } y</m>.
+    </p>
+    <p>Ký hiệu:
+      <me>
+        \rho = x \cdot y = x \times y = xy
+      </me>
+    </p>
+    
+  </subsection>
+
+
+  <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
+    <title>Tính Chất Của Các Phép Toán</title>
+
+    <p><m>\forall x, y, z \in \R</m></p>
+
+    <p>
+      <ol marker="1">
+        <li>
+          <p>
+            <term>Phép cộng</term> có các tính chất:
+            <ol>
+              <li xml:id="giao-hoan-phep-cong"><p>Giao hoán: <me>x + y = y + x</me></p></li>
+              <li><p>Kết hợp: <me>(x + y) + z = x + (y + z)</me></p></li>
+              <li><p>Số <m>0</m>: <me>x + 0 = 0 + x = x</me></p></li>
+              <li><p>Số đối: <me>x + (-x) = -x + x = 0</me></p></li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <term>Phép nhân</term> có các tính chất:
+            <ol>
+              <li xml:id="giao-hoan-phep-nhan"><p>Giao hoán: <me>x \cdot y = y \cdot x</me></p></li>
+              <li><p>Kết hợp: <me>(x \cdot y)z = x(y \cdot z)</me></p></li>
+              <li><p>Số <m>1</m>: <me>x \cdot 1 = 1 \cdot x = x</me></p></li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <term>Tính phân phối</term> của 2 phép toán:
+            <me>x(y + z) = xy + xz</me>
+          </p>
+        </li>
+
+      </ol>
+
+    </p>
+
+    <observation>
+      <title>Tính giao hoán và phân phối</title>
+      <p>
+        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và 
+        <xref ref="giao-hoan-phep-nhan" text="local"/>, ta có:
+        <md>
+          <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
+          <mrow>\amp = xz + yz</mrow>
+        </md>
+      </p>
+    </observation>
+    
+    <example>
+      <title>Tính phân phối và giao hoán</title>
+      <p>
+        <md>
+          <mrow>2(3 + 4) \amp = 2 \cdot 3 + 2 \cdot 4 = 6 + 8 = 14 </mrow>
+          <mrow>= (4 + 3)2 \amp = 4 \cdot 2 + 3 \cdot 2 = 8 + 6 = 14 </mrow>
+        </md>
+      </p>
+    </example>
+
+  </subsection>
+  <subsection xml:id="subsec-tinh-dong-cua-mot-phep-toan">
+    <title>Tính Đóng Của Một Phép Toán</title>
+    
+    <p>Với mọi <m>x, y \in \R</m>, khi:</p>
+    <p>
+      <ul>
+        <li>
+          <p>Tổng <m>x + y = \delta \in \R</m>, ta nói phép cộng các số thực có tính đóng.</p>
+        </li>
+        <li>
+          <p>Tích <m>x \cdot y = \rho \in \R</m>, ta nói phép nhân các số thực có tính đóng.</p>
+        </li>
+      </ul>
+    </p>
+
+    <note>
+      <title>Sự phụ thuộc của tính đóng với tập số</title>
+      <p>
+        Với phép cộng và phép nhân, tính đóng phụ thuộc vào 
+        tập chứa các phần tử mà ta thực hiện phép toán.
+      </p>
+
+      <example>
+        <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
+        <p>
+          Trên tập các số nguyên âm <m>\mZ = \{\ldots, -n, \ldots, -3, -2, -1\}</m>    
+          <ul>
+            <li>
+              <p>
+                Phép cộng có tính đóng. 
+                <me>
+                  (-3) + (-2) = -5 \in \mZ
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Phép nhân <em>không</em> có tính đóng. 
+                <me>
+                  (-3) \cdot (-2) = 6 \notin \mZ
+                </me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </example>
+    </note>
+
+    <remark>
+      <title>Sự quan trọng của tính đóng</title>
+      <p>
+        Tính đóng đối với phép toán có mối quan hệ mật thiết với 
+        một đặc tính khái niệm của không gian vector 
+        <xref provisional="section-dac-tinh-khong-gian-vector"/>.
+      </p>
+    </remark>
+
+
+    <exercises xml:id="exercises-tinh-dong-cua-cac-tap-so-co-ban">
+      <title>Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản</title>
+      <shorttitle>Bài Tập Về Tính Đóng</shorttitle>
+
+      <exercisegroup xml:id="exercisegroup-tinh-dong-cua-tap-so-tu-nhien">
+        <title>Tập Số Tự Nhiên</title>
+
+        <introduction>
+          <p>Đánh giá tính đóng của các phép toán đối với tập số tự nhiên <m>\N</m>.</p>
+        </introduction>
+
+        <exercise xml:id="exercise-tinh-dong-cua-phep-cong-so-tu-nhien">
+          <statement>
+            <p>Phép cộng số tự nhiên có tính đóng không?</p>
+          </statement>
+
+          <hint>
+            <p>
+              Nháp một vài phép cộng hai số tự nhiên bất kỳ và 
+              xem xét tổng có thuộc tập số tự nhiên không.
+            </p>
+          </hint>
+
+          <answer>
+            <p>Phép cộng số tự nhiên có tính đóng.</p>
+          </answer>
+
+          <solution>
+            <p>
+              <me>\forall x, y \in \N, x + y = \delta \Rightarrow \delta \in \N</me>
+              Ví dụ:
+              <me>2 + 5 = 7 \in \N</me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise xml:id="exercise-tinh-dong-cua-phep-tru-so-tu-nhien">
+          <statement>
+            <p>Phép trừ số tự nhiên có tính đóng không?</p>
+          </statement>
+
+          <hint>
+            <p>
+              Nháp một vài phép trừ hai số tự nhiên bất kỳ và 
+              xem xét hiệu có thuộc tập số tự nhiên không.
+            </p>
+          </hint>
+
+          <answer>
+            <p>
+              Phép trừ số tự nhiên <em>không</em> có tính đóng. 
+            </p>
+          </answer>
+
+          <solution>
+            <p>
+              <me>\exists x, y \in \N, x - y = \delta \Rightarrow \delta \notin \N</me>
+              Ví dụ:
+              <md>
+                <mrow>5 - 2 \amp = 3 \in \N</mrow>
+                <mrow>\text{Nhưng } 2 - 5 \amp = -3 \notin \N</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise xml:id="exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien">
+          <statement>
+            <p>
+              Tương tự, phép nhân số tự nhiên có tính đóng không?
+              Phép chia số tự nhiên có tính đóng không?
+            </p>
+          </statement>
+
+          <answer>
+            <p>
+              Phép nhân số tự nhiên có tính đóng.
+              Còn phép chia số tự nhiên <em>không</em> có tính đóng.
+            </p>
+          </answer>
+
+          <solution>
+            <p>
+              <me>\forall x, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
+              <me></me>
+              <me>\exists x, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
+              Ví dụ:
+              <md>
+                <mrow>2 \cdot 5 \amp = 10 \in \N</mrow>
+                <mrow></mrow>
+                <mrow>10 \div 5 \amp = 2 \in \N</mrow>
+                <mrow>\text{Nhưng } 5 \div 10 \amp = 0.5 \notin \N</mrow>
+              </md>
+            </p>
+          </solution>
+        </exercise>
+
+
+        <conclusion>
+          <p>
+            The conclusion of the exercise group.
+          </p>
+        </conclusion>
+
+      </exercisegroup>
+
+      <exercisegroup xml:id="exercisegroup-tinh-dong-cua-cac-tap-so-co-ban-con-lai">
+        <title>Các tập số cơ bản còn lại</title>
+
+        <introduction>
+          <p>
+            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>
+            , hữu tỷ <m>\Q</m>, thực <m>\R</m>.
+          </p>
+        </introduction>
+        
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-nguyen">
+          <statement>
+            <p>Các phép toán có tính đóng đối với tập số nguyên <m>\Z</m> là?</p>
+          </statement>
+
+          <choices multiple-correct="yes">
+            <choice correct="yes">
+              <statement>
+                <p>Phép cộng</p>
+              </statement>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>Phép trừ</p>
+              </statement>
+            </choice>
+
+            <choice correct="yes">
+              <statement>
+                <p>Phép nhân</p>
+              </statement>
+            </choice>
+
+            <choice>
+              <statement>
+                <p>Phép chia</p>
+              </statement>
+            </choice>
+          </choices>
+        </exercise>
+        
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-huu-ty">
+          <statement correct="yes">
+            <p>Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ <m>\Q</m>?</p>
+          </statement>
+
+          <feedback>
+            <q>Alo</q>
+          </feedback>
+        </exercise>
+        
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-thuc">
+          <statement>
+            <p>Các phép toán nào có tính đóng đối với tập số thực <m>\R</m>?</p>
+          </statement>
+        </exercise>
+        
+        <conclusion>
+          <p>
+            Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.
+          </p>
+        </conclusion>
+
+      </exercisegroup>
+      
+    </exercises>
+    
+  </subsection>
+
+</section>

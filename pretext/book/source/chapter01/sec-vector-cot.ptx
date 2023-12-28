@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-vector-cot" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Vector Cột</title>
+  <title>Vector Cột<mdash/>Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</title>
+  <shorttitle>Vector Cột</shorttitle>
 
   <objectives>
     <ol>
@@ -99,7 +100,7 @@
              vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
           </p>
           <p>
-            Giữ và di chuột trái để di chuyển góc nhìn 3D.
+            Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.
           </p>
           <p>
             Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
@@ -117,41 +118,6 @@
         <slate xml:id="vector3d" surface="jsxboard" aspect="5:5"/>
       </interactive>
     </example> -->
-    
-  </subsection>
-
-
-  <subsection xml:id="subsec-cac-phep-toan-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
-    <title>Các Phép Toán Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
-
-    <p>Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</p>
-
-    <note>
-      <p>Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</p>
-    </note>
-
-    <p>
-      Ví dụ:
-      <md>
-        <mrow>\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
-        <mrow></mrow>
-        <mrow>3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}</mrow>
-        <mrow></mrow>
-        <mrow>(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
-        <mrow></mrow>
-        <mrow>4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}</mrow>
-      </md>
-    </p>
-
-    <remark>
-      <title>Tính chất</title>
-      
-      <p>
-        Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu 
-        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
-      </p>
-      
-    </remark>
     
   </subsection>
 
@@ -197,6 +163,7 @@
     
   </subsection>
 
+
   <subsection xml:id="subsec-phep-chuyen-vi-vector">
     <title>Phép Chuyển Vị</title>
 
@@ -232,8 +199,144 @@
 
   </subsection>
 
-  <subsection xml:id="subsec-van-de-tiep-theo">
-    <title>Vấn Đề Tiếp Theo</title>
+  <subsection xml:id="subsec-sage-python-nhap-xuat-vector">
+    <title>Nhập, Xuất Vector Trong Numpy (Python)</title>
+
+    <p>
+      Nhập, xuất vector trong Numpy (Python)
+    </p>
+
+    <sage>
+      <input>
+        import numpy as np # Sử dụng thư viện numpy
+        
+        cot = np.matrix([
+          [1],
+          [2],
+          [3]
+        ])
+
+        hang = np.matrix([
+          [4, 5, 6]
+        ])
+
+        print("Vector cot:")
+        print(cot)
+
+        print("\nVector hang:")
+        print(hang)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Tính chuyển vị của vector trong Numpy (Python)
+    </p>
+    
+    <sage>
+      <input>
+        print("Chuyen vi cua 'cot':")
+        print(cot.transpose())
+
+        print("\nChuyen vi cua 'hang':")
+        print(hang.transpose())
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+  </subsection>
+
+  <subsection xml:id="subsec-sage-nhap-xuat-vector">
+    <title>Nhập, Xuất Vector Trong SageMath</title>
+    
+    <p>
+      Nhập, xuất vector, tính chuyển vị của vector trong SageMath
+    </p>
+
+    <sage>
+      <input>
+        cot = matrix([
+          [10/3],
+          [0],
+          [1.52]
+        ])
+
+        hang = matrix([
+          [2, 4, -6] 
+        ])
+
+        # Các cài đặt hiển thị của SageMath
+        matrix.options.format_numeric = '{:.{prec}f}' # Hiển thị số thập phân
+        matrix.options.precision = 2 # Số chữ số thập phân hiển thị
+
+        print("Vector cot:")
+        print(cot)
+
+        print("\nVector hang:")
+        print(hang)
+
+        print("\nChuyen vi cua 'cot':")
+        print(cot.transpose())
+
+        print("\nChuyen vi cua 'hang':")
+        print(hang.transpose())
+
+        matrix.options._reset()
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Biểu diễn vector bằng LaTeX
+    </p>
+
+    <sage>
+      <input>
+        latex.matrix_delimiters("[", "]") # Hiển thị ngoặc vuông thay vì mặc định là ngoặc tròn
+
+        show(cot)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        show(hang)
+      </input>
+      <output>
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        # Chuyển vị của 'cot'
+        show(cot.transpose())
+      </input>
+      <output>
+      </output>
+    </sage>
+
+    <sage>
+      <input>
+        # Chuyển vị của 'hang'
+        show(hang.transpose())
+      </input>
+      <output>
+      </output>
+    </sage>
+
+  </subsection>
+
+  <subsection xml:id="subsec-vdtt-vector-cot">
+    <title>Vấn Đề Tiếp Theo (Cũ)</title>
 
     <ol marker="a">
       <li>
