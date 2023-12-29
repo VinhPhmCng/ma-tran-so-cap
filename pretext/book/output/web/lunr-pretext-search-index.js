@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.      Coming soon.  "
+  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.       Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
 },
 {
   "id": "sec-ma-tran-hoan-vi-2",
@@ -575,6 +575,15 @@ var ptx_lunr_docs = [
   "number": "2.6",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "figure-sage-interact-ma-tran-hoan-vi",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#figure-sage-interact-ma-tran-hoan-vi",
+  "type": "Figure",
+  "number": "2.6.1",
+  "title": "",
+  "body": " Tương tác ma trận hoán vị với SageMath Interact   "
 },
 {
   "id": "sec-A-bang-CiRk",
