@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector",
-  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Numpy (Python)  Nhập, xuất vector trong Numpy (Python)   Tính chuyển vị của vector trong Numpy (Python)     Nhập, Xuất Vector Trong SageMath  Nhập, xuất vector, tính chuyển vị của vector trong SageMath   Biểu diễn vector bằng LaTeX        Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất (có chỉ số ) là     phần tử thứ hai (có chỉ số ) là     phần tử thứ ba (có chỉ số ) là    Khái niệm chỉ số sẽ được nhắc đến ở dưới trong .        Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Lập Trình   Trong Numpy (Python)     Trong SageMath   SageMath cung cấp lựa chọn biểu diễn vector và các đối tượng toán học khác bằng latex một hệ thống phần mềm soạn thảo chuyên dành cho toán. Ta chỉ cần sử dụng hàm show() .      Tính Chuyển Vị Của Vector       Truy Cập Phần Tử Của Vector  Trong lập trình, để truy cập phần tử nằm ở hàng m, cột n của ma trận A , ta sử dụng cú pháp A[m][n] . Hai số m và n được gọi là chỉ số .   Khác biệt trong chỉ số giữa toán học và lập trình  Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số thay vì như trong toán học.  Vì vậy, trong quyển sách này, các chỉ số sẽ bắt đầu từ . Nói cách khác, một ma trận có kích thước sẽ có hàng , hàng , hàng , , hàng và cột , cột , cột , , cột .   Ví dụ, để truy cập phần tử nằm ở hàng , cột của ma trận A , ta dùng cú pháp A[2][0] .  Vì vector cột thực chất là ma trận có kích thước , khi ta nói phần tử với chỉ số của vector cột , thực chất ta đang nói phần tử nằm ở hàng , cột của . Vậy nên, cú pháp ta sử dụng là u[a][0] .  Tương tự, cú pháp để truy cập phần tử với chỉ số của vector hàng là v[0][b] .      Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
   "id": "sec-vector-cot-3",
@@ -265,8 +265,35 @@ var ptx_lunr_docs = [
   "id": "subsec-vector-cot-7",
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-cot-7",
-  "type": "Note",
+  "type": "Convention",
   "number": "1.2.4",
+  "title": "",
+  "body": " Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .  "
+},
+{
+  "id": "subsec-vector-cot-8",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "phần tử chỉ số "
+},
+{
+  "id": "subsec-vector-cot-9",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-9",
+  "type": "Note",
+  "number": "1.2.5",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "subsec-vector-cot-10",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-10",
+  "type": "Note",
+  "number": "1.2.6",
   "title": "",
   "body": " Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .  "
 },
@@ -275,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#example-vector2d",
   "type": "Example",
-  "number": "1.2.5",
+  "number": "1.2.7",
   "title": "Biểu diễn vector 2<span class=\"times-sign\">×<\/span>1 trong không gian 2 chiều với JSXGraph.",
   "body": " Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph   "
 },
@@ -284,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#example-vector3d",
   "type": "Example",
-  "number": "1.2.6",
+  "number": "1.2.8",
   "title": "Biểu diễn vector 3<span class=\"times-sign\">×<\/span>1 trong không gian 3 chiều với GeoGebra.",
   "body": " Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra   "
 },
@@ -293,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#def-vector-hang",
   "type": "Definition",
-  "number": "1.2.7",
+  "number": "1.2.9",
   "title": "",
   "body": "  Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .   "
 },
@@ -302,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-3",
   "type": "Convention",
-  "number": "1.2.8",
+  "number": "1.2.10",
   "title": "",
   "body": " Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng   "
 },
@@ -311,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-4",
   "type": "Convention",
-  "number": "1.2.9",
+  "number": "1.2.11",
   "title": "",
   "body": " Vector hàng có n cột (và 1 hàng) được kí hiệu   "
 },
@@ -320,25 +347,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-5",
   "type": "Remark",
-  "number": "1.2.10",
+  "number": "1.2.12",
   "title": "",
   "body": " Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.  "
-},
-{
-  "id": "subsec-vector-hang-6",
-  "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-hang-6",
-  "type": "Convention",
-  "number": "1.2.11",
-  "title": "",
-  "body": " Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .  "
 },
 {
   "id": "def-phep-chuyen-vi-vector",
   "level": "2",
   "url": "sec-vector-cot.html#def-phep-chuyen-vi-vector",
   "type": "Definition",
-  "number": "1.2.12",
+  "number": "1.2.13",
   "title": "",
   "body": "   Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.    "
 },
@@ -347,9 +365,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-phep-chuyen-vi-vector-4",
   "type": "Observation",
-  "number": "1.2.13",
+  "number": "1.2.14",
   "title": "",
   "body": "  "
+},
+{
+  "id": "subsubsec-phan-tu-vector-2",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsubsec-phan-tu-vector-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "chỉ số "
+},
+{
+  "id": "subsubsec-phan-tu-vector-3",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsubsec-phan-tu-vector-3",
+  "type": "Note",
+  "number": "1.2.15",
+  "title": "Khác biệt trong chỉ số giữa toán học và lập trình.",
+  "body": " Khác biệt trong chỉ số giữa toán học và lập trình  Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số thay vì như trong toán học.  Vì vậy, trong quyển sách này, các chỉ số sẽ bắt đầu từ . Nói cách khác, một ma trận có kích thước sẽ có hàng , hàng , hàng , , hàng và cột , cột , cột , , cột .  "
 },
 {
   "id": "subsec-vdtt-vector-cot-2-2-1",
@@ -367,7 +403,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Cộng Vector",
-  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    "
+  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .    "
 },
 {
   "id": "sec-cong-vector-2",
@@ -379,22 +415,22 @@ var ptx_lunr_docs = [
   "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
+  "id": "subsec-cong-vector-cot-3",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-3",
   "type": "Note",
   "number": "1.3.1",
-  "title": "",
-  "body": " Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.  "
+  "title": "Điều kiện để cộng 2 hoặc nhiều vectors.",
+  "body": " Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.  "
 },
 {
-  "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
+  "id": "subsec-cong-vector-cot-5",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-5",
   "type": "Remark",
   "number": "1.3.2",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .  "
 },
 {
   "id": "sec-nhan-vector-voi-1-so",
@@ -403,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Nhân Vector Với 1 Số",
-  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.      Coming soon.  "
+  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.       Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:    Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    "
 },
 {
   "id": "sec-nhan-vector-voi-1-so-2",
@@ -413,6 +449,15 @@ var ptx_lunr_docs = [
   "number": "1.4",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "subsec-nhan-vector-cot-voi-1-so-4",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-cot-voi-1-so-4",
+  "type": "Remark",
+  "number": "1.4.1",
+  "title": "Tính chất.",
+  "body": " Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
 },
 {
   "id": "sec-thtt-vector",
