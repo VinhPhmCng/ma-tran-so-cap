@@ -236,7 +236,7 @@
       
       <sage>
         <input>
-          import numpy as np # Sử dụng thư viện numpy
+          import numpy as np # Su dung thu vien Numpy
           
           cot_1 = np.matrix([
             [1],
@@ -248,10 +248,10 @@
             [4, 5, 6]
           ])
 
-          print("Vector cot:")
+          print("Vector cot_1:")
           print(cot_1)
 
-          print("\nVector hang:")
+          print("\nVector hang_1:")
           print(hang_1)
         </input>
         <output>
@@ -276,14 +276,14 @@
             [2, 4, -6] 
           ])
 
-          # Cài đặt hiển thị của SageMath
-          matrix.options.format_numeric = '{:.{prec}f}' # Hiển thị số thập phân
-          matrix.options.precision = 2 # Số chữ số thập phân
+          # Cai dat hien thi cua SageMath
+          matrix.options.format_numeric = '{:.{prec}f}' # Hien thi so thap phan
+          matrix.options.precision = 2 # So chu so thap phan
 
-          print("Vector cot:")
+          print("Vector cot_2:")
           print(cot_2)
 
-          print("\nVector hang:")
+          print("\nVector hang_2:")
           print(hang_2)
         </input>
         <output>
@@ -299,7 +299,7 @@
 
       <sage>
         <input>
-          latex.matrix_delimiters("[", "]") # Hiển thị ngoặc vuông thay vì mặc định là ngoặc tròn
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong thay vi mac dinh la ngoac tron
 
           show(cot_2)
         </input>
@@ -341,7 +341,7 @@
         <input>
           # Trong SageMath
 
-          # Chuyển vị của 'cot_2'
+          # Chuyen vi cua 'cot_2'
           show(cot_2.transpose())
         </input>
         <output>
@@ -351,7 +351,7 @@
 
       <sage>
         <input>
-          # Chuyển vị của 'hang_2'
+          # Chuyen vi cua 'hang_2'
           show(hang_2.transpose())
         </input>
         <output>
@@ -405,12 +405,12 @@
       <sage>
         <input>
           # Numpy
-          print(cot_1[1][0]) # Phần tử chỉ số 1 của vector 'cot_1'
-          print(hang_1[0][0]) # Phần tử chỉ số 0 của vector 'hang_1'
+          print(cot_1[1][0]) # Phan tu chi so 1 cua 'cot_1'
+          print(hang_1[0][0]) # Phan tu chi so 0 cua 'hang_1'
 
           # SageMath
-          print(cot_2[0][0]) # Phần tử chỉ số 0 của vector 'cot_2'
-          print(hang_2[0][2]) # Phần tử chỉ số 2 của vector 'hang_2'
+          print(cot_2[0][0]) # Phan tu chi so 0 cua 'cot_2'
+          print(hang_2[0][2]) # Phan tu chi so 2 cua 'hang_2'
         </input>
         <output>
           Provisional
