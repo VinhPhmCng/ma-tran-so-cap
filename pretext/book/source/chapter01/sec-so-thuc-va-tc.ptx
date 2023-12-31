@@ -211,7 +211,7 @@
 
     </note>
 
-<!--     <example>
+    <example>
       <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
       <p>
         Trên tập các số nguyên âm <m>\mZ = \{\ldots, -n, \ldots, -3, -2, -1\}</m>    
@@ -236,7 +236,7 @@
           </li>
         </ul>
       </p>
-    </example> -->
+    </example>
 
     <remark>
       <title>Sự quan trọng của tính đóng</title>
@@ -248,7 +248,7 @@
     </remark>
 
 
-<!--     <exercises xml:id="exercises-tinh-dong-cua-cac-tap-so-co-ban">
+    <exercises xml:id="exercises-tinh-dong-cua-cac-tap-so-co-ban">
       <title>Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản</title>
       <shorttitle>Bài Tập Về Tính Đóng</shorttitle>
 
@@ -362,9 +362,9 @@
             Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>
             , hữu tỷ <m>\Q</m>, thực <m>\R</m>.
           </p>
-        </introduction> -->
+        </introduction>
         
-<!--         <exercise xml:id="exercise-tinh-dong-cua-tap-so-nguyen">
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-nguyen">
           <statement>
             <p>Các phép toán có tính đóng đối với tập số nguyên <m>\Z</m> là?</p>
           </statement>
@@ -394,9 +394,9 @@
               </statement>
             </choice>
           </choices>
-        </exercise> -->
+        </exercise>
         
-<!--         <exercise xml:id="exercise-tinh-dong-cua-tap-so-huu-ty">
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-huu-ty">
           <statement correct="yes">
             <p>Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ <m>\Q</m>?</p>
           </statement>
@@ -404,9 +404,9 @@
           <feedback>
             <p>Alo</p>
           </feedback>
-        </exercise> -->
+        </exercise>
         
-<!--         <exercise xml:id="exercise-tinh-dong-cua-tap-so-thuc">
+        <exercise xml:id="exercise-tinh-dong-cua-tap-so-thuc">
           <statement>
             <p>Các phép toán nào có tính đóng đối với tập số thực <m>\R</m>?</p>
           </statement>
@@ -420,7 +420,7 @@
 
       </exercisegroup>
       
-    </exercises> -->
+    </exercises>
     
   </subsection>
 
