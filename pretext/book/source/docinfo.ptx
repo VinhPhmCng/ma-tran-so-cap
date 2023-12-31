@@ -19,7 +19,7 @@
 <!--   <math-package latex-name="spalign" mathjax-name="spalign"></math-package> --> <!--will break stuff-->
   <math-package latex-name="cancel" mathjax-name="cancel"></math-package>
   <math-package latex-name="mathtools" mathjax-name="mathtools"></math-package>
-  <math-package latex-name="boldsymbol" mathjax-name="boldsymbol"></math-package>
+<!--   <math-package latex-name="boldsymbol" mathjax-name="boldsymbol"></math-package> -->
 
   <!-- macros for defining latex math shortcuts. It is good practice -->
   <!-- to define these semantically, so that the macro relates to what-->
