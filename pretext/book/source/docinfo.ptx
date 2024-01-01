@@ -16,10 +16,10 @@
   <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
   <!-- <document-id>unique-book-id</document-id> -->
 
-<!--   <math-package latex-name="spalign" mathjax-name="spalign"></math-package> --> <!--will break stuff-->
+  <!-- this tag "math-package" might become obsolete in the near future -->
   <math-package latex-name="cancel" mathjax-name="cancel"></math-package>
   <math-package latex-name="mathtools" mathjax-name="mathtools"></math-package>
-<!--   <math-package latex-name="boldsymbol" mathjax-name="boldsymbol"></math-package> -->
+  <math-package latex-name="" mathjax-name="boldsymbol"></math-package>
 
   <!-- macros for defining latex math shortcuts. It is good practice -->
   <!-- to define these semantically, so that the macro relates to what-->
@@ -34,19 +34,20 @@
     \newcommand{\nQ}{\bar{\mathbb{Q}}}
     \newcommand{\R}{\mathbb{R}}
 
-<!--     \newcommand{\bs}[1]{\boldsymbol{#1}} -->
+    \newcommand{\bs}[1]{\boldsymbol{#1}}
 
     \newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
     \newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
     \newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
     \newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
-    <!-- \newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} --> <!-- Only use for horizontal vectors. For vertical vectors or matrices use \bmat and its alternatives.-->
-    \newcommand{\hvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
+    \newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} <!-- Only use for horizontal vectors. For vertical vectors or matrices use \bmat and its alternatives.-->
+<!--     \newcommand{\hvec}[1]{\begin{bmatrix}#1\end{bmatrix}} -->
 
     \newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
     \newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
     \newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
     \newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
+    \newcommand{\shvec}[1]{\bs{[}\begin{smallmatrix}#1\end{smallmatrix}\bs{]}} <!-- Only use for horizontal vectors. For vertical vectors or matrices use \bmat and its alternatives.-->
 
   </macros>
 
