@@ -24,8 +24,13 @@
         <mrow number="yes">(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
         <mrow></mrow>
         <mrow number="yes">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3} \quad \text{(}<xref ref="subsec-vector-co-so" text="title"/>\text{)}</mrow>
+      </md>
+
+      <md>
         <mrow></mrow>
-        <mrow number="yes">4 \bmat{5 \\ 6} - 2 \bmat{1 \\ 2} = 4 \bmat{5 \\ 6} + (-2) \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{-2 \\ -4} = \bmat{18 \\ 20}</mrow>
+        <mrow number="yes">4 \bmat{5 \\ 6} - 2 \bmat{1 \\ 2} \amp = 4 \bmat{5 \\ 6} + (-2) \bmat{1 \\ 2}</mrow>
+        <mrow></mrow>
+        <mrow>\amp = \bmat{20 \\ 24} + \bmat{-2 \\ -4} = \bmat{18 \\ 20}</mrow>
       </md>
     </p>
 

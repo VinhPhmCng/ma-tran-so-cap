@@ -46,5 +46,63 @@
     
   </subsection>
 
+  <subsection xml:id="subsec-cong-vector-lap-trinh">
+    <title>Cộng vector trong lập trình</title>
+
+      <sage language="python">
+        <input>
+          # Trong Numpy (Python)
+          import numpy as np # Su dung thu vien Numpy
+          
+          a = np.matrix([
+              [1],
+              [2],
+              [3]
+          ])
+
+          b = np.matrix([
+              [4],
+              [-2],
+              [0.5]
+          ])
+
+          print("a + b =")
+          print(a + b) # Tinh tong
+        </input>
+        <output>
+          Provisional
+        </output>
+      </sage>
+
+      <p>
+        Ví dụ cộng 2 vectors cột không có cùng số hàng <m>\rightarrow</m> <alert>Lỗi</alert>:
+      </p>
+
+      <sage>
+        <input>
+          # Trong SageMath
+          
+          c = matrix([
+              [1],
+              [2],
+              [3],
+              [4]
+          ])
+
+          d = matrix([
+              [4],
+              [-2],
+              [0.5]
+          ])
+
+          print("c + d =")
+          print(c + d) # Tinh tong
+        </input>
+        <output>
+          Provisional
+        </output>
+      </sage>
+
+  </subsection>
 
 </section>

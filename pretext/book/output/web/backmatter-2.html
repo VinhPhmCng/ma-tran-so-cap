@@ -163,19 +163,20 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\nQ}{\bar{\mathbb{Q}}}
 \newcommand{\R}{\mathbb{R}}
 
-
+\newcommand{\bs}[1]{\boldsymbol{#1}}
 
 \newcommand{\mat}[1]{\begin{matrix}#1\end{matrix}}
 \newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
 \newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand{\amat}[1]{\left\langle\begin{matrix}#1\end{matrix}\right\rangle}
- 
-\newcommand{\hvec}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\hvec}[1]{\bs{[}\begin{matrix}#1\end{matrix}\bs{]}} 
+
 
 \newcommand{\smat}[1]{\begin{smallmatrix}#1\end{smallmatrix}}
 \newcommand{\sbmat}[1]{\begin{bsmallmatrix}#1\end{bsmallmatrix}}
 \newcommand{\spmat}[1]{\begin{psmallmatrix}#1\end{psmallmatrix}}
 \newcommand{\samat}[1]{\left\langle\begin{smallmatrix}#1\end{smallmatrix}\right\rangle}
+\newcommand{\shvec}[1]{\bs{[}\begin{smallmatrix}#1\end{smallmatrix}\bs{]}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -220,7 +221,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-cong-vector.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Cộng Vector</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cong-vector.html#subsec-cong-vector-cot" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Cộng Vector Cột</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cong-vector.html#subsec-cong-vector-cot" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Cộng Vector Cột</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cong-vector.html#subsec-cong-vector-lap-trinh" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Cộng vector trong lập trình</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-nhan-vector-voi-1-so.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Nhân Vector Với 1 Số</span></a></div>

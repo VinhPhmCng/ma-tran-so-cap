@@ -17,14 +17,14 @@
     <p>
       <term>Tập số tự nhiên</term> (hay tập số nguyên không âm), kí hiệu <m>\N</m>
       <me>
-        \N = \{0, 1, 2, 3, \ldots, n, \ldots \}
+        \N = \{0, \, 1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}
       </me>
     </p>
 
     <p>
       <term>Tập số tự nhiên dương</term>, kí hiệu <m>\pN</m>.
       <md>
-        <mrow>\pN \amp = \{1, 2, 3, \ldots, n, \ldots \}</mrow>
+        <mrow>\pN \amp = \{1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}</mrow>
         <mrow>\amp =\N \setminus \{0\}</mrow>
       </md>
     </p>
@@ -32,7 +32,7 @@
     <p>
       <term>Tập số nguyên</term>, kí hiệu <m>\Z</m>
       <me>
-        \Z = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}
+        \Z = \{\ldots, \, -3, \, -2, \, -1, \, 0, \, 1, \, 2, \, 3, \, \ldots \}
       </me>
     </p>
       
@@ -94,12 +94,12 @@
   <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
     <title>Các Phép Toán Trên Tập Số Thực <m>\R</m></title>
 
-    <p>Với 2 số <m>x, y \in \R</m></p>
+    <p>Với 2 số <m>x, \, y \in \R</m></p>
 
     <p><term>Phép cộng</term></p>
     <p>
-      Cộng 2 số thực <m>x, y</m> ta được 1 số thực <m>\delta</m>, 
-      gọi là tổng của <m>x \text{ và } y</m>.
+      Cộng 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\delta</m>, 
+      gọi là tổng của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
       <me>
@@ -109,8 +109,8 @@
     
     <p><term>Phép nhân</term></p>
     <p>
-      Nhân 2 số thực <m>x, y</m> ta được 1 số thực <m>\rho</m>, 
-      gọi là tích của <m>x \text{ và } y</m>.
+      Nhân 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\rho</m>, 
+      gọi là tích của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
       <me>
@@ -124,7 +124,7 @@
   <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
     <title>Tính Chất Của Các Phép Toán</title>
 
-    <p><m>\forall x, y, z \in \R</m></p>
+    <p><m>\forall x, \, y, \, z \in \R</m></p>
 
     <p>
       <ol marker="1">
@@ -190,7 +190,7 @@
   <subsection xml:id="subsec-tinh-dong-cua-mot-phep-toan">
     <title>Tính Đóng Của Một Phép Toán</title>
     
-    <p>Với mọi <m>x, y \in \R</m>, khi:</p>
+    <p>Với mọi <m>x, \, y \in \R</m>, khi:</p>
     <p>
       <ul>
         <li>
@@ -277,7 +277,7 @@
 
           <solution>
             <p>
-              <me>\forall x, y \in \N, x + y = \delta \Rightarrow \delta \in \N</me>
+              <me>\forall x, \, y \in \N, x + y = \delta \Rightarrow \delta \in \N</me>
               Ví dụ:
               <me>2 + 5 = 7 \in \N</me>
             </p>
@@ -304,7 +304,7 @@
 
           <solution>
             <p>
-              <me>\exists x, y \in \N, x - y = \delta \Rightarrow \delta \notin \N</me>
+              <me>\exists x, \, y \in \N, x - y = \delta \Rightarrow \delta \notin \N</me>
               Ví dụ:
               <md>
                 <mrow>5 - 2 \amp = 3 \in \N</mrow>
@@ -331,9 +331,9 @@
 
           <solution>
             <p>
-              <me>\forall x, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
+              <me>\forall x, \, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
               <me></me>
-              <me>\exists x, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
+              <me>\exists x, \, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
               Ví dụ:
               <md>
                 <mrow>2 \cdot 5 \amp = 10 \in \N</mrow>

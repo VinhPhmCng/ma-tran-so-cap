@@ -89,6 +89,7 @@
 
     <note>
       <p>
+        Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.
         <me>\bmat{1 \\ 2} \quad \text{khác} \quad \bmat{1 \\ 2 \\ 0} \quad \text{khác} \quad \bmat{0 \\ 1 \\ 2}</me>
       </p>
     </note>
@@ -172,14 +173,14 @@
     <convention>
       <p>
         Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 hàng
-        ta được vector hàng <m>\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
+        ta được vector hàng <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
       </p>
     </convention>
 
     <convention>
       <p>
         Vector hàng có n cột (và 1 hàng) được kí 
-        hiệu <m>\sbmat{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}</m>
+        hiệu <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}</m>
       </p>
     </convention>
     
@@ -234,18 +235,18 @@
     <subsubsection xml:id="subsubsec-nhap-xuat-vector-numpy">
       <title>Trong Numpy (Python)</title>
       
-      <sage>
+      <sage language="python">
         <input>
-          import numpy as np # Sử dụng thư viện numpy
+          import numpy as np # Su dung thu vien Numpy
           
           cot_1 = np.matrix([
-            [1],
-            [2],
-            [3]
+              [1],
+              [2],
+              [3]
           ])
 
           hang_1 = np.matrix([
-            [4, 5, 6]
+              [4, 5, 6]
           ])
 
           print("Vector cot:")
@@ -267,18 +268,18 @@
       <sage>
         <input>
           cot_2 = matrix([
-            [10/3],
-            [0],
-            [1.52]
+              [10/3],
+              [0],
+              [1.52]
           ])
 
           hang_2 = matrix([
-            [2, 4, -6] 
+              [2, 4, -6] 
           ])
 
-          # Cài đặt hiển thị của SageMath
-          matrix.options.format_numeric = '{:.{prec}f}' # Hiển thị số thập phân
-          matrix.options.precision = 2 # Số chữ số thập phân
+          # Cai dat hien thi cua SageMath
+          matrix.options.format_numeric = '{:.{prec}f}' # Hien thi so thap phan
+          matrix.options.precision = 2 # So chu so thap phan
 
           print("Vector cot:")
           print(cot_2)
@@ -299,7 +300,7 @@
 
       <sage>
         <input>
-          latex.matrix_delimiters("[", "]") # Hiển thị ngoặc vuông thay vì mặc định là ngoặc tròn
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
 
           show(cot_2)
         </input>
@@ -322,7 +323,7 @@
     <subsubsection xml:id="subsubsec-chuyen-vi-vector">
       <title>Tính Chuyển Vị Của Vector</title>
 
-      <sage>
+      <sage language="python">
         <input>
           # Trong Numpy (Python)
 
@@ -365,12 +366,12 @@
       <title>Truy Cập Phần Tử Của Vector</title>
 
       <p>
-        Trong lập trình, để truy cập phần tử nằm ở <c>hàng m, cột n của ma trận A</c>
-        , ta sử dụng cú pháp <c>A[m][n]</c>. Hai số m và n được gọi là <term>chỉ số</term>.
+        Trong lập trình, để truy cập phần tử nằm ở hàng <m>m</m>, cột <m>n</m> của ma trận A
+        , ta sử dụng cú pháp <c>A[m][n]</c>. <m>m</m> và <m>n</m> được gọi là <term>chỉ số</term>.
       </p>
 
       <note>
-        <title>Khác biệt trong chỉ số giữa toán học và lập trình</title>
+        <title>Khác biệt giữa chỉ số trong toán học và trong lập trình</title>
         
         <p>
           Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số <m>0</m> thay
@@ -392,25 +393,25 @@
 
       <p>
         Vì vector cột thực chất là ma trận có kích thước <m>m\times1</m>, khi ta nói
-         <q>phần tử với chỉ số <m>a</m> của vector cột <m>u</m></q>, thực chất ta đang nói
-         <q>phần tử nằm ở hàng <m>a</m>, cột <m>0</m> của <m>u</m></q>. Vậy nên, cú pháp
-         ta sử dụng là <c>u[a][0]</c>.
+         <q>phần tử với chỉ số <m>a</m>, hay phần tử <m>a</m>, của vector cột <m>u</m></q>, 
+         thực chất ta đang nói <q>phần tử nằm ở hàng <m>a</m>, cột <m>0</m> của <m>u</m></q>. 
+         Vậy nên, cú pháp ta sử dụng là <c>u[a][0]</c>.
       </p>
 
       <p>
-        Tương tự, cú pháp để truy cập phần tử với chỉ số <m>b</m> của
+        Tương tự, cú pháp để truy cập phần tử (với chỉ số) <m>b</m> của
          vector hàng <m>v_{1 \times n}</m> là <c>v[0][b]</c>.
       </p>
       
       <sage>
         <input>
           # Numpy
-          print(cot_1[1][0]) # Phần tử chỉ số 1 của vector 'cot_1'
-          print(hang_1[0][0]) # Phần tử chỉ số 0 của vector 'hang_1'
+          print(cot_1[1][0]) # Phan tu 1 cua 'cot_1'
+          print(hang_1[0][0]) # Phan tu 0 cua 'hang_1'
 
           # SageMath
-          print(cot_2[0][0]) # Phần tử chỉ số 0 của vector 'cot_2'
-          print(hang_2[0][2]) # Phần tử chỉ số 2 của vector 'hang_2'
+          print(cot_2[0][0]) # Phan tu 0 cua 'cot_2'
+          print(hang_2[0][2]) # Phan tu 2 cua 'hang_2'
         </input>
         <output>
           Provisional
