@@ -218,7 +218,7 @@
     <example>
       <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
       <p>
-        Trên tập các số nguyên âm <m>\mZ = \{\ldots, -n, \ldots, -3, -2, -1\}</m>    
+        Trên tập số nguyên âm <m>\mZ = \{\ldots, \, -n, \, \ldots, \, -3, \, -2, \, -1\}</m>    
       </p>
       <p>
         <ul>
@@ -281,7 +281,8 @@
 
           <solution>
             <p>
-              <me>\forall x, \, y \in \N, x + y = \delta \Rightarrow \delta \in \N</me>
+<!--               <me>\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N</me> -->
+              <me>\boxed{\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N}</me>
               Ví dụ:
               <me>2 + 5 = 7 \in \N</me>
             </p>
@@ -308,7 +309,8 @@
 
           <solution>
             <p>
-              <me>\exists x, \, y \in \N, x - y = \delta \Rightarrow \delta \notin \N</me>
+<!--               <me>\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N</me> -->
+              <me>\boxed{\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N}</me>
               Ví dụ:
               <md>
                 <mrow>5 - 2 \amp = 3 \in \N</mrow>
@@ -335,15 +337,31 @@
 
           <solution>
             <p>
-              <me>\forall x, \, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
-<!--               <me></me> -->
-              <me>\exists x, \, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
+<!--               <me>\forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N</me>
+              <me>\exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N</me> -->
+
+              <me>
+                \boxed{
+                  \begin{aligned}
+                    \forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N \\[0.5ex]
+                    \exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N
+                  \end{aligned}
+                }
+              </me>
+
+<!--               <me>
+                \left\lfloor\begin{aligned}
+                  \forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N \\[0.5ex]
+                  \exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N
+                \end{aligned}\right\rfloor
+              </me> -->
+
               Ví dụ:
               <md>
                 <mrow>2 \cdot 5 \amp = 10 \in \N</mrow>
                 <mrow></mrow>
-                <mrow>10 \div 5 \amp = 2 \in \N</mrow>
-                <mrow>\text{Nhưng } 5 \div 10 \amp = 0.5 \notin \N</mrow>
+                <mrow>10 / 5 \amp = 2 \in \N</mrow>
+                <mrow>\text{Nhưng } 5 / 10 \amp = 0.5 \notin \N</mrow>
               </md>
             </p>
           </solution>
