@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Số Thực Và Các Tính Chất",
-  "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.     Các Phép Toán Trên Tập Số Thực  Với 2 số  Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của .  Ký hiệu:     Tính Chất Của Các Phép Toán       Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.         Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.      Ví dụ:     The conclusion of the exercise group.     Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng      Phép trừ      Phép nhân      Phép chia      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Alo    Các phép toán nào có tính đóng đối với tập số thực ?    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
+  "body": " Số Thực Và Các Tính Chất    Các mục tiêu của section.       Tập Số Thực   Tập số tự nhiên (hay tập số nguyên không âm), kí hiệu     Tập số tự nhiên dương , kí hiệu .    Tập số nguyên , kí hiệu     Tập số hữu tỷ , kí hiệu . Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng hữu hạn hoặc vô hạn tuần hoàn .  Ví dụ:    Tập số vô tỷ , kí hiệu , là tập các số thập phân vô hạn không tuần hoàn.   Ví dụ:    Tập số thực , kí hiệu , là tập bao gồm các số hữu tỷ và các số vô tỷ.    Mối quan hệ giữa 4 tập số cơ bản       Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R      Các Phép Toán Trên Tập Số Thực     Phép cộng  Cộng 2 số thực ta được 1 số thực , gọi là tổng của và .  Ký hiệu:   Phép nhân  Nhân 2 số thực ta được 1 số thực , gọi là tích của và .  Ký hiệu:     Tính Chất Của Các Phép Toán         Phép cộng có các tính chất:  Giao hoán:  Kết hợp:  Số :  Số đối:       Phép nhân có các tính chất:  Giao hoán:  Kết hợp:  Số :       Tính phân phối của 2 phép toán:       Tính giao hoán và phân phối  Do tính giao hoán và , ta có:     Tính phân phối và giao hoán        Tính Đóng Của Một Phép Toán  Với mọi , khi:     Tổng , ta nói phép cộng các số thực có tính đóng.    Tích , ta nói phép nhân các số thực có tính đóng.      Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.    Tính đóng đối với tập số nguyên âm  Trên tập số nguyên âm      Phép cộng có tính đóng.     Phép nhân không có tính đóng.        Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .    Bài Tập Về Tính Đóng Của Các Tập Số Cơ Bản  Bài Tập Về Tính Đóng   Tập Số Tự Nhiên   Đánh giá tính đóng của các phép toán đối với tập số tự nhiên .    Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.     Ví dụ:     Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.     Ví dụ:     Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?   Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên không có tính đóng.      Ví dụ:     The conclusion of the exercise group.     Các tập số cơ bản còn lại   Đánh giá tính đóng của các phép toán đối với các tập số nguyên , hữu tỷ , thực .    Các phép toán có tính đóng đối với tập số nguyên là?     Phép cộng      Phép trừ      Phép nhân      Phép chia      Cả 4 phép toán trên đều có tính đóng với tập số hữu tỷ ?   Alo    Các phép toán nào có tính đóng đối với tập số thực ?    Kết luận: Ảnh về tính đóng của các phép toán đối với các tập số cơ bản.      "
 },
 {
   "id": "sec-so-thuc-va-tc-2",
@@ -82,6 +82,24 @@ var ptx_lunr_docs = [
   "body": "Tập số thực "
 },
 {
+  "id": "subsec-tap-so-thuc-10",
+  "level": "2",
+  "url": "sec-so-thuc-va-tc.html#subsec-tap-so-thuc-10",
+  "type": "Remark",
+  "number": "1.1.1",
+  "title": "Mối quan hệ giữa 4 tập số cơ bản.",
+  "body": " Mối quan hệ giữa 4 tập số cơ bản     "
+},
+{
+  "id": "figure-cac-tap-so-co-ban",
+  "level": "2",
+  "url": "sec-so-thuc-va-tc.html#figure-cac-tap-so-co-ban",
+  "type": "Figure",
+  "number": "1.1.2",
+  "title": "",
+  "body": " Bốn tập số cơ bản   Hình biểu diễn bốn tập số cơ bản N, Z, Q, R   "
+},
+{
   "id": "subsec-cac-phep-toan-tren-tap-so-thuc-3",
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-cac-phep-toan-tren-tap-so-thuc-3",
@@ -113,7 +131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-4",
   "type": "Observation",
-  "number": "1.1.1",
+  "number": "1.1.3",
   "title": "Tính giao hoán và phân phối.",
   "body": " Tính giao hoán và phân phối  Do tính giao hoán và , ta có:   "
 },
@@ -122,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-chat-cua-cac-phep-toan-5",
   "type": "Example",
-  "number": "1.1.2",
+  "number": "1.1.4",
   "title": "Tính phân phối và giao hoán.",
   "body": " Tính phân phối và giao hoán     "
 },
@@ -131,16 +149,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-4",
   "type": "Note",
-  "number": "1.1.3",
+  "number": "1.1.5",
   "title": "Sự phụ thuộc của tính đóng với tập số.",
-  "body": " Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.   Tính đóng đối với tập số nguyên âm  Trên tập các số nguyên âm    Phép cộng có tính đóng.     Phép nhân không có tính đóng.       "
+  "body": " Sự phụ thuộc của tính đóng với tập số  Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.  "
 },
 {
   "id": "subsec-tinh-dong-cua-mot-phep-toan-5",
   "level": "2",
   "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-5",
+  "type": "Example",
+  "number": "1.1.6",
+  "title": "Tính đóng đối với tập số nguyên âm <span class=\"process-math\">\\(\\mZ\\)<\/span>.",
+  "body": " Tính đóng đối với tập số nguyên âm  Trên tập số nguyên âm      Phép cộng có tính đóng.     Phép nhân không có tính đóng.      "
+},
+{
+  "id": "subsec-tinh-dong-cua-mot-phep-toan-6",
+  "level": "2",
+  "url": "sec-so-thuc-va-tc.html#subsec-tinh-dong-cua-mot-phep-toan-6",
   "type": "Remark",
-  "number": "1.1.5",
+  "number": "1.1.7",
   "title": "Sự quan trọng của tính đóng.",
   "body": " Sự quan trọng của tính đóng  Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector .  "
 },
@@ -151,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.4.1",
   "title": "",
-  "body": " Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.    Ví dụ:   "
+  "body": " Phép cộng số tự nhiên có tính đóng không?   Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.   Phép cộng số tự nhiên có tính đóng.     Ví dụ:   "
 },
 {
   "id": "exercise-tinh-dong-cua-phep-tru-so-tu-nhien",
@@ -160,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.4.2",
   "title": "",
-  "body": " Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.    Ví dụ:   "
+  "body": " Phép trừ số tự nhiên có tính đóng không?   Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.   Phép trừ số tự nhiên không có tính đóng.     Ví dụ:   "
 },
 {
   "id": "exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien",
@@ -205,7 +232,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector",
-  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.    Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Numpy (Python)  Nhập, xuất vector trong Numpy (Python)   Tính chuyển vị của vector trong Numpy (Python)     Nhập, Xuất Vector Trong SageMath  Nhập, xuất vector, tính chuyển vị của vector trong SageMath   Biểu diễn vector bằng LaTeX        Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
+  "body": " Vector Cột Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector  Vector Cột    Các mục tiêu của section.       Vector cột     Vector cột là bộ các số thực được sắp xếp theo chiều dọc.    Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.  Ví dụ:   Sắp xếp bộ 2 số thực thành 1 cột ta được vector cột .    Sắp xếp bộ 3 số thực thành 1 cột ta được vector cột       Sắp xếp bộ n số thực thành 1 cột ta được vector cột     Vector cột có n hàng (và 1 cột) được kí hiệu     Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .   Ví dụ: Vector có các phần tử    phần tử thứ nhất (có chỉ số ) là     phần tử thứ hai (có chỉ số ) là     phần tử thứ ba (có chỉ số ) là    Khái niệm chỉ số sẽ được nhắc đến ở dưới trong .   Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.     Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .    Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph     Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra        Vector hàng    Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .     Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng     Vector hàng có n cột (và 1 hàng) được kí hiệu     Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.     Phép Chuyển Vị     Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.     Phép chuyển vị được kí hiệu bằng chữ .        Nhập, Xuất Vector Trong Lập Trình   Trong Numpy (Python)     Trong SageMath   SageMath cung cấp lựa chọn biểu diễn vector và các đối tượng toán học khác bằng latex một hệ thống phần mềm soạn thảo chuyên dành cho toán. Ta chỉ việc sử dụng hàm show() .      Tính Chuyển Vị Của Vector       Truy Cập Phần Tử Của Vector  Trong lập trình, để truy cập phần tử nằm ở hàng , cột của ma trận A , ta sử dụng cú pháp A[m][n] . và được gọi là chỉ số .   Khác biệt giữa chỉ số trong toán học và trong lập trình  Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số thay vì như trong toán học.  Vì vậy, trong quyển sách này, các chỉ số sẽ bắt đầu từ . Nói cách khác, một ma trận có kích thước sẽ có hàng , hàng , hàng , , hàng và cột , cột , cột , , cột .   Ví dụ, để truy cập phần tử nằm ở hàng , cột của ma trận A , ta dùng cú pháp A[2][0] .  Vì vector cột thực chất là ma trận có kích thước , khi ta nói phần tử với chỉ số , hay phần tử , của vector cột , thực chất ta đang nói phần tử nằm ở hàng , cột của . Vậy nên, cú pháp ta sử dụng là u[a][0] .  Tương tự, cú pháp để truy cập phần tử (với chỉ số) của vector hàng là v[0][b] .      Vấn Đề Tiếp Theo (Cũ)    Như vậy, ta có thể coi vector cột là sự mở rộng của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự mở rộng của các số thực theo chiều ngang.    Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là ma trận .    Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?     "
 },
 {
   "id": "sec-vector-cot-3",
@@ -247,8 +274,35 @@ var ptx_lunr_docs = [
   "id": "subsec-vector-cot-7",
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-cot-7",
-  "type": "Note",
+  "type": "Convention",
   "number": "1.2.4",
+  "title": "",
+  "body": " Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .  "
+},
+{
+  "id": "subsec-vector-cot-8",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "phần tử chỉ số "
+},
+{
+  "id": "subsec-vector-cot-9",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-9",
+  "type": "Note",
+  "number": "1.2.5",
+  "title": "",
+  "body": " Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.   "
+},
+{
+  "id": "subsec-vector-cot-10",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsec-vector-cot-10",
+  "type": "Note",
+  "number": "1.2.6",
   "title": "",
   "body": " Kí hiệu trên khác việc sử dụng ngoặc tròn hoặc ngoặc nhọn .  "
 },
@@ -257,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#example-vector2d",
   "type": "Example",
-  "number": "1.2.5",
+  "number": "1.2.7",
   "title": "Biểu diễn vector 2<span class=\"times-sign\">×<\/span>1 trong không gian 2 chiều với JSXGraph.",
   "body": " Biểu diễn vector 2 1 trong không gian 2 chiều với JSXGraph   "
 },
@@ -266,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#example-vector3d",
   "type": "Example",
-  "number": "1.2.6",
+  "number": "1.2.8",
   "title": "Biểu diễn vector 3<span class=\"times-sign\">×<\/span>1 trong không gian 3 chiều với GeoGebra.",
   "body": " Biểu diễn vector 3 1 trong không gian 3 chiều với GeoGebra   "
 },
@@ -275,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#def-vector-hang",
   "type": "Definition",
-  "number": "1.2.7",
+  "number": "1.2.9",
   "title": "",
   "body": "  Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được vector hàng .   "
 },
@@ -284,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-3",
   "type": "Convention",
-  "number": "1.2.8",
+  "number": "1.2.10",
   "title": "",
   "body": " Sắp xếp bộ n số thực thành 1 hàng ta được vector hàng   "
 },
@@ -293,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-4",
   "type": "Convention",
-  "number": "1.2.9",
+  "number": "1.2.11",
   "title": "",
   "body": " Vector hàng có n cột (và 1 hàng) được kí hiệu   "
 },
@@ -302,25 +356,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-vector-hang-5",
   "type": "Remark",
-  "number": "1.2.10",
+  "number": "1.2.12",
   "title": "",
   "body": " Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.  "
-},
-{
-  "id": "subsec-vector-hang-6",
-  "level": "2",
-  "url": "sec-vector-cot.html#subsec-vector-hang-6",
-  "type": "Convention",
-  "number": "1.2.11",
-  "title": "",
-  "body": " Trong tài liệu này, khi nói đến vector ta sẽ sử dụng ký hiệu vector cột .  "
 },
 {
   "id": "def-phep-chuyen-vi-vector",
   "level": "2",
   "url": "sec-vector-cot.html#def-phep-chuyen-vi-vector",
   "type": "Definition",
-  "number": "1.2.12",
+  "number": "1.2.13",
   "title": "",
   "body": "   Phép chuyển vị 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.    "
 },
@@ -329,9 +374,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-vector-cot.html#subsec-phep-chuyen-vi-vector-4",
   "type": "Observation",
-  "number": "1.2.13",
+  "number": "1.2.14",
   "title": "",
   "body": "  "
+},
+{
+  "id": "subsubsec-phan-tu-vector-2",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsubsec-phan-tu-vector-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "chỉ số "
+},
+{
+  "id": "subsubsec-phan-tu-vector-3",
+  "level": "2",
+  "url": "sec-vector-cot.html#subsubsec-phan-tu-vector-3",
+  "type": "Note",
+  "number": "1.2.15",
+  "title": "Khác biệt giữa chỉ số trong toán học và trong lập trình.",
+  "body": " Khác biệt giữa chỉ số trong toán học và trong lập trình  Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số thay vì như trong toán học.  Vì vậy, trong quyển sách này, các chỉ số sẽ bắt đầu từ . Nói cách khác, một ma trận có kích thước sẽ có hàng , hàng , hàng , , hàng và cột , cột , cột , , cột .  "
 },
 {
   "id": "subsec-vdtt-vector-cot-2-2-1",
@@ -349,7 +412,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Cộng Vector",
-  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực  Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.   Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    "
+  "body": " Cộng Vector    Các mục tiêu của section.       Cộng Vector Cột  Thực hiện và cho kết quả tương tự phép cộng số với số.   Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.   Ví dụ:    Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .    Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.      Cộng vector trong lập trình     Để cộng vector, ta dùng + .    Để trừ vector, ta dùng - .      Ví dụ cộng 2 vectors cột không có cùng số hàng  Lỗi :    "
 },
 {
   "id": "sec-cong-vector-2",
@@ -361,22 +424,31 @@ var ptx_lunr_docs = [
   "body": "  Các mục tiêu của section.     "
 },
 {
-  "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
+  "id": "subsec-cong-vector-cot-3",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-3",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-3",
   "type": "Note",
   "number": "1.3.1",
-  "title": "",
-  "body": " Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.  "
+  "title": "Điều kiện để cộng 2 hoặc nhiều vectors.",
+  "body": " Điều kiện để cộng 2 hoặc nhiều vectors  Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.  "
 },
 {
-  "id": "subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
+  "id": "subsec-cong-vector-cot-5",
   "level": "2",
-  "url": "sec-cong-vector.html#subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc-5",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-5",
   "type": "Remark",
   "number": "1.3.2",
   "title": "Tính chất.",
-  "body": " Tính chất  Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
+  "body": " Tính chất  Phép cộng các vector cột có 8 tính chất đã nêu ở .  "
+},
+{
+  "id": "subsec-cong-vector-cot-6",
+  "level": "2",
+  "url": "sec-cong-vector.html#subsec-cong-vector-cot-6",
+  "type": "Remark",
+  "number": "1.3.3",
+  "title": "Trừ vector cột.",
+  "body": " Trừ vector cột  Thực hiện và cho kết quả tương tự phép trừ số với số.   "
 },
 {
   "id": "sec-nhan-vector-voi-1-so",
@@ -385,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Nhân Vector Với 1 Số",
-  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.      Coming soon.  "
+  "body": " Nhân Vector Với 1 Số    Các mục tiêu của section.       Nhân vector cột với 1 số  Thực hiện và cho kết quả tương tự phép nhân số với số.  Ví dụ:     Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .    Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.      Nhân vector với 1 số trong lập trình     Để nhân vector, ta dùng * .    Để chia vector, ta dùng \/ .       "
 },
 {
   "id": "sec-nhan-vector-voi-1-so-2",
@@ -395,6 +467,24 @@ var ptx_lunr_docs = [
   "number": "1.4",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "subsec-nhan-vector-cot-voi-1-so-4",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-cot-voi-1-so-4",
+  "type": "Remark",
+  "number": "1.4.1",
+  "title": "Tính chất.",
+  "body": " Tính chất  Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở .  "
+},
+{
+  "id": "subsec-nhan-vector-cot-voi-1-so-5",
+  "level": "2",
+  "url": "sec-nhan-vector-voi-1-so.html#subsec-nhan-vector-cot-voi-1-so-5",
+  "type": "Remark",
+  "number": "1.4.2",
+  "title": "Chia vector cột cho 1 số.",
+  "body": " Chia vector cột cho 1 số  Thực hiện và cho kết quả tương tự phép chia số với số.   "
 },
 {
   "id": "sec-thtt-vector",
@@ -547,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Ma Trận Hoán Vị",
-  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.      Coming soon.  "
+  "body": " Ma Trận Hoán Vị    Các mục tiêu của section.       Tương tác ma trận hoán vị với SageMath Interact    Coming soon.  "
 },
 {
   "id": "sec-ma-tran-hoan-vi-2",
@@ -557,6 +647,15 @@ var ptx_lunr_docs = [
   "number": "2.6",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "figure-sage-interact-ma-tran-hoan-vi",
+  "level": "2",
+  "url": "sec-ma-tran-hoan-vi.html#figure-sage-interact-ma-tran-hoan-vi",
+  "type": "Figure",
+  "number": "2.6.1",
+  "title": "",
+  "body": " Tương tác ma trận hoán vị với SageMath Interact   "
 },
 {
   "id": "sec-A-bang-CiRk",
