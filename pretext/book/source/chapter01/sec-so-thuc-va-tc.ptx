@@ -336,7 +336,7 @@
           <solution>
             <p>
               <me>\forall x, \, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
-              <me></me>
+<!--               <me></me> -->
               <me>\exists x, \, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
               Ví dụ:
               <md>
