@@ -295,7 +295,7 @@
       <p>
         SageMath cung cấp lựa chọn biểu diễn vector và các đối tượng toán học khác bằng
          <latex /><mdash />một hệ thống phần mềm soạn thảo chuyên dành cho toán. Ta chỉ
-         cần sử dụng hàm <c>show()</c>.
+         việc sử dụng hàm <c>show()</c>.
       </p>
 
       <sage>

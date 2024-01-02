@@ -43,7 +43,56 @@
       </p>
       
     </remark>
+
+    <remark>
+      <title>Chia vector cột cho 1 số</title>
+
+      <p>
+        Thực hiện và cho kết quả tương tự phép chia số với số.
+        <me>a / b = a \cdot \frac{1}{b}</me>
+      </p>
+    </remark>
     
+  </subsection>
+
+  <subsection xml:id="subsec-nhan-vector-voi-1-so-code">
+    <title>Nhân vector với 1 số trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để nhân vector, ta dùng <c>*</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để chia vector, ta dùng <c>/</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        a = np.matrix([
+            [1],
+            [2],
+            [3]
+        ])
+
+        print(a * 2)
+        print()
+        print(a / 2)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
   </subsection>
 
 </section>
