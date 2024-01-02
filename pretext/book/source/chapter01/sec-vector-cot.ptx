@@ -342,7 +342,7 @@
         <input>
           # Trong SageMath
 
-          # Chuyển vị của 'cot_2'
+          # Chuyen vi cua 'cot_2'
           show(cot_2.transpose())
         </input>
         <output>
@@ -352,7 +352,7 @@
 
       <sage>
         <input>
-          # Chuyển vị của 'hang_2'
+          # Chuyen vi cua 'hang_2'
           show(hang_2.transpose())
         </input>
         <output>
