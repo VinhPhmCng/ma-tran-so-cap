@@ -94,7 +94,9 @@
   <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
     <title>Các Phép Toán Trên Tập Số Thực <m>\R</m></title>
 
-    <p>Với 2 số <m>x, \, y \in \R</m></p>
+    <p>
+      <me>\boxed{\forall \, x, \, y \in \R}</me>
+    </p>
 
     <p><term>Phép cộng</term></p>
     <p>
@@ -124,7 +126,9 @@
   <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
     <title>Tính Chất Của Các Phép Toán</title>
 
-    <p><m>\forall x, \, y, \, z \in \R</m></p>
+    <p>
+      <me>\boxed{\forall \, x, \, y, \, z \in \R}</me>
+    </p>
 
     <p>
       <ol marker="1">
