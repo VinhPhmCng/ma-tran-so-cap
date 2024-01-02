@@ -11,6 +11,44 @@
     </ol>
   </objectives>
 
+
+  <figure xml:id="figure-sage-interact-ma-tran-hoan-vi">
+    <caption>Tương tác ma trận hoán vị với SageMath Interact</caption>
+
+    <interactive xml:id="interactive-sage-interact-ma-tran-hoan-vi" platform="sage" width="100%" aspect="1:1">
+      <slate surface="sage">
+        @interact(layout=dict(top = [['m', 'n']]))
+        def matrix_dimensions(
+          m = ('Số hàng', 3),
+          n = ('Số cột', 3),
+        ):
+          if not m in [2, 3, 4, 5]:
+            print('Số hàng phải là một số nguyên từ 2 đến 5')
+            return
+          if not n in [2, 3, 4, 5]:
+            print('Số cột phải là một số nguyên từ 2 đến 5')
+            return
+
+          @interact(layout=dict(top = [['A'], ['P1'], ['P2']]))
+          def func1(
+            A = ('Ma trận A', matrix(
+              nrows = m,
+              ncols = n,
+              entries = lambda i, j: i + j + 1,
+            )),
+            P1 = ('Ma trận hoán vị hàng P1', matrix.identity(m)),
+            P2 = ('Ma trận hoán vị cột P2', matrix.identity(n)),
+          ):
+            pretty_print('\n')
+            latex.matrix_delimiters("[", "]")
+            pretty_print(html(r'$P_{1} \cdot A = %s \cdot %s = %s$' % (latex(P1), latex(A), latex(P1 * A))))
+            pretty_print('\n\n')
+            pretty_print(html(r'$A \cdot P_{2} = %s \cdot %s = %s$' % (latex(A), latex(P2), latex(A * P2))))
+
+      </slate>
+    </interactive>
+  </figure>
+
   <p> Coming soon. </p>
 
 </section>

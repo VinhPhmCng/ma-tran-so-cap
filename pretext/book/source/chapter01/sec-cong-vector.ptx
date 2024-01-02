@@ -12,27 +12,25 @@
   </objectives>
   
 
-  <subsection xml:id="subsec-cong-vector-cot-va-nhan-vector-cot-voi-1-so-thuc">
-    <title>Cộng Vector Cột Và Nhân Vector Cột Với 1 Số Thực</title>
+  <subsection xml:id="subsec-cong-vector-cot">
+    <title>Cộng Vector Cột</title>
 
-    <p>Thực hiện và cho kết quả tương tự phép cộng và phép nhân số với số.</p>
+    <p>Thực hiện và cho kết quả tương tự phép cộng số với số.</p>
 
     <note>
-      <p>Để cộng 2 hoặc nhiều vector cột thì các vector đó phải có cùng số hàng.</p>
+      <title>Điều kiện để cộng 2 hoặc nhiều vectors</title>
+
+      <p>Để cộng 2 hoặc nhiều vectors cột thì các vector đó phải có cùng số hàng.</p>
     </note>
 
     <p>
       Ví dụ:
       <md>
-        <mrow>\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
+        <mrow number="yes">\bmat{2 \\ 3} + \bmat{3 \\ -1} = \bmat{5 \\ 2}</mrow>
         <mrow></mrow>
-        <mrow>3 \cdot \bmat{-5 \\ 2.5} = \bmat{3 \cdot (-5) \\ 3 \cdot 2.5} = \bmat{-15 \\ 7.5}</mrow>
+        <mrow number="yes">\bmat{-3 \\ 3} + \bmat{0 \\ 1}  + \bmat{3 \\ -4} = \bmat{0 \\ 0}</mrow>
         <mrow></mrow>
-        <mrow>(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
-        <mrow></mrow>
-        <mrow>4 \bmat{5 \\ 6} + 2 \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{2 \\ 4} = \bmat{22 \\ 28}</mrow>
-        <mrow></mrow>
-        <mrow xml:id="mrow-vi-du-vector-co-so">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3}</mrow>
+        <mrow number="yes">\bmat{1 \\ 2} + \bmat{1 \\ 2 \\ 3} \rightarrow \text{Không tính được}</mrow>
       </md>
     </p>
 
@@ -40,13 +38,94 @@
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vector cột và phép nhân vector cột với 1 số có 8 tính chất đã nêu 
+        Phép cộng các vector cột có 8 tính chất đã nêu 
         ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
     
+    <remark>
+      <title>Trừ vector cột</title>
+
+      <p>
+        Thực hiện và cho kết quả tương tự phép trừ số với số.
+        <me>a - b = a + (-b)</me>
+      </p>
+    </remark>
   </subsection>
 
+  <subsection xml:id="subsec-cong-vector-code">
+    <title>Cộng vector trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để cộng vector, ta dùng <c>+</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để trừ vector, ta dùng <c>-</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        a = np.matrix([
+            [1],
+            [2],
+            [3]
+        ])
+
+        b = np.matrix([
+            [4],
+            [-2],
+            [0.5]
+        ])
+
+        print(a + b)
+        print()
+        print(a - b)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Ví dụ cộng 2 vectors cột không có cùng số hàng <m>\rightarrow</m> <alert>Lỗi</alert>:
+    </p>
+
+    <sage>
+      <input>
+        # Trong SageMath
+        
+        c = matrix([
+            [1],
+            [2],
+            [3],
+            [4]
+        ])
+
+        d = matrix([
+            [4],
+            [-2],
+            [0.5]
+        ])
+
+        print(c + d)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+  </subsection>
 
 </section>
