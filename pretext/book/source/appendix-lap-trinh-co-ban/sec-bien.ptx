@@ -28,17 +28,26 @@
   <p>
     Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu,
      nên nó mang tính xác định, nhưng đồng thời nó cũng thường xuyên thay đổi
-     trong quá trình chương trình chạy. Dưới đây là ví dụ.
+     trong quá trình chương trình chạy.
+  </p>
+
+  <p>
+    Để <term>khai báo</term> biến hoặc <term>gán</term> cho biến giá trị mới,
+     ta sử dụng dấu <c>=</c>. Vế trái là tên biến và vế phải là giá trị.
+     Dưới đây là ví dụ.
   </p>
 
   <sage>
     <input>
       a = 1
+      b = a
       print(a)
+      print(b)
 
       # Update bien
       a = 2
-      print("New a = ", a)
+      print(a)
+      print(b)
     </input>
     <output>
       (for static output)
@@ -46,19 +55,25 @@
   </sage>
   
   <p>
-    Đầu tiên, ta <term>gán</term> cho biến <c>a</c> giá trị là <c>1</c>.
-     Ta sử dụng hàm <c>print(a)</c> để truy cập và hiển thị giá trị hiện tại của
-     biến <c>a</c> ra terminal.
+    Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>.
+     Ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>.
+     Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của
+     hai biến ra terminal.
   </p>
 
   <p>
     Sau đó, ta lại gán cho <c>a</c> một giá trị mới, hay nói cách khác là update
-     giá trị của <c>a</c>, thành <c>2</c>. Khi ấy, <c>print(a)</c> sẽ cho kết quả là
-     giá trị mới nhất của <c>a</c>.
+     giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
   </p>
 
   <p>
-    Bạn hãy thử thay đổi giá trị của các biến trong ví dụ dưới đây, chạy lại,
+    Ví dụ trên thể hiện tính xác định của biến. Vì trình biên dịch code sẽ đọc
+     từ trên xuống dưới, tại dòng số 3 <c>b = a</c> thì giá trị của <c>a</c>
+     vẫn đang là <c>1</c>.
+  </p>
+
+  <p>
+    Trong ví dụ dưới đây, bạn hãy thử thay đổi giá trị của các biến, chạy lại code,
      và xem kết quả thay đổi.
   </p>
 

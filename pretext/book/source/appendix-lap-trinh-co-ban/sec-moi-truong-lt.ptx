@@ -38,12 +38,18 @@
   </sage>
 
   <p>
-    Môi trường trên có 2 thành phần chính:
+    Môi trường trên có 3 thành phần chính:
 
     <ol>
       <li>
         <p>
           Ô soạn thảo: Nơi bạn viết code
+        </p>
+      </li>
+      <li>
+        <p>
+          Nút <c>Evaluate</c>: Ấn để chạy chương trình, hay nói cách khác là chạy trình biên
+           dịch code.
         </p>
       </li>
       <li>
