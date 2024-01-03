@@ -1024,7 +1024,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "D.2",
   "title": "Môi Trường Lập Trình",
-  "body": " Môi Trường Lập Trình    Các mục tiêu của section.      Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó , ta sẽ sử dụng các trình soạn thảo và biên dịch dành cho lập trình.  Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút Evaluate để chạy đoạn code.   Môi trường trên có 2 thành phần chính:   Ô soạn thảo: Nơi bạn viết code    Terminal: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.     Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra , nhưng quyển sách này sẽ không hướng dẫn việc đó.  Quyển sách này cung cấp những đoạn code được viết bằng Python và SageMath . Để phân biệt, nếu nút Evaluate có chữ Python kèm theo, thì ô code ý đang chạy Python, nếu không có thì nó đang chạy SageMath.  Terminal là một phần không thể thiếu đối với một lập trình viên. Nó cung cấp khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. Ngoài ra, nó còn hiển thị các lỗi , nếu có, trong một đoạn code và những thông tin khác giúp chúng ta sửa lỗi đó.   Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và thử sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!    "
+  "body": " Môi Trường Lập Trình    Các mục tiêu của section.      Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó , ta sẽ sử dụng các trình soạn thảo và biên dịch dành cho lập trình.  Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút Evaluate để chạy đoạn code.   Môi trường trên có 2 thành phần chính:   Ô soạn thảo: Nơi bạn viết code    Terminal: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.     Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra, nhưng quyển sách này sẽ không hướng dẫn việc đó.  Terminal có khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. Ngoài ra, nó còn hiển thị các lỗi , nếu có, trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.   Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!    "
 },
 {
   "id": "sec-moi-truong-lt-2",
@@ -1051,15 +1051,6 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Python SageMath "
-},
-{
-  "id": "sec-moi-truong-lt-9",
-  "level": "2",
-  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-9",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
   "body": "lỗi "
 },
 {
@@ -1069,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "D.2.1",
   "title": "Đoạn code có lỗi.",
-  "body": " Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và thử sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!   "
+  "body": " Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!   "
 },
 {
   "id": "sec-ghi-chu",
@@ -1078,7 +1069,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "D.3",
   "title": "Ghi Chú",
-  "body": " Ghi Chú    Các mục tiêu của section.      Coming soon.  "
+  "body": " Ghi Chú    Các mục tiêu của section.      Khi viết code, có những lúc ta muốn để lại những ghi chú, có thể là để giải thích một thuật toán nào đó hay ghi chép lại luồng suy nghĩ bản thân khi đó. Trong tương lai, khi quay lại ta sẽ dễ dàng đọc hiểu đoạn code với sự giúp đỡ của các ghi chú ấy.  Cú pháp của ghi chú trong Python và SageMath là dấu thăng # . Những gì được viết ở phía sau # (trên cùng 1 dòng) sẽ được trình biên dịch coi là văn bản thuần túy thay vì code.  Cú pháp ghi chú cũng được sử dụng để tạm thời tắt một đoạn code. Dưới đây là ví dụ.   "
 },
 {
   "id": "sec-ghi-chu-2",
@@ -1088,6 +1079,15 @@ var ptx_lunr_docs = [
   "number": "D.3",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ghi-chu-4",
+  "level": "2",
+  "url": "sec-ghi-chu.html#sec-ghi-chu-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ghi chú "
 },
 {
   "id": "sec-bien",

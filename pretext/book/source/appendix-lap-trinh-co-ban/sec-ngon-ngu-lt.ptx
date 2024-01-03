@@ -95,6 +95,7 @@
   <remark>
     <p>
       Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao,
+       cụ thể là <term>Python</term> và <term>SageMath</term>,
        giúp bạn dễ dàng theo dõi và thử nghiệm.
     </p>
   </remark>

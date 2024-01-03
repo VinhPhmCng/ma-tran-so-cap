@@ -11,7 +11,37 @@
     </ol>
   </objectives>
   
+  <p>
+    Khi viết code, có những lúc ta muốn để lại những ghi chú, có thể là để giải thích
+     một thuật toán nào đó hay ghi chép lại luồng suy nghĩ bản thân khi đó. Trong tương lai,
+     khi quay lại ta sẽ dễ dàng đọc hiểu đoạn code với sự giúp đỡ của các ghi chú ấy.
+  </p>
 
-  <p> Coming soon. </p>
+  <p>
+    Cú pháp của <term>ghi chú</term> trong Python và SageMath là dấu thăng <c>#</c>.
+     Những gì được viết ở phía sau <c>#</c> (trên cùng 1 dòng) sẽ được trình biên dịch
+     coi là văn bản thuần túy thay vì code. 
+  </p>
+
+  <p>
+    Cú pháp ghi chú cũng được sử dụng để tạm thời <q>tắt</q> một đoạn code.
+     Dưới đây là ví dụ.
+  </p>
+
+  <sage language="python">
+    <input>
+      # Day la 1 ghi chu
+
+      print("Day la code")
+
+      # print("Doan code nay se khong duoc chay")
+
+      print("Lai la code")
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
 
 </section>
