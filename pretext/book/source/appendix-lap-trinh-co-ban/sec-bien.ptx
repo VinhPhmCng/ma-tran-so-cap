@@ -11,7 +11,67 @@
     </ol>
   </objectives>
   
+  <p>
+    <term>Biến</term> là một trong những khái niệm cơ bản và quan trọng nhất của lập trình.
+  </p>
 
-  <p> Coming soon. </p>
+  <p>
+    Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như:
 
+    <me>f(x) = x^2 + 2x + 1</me>
+
+    Ở đây, <q>biến</q> có nghĩa là chưa xác định, hay nói cách khác <m>x</m> là trừu tượng
+     cho tất cả những kết quả của hàm số trên khi ta thay thế <m>x</m> với những con số
+     xác định.
+  </p>
+
+  <p>
+    Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu,
+     nên nó mang tính xác định, nhưng đồng thời nó cũng thường xuyên thay đổi
+     trong quá trình chương trình chạy. Dưới đây là ví dụ.
+  </p>
+
+  <sage>
+    <input>
+      a = 1
+      print(a)
+
+      # Update bien
+      a = 2
+      print("New a = ", a)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Đầu tiên, ta <term>gán</term> cho biến <c>a</c> giá trị là <c>1</c>.
+     Ta sử dụng hàm <c>print(a)</c> để truy cập và hiển thị giá trị hiện tại của
+     biến <c>a</c> ra terminal.
+  </p>
+
+  <p>
+    Sau đó, ta lại gán cho <c>a</c> một giá trị mới, hay nói cách khác là update
+     giá trị của <c>a</c>, thành <c>2</c>. Khi ấy, <c>print(a)</c> sẽ cho kết quả là
+     giá trị mới nhất của <c>a</c>.
+  </p>
+
+  <p>
+    Bạn hãy thử thay đổi giá trị của các biến trong ví dụ dưới đây, chạy lại,
+     và xem kết quả thay đổi.
+  </p>
+
+  <sage>
+    <input>
+      b = 3
+      c = b^2 + 2*b + 1
+
+      print(c)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
 </section>

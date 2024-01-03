@@ -961,7 +961,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "D.1",
   "title": "Ngôn Ngữ Lập Trình",
-  "body": " Ngôn Ngữ Lập Trình    Các mục tiêu của section.      Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những chỉ dẫn này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.  Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình Python một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Bấm nút Evaluate để chạy đoạn code.   Khi chạy đoạn code trên bạn sẽ thấy dòng chữ Hello world! được hiển thị ở terminal (hay console ) ở ngay phía dưới.  Đây là một đoạn code nữa được viết bằng Python.   a = 0 while a < 10: print(a, end=\" \") if a % 2 == 0: print(\"is even\") else: print(\"is odd\") a += 1   Python là một ngôn ngữ lập trình bậc cao . Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp Python trở thành một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây.  Dưới đây là một đoạn code trong ngôn ngữ Assembly một ngôn ngữ lập trình bậc thấp . Khi chạy, ta cũng thu được dòng chữ \"Hello World!\".   org 0x100 mov dx, msg mov ah, 9 int 0x21 mov ah, 0x4c int 0x21 msg db 'Hello World!', 0x0d, 0x0a, '$'   Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình mà ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được. Và hiển nhiên rồi, đổi lại chiếc xe đua F1 bậc thấp sẽ có tốc độ vượt xa chiếc xe ô tô bậc cao .   Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, giúp bạn dễ dàng theo dõi và thử nghiệm.   "
+  "body": " Ngôn Ngữ Lập Trình    Các mục tiêu của section.      Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những chỉ dẫn này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.  Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình Python một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Bấm nút Evaluate để chạy đoạn code.   Khi chạy đoạn code trên bạn sẽ thấy dòng chữ Hello world! được hiển thị ở terminal (hay console ) ở ngay phía dưới.  Đây là một đoạn code nữa được viết bằng Python.   a = 0 while a < 10: print(a, end=\" \") if a % 2 == 0: print(\"is even\") else: print(\"is odd\") a += 1   Python là một ngôn ngữ lập trình bậc cao . Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp Python trở thành một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây.  Dưới đây là một đoạn code trong ngôn ngữ Assembly một ngôn ngữ lập trình bậc thấp . Khi chạy, ta cũng thu được dòng chữ \"Hello World!\".   org 0x100 mov dx, msg mov ah, 9 int 0x21 mov ah, 0x4c int 0x21 msg db 'Hello World!', 0x0d, 0x0a, '$'   Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình mà ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được. Và hiển nhiên rồi, đổi lại chiếc xe đua F1 bậc thấp sẽ có tốc độ vượt xa chiếc xe ô tô bậc cao .   Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, cụ thể là Python và SageMath , giúp bạn dễ dàng theo dõi và thử nghiệm.   "
 },
 {
   "id": "sec-ngon-ngu-lt-2",
@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "D.1.1",
   "title": "",
-  "body": " Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, giúp bạn dễ dàng theo dõi và thử nghiệm.  "
+  "body": " Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, cụ thể là Python và SageMath , giúp bạn dễ dàng theo dõi và thử nghiệm.  "
 },
 {
   "id": "sec-moi-truong-lt",
@@ -1096,7 +1096,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "D.4",
   "title": "Biến",
-  "body": " Biến    Các mục tiêu của section.      Coming soon.  "
+  "body": " Biến    Các mục tiêu của section.       Biến là một trong những khái niệm cơ bản và quan trọng nhất của lập trình.  Trong toán học, ta thường hay thấy biến số trong các hàm số, ví dụ như: Ở đây, biến có nghĩa là chưa xác định, hay nói cách khác là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế với những con số xác định.  Còn trong lập trình thì biến được dùng để lưu trữ dữ liệu, nên nó mang tính xác định, nhưng đồng thời nó cũng thường xuyên thay đổi trong quá trình chương trình chạy. Dưới đây là ví dụ.   Đầu tiên, ta gán cho biến a giá trị là 1 . Ta sử dụng hàm print(a) để truy cập và hiển thị giá trị hiện tại của biến a ra terminal.  Sau đó, ta lại gán cho a một giá trị mới, hay nói cách khác là update giá trị của a , thành 2 . Khi ấy, print(a) sẽ cho kết quả là giá trị mới nhất của a .  Bạn hãy thử thay đổi giá trị của các biến trong ví dụ dưới đây, chạy lại, và xem kết quả thay đổi.   "
 },
 {
   "id": "sec-bien-2",
@@ -1106,6 +1106,33 @@ var ptx_lunr_docs = [
   "number": "D.4",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-bien-3",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Biến "
+},
+{
+  "id": "sec-bien-5",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "biến "
+},
+{
+  "id": "sec-bien-7",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gán "
 },
 {
   "id": "sec-kieu-du-lieu",
