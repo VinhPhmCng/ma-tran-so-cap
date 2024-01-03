@@ -931,6 +931,285 @@ var ptx_lunr_docs = [
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
+  "type": "Appendix",
+  "number": "A",
+  "title": "Selected Hints",
+  "body": " Selected Hints  "
+},
+{
+  "id": "backmatter-3",
+  "level": "1",
+  "url": "backmatter-3.html",
+  "type": "Appendix",
+  "number": "B",
+  "title": "Selected Solutions",
+  "body": " Selected Solutions  "
+},
+{
+  "id": "backmatter-4",
+  "level": "1",
+  "url": "backmatter-4.html",
+  "type": "Appendix",
+  "number": "C",
+  "title": "List of Symbols",
+  "body": " List of Symbols   "
+},
+{
+  "id": "sec-ngon-ngu-lt",
+  "level": "1",
+  "url": "sec-ngon-ngu-lt.html",
+  "type": "Section",
+  "number": "D.1",
+  "title": "Ngôn Ngữ Lập Trình",
+  "body": " Ngôn Ngữ Lập Trình    Các mục tiêu của section.      Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những chỉ dẫn này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.  Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình Python một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Bấm nút Evaluate để chạy đoạn code.   Khi chạy đoạn code trên bạn sẽ thấy dòng chữ Hello world! được hiển thị ở terminal (hay console ) ở ngay phía dưới.  Đây là một đoạn code nữa được viết bằng Python.   a = 0 while a < 10: print(a, end=\" \") if a % 2 == 0: print(\"is even\") else: print(\"is odd\") a += 1   Python là một ngôn ngữ lập trình bậc cao . Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp Python trở thành một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây.  Dưới đây là một đoạn code trong ngôn ngữ Assembly một ngôn ngữ lập trình bậc thấp . Khi chạy, ta cũng thu được dòng chữ \"Hello World!\".   org 0x100 mov dx, msg mov ah, 9 int 0x21 mov ah, 0x4c int 0x21 msg db 'Hello World!', 0x0d, 0x0a, '$'   Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình mà ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được. Và hiển nhiên rồi, đổi lại chiếc xe đua F1 bậc thấp sẽ có tốc độ vượt xa chiếc xe ô tô bậc cao .   Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, giúp bạn dễ dàng theo dõi và thử nghiệm.   "
+},
+{
+  "id": "sec-ngon-ngu-lt-2",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-2",
+  "type": "Objectives",
+  "number": "D.1",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ngon-ngu-lt-4",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Python "
+},
+{
+  "id": "sec-ngon-ngu-lt-6",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "terminal console "
+},
+{
+  "id": "sec-ngon-ngu-lt-9",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "bậc cao "
+},
+{
+  "id": "sec-ngon-ngu-lt-10",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Assembly bậc thấp "
+},
+{
+  "id": "sec-ngon-ngu-lt-13",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-13",
+  "type": "Remark",
+  "number": "D.1.1",
+  "title": "",
+  "body": " Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, giúp bạn dễ dàng theo dõi và thử nghiệm.  "
+},
+{
+  "id": "sec-moi-truong-lt",
+  "level": "1",
+  "url": "sec-moi-truong-lt.html",
+  "type": "Section",
+  "number": "D.2",
+  "title": "Môi Trường Lập Trình",
+  "body": " Môi Trường Lập Trình    Các mục tiêu của section.      Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó , ta sẽ sử dụng các trình soạn thảo và biên dịch dành cho lập trình.  Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút Evaluate để chạy đoạn code.   Môi trường trên có 2 thành phần chính:   Ô soạn thảo: Nơi bạn viết code    Terminal: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.     Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra , nhưng quyển sách này sẽ không hướng dẫn việc đó.  Quyển sách này cung cấp những đoạn code được viết bằng Python và SageMath . Để phân biệt, nếu nút Evaluate có chữ Python kèm theo, thì ô code ý đang chạy Python, nếu không có thì nó đang chạy SageMath.  Terminal là một phần không thể thiếu đối với một lập trình viên. Nó cung cấp khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. Ngoài ra, nó còn hiển thị các lỗi , nếu có, trong một đoạn code và những thông tin khác giúp chúng ta sửa lỗi đó.   Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và thử sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!    "
+},
+{
+  "id": "sec-moi-truong-lt-2",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-2",
+  "type": "Objectives",
+  "number": "D.2",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-moi-truong-lt-3",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Word trình soạn thảo và biên dịch "
+},
+{
+  "id": "sec-moi-truong-lt-8",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Python SageMath "
+},
+{
+  "id": "sec-moi-truong-lt-9",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "lỗi "
+},
+{
+  "id": "example-code-co-loi",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#example-code-co-loi",
+  "type": "Example",
+  "number": "D.2.1",
+  "title": "Đoạn code có lỗi.",
+  "body": " Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và thử sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!   "
+},
+{
+  "id": "sec-ghi-chu",
+  "level": "1",
+  "url": "sec-ghi-chu.html",
+  "type": "Section",
+  "number": "D.3",
+  "title": "Ghi Chú",
+  "body": " Ghi Chú    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-ghi-chu-2",
+  "level": "2",
+  "url": "sec-ghi-chu.html#sec-ghi-chu-2",
+  "type": "Objectives",
+  "number": "D.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-bien",
+  "level": "1",
+  "url": "sec-bien.html",
+  "type": "Section",
+  "number": "D.4",
+  "title": "Biến",
+  "body": " Biến    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-bien-2",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-2",
+  "type": "Objectives",
+  "number": "D.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-kieu-du-lieu",
+  "level": "1",
+  "url": "sec-kieu-du-lieu.html",
+  "type": "Section",
+  "number": "D.5",
+  "title": "Kiểu Dữ Liệu",
+  "body": " Kiểu Dữ Liệu    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-kieu-du-lieu-2",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-2",
+  "type": "Objectives",
+  "number": "D.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-toan-tu",
+  "level": "1",
+  "url": "sec-toan-tu.html",
+  "type": "Section",
+  "number": "D.6",
+  "title": "Toán Tử",
+  "body": " Toán Tử    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-toan-tu-2",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-2",
+  "type": "Objectives",
+  "number": "D.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-mang",
+  "level": "1",
+  "url": "sec-mang.html",
+  "type": "Section",
+  "number": "D.7",
+  "title": "Mảng",
+  "body": " Mảng    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-mang-2",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-2",
+  "type": "Objectives",
+  "number": "D.7",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ham",
+  "level": "1",
+  "url": "sec-ham.html",
+  "type": "Section",
+  "number": "D.8",
+  "title": "Hàm",
+  "body": " Hàm    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-ham-2",
+  "level": "2",
+  "url": "sec-ham.html#sec-ham-2",
+  "type": "Objectives",
+  "number": "D.8",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-loi",
+  "level": "1",
+  "url": "sec-loi.html",
+  "type": "Section",
+  "number": "D.9",
+  "title": "Lỗi",
+  "body": " Lỗi    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-loi-2",
+  "level": "2",
+  "url": "sec-loi.html#sec-loi-2",
+  "type": "Objectives",
+  "number": "D.9",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "backmatter-6",
+  "level": "1",
+  "url": "backmatter-6.html",
+  "type": "Index",
+  "number": "",
+  "title": "Index",
+  "body": " Index   "
+},
+{
+  "id": "backmatter-7",
+  "level": "1",
+  "url": "backmatter-7.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",

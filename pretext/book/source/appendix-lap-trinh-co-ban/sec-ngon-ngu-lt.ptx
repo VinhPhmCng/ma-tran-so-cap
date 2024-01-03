@@ -10,8 +10,93 @@
       <li></li>
     </ol>
   </objectives>
-  
 
-  <p></p>
+  <p>
+    Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình
+    máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những <q>chỉ dẫn</q>
+     này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.
+  </p>
+
+  <p>
+    Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình <term>Python</term><mdash />một
+     trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây.
+     Bấm nút <c>Evaluate</c> để chạy đoạn code.
+  </p>
+
+  <sage language="python">
+    <input>
+      print("Hello world!")
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Khi chạy đoạn code trên bạn sẽ thấy
+     dòng chữ <q>Hello world!</q> được hiển thị ở <term>terminal</term> (hay
+     <term>console</term>) ở ngay phía dưới.
+  </p>  
+
+  <p>
+    Đây là một đoạn code nữa được viết bằng Python.
+  </p>
+
+  <program language="python" line-numbers="yes">
+    <input>
+      a = 0
+      while a &lt; 10:
+          print(a, end=" ")
+          if a % 2 == 0:
+              print("is even")
+          else:
+              print("is odd")
+          a += 1
+    </input>
+  </program>
+
+  <p>
+    Python là một ngôn ngữ lập trình <term>bậc cao</term>.
+     Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm
+     rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất
+     tới những người mới học lập trình, và cũng chính là một trong những lí do
+     giúp Python trở thành một trong những ngôn ngữ lập trình
+     phổ biến nhất trong những năm gần đây.
+  </p>
+
+  <p>
+    Dưới đây là một đoạn code trong ngôn ngữ <term>Assembly</term><mdash />một ngôn
+     ngữ lập trình <term>bậc thấp</term>. Khi chạy, ta cũng thu được
+     dòng chữ "Hello World!".
+  </p>
+
+  <program language="assy" line-numbers="yes">
+    <input>
+      org  0x100 
+      mov  dx, msg
+      mov  ah, 9
+      int  0x21
+
+      mov  ah, 0x4c
+      int  0x21
+
+      msg  db 'Hello World!', 0x0d, 0x0a, '$'
+    </input>
+  </program>
+  
+  <p>
+    Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô
+     gia đình mà ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ
+     là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được.
+     Và hiển nhiên rồi, đổi lại chiếc xe đua F1 <q>bậc thấp</q> sẽ có tốc độ vượt xa chiếc xe
+     ô tô <q>bậc cao</q>.
+  </p>
+
+  <remark>
+    <p>
+      Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao,
+       giúp bạn dễ dàng theo dõi và thử nghiệm.
+    </p>
+  </remark>
 
 </section>
