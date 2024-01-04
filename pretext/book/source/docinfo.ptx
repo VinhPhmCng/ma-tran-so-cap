@@ -19,6 +19,7 @@
   <!-- this tag "math-package" might become obsolete in the near future -->
   <math-package latex-name="cancel" mathjax-name="cancel"></math-package>
   <math-package latex-name="mathtools" mathjax-name="mathtools"></math-package>
+  <math-package latex-name="color" mathjax-name="color"></math-package>
   <math-package latex-name="" mathjax-name="boldsymbol"></math-package>
 
   <!-- macros for defining latex math shortcuts. It is good practice -->
