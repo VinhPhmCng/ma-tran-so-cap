@@ -11,6 +11,8 @@
   </introduction>
 
   <!-- include sections -->
+  <xi:include href="sec-cau-lenh-dieu-kien.ptx" />
+  <xi:include href="sec-vong-lap.ptx" />
   <xi:include href="sec-thao-tac-ma-tran.ptx" />
 
 </appendix>

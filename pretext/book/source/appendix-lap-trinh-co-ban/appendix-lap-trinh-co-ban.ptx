@@ -31,6 +31,7 @@
   <xi:include href="sec-kieu-du-lieu.ptx" />
   <xi:include href="sec-cau-truc-du-lieu.ptx" />
   <xi:include href="sec-toan-tu.ptx" />
+  <xi:include href="sec-thuoc-tinh.ptx" />
   <xi:include href="sec-ham.ptx" />
   <xi:include href="sec-loi.ptx" />
 
