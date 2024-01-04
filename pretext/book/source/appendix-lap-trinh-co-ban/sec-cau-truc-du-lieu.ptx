@@ -155,9 +155,6 @@
     <p>
       <term>Ma trận</term> là một cấu trúc dữ liệu giúp biến có khả năng lưu trữ nhiều phần tử
        cùng một lúc và sắp xếp chúng thành các <term>hàng</term> và các <term>cột</term>.
-       Ngoài ra, ma trận có những thuộc tính và thuật toán được cài đặt sẵn giúp thuận tiện
-       cho việc tính toán.
-       Bạn có thể tham khảo mục <xref provisional="ma-tran" />.
     </p>
 
     <p>
