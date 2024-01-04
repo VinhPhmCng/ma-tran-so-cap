@@ -151,7 +151,12 @@
   <p>
     <term>Python</term> là một ngôn ngữ lập trình bậc cao, đa mục đích. Nó được dùng bởi
      các nhà toán học, nhà khoa học dữ liệu, người phát triển phần mềm, phát triển game, v.v.
-     <term>Numpy</term> là một thư viện mở rộng cho Python với rất nhiều tính năng toán học.
+  </p>
+
+  <p>
+    <term>Numpy</term> là một thư viện mở rộng cho Python với rất nhiều tính năng toán học,
+     trong đó có cấu trúc dữ liệu ma trận.
+     Để sử dụng Numpy, ta chỉ cần sử dụng lệnh <c>import numpy as np</c>.
   </p>
 
   <p>
@@ -166,7 +171,8 @@
        giúp bạn dễ dàng theo dõi và thử nghiệm.
     </p>
     <p>
-      Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python. Mỗi ngôn ngữ đều có
+      Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python và SageMath.
+       Mỗi ngôn ngữ đều có
        một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó.
        Vì Python là một ngôn ngữ bậc cao và đa mục đích, cú pháp của nó rất thân thiện với người
        mới bắt đầu.
