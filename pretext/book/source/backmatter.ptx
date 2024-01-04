@@ -14,6 +14,7 @@
 
   <appendix> <title>List of Symbols</title> <notation-list/> </appendix>
   <xi:include href="appendix-lap-trinh-co-ban/appendix-lap-trinh-co-ban.ptx"/>
+  <xi:include href="appendix-lap-trinh-mo-rong/appendix-lap-trinh-mo-rong.ptx"/>
 
   <index> <title>Index</title> <index-list/> </index>
 

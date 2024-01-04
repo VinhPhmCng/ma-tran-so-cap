@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appendix xml:id="appendix-lap-trinh-mo-rong" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Lập Trình Mở Rộng</title>
+
+  <introduction>
+    <p>
+      Phụ lục này bổ sung một vài kiến thức, cơ bản nhưng hữu ích, về lập trình
+       cho các bạn độc giả có hứng thú.
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-thao-tac-ma-tran.ptx" />
+
+</appendix>
