@@ -10,8 +10,42 @@
       <li></li>
     </ol>
   </objectives>
-  
 
-  <p> Coming soon. </p>
+  <p>
+    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v.
+     Đối với lập trình, ta có các <term>toán tử</term> giúp miêu tả tương tác giữa các biến
+     cũng như các dữ liệu tự do.
+  </p>
+  
+  <p>
+    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>
+     Và như đã đề cập, <term>kiểu dữ liệu</term> đóng vai trò quyết định tương tác có thể thực hiện
+     với biến. Ý này sẽ được làm rõ hơn ở dưới đây.
+  </p>
+
+  <p>
+    Dưới đây là một vài những toán tử cơ bản.
+  </p>
+
+  <subsection xml:id="subsec-tt-so-hoc">
+    <title>Toán Tử Số Học</title>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-gan">
+    <title>Toán Tử Gán</title>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-quan-he">
+    <title>Toán Tử Quan Hệ</title>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-logic">
+    <title>Toán Tử Logic</title>
+    
+  </subsection>
+
 
 </section>

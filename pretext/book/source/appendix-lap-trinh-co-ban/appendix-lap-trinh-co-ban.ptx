@@ -29,8 +29,8 @@
   <xi:include href="sec-ghi-chu.ptx" />
   <xi:include href="sec-bien.ptx" />
   <xi:include href="sec-kieu-du-lieu.ptx" />
-  <xi:include href="sec-toan-tu.ptx" />
   <xi:include href="sec-mang.ptx" />
+  <xi:include href="sec-toan-tu.ptx" />
   <xi:include href="sec-ham.ptx" />
   <xi:include href="sec-loi.ptx" />
 

@@ -97,7 +97,7 @@
   <p>
     Kiểu dữ liệu quyết định <term>tương tác</term> của biến. Trong ví dụ dưới đây,
      ta có thể cộng <c>int</c> với <c>int</c> và cộng <c>float</c> với <c>float</c>.
-     Ta cũng có thể cộng <c>int</c> với <c>float</c>.
+     Ta cũng có thể cộng <c>int</c> với <c>float</c>, cho kết quả là <c>float</c>.
   </p>
 
   <sage language="python">

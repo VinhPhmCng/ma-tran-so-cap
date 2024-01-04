@@ -1159,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "D.5",
   "title": "Kiểu Dữ Liệu",
-  "body": " Kiểu Dữ Liệu    Các mục tiêu của section.       Kiểu dữ liệu là một khái niệm đi đôi với biến.  Trong Python và SageMath, khi ta khai báo biến hay gán cho biến giá trị mới, biến sẽ dựa vào giá trị đó mà quyết định kiểu dữ liệu của mình.   Ở ví dụ trên, ta sử dụng lệnh type() để biết được kiểu dữ liệu của biến, trong trường hợp này là int và str .  Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:   str   Chuỗi ký tự. Được bao quanh bởi dấu ngoặc kép \"\" hoặc dấu ngoặc kép đơn '' .    int   Số nguyên . Là một số thực không có các chữ số thập phân.    float   Số dấu phẩy động . Là một số thực có một hoặc nhiều chữ số thập phân.    bool   Boolean chỉ chứa một trong hai giá trị True hoặc False . Được dùng chủ yếu trong những câu lệnh điều kiện.     Dưới đây là ví dụ.   Kiểu dữ liệu quyết định tương tác của biến. Trong ví dụ dưới đây, ta có thể cộng int với int và cộng float với float . Ta cũng có thể cộng int với float .   Ta cũng có thể cộng các str với nhau, việc này ghép chúng lại thành một chuỗi mới.   Nhưng ta không thể cộng int với str .   "
+  "body": " Kiểu Dữ Liệu    Các mục tiêu của section.       Kiểu dữ liệu là một khái niệm đi đôi với biến.  Trong Python và SageMath, khi ta khai báo biến hay gán cho biến giá trị mới, biến sẽ dựa vào giá trị đó mà quyết định kiểu dữ liệu của mình.   Ở ví dụ trên, ta sử dụng lệnh type() để biết được kiểu dữ liệu của biến, trong trường hợp này là int và str .  Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:   str   Chuỗi ký tự. Được bao quanh bởi dấu ngoặc kép \"\" hoặc dấu ngoặc kép đơn '' .    int   Số nguyên . Là một số thực không có các chữ số thập phân.    float   Số dấu phẩy động . Là một số thực có một hoặc nhiều chữ số thập phân.    bool   Boolean chỉ chứa một trong hai giá trị True hoặc False . Được dùng chủ yếu trong những câu lệnh điều kiện.     Dưới đây là ví dụ.   Kiểu dữ liệu quyết định tương tác của biến. Trong ví dụ dưới đây, ta có thể cộng int với int và cộng float với float . Ta cũng có thể cộng int với float , cho kết quả là float .   Ta cũng có thể cộng các str với nhau, việc này ghép chúng lại thành một chuỗi mới.   Nhưng ta không thể cộng int với str .   "
 },
 {
   "id": "sec-kieu-du-lieu-2",
@@ -1207,40 +1207,76 @@ var ptx_lunr_docs = [
   "body": "tương tác "
 },
 {
-  "id": "sec-toan-tu",
-  "level": "1",
-  "url": "sec-toan-tu.html",
-  "type": "Section",
-  "number": "D.6",
-  "title": "Toán Tử",
-  "body": " Toán Tử    Các mục tiêu của section.      Coming soon.  "
-},
-{
-  "id": "sec-toan-tu-2",
-  "level": "2",
-  "url": "sec-toan-tu.html#sec-toan-tu-2",
-  "type": "Objectives",
-  "number": "D.6",
-  "title": "",
-  "body": "  Các mục tiêu của section.     "
-},
-{
   "id": "sec-mang",
   "level": "1",
   "url": "sec-mang.html",
   "type": "Section",
-  "number": "D.7",
+  "number": "D.6",
   "title": "Mảng",
-  "body": " Mảng    Các mục tiêu của section.      Coming soon.  "
+  "body": " Mảng    Các mục tiêu của section.      Có một khái niệm được xây dựng dựa trên kiểu dữ liệu , và đó chính là cấu trúc dữ liệu . Các cấu trúc  Ta có một khái niệm mới, và đó là cấu trúc dữ liệu . Cấu trúc dữ liệu được xây dựng dựa trên  kiểu dữ liệu , hay nói cách khác nó cũng là một kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.  Để nói một cách dễ hiểu thì cấu trúc dữ liệu giúp biến có khả năng chứa cùng một lúc nhiều dữ liệu, có thể giống nhau hoặc khác nhau. Dưới đây là ví dụ.   Ở trên, ta đang sử dụng cấu trúc dữ liệu list , hay còn được gọi là danh sách. Đây là một cấu trúc dữ liệu có sẵn của Python rất phổ biến. Ta có thể thấy arr1 là một danh sách chứa các giá trị có kiểu int , còn arr2 lại chứa một hỗn hợp các kiểu dữ liệu. Và để khai báo một list , bạn phải sử dụng ngoặc vuông [] bao quanh các phần tử và dấu phẩy , để ngăn cách chúng.  Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập hợp các cấu trúc dữ liệu riêng của mình, và, một lần nữa, điều này dựa trên mục đích của nó.  Đối với quyển sách về ma trận này, hai cấu trúc dữ liệu quan trọng nhất chắc chắn phải là:   Mảng    Ma trận     "
 },
 {
   "id": "sec-mang-2",
   "level": "2",
   "url": "sec-mang.html#sec-mang-2",
   "type": "Objectives",
+  "number": "D.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-mang-3",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kiểu dữ liệu cấu trúc dữ liệu "
+},
+{
+  "id": "sec-mang-4",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cấu trúc dữ liệu kiểu dữ liệu "
+},
+{
+  "id": "sec-toan-tu",
+  "level": "1",
+  "url": "sec-toan-tu.html",
+  "type": "Section",
+  "number": "D.7",
+  "title": "Toán Tử",
+  "body": " Toán Tử    Các mục tiêu của section.      Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v. Đối với lập trình, ta có các toán tử giúp miêu tả tương tác giữa các biến cũng như các dữ liệu tự do.  Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử = và + Và như đã đề cập, kiểu dữ liệu đóng vai trò quyết định tương tác có thể thực hiện với biến. Ý này sẽ được làm rõ hơn ở dưới đây.  Dưới đây là một vài những toán tử cơ bản.   Toán Tử Số Học    Toán Tử Gán    Toán Tử Quan Hệ    Toán Tử Logic   "
+},
+{
+  "id": "sec-toan-tu-2",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-2",
+  "type": "Objectives",
   "number": "D.7",
   "title": "",
   "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-toan-tu-3",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "toán tử "
+},
+{
+  "id": "sec-toan-tu-4",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kiểu dữ liệu "
 },
 {
   "id": "sec-ham",
