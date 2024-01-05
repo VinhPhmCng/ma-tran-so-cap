@@ -19,7 +19,7 @@
     <definition xml:id="def-vector-cot">
       <statement>
         <p>
-          <term>Vector cột</term> là bộ các số thực được sắp xếp theo chiều dọc. 
+          <term>Vector cột</term> là bộ các số thực được sắp xếp theo chiều dọc.
         </p>
       </statement>
     </definition>
@@ -38,7 +38,7 @@
         <li>
           <p>
             Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được
-             vector cột <m>\sbmat{x \\ y \\ z}</m>
+            vector cột <m>\sbmat{x \\ y \\ z}</m>
           </p>
         </li>
       </ul>
@@ -53,7 +53,7 @@
 
     <convention>
       <p>
-        Vector cột có n hàng (và 1 cột) được kí 
+        Vector cột có n hàng (và 1 cột) được kí
         hiệu <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}</m>
       </p>
     </convention>
@@ -84,7 +84,7 @@
         </li>
       </ul>
       Khái niệm <term>chỉ số</term> sẽ được nhắc đến ở dưới<mdash />
-      trong <xref ref="subsubsec-phan-tu-vector" text="title"></xref>.
+      trong <xref provisional="chi-so"></xref>.
     </p>
 
     <note>
@@ -96,7 +96,7 @@
 
     <note>
       <p>
-        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc 
+        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc
         ngoặc nhọn <m>\samat{x \\ y}</m>.
       </p>
     </note>
@@ -109,11 +109,11 @@
         <instructions>
           <p>
             Thay đổi giá trị của 2 số thực <m>x, y</m> và quan sát sự biểu diễn của
-             vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
+            vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
           </p>
           <p>
             Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-             1 vector 2<times/>1 trong không gian 2D.
+            1 vector 2<times/>1 trong không gian 2D.
           </p>
         </instructions>
       </interactive>
@@ -133,14 +133,14 @@
         <instructions>
           <p>
             Thay đổi giá trị của 3 số thực <m>u_{1}, u_{2}, u_{3}</m> và quan sát sự biểu diễn của
-             vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
+            vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
           </p>
           <p>
             Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.
           </p>
           <p>
             Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-             1 vector 3<times/>1 trong không gian 3D.
+            1 vector 3<times/>1 trong không gian 3D.
           </p>
         </instructions>
       </interactive>
@@ -187,7 +187,7 @@
     <remark>
       <p>
         Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và
-         phép nhân vector hàng với 1 số như đối với các vector cột.
+        phép nhân vector hàng với 1 số như đối với các vector cột.
       </p>
     </remark>
 
@@ -201,9 +201,9 @@
       <statement>
         <p>
           <term>Phép chuyển vị</term> 1 vector là sự biến đổi vị trí bộ các số
-           thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
-           nhưng giữ nguyên thứ tự các số.
-           <me>
+          thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
+          nhưng giữ nguyên thứ tự các số.
+          <me>
             \bmat{\text{trên} \\ \downarrow \\ \text{dưới}}
             \quad \text{hay} \quad
             \hvec{\text{trái} \amp \rightarrow \amp \text{phải}}
@@ -229,16 +229,15 @@
 
   </subsection>
 
-  <subsection xml:id="subsec-nhap-xuat-vector-lap-trinh">
-    <title>Nhập, Xuất Vector Trong Lập Trình</title>
+  <subsection xml:id="subsec-vector-lap-trinh">
+    <title>Vector Trong Lập Trình</title>
 
-    <subsubsection xml:id="subsubsec-nhap-xuat-vector-numpy">
-      <title>Trong Numpy (Python)</title>
-      
+    <subsubsection xml:id="subsubsec-nhap-xuat-vector">
+      <title>Nhập, Xuất Vector</title>
+
       <sage language="python">
         <input>
           import numpy as np # Su dung thu vien Numpy
-          
           cot_1 = np.matrix([
               [1],
               [2],
@@ -249,10 +248,8 @@
               [4, 5, 6]
           ])
 
-          print("Vector cot:")
           print(cot_1)
-
-          print("\nVector hang:")
+          print()
           print(hang_1)
         </input>
         <output>
@@ -260,48 +257,15 @@
         </output>
       </sage>
       
-    </subsubsection>
-
-    <subsubsection xml:id="subsubsec-nhap-xuat-vector-sagemath">
-      <title>Trong SageMath</title>
-      
       <sage>
         <input>
+          # SageMath
           cot_2 = matrix([
               [10/3],
               [0],
               [1.52]
           ])
-
-          hang_2 = matrix([
-              [2, 4, -6] 
-          ])
-
-          # Cai dat hien thi cua SageMath
-          matrix.options.format_numeric = '{:.{prec}f}' # Hien thi so thap phan
-          matrix.options.precision = 2 # So chu so thap phan
-
-          print("Vector cot:")
-          print(cot_2)
-
-          print("\nVector hang:")
-          print(hang_2)
-        </input>
-        <output>
-          Provisional
-        </output>
-      </sage>
-
-      <p>
-        SageMath cung cấp lựa chọn biểu diễn vector và các đối tượng toán học khác bằng
-         <latex /><mdash />một hệ thống phần mềm soạn thảo chuyên dành cho toán. Ta chỉ
-         việc sử dụng hàm <c>show()</c>.
-      </p>
-
-      <sage>
-        <input>
           latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
-
           show(cot_2)
         </input>
         <output>
@@ -311,6 +275,11 @@
 
       <sage>
         <input>
+          # SageMath
+          hang_2 = matrix([
+              [2, 4, -6] 
+          ])
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
           show(hang_2)
         </input>
         <output>
@@ -320,17 +289,20 @@
 
     </subsubsection>
 
+
     <subsubsection xml:id="subsubsec-chuyen-vi-vector">
       <title>Tính Chuyển Vị Của Vector</title>
+
+      <p>
+        Để tính chuyển vị của một vector, ta sử dụng hàm <c>transpose()</c>.
+      </p>
 
       <sage language="python">
         <input>
           # Trong Numpy (Python)
-
-          print("Chuyen vi cua 'cot_1':")
           print(cot_1.transpose())
 
-          print("\nChuyen vi cua 'hang_1':")
+          print()
           print(hang_1.transpose())
         </input>
         <output>
@@ -341,8 +313,6 @@
       <sage>
         <input>
           # Trong SageMath
-
-          # Chuyen vi cua 'cot_2'
           show(cot_2.transpose())
         </input>
         <output>
@@ -352,7 +322,7 @@
 
       <sage>
         <input>
-          # Chuyen vi cua 'hang_2'
+          # Trong SageMath
           show(hang_2.transpose())
         </input>
         <output>
@@ -360,64 +330,6 @@
         </output>
       </sage>
       
-    </subsubsection>
-
-    <subsubsection xml:id="subsubsec-phan-tu-vector">
-      <title>Truy Cập Phần Tử Của Vector</title>
-
-      <p>
-        Trong lập trình, để truy cập phần tử nằm ở hàng <m>m</m>, cột <m>n</m> của ma trận A
-        , ta sử dụng cú pháp <c>A[m][n]</c>. <m>m</m> và <m>n</m> được gọi là <term>chỉ số</term>.
-      </p>
-
-      <note>
-        <title>Khác biệt giữa chỉ số trong toán học và trong lập trình</title>
-        
-        <p>
-          Trong phần lớn các ngôn ngữ lập trình, chỉ số bắt đầu từ số <m>0</m> thay
-           vì <m>1</m> như trong toán học.
-        </p>
-
-        <p>
-          Vì vậy, trong quyển sách này, các chỉ số sẽ bắt đầu từ <m>0</m>. Nói cách khác,
-           một ma trận có kích thước <m>m \times n</m> sẽ có hàng <m>0</m>, hàng <m>1</m>,
-           hàng <m>2</m>, <ellipsis />, hàng <m>m - 1</m> và cột <m>0</m>, cột <m>1</m>, 
-           cột <m>2</m>, <ellipsis />, cột <m>n - 1</m>.
-        </p>
-      </note>
-
-      <p>
-        Ví dụ, để truy cập phần tử nằm ở hàng <m>2</m>, cột <m>0</m> của ma trận A
-        , ta dùng cú pháp <c>A[2][0]</c>.
-      </p>
-
-      <p>
-        Vì vector cột thực chất là ma trận có kích thước <m>m\times1</m>, khi ta nói
-         <q>phần tử với chỉ số <m>a</m>, hay phần tử <m>a</m>, của vector cột <m>u</m></q>, 
-         thực chất ta đang nói <q>phần tử nằm ở hàng <m>a</m>, cột <m>0</m> của <m>u</m></q>. 
-         Vậy nên, cú pháp ta sử dụng là <c>u[a][0]</c>.
-      </p>
-
-      <p>
-        Tương tự, cú pháp để truy cập phần tử (với chỉ số) <m>b</m> của
-         vector hàng <m>v_{1 \times n}</m> là <c>v[0][b]</c>.
-      </p>
-      
-      <sage>
-        <input>
-          # Numpy
-          print(cot_1[1][0]) # Phan tu 1 cua 'cot_1'
-          print(hang_1[0][0]) # Phan tu 0 cua 'hang_1'
-
-          # SageMath
-          print(cot_2[0][0]) # Phan tu 0 cua 'cot_2'
-          print(hang_2[0][2]) # Phan tu 2 cua 'hang_2'
-        </input>
-        <output>
-          Provisional
-        </output>
-      </sage>
-
     </subsubsection>
 
   </subsection>
@@ -430,20 +342,20 @@
       <li>
         <p>
           Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc.
-           Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
+          Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
         </p>
       </li>
 
       <li>
         <p>
           Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc)
-           ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
+          ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
         </p>
       </li>
 
       <li>
         <p>
-          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào? 
+          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?
         </p>
       </li>
 

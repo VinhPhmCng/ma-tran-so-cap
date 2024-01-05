@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-toan-tu" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Toán Tử</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+
+  <p>
+    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v.
+    Đối với lập trình, ta có các <term>toán tử</term> giúp miêu tả tương tác giữa các biến
+    cũng như các dữ liệu tự do.
+  </p>
+  
+  <p>
+    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>.
+    Và như đã đề cập, <term>kiểu dữ liệu</term> đóng vai trò quyết định tương tác có thể thực hiện
+    với biến. Ý này sẽ được làm rõ hơn ở dưới đây.
+  </p>
+
+  <p>
+    Dưới đây là một vài những toán tử cơ bản.
+  </p>
+
+  <subsection xml:id="subsec-tt-so-hoc">
+    <title>Toán Tử Số Học</title>
+
+    <p>
+      Dưới đây là ví dụ của những toán tử số học cơ bản.
+    </p>
+
+    <sage language="python">
+      <input>
+        print(5 + 3) # Cong
+        print(5 - 3) # Tru
+        print(5 * 3) # Nhan
+        print(5 / 3) # Chia
+
+        # Ta cung co the cong hai chuoi
+        print("chuoi 1 " + "chuoi 2")
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+    <p>
+      Ta cũng có một vài toán tử khác ít được dùng hơn như:
+    </p>
+
+    <sage language="python">
+      <input>        
+        print(5 // 3) # Chia lay phan nguyen
+        print(5 ** 3) # Luy thua
+        print(5 % 3) # Modulo
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+    <p>
+      Có những phép toán được cung cấp bởi thư viện mở rộng như:
+    </p>
+
+    <sage language="python">
+      <input>
+        import numpy as np # Su dung thu vien Numpy
+
+        print(np.sqrt(9)) # Can bac 2
+        print(np.cbrt(8)) # Can bac 3
+        print(np.sin(45))
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-gan">
+    <title>Toán Tử Gán</title>
+
+    <p>
+      Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên.
+      Đây là <term>toán tử gán</term> quan trọng nhất mà bạn cần biết.
+    </p>
+
+    <p>
+      Ta sử dụng toán tử gán khi ta muốn <q>gán</q> cho biến một giá trị mới.
+      Lần đầu tiên ta gán cho biến một giá trị được gọi là <term>khai báo</term>,
+      và những lần tiếp theo được gọi là <term>gán</term>, hay <term>update</term>.
+      Dưới đây là một ví dụ
+    </p>
+
+    <sage language="python">
+      <input>
+        a = 5
+        a + 1
+        print(a)
+
+        a = a + 1
+        print(a)
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+    <p>
+      Ta thấy ở dòng 2, dù ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 3,
+      kết quả vẫn là <c>5</c>.
+      Chỉ khi ta sử dụng toán tử gán như <c>=</c>, như ở dòng 5, thì biến a mới được update giá trị.
+    </p>
+
+    <p>
+      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết.
+      Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên gọn gàng hơn,
+      ví dụ như:
+    </p>
+
+    <p>
+      <dl>
+        <li>
+          <title><c>x += 5</c></title>
+          <p>
+            Tương đương với <c>x = x + 5</c> 
+          </p>
+        </li>
+        <li>
+          <title><c>x -= 5</c></title>
+          <p>
+            Tương đương với <c>x = x - 5</c> 
+          </p>
+        </li>
+        <li>
+          <title><c>x *= 5</c></title>
+          <p>
+            Tương đương với <c>x = x * 5</c> 
+          </p>
+        </li>
+        <li>
+          <title><c>x /= 5</c></title>
+          <p>
+            Tương đương với <c>x = x / 5</c> 
+          </p>
+        </li>
+      </dl>
+    </p>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-quan-he">
+    <title>Toán Tử Quan Hệ</title>
+
+    <p>
+      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện,
+      vì vậy nó sẽ được trình bày rõ hơn ở
+      <xref provisional="cau-lenh-dieu-kien"/>
+    </p>
+
+    <p>
+      Dưới đây là tóm tắt sơ bộ:
+
+      <dl>
+        <li>
+          <title><c>x == y</c></title>
+          <p>
+            Trả lại <c>True</c> nếu x bằng y
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu x <em>không</em> bằng y
+          </p>
+        </li>
+        <li>
+          <title><c>x != y</c></title>
+          <p>
+            Ngược lại với <c>x == y</c>
+          </p>
+        </li>
+        <li>
+          <title><c>x &lt; y</c></title>
+          <p>
+            Trả lại <c>True</c> nếu x nhỏ hơn y
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu x lớn hơn hoặc bằng y
+          </p>
+        </li>
+        <li>
+          <title><c>x &gt; y </c></title>
+          <p>
+            Trả lại <c>True</c> nếu x lớn hơn y
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu x nhỏ hơn hoặc bằng y
+          </p>
+        </li>
+        <li>
+          <title><c>x &lt;= y </c></title>
+          <p>
+            Ngược lại với <c>x &gt; y</c> 
+          </p>
+        </li>
+        <li>
+          <title><c>x &gt;= y</c></title>
+          <p>
+            Ngược lại với <c>x &lt; y</c> 
+          </p>
+        </li>
+      </dl>
+    </p>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-tt-logic">
+    <title>Toán Tử Logic</title>
+    
+    <p>
+      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện,
+      vì vậy nó sẽ được trình bày rõ hơn ở
+      <xref provisional="cau-lenh-dieu-kien"/>
+    </p>
+
+    <p>
+      Dưới đây là tóm tắt sơ bộ:
+      <dl>
+        <li>
+          <title><c>x and y</c></title>
+          <p>
+            Trả lại <c>True</c> nếu cả x và y đều bằng <c>True</c>
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu ít nhất một trong hai biến bằng <c>False</c>
+          </p>
+        </li>
+        <li>
+          <title><c>x or y</c></title>
+          <p>
+            Trả lại <c>True</c> nếu ít nhất một trong hai biến bằng <c>True</c>
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu cả x và y đều bằng <c>False</c>
+          </p>
+        </li>
+        <li>
+          <title><c>not x</c></title>
+          <p>
+            Đảo ngược boolean
+          </p>
+          <p>
+            Trả lại <c>True</c> nếu x bằng <c>False</c>
+          </p>
+          <p>
+            Trả lại <c>False</c> nếu x bằng <c>True</c>
+          </p>
+        </li>
+      </dl>
+    </p>
+    
+  </subsection>
+
+</section>
