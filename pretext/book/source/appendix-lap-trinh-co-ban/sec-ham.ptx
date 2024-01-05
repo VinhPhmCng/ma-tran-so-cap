@@ -46,136 +46,103 @@
   </p>
 
   <p>
-    Cú pháp để <term>khai báo hàm</term> là:
-    <md>
-      <mrow> \amp {\color{purple} \text{def }} {\color{blue} \text{tên hàm}} \, \text{(tham số 1, tham số 2, ...):}</mrow>
-      <mrow> \amp \qquad \text{...}</mrow>
-      <mrow> \amp \qquad \text{thân hàm}</mrow>
-      <mrow> \amp \qquad \text{...}</mrow>
-      <mrow> \amp \qquad {\color{purple} \text{return }} \text{kết quả}</mrow>
-    </md>
+    Ở phần này ta chưa đi sâu vào cú pháp để khai báo hàm,
+    mà ta sẽ chỉ tập trung vào cú pháp để sử dụng những hàm có sẵn hoặc
+    được cung cấp bởi thư viện.
+    Để biết thêm về cú pháp <c>khai báo hàm</c>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
   </p>
 
   <p>
-    Sau khi đã khai báo hàm, để sử dụng nó ta chỉ việc <term>gọi hàm</term> bằng cú pháp:
+    Trước hết, ta có những <term>hàm toàn cục</term>
+    là những hàm có thể sử dụng được ở bất kỳ nơi nào trong code.
+    Để sử dụng nó ta chỉ việc <term>gọi hàm</term> bằng cú pháp:
     <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me>
   </p>
 
   <p>
-    Dưới đây là ví dụ.
+    Một ví dụ điển hình của hàm toàn cục chính là hàm <c>print()</c>.
+    Nó có thể được gọi ở bất cứ nơi nào trong code, và với bất kỳ giá trị đầu vào nào.
   </p>
 
   <sage language="python">
     <input>
-      def cong_hai_roi_nhan_ba(x):
-          x += 2
-          x *= 3
-          return x
+      print(5) 
+      
+      print("Hello World!")
 
-      print(cong_hai_roi_nhan_ba(2))
-      print(cong_hai_roi_nhan_ba(3))
+      print([1, 2, 3, 4])
     </input>
     <output>
       (for static output)
     </output>
   </sage>
-  
-  <p>
-    Trước tiên, ta <term>khai báo</term> hàm bằng cú pháp <c>def</c>
-     và cho nó cái tên là <c>cong_hai_roi_nhan_ba</c>,
-     sau đó, ta cho nó <term>tham số</term> <c>x</c>.
-     Ta sử dụng dấu hai chấm <c>:</c> để bắt đầu thân hàm.
-     Phía dưới, những dòng code được thụt vào sẽ thuộc thân hàm.
-  </p>
-
-  <note>
-    <p>
-      Python là một ngôn ngữ sử dụng <term>khoảng trắng đầu dòng</term> để xác định
-      mức độ ưu tiên (level) của các đoạn code.
-      Bạn có thể hình dung bằng đoạn code giả dưới đây:
-    </p>
-
-    <program language="python" line-numbers="yes">
-      <input>
-        Level 1
-            Level 2
-                Level 3
-                ...
-            Level 2 (tiep tuc)
-        Level 1 (tiep tuc)
-      </input> 
-    </program>
-
-    <p>
-      Ta thường sử dụng phím <c>Tab</c> để thụt đầu dòng trong Python.
-    </p>
-  </note>
 
   <p>
-    Trong thân hàm, ta viết những dòng code miêu tả hành động của hàm.
-     Ở ví dụ trên, ta tăng tham số <c>x</c> lên 2 đơn vị rồi nhân nó lên 3 lần.
+    Sau đó, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó,
+    còn được gọi là <term>hàm cục bộ</term>.
+    Mỗi kiểu dữ liệu hay cấu trúc dữ liệu đều có tập hợp các hàm cục bộ của riêng mình.
   </p>
 
   <p>
-    Ở cuối thân hàm, cú pháp <c>return</c> có nhiệm vụ trả lại kết quả.
-    Ở ví dụ trên, hàm trả lại tham số <c>x</c> sau khi đã được biến đổi bởi những tính toán phía trên.
+    Cú pháp <term>gọi</term> hàm cục bộ là:
+
+    <me>\text{tên biến.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
+
+    hoặc
+
+    <me>\text{dữ liệu.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
   </p>
 
   <p>
-    Cuối cùng, ta sử dụng hàm bằng cách truyền cho nó những giá trị đầu vào như <c>2</c> và <c>3</c>.
-    Kết quả trả lại được truyền vào hàm <c>print()</c>.
+    Vậy, <term>đầu vào 1</term> chính là biến hay dữ liệu tự do mà ta gọi hàm lên.
+    Dưới đây là ví dụ.
   </p>
 
-  <note>
-    <p>
-      Từ khóa <c>return</c> đánh dấu sự kết thúc của hàm.
-      Khi gặp từ khóa <c>return</c>, hàm sẽ ngay lập tức trả lại kết quả và kết thúc nghĩa vụ của mình.
-    </p>
+  <sage language="python">
+    <input>
+      s = "Xin chao! Vi du ham cuc bo" 
 
-    <sage language="python">
-      <input>
-        def nhan_hai(x):
-            x *= 2
-            return x
-            print("Hello world!") # Khong duoc chay
+      print(s.upper())
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+ 
+  <p>
+    Vậy, <c>upper()</c> là một hàm cục bộ của kiểu <c>str</c>.
+    Trong trường hợp này, nó nhận một giá trị vào là chuỗi <c>s</c>,
+    và nó trả lại chuỗi đó sau khi viết hoa từng phần tử.
+  </p>
 
-        a = 5
-        print(nhan_hai(a))
-      </input>
-      <output>
-        (for static output)
-      </output>
-    </sage>
-    
-  </note>
+  <p>
+    Ta cũng có thể sử dụng nó trên một chuỗi tự do, không thuộc vào biến nào cả.
+  </p>
 
-  <note>
-    <p>
-      Trong phần lớn các trường hợp, những câu lệnh ở bên trong hàm sẽ không làm thay đổi
-      giá trị ban đầu của các tham số được truyền vào.
-    </p>
+  <sage language="python">
+    <input>
+      print("Xin chao the gioi!".upper()) 
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
 
-    <sage language="python">
-      <input>
-        def cong_hai_roi_nhan_ba(x):
-            x += 2
-            x *= 3
-            return x
+  <p>
+    Nhưng nếu ta thử dùng hàm <c>upper()</c> với kiểu <c>int</c>, ta sẽ gặp lỗi
+    vì <c>int</c> không có hàm cục bộ trên.
+  </p>
 
-        a = 2
-        b = cong_hai_roi_nhan_ba(a)
-        print(a)
-        print(b)
-      </input>
-      <output>
-        (for static output)
-      </output>
-    </sage>
+  <sage language="python">
+    <input>
+      a = 5 
+      print(a.upper())
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
 
-    <p>
-      Dễ thấy, giá trị của biến <c>a</c> không thay đổi sau khi gọi hàm <c>cong_hai_roi_nhan_ba(a)</c>.
-    </p>
-  </note>
 
   <subsection xml:id="subsec-kieu-tra-lai-cua-ham">
     <title>Kiểu Của Tham Số Và Kiểu Trả Lại Của Hàm</title>
@@ -184,16 +151,39 @@
       Hàm có nhiệm vụ nhận một giá trị đầu vào và trả lại một giá trị đầu ra.
       Có nhiều hàm mà tham số của nó bắt buộc phải thuộc vào một kiểu dữ liệu xác định nào đó, 
       và giá trị trả lại của nó cũng luôn thuộc một kiểu dữ liệu xác định.
-      Ví dụ như hàm <c>np.sqrt()</c>, ta có thể truyền cho nó <c>int</c>, <c>float</c>, v.v.,
-      và kiểu trả lại của nó cũng sẽ luôn là một loại số phù hợp.
+      Ví dụ như hàm <c>upper()</c>, ta chỉ có thể truyền cho nó <c>str</c>,
+      và kiểu trả lại của nó cũng sẽ luôn là <c>str</c>.
+    </p>
+    
+    <sage language="python">
+      <input>
+        s = "Hello world!" 
+        print(type(s))
+        print(type(s.upper()))
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+    <p>
+      Ví dụ tiếp theo là hàm <c>np.sqrt()</c>.
+      Nó có thể nhận vào nhiều kiểu dữ liệu như <c>int</c>, <c>float</c>,
+      thậm chí là mảng.
+      Và nó sẽ trả lại kết quả thuộc kiểu dữ liệu phù hợp.
     </p>
 
     <sage language="python">
       <input>
         import numpy as np # Su dung thu vien Numpy
 
-        print(sqrt(9))
-        print(sqrt(5.5))
+        a = np.sqrt(9)
+        b = np.sqrt(5.5)
+        c = np.sqrt([4, 9, 16])
+
+        print(a, type(a))
+        print(b, type(b))
+        print(c, type(c))
       </input>
       <output>
         (for static output)
@@ -206,7 +196,7 @@
 
     <sage language="python">
       <input>
-        print(sqrt("xin chao?"))
+        print(np.sqrt("xin chao?"))
       </input>
       <output>
         (for static output)
@@ -215,14 +205,14 @@
 
     <p>
       Nhưng cũng có những hàm có thể nhận giá trị đầu vào có kiểu dữ liệu tự do.
-      Cũng có những hàm trả lại kiểu dữ liệu tự do, hoặc nó có thể không trả lại gì cả,
-      khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
+      Cũng có những hàm trả lại kiểu dữ liệu tự do, hoặc nó có thể không trả lại gì cả.
+      Khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
     </p>
 
     <p>
       Một ví dụ điển hình cho hàm không có kiểu của tham số và kiểu trả lại chính là hàm <c>print()</c>
       Ta có thể truyền cho nó kiểu <c>str</c>, kiểu <c>int</c>, kiểu <c>float</c>, v.v.
-      Và nó trả lại <c>None</c>.
+      Và nó luôn trả lại <c>None</c>.
     </p>
     
     <sage language="python">

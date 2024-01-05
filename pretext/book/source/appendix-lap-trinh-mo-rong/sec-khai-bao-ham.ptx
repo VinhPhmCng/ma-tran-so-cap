@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-khai-bao-ham" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Khai Báo Hàm</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+
+  <p> Coming soon. </p>
+
+  <p>
+    Cú pháp để <term>khai báo hàm</term> là:
+    <md>
+      <mrow> \amp {\color{purple} \text{def }} {\color{blue} \text{tên hàm}} \, \text{(tham số 1, tham số 2, ...):}</mrow>
+      <mrow> \amp \qquad \text{...}</mrow>
+      <mrow> \amp \qquad \text{thân hàm}</mrow>
+      <mrow> \amp \qquad \text{...}</mrow>
+      <mrow> \amp \qquad {\color{purple} \text{return }} \text{kết quả}</mrow>
+    </md>
+  </p>
+
+  <sage language="python">
+    <input>
+      def cong_hai_roi_nhan_ba(x):
+          x += 2
+          x *= 3
+          return x
+
+      print(cong_hai_roi_nhan_ba(2))
+      print(cong_hai_roi_nhan_ba(3))
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Trước tiên, ta <term>khai báo</term> hàm bằng cú pháp <c>def</c>
+     và cho nó cái tên là <c>cong_hai_roi_nhan_ba</c>,
+     sau đó, ta cho nó <term>tham số</term> <c>x</c>.
+     Ta sử dụng dấu hai chấm <c>:</c> để bắt đầu thân hàm.
+     Phía dưới, những dòng code được thụt vào sẽ thuộc thân hàm.
+  </p>
+
+  <note>
+    <p>
+      Python là một ngôn ngữ sử dụng <term>khoảng trắng đầu dòng</term> để xác định
+      mức độ ưu tiên (level) của các đoạn code.
+      Bạn có thể hình dung bằng đoạn code giả dưới đây:
+    </p>
+
+    <program language="python" line-numbers="yes">
+      <input>
+        Level 1
+            Level 2
+                Level 3
+                ...
+            Level 2 (tiep tuc)
+        Level 1 (tiep tuc)
+      </input> 
+    </program>
+
+    <p>
+      Ta thường sử dụng phím <c>Tab</c> để thụt đầu dòng trong Python.
+    </p>
+  </note>
+
+  <p>
+    Trong thân hàm, ta viết những dòng code miêu tả hành động của hàm.
+     Ở ví dụ trên, ta tăng tham số <c>x</c> lên 2 đơn vị rồi nhân nó lên 3 lần.
+  </p>
+
+  <p>
+    Ở cuối thân hàm, cú pháp <c>return</c> có nhiệm vụ trả lại kết quả.
+    Ở ví dụ trên, hàm trả lại tham số <c>x</c> sau khi đã được biến đổi bởi những tính toán phía trên.
+  </p>
+
+  <p>
+    Cuối cùng, ta sử dụng hàm bằng cách truyền cho nó những giá trị đầu vào như <c>2</c> và <c>3</c>.
+    Kết quả trả lại được truyền vào hàm <c>print()</c>.
+  </p>
+
+  <note>
+    <p>
+      Từ khóa <c>return</c> đánh dấu sự kết thúc của hàm.
+      Khi gặp từ khóa <c>return</c>, hàm sẽ ngay lập tức trả lại kết quả và kết thúc nghĩa vụ của mình.
+    </p>
+
+    <sage language="python">
+      <input>
+        def nhan_hai(x):
+            x *= 2
+            return x
+            print("Hello world!") # Khong duoc chay
+
+        a = 5
+        print(nhan_hai(a))
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+  </note>
+
+  <note>
+    <p>
+      Trong phần lớn các trường hợp, những câu lệnh ở bên trong hàm sẽ không làm thay đổi
+      giá trị ban đầu của các tham số được truyền vào.
+    </p>
+
+    <sage language="python">
+      <input>
+        def cong_hai_roi_nhan_ba(x):
+            x += 2
+            x *= 3
+            return x
+
+        a = 2
+        b = cong_hai_roi_nhan_ba(a)
+        print(a)
+        print(b)
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+
+    <p>
+      Dễ thấy, giá trị của biến <c>a</c> không thay đổi sau khi gọi hàm <c>cong_hai_roi_nhan_ba(a)</c>.
+    </p>
+  </note>
+</section>
