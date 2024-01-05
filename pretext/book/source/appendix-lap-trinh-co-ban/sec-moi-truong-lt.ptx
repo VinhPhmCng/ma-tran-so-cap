@@ -13,14 +13,14 @@
   
   <p>
     Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ
-     không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó
-    , ta sẽ sử dụng các <term>trình soạn thảo và biên dịch</term> dành cho lập trình.
+    không mở trình soạn thảo Word để lập trình rồi, phải không nào.
+    Thay vào đó, ta sẽ sử dụng các <term>trình soạn thảo và biên dịch</term> dành cho lập trình.
   </p>
 
   <p>
     Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng
-     phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút
-     <c>Evaluate</c> để chạy đoạn code (bạn chưa cần hiểu đoạn code sau đang làm gì đâu).
+    phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây.
+    Bấm nút <c>Evaluate</c> để chạy đoạn code.
   </p>
 
   <sage language="python">
@@ -50,7 +50,7 @@
       <li>
         <p>
           <term>Nút</term> <c>Evaluate</c>: Ấn để chạy chương trình, hay nói cách khác là chạy trình biên
-           dịch code.
+          dịch code.
         </p>
       </li>
       <li>
@@ -63,18 +63,18 @@
 
   <p>
     Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy.
-     Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình
-     viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la
-     rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương
-     tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra,
-     nhưng quyển sách này sẽ không hướng dẫn việc đó.
+    Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình
+    viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la
+    rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương
+    tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra,
+    nhưng quyển sách này sẽ không hướng dẫn việc đó.
   </p>
 
   <p>
     Terminal có khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. 
-     Ngoài ra, nó còn hiển thị các <term>lỗi</term>, nếu có, 
-     trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.
-     Bạn có thể tham khảo phần <xref ref="sec-loi"/>
+    Ngoài ra, nó còn hiển thị các <term>lỗi</term>, nếu có, 
+    trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.
+    Bạn có thể tham khảo phần <xref ref="sec-loi"/>
   </p>
 
   <example xml:id="example-code-co-loi">

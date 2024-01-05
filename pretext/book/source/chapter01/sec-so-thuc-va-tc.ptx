@@ -41,7 +41,7 @@
       <me>
         \Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}
       </me>
-      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng 
+      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng
       <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
     </p>
     <p>Ví dụ:
@@ -52,7 +52,7 @@
     </p>
       
     <p>
-      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là 
+      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là
       tập các số thập phân vô hạn <em>không</em> tuần hoàn.
       <me>
         \nQ = \R \setminus \Q
@@ -66,7 +66,7 @@
     </p>
       
     <p>
-      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là 
+      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là
       tập bao gồm các số hữu tỷ và các số vô tỷ.
       <me>
         \R = \Q \cup \nQ
@@ -169,7 +169,7 @@
     <observation>
       <title>Tính giao hoán và phân phối</title>
       <p>
-        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và 
+        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và
         <xref ref="giao-hoan-phep-nhan" text="local"/>, ta có:
         <md>
           <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
@@ -218,13 +218,13 @@
     <example>
       <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
       <p>
-        Trên tập số nguyên âm <m>\mZ = \{\ldots, \, -n, \, \ldots, \, -3, \, -2, \, -1\}</m>    
+        Trên tập số nguyên âm <m>\mZ = \{\ldots, \, -n, \, \ldots, \, -3, \, -2, \, -1\}</m>
       </p>
       <p>
         <ul>
           <li>
             <p>
-              Phép cộng có tính đóng. 
+              Phép cộng có tính đóng.
               <me>
                 (-3) + (-2) = -5 \in \mZ
               </me>
@@ -232,7 +232,7 @@
           </li>
           <li>
             <p>
-              Phép nhân <em>không</em> có tính đóng. 
+              Phép nhân <em>không</em> có tính đóng.
               <me>
                 (-3) \cdot (-2) = 6 \notin \mZ
               </me>
@@ -245,8 +245,8 @@
     <remark>
       <title>Sự quan trọng của tính đóng</title>
       <p>
-        Tính đóng đối với phép toán có mối quan hệ mật thiết với 
-        một đặc tính khái niệm của không gian vector 
+        Tính đóng đối với phép toán có mối quan hệ mật thiết với
+        một đặc tính khái niệm của không gian vector
         <xref provisional="section-dac-tinh-khong-gian-vector"/>.
       </p>
     </remark>
@@ -270,7 +270,7 @@
 
           <hint>
             <p>
-              Nháp một vài phép cộng hai số tự nhiên bất kỳ và 
+              Nháp một vài phép cộng hai số tự nhiên bất kỳ và
               xem xét tổng có thuộc tập số tự nhiên không.
             </p>
           </hint>
@@ -367,7 +367,6 @@
           </solution>
         </exercise>
 
-
         <conclusion>
           <p>
             The conclusion of the exercise group.
@@ -381,8 +380,8 @@
 
         <introduction>
           <p>
-            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>
-            , hữu tỷ <m>\Q</m>, thực <m>\R</m>.
+            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>,
+            hữu tỷ <m>\Q</m>, thực <m>\R</m>.
           </p>
         </introduction>
         

@@ -42,10 +42,10 @@
   
   <p>
     Trước tiên, ta <term>khai báo</term> hàm bằng cú pháp <c>def</c>
-     và cho nó cái tên là <c>cong_hai_roi_nhan_ba</c>,
-     sau đó, ta cho nó <term>tham số</term> <c>x</c>.
-     Ta sử dụng dấu hai chấm <c>:</c> để bắt đầu thân hàm.
-     Phía dưới, những dòng code được thụt vào sẽ thuộc thân hàm.
+    và cho nó cái tên là <c>cong_hai_roi_nhan_ba</c>,
+    sau đó, ta cho nó <term>tham số</term> <c>x</c>.
+    Ta sử dụng dấu hai chấm <c>:</c> để bắt đầu thân hàm.
+    Phía dưới, những dòng code được thụt vào sẽ thuộc thân hàm.
   </p>
 
   <note>
@@ -73,7 +73,7 @@
 
   <p>
     Trong thân hàm, ta viết những dòng code miêu tả hành động của hàm.
-     Ở ví dụ trên, ta tăng tham số <c>x</c> lên 2 đơn vị rồi nhân nó lên 3 lần.
+    Ở ví dụ trên, ta tăng tham số <c>x</c> lên 2 đơn vị rồi nhân nó lên 3 lần.
   </p>
 
   <p>

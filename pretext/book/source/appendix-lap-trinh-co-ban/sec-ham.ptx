@@ -13,7 +13,7 @@
   
   <p>
     Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>Hàm</term>.
-     Và nó cũng đóng vai trò thiết yếu trong lập trình.
+    Và nó cũng đóng vai trò thiết yếu trong lập trình.
   </p>
 
   <p>
@@ -27,7 +27,7 @@
     </md>
 
     Ta nhận ra là các biểu thức trên có cùng một dạng là đa thức bậc hai.
-     Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
+    Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
 
     <md>
       <mrow>f(x) = x^2 + 2 \cdot x + 1</mrow>
@@ -41,8 +41,8 @@
 
   <p>
     <term>Hàm</term> trong lập trình cũng được tạo ra để giúp ta theo cách tương tự như vậy.
-     Khi xuất hiện những đoạn code được dùng đi dùng lại nhiều lần, ta thường sử dụng
-     hàm để trừu tượng hóa chúng.
+    Khi xuất hiện những đoạn code được dùng đi dùng lại nhiều lần, ta thường sử dụng
+    hàm để trừu tượng hóa chúng.
   </p>
 
   <p>

@@ -19,7 +19,7 @@
     <definition xml:id="def-vector-cot">
       <statement>
         <p>
-          <term>Vector cột</term> là bộ các số thực được sắp xếp theo chiều dọc. 
+          <term>Vector cột</term> là bộ các số thực được sắp xếp theo chiều dọc.
         </p>
       </statement>
     </definition>
@@ -38,7 +38,7 @@
         <li>
           <p>
             Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được
-             vector cột <m>\sbmat{x \\ y \\ z}</m>
+            vector cột <m>\sbmat{x \\ y \\ z}</m>
           </p>
         </li>
       </ul>
@@ -53,7 +53,7 @@
 
     <convention>
       <p>
-        Vector cột có n hàng (và 1 cột) được kí 
+        Vector cột có n hàng (và 1 cột) được kí
         hiệu <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}</m>
       </p>
     </convention>
@@ -96,7 +96,7 @@
 
     <note>
       <p>
-        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc 
+        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc
         ngoặc nhọn <m>\samat{x \\ y}</m>.
       </p>
     </note>
@@ -109,11 +109,11 @@
         <instructions>
           <p>
             Thay đổi giá trị của 2 số thực <m>x, y</m> và quan sát sự biểu diễn của
-             vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
+            vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
           </p>
           <p>
             Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-             1 vector 2<times/>1 trong không gian 2D.
+            1 vector 2<times/>1 trong không gian 2D.
           </p>
         </instructions>
       </interactive>
@@ -133,14 +133,14 @@
         <instructions>
           <p>
             Thay đổi giá trị của 3 số thực <m>u_{1}, u_{2}, u_{3}</m> và quan sát sự biểu diễn của
-             vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
+            vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
           </p>
           <p>
             Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.
           </p>
           <p>
             Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-             1 vector 3<times/>1 trong không gian 3D.
+            1 vector 3<times/>1 trong không gian 3D.
           </p>
         </instructions>
       </interactive>
@@ -187,7 +187,7 @@
     <remark>
       <p>
         Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và
-         phép nhân vector hàng với 1 số như đối với các vector cột.
+        phép nhân vector hàng với 1 số như đối với các vector cột.
       </p>
     </remark>
 
@@ -201,9 +201,9 @@
       <statement>
         <p>
           <term>Phép chuyển vị</term> 1 vector là sự biến đổi vị trí bộ các số
-           thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
-           nhưng giữ nguyên thứ tự các số.
-           <me>
+          thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
+          nhưng giữ nguyên thứ tự các số.
+          <me>
             \bmat{\text{trên} \\ \downarrow \\ \text{dưới}}
             \quad \text{hay} \quad
             \hvec{\text{trái} \amp \rightarrow \amp \text{phải}}
@@ -239,13 +239,13 @@
         <input>
           import numpy as np # Su dung thu vien Numpy
           cot_1 = np.matrix([
-            [1],
-            [2],
-            [3]
+              [1],
+              [2],
+              [3]
           ])
 
           hang_1 = np.matrix([
-            [4, 5, 6]
+              [4, 5, 6]
           ])
 
           print(cot_1)
@@ -295,7 +295,7 @@
 
       <p>
         Để tính chuyển vị của một vector, ta sử dụng hàm <c>transpose()</c>.
-      </p>  
+      </p>
 
       <sage language="python">
         <input>
@@ -342,20 +342,20 @@
       <li>
         <p>
           Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc.
-           Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
+          Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
         </p>
       </li>
 
       <li>
         <p>
           Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc)
-           ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
+          ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
         </p>
       </li>
 
       <li>
         <p>
-          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào? 
+          Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?
         </p>
       </li>
 

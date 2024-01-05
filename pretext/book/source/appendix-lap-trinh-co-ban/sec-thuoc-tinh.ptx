@@ -13,7 +13,7 @@
   
   <p>
     Một cách để hiểu khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>.
-     Dưới đây là ví dụ.
+    Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
@@ -36,14 +36,14 @@
   
   <p>
     Có thể thấy, <c>mat.size</c> trả lại số phần tử của ma trận, còn <c>mat.shape</c>
-     trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term>
-     của cấu trúc dữ liệu ma trận của Numpy.
+    trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term>
+    của cấu trúc dữ liệu ma trận của Numpy.
   </p>
 
   <p>
     Như đã nói ở các phần trước, kiểu dữ liệu hay cấu trúc dữ liệu quyết định tương tác của biến.
-     Vậy nên, nếu ta thử điều tương tự với kiểu dữ liệu <c>int</c>, ta sẽ gặp lỗi vì nó không
-     có các thuộc tính ý.
+    Vậy nên, nếu ta thử điều tương tự với kiểu dữ liệu <c>int</c>, ta sẽ gặp lỗi vì nó không
+    có các thuộc tính ý.
   </p>
 
   <sage language="python">
@@ -88,7 +88,7 @@
 
   <p>
     Vì thuộc tính cũng thuộc một kiểu dự liệu hoặc cấu trúc dữ liệu nào đó, nó cũng có thể
-     có thuộc tính của riêng mình. Dưới đây là ví dụ.
+    có thuộc tính của riêng mình. Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
