@@ -20,7 +20,7 @@
   <p>
     Cú pháp của <term>ghi chú</term> trong Python và SageMath là dấu thăng <c>#</c>.
      Những gì được viết ở phía sau <c>#</c> (trên cùng 1 dòng) sẽ được trình biên dịch
-     coi là văn bản thuần túy thay vì code. 
+     coi là <term>văn bản thuần túy</term> thay vì code. 
   </p>
 
   <p>

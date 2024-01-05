@@ -13,24 +13,25 @@
   
   <p>
     Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ
-     không mở trình soạn thảo <term>Word</term> để lập trình rồi, phải không nào. Thay vào đó
+     không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó
     , ta sẽ sử dụng các <term>trình soạn thảo và biên dịch</term> dành cho lập trình.
   </p>
 
   <p>
     Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng
      phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút
-     <c>Evaluate</c> để chạy đoạn code.
+     <c>Evaluate</c> để chạy đoạn code (bạn chưa cần hiểu đoạn code sau đang làm gì đâu).
   </p>
 
   <sage language="python">
     <input>
-      def cong(x, y):
-          return x + y
+      print("Hello World!")
+
+      # Day la mot ghi chu
 
       a = 3
       b = 5
-      print(cong(a, b))
+      print(a * b)
     </input>
     <output>
       (for static output)
@@ -43,18 +44,18 @@
     <ol>
       <li>
         <p>
-          Ô soạn thảo: Nơi bạn viết code
+          <term>Ô soạn thảo</term>: Nơi bạn viết code
         </p>
       </li>
       <li>
         <p>
-          Nút <c>Evaluate</c>: Ấn để chạy chương trình, hay nói cách khác là chạy trình biên
+          <term>Nút</term> <c>Evaluate</c>: Ấn để chạy chương trình, hay nói cách khác là chạy trình biên
            dịch code.
         </p>
       </li>
       <li>
         <p>
-          Terminal: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.
+          <term>Terminal</term>: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.
         </p>
       </li>
     </ol>
@@ -73,6 +74,7 @@
     Terminal có khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. 
      Ngoài ra, nó còn hiển thị các <term>lỗi</term>, nếu có, 
      trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.
+     Bạn có thể tham khảo phần <xref ref="sec-loi"/>
   </p>
 
   <example xml:id="example-code-co-loi">

@@ -27,7 +27,7 @@
 
   <p>
     Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu,
-     nên nó mang tính xác định, nhưng đồng thời nó cũng thường xuyên thay đổi
+     nên nó mang <term>tính xác định</term>, nhưng đồng thời nó cũng <em>thường xuyên thay đổi</em>
      trong quá trình chương trình chạy.
   </p>
 

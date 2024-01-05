@@ -45,7 +45,7 @@
       <li>
         <title>str</title>
         <p>
-          <term>Chuỗi</term> ký tự. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc
+          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc
            kép đơn <c>''</c>.
         </p>
       </li>
@@ -124,11 +124,11 @@
   <sage language="python">
     <input>
       s1 = "Ma tran"
-      s2 = "Ma tran "
+      s2 = "Ma tran " # Chu y dau cach
       s3 = "so cap"
 
       s4 = s1 + s2
-      s5 = s1 + s3
+      s5 = s2 + s3
       
       print(s4, type(s4))
       print(s5)

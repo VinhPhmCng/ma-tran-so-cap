@@ -12,7 +12,7 @@
   </objectives>
   
   <p>
-    Một cách để hiểu được khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>.
+    Một cách để hiểu khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>.
      Dưới đây là ví dụ.
   </p>
 
@@ -36,7 +36,7 @@
   
   <p>
     Có thể thấy, <c>mat.size</c> trả lại số phần tử của ma trận, còn <c>mat.shape</c>
-     trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <q>thuộc tính</q>
+     trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term>
      của cấu trúc dữ liệu ma trận của Numpy.
   </p>
 
@@ -58,9 +58,33 @@
   </sage>
   
   <p>
-    Vậy, cú pháp để truy cập thuộc tính sử dụng dấu chấm <c>.</c>, phía trước nó là tên của biến,
-     và phía sau là tên của thuộc tính.
+    Vậy, cú pháp để <term>truy cập</term> thuộc tính là:
+    <me>\text{tên biến.} {\color{blue} \text{tên thuộc tính}}</me>
+    hoặc
+    <me>\text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}</me>
   </p>
+
+  <p>
+    Đúng vậy, bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>,
+    như ở ví dụ dưới đây.
+  </p>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy
+
+      print(
+          np.matrix([
+              [1, 2, 3],
+              [2, 3, 4],
+              [3, 4, 5] 
+          ]).size
+      )
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
 
   <p>
     Vì thuộc tính cũng thuộc một kiểu dự liệu hoặc cấu trúc dữ liệu nào đó, nó cũng có thể

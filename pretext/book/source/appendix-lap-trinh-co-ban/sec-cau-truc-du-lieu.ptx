@@ -13,7 +13,7 @@
   
   <p>
     Ta có một khái niệm mới, và đó là <term>cấu trúc dữ liệu</term>. Cấu trúc dữ liệu được
-     xây dựng <em>dựa trên</em> <term>kiểu dữ liệu</term>, hay nói cách khác nó cũng là một
+     xây dựng <em>dựa trên</em> <term>kiểu dữ liệu</term>, hay nói cách khác nó cũng là
      kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.
   </p>
 
@@ -38,7 +38,7 @@
 
   <p>
     Ở trên, ta đang sử dụng cấu trúc dữ liệu <c>list</c>, hay còn được gọi là danh sách.
-     Đây là một cấu trúc dữ liệu có sẵn của Python rất phổ biến. Ta có thể thấy <c>l1</c>
+     Đây là một cấu trúc dữ liệu có sẵn của Python. Ta có thể thấy <c>l1</c>
      là một danh sách chứa các giá trị có kiểu <c>int</c>, còn <c>l2</c> lại chứa một
      hỗn hợp các kiểu dữ liệu. Và để khai báo một <c>list</c>, bạn phải sử dụng ngoặc vuông
      <c>[]</c> bao quanh các phần tử và dấu phẩy <c>,</c> để ngăn cách chúng.
@@ -183,6 +183,7 @@
       Như vậy, cú pháp của ma trận là một cặp ngoặc vuông <c>[]</c> ở ngoài cùng,
        bao trùm các cặp ngoặc vuông khác ở bên trong nó.
        Trong đó, mỗi cặp ngoặc vuông con là một hàng của ma trận, và mỗi hàng ý phải có cùng số phần tử.
+      Bạn có thể tham khảo phần <xref ref="sec-thao-tac-ma-tran"/>
     </p>
 
     <p>

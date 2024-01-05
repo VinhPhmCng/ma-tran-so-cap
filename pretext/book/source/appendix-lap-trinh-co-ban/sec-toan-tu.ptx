@@ -18,7 +18,7 @@
   </p>
   
   <p>
-    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>
+    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>.
      Và như đã đề cập, <term>kiểu dữ liệu</term> đóng vai trò quyết định tương tác có thể thực hiện
      với biến. Ý này sẽ được làm rõ hơn ở dưới đây.
   </p>
@@ -116,7 +116,7 @@
     <p>
       Ta thấy ở dòng 2, dù ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 3,
        kết quả vẫn là <c>5</c>.
-       Chỉ khi ta sử dụng toán tử gán <c>=</c>, như ở dòng 5, thì biến a mới được update giá trị.
+       Chỉ khi ta sử dụng toán tử gán như <c>=</c>, như ở dòng 5, thì biến a mới được update giá trị.
     </p>
 
     <p>

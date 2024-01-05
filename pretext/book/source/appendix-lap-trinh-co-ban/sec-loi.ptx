@@ -68,6 +68,22 @@
     Và miêu tả của lỗi là <q>chuỗi ký tự chưa được kết thúc</q>.
   </p>
 
+  <sage language="python">
+    <input>
+      a = 5
+      s = "string"
+      print(a + s)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+
+  <p>
+    Ta thấy lỗi có kiểu <c>TypeError</c>, và dịch qua miêu tả ta được
+    <q>không hỗ trợ toán tử + giữa hai kiểu int và str</q>.
+  </p>
+  
   <p>
     Và một ví dụ nữa.
   </p>
@@ -85,7 +101,7 @@
   <p>
     Lỗi này phức tạp hơn một tí xíu.
     Ta thấy kiểu lỗi là <c>TypeError</c>, và dịch nôm na miêu tả ta có
-    <q>hàm <c>sqrt</c> không hỗ trợ kiểu của dữ liệu đầu vào...</q>.
+    <q>hàm sqrt không hỗ trợ kiểu của dữ liệu đầu vào...</q>.
     Từ đó, ta có thể dễ dàng suy ra là lỗi được phát hiện ở dòng 2.
   </p>
 
