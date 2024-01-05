@@ -123,7 +123,7 @@ The project is currently NOT open to PR.
 
 <!-- LICENSE -->
 ## License
-[MIT License](LICENSE) © [VPC](https://github.com/VinhPhmCng)
+[GNU Free Documentation License](COPYING) © [VPC](https://github.com/VinhPhmCng)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
