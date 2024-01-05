@@ -105,7 +105,7 @@ Giới thiệu học sinh phổ thông (lớp 8 trở lên) với ma trận và 
 ## Các Dự Án Phụ
 
 1. Phân Rã Ma Trận Bằng Đệ Quy
-   - [Streamlit](https://textbooks.math.gatech.edu/ila/)
+   - [Streamlit]([https://textbooks.math.gatech.edu/ila/](https://procedural-matrix-decomposition-fuyaf698zxk4emw4uufsfm.streamlit.app/))
    - [Github](https://github.com/VinhPhmCng/procedural-matrix-decomposition/tree/vn-vi)
 
 
