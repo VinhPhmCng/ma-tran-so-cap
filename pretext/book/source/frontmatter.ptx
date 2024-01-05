@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This frontmatter division will contain all content before the -->
-<!-- first chapter. Fill in and comment/uncomment to see how this -->
-<!-- works. -->
+
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Phạm Công Vinh</personname>
+<!--       <department>Your department</department>
+      <institution>Your institution</institution> -->
+    </author>
+    <author>
+      <personname>Phạm Xuân Trung</personname>
+<!--       <department>Your department</department>
+      <institution>Your institution</institution> -->
     </author>
     <date>
       <today />
@@ -17,16 +26,18 @@
 
   <colophon>
 
-    <website>
+<!--     <website>
       <url href="https://pretextbook.org">My Website</url>
-    </website>
+    </website> -->
 
     <copyright>
-      <year>2020<ndash />2023</year>
-      <holder>You</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
-      </shortlicense>
+      <year>2023<ndash />2024</year>
+      <holder>Phạm Công Vinh</holder>
+      <minilicense>GNU Free Documentation License</minilicense>
+      <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled <q>GNU Free Documentation License</q>.</shortlicense>
     </copyright>
   </colophon>
+
+  <xi:include href="preface.ptx" />
 </frontmatter>
 

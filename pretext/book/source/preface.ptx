@@ -7,11 +7,12 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<appendix xml:id="appendix-" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Appendix</title>
+<preface xml:id="preface">
 
+  <paragraphs>
+    <title>Introduction</title>
+    
+    <p>Comming soon.</p>
+  </paragraphs>
 
-  <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
-
-</appendix>
+</preface>
