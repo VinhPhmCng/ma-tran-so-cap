@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
 <section xml:id="sec-nhan-vector-voi-1-so" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Nhân Vector Với 1 Số</title>
 
@@ -24,8 +31,13 @@
         <mrow number="yes">(-2) \bmat{3 \\ 4} = \bmat{-2 \cdot 3 \\ -2 \cdot 4} = \bmat{-6 \\ -8}</mrow>
         <mrow></mrow>
         <mrow number="yes">5 \bmat{1 \\ 0} + (-3) \bmat{0 \\ 1} = \bmat{5 \\ -3} \quad \text{(}<xref ref="subsec-vector-co-so" text="title"/>\text{)}</mrow>
+      </md>
+
+      <md>
         <mrow></mrow>
-        <mrow number="yes">4 \bmat{5 \\ 6} - 2 \bmat{1 \\ 2} = 4 \bmat{5 \\ 6} + (-2) \bmat{1 \\ 2} = \bmat{20 \\ 24} + \bmat{-2 \\ -4} = \bmat{18 \\ 20}</mrow>
+        <mrow number="yes">4 \bmat{5 \\ 6} - 2 \bmat{1 \\ 2} \amp = 4 \bmat{5 \\ 6} + (-2) \bmat{1 \\ 2}</mrow>
+        <mrow></mrow>
+        <mrow>\amp = \bmat{20 \\ 24} + \bmat{-2 \\ -4} = \bmat{18 \\ 20}</mrow>
       </md>
     </p>
 
@@ -38,7 +50,56 @@
       </p>
       
     </remark>
+
+    <remark>
+      <title>Chia vector cột cho 1 số</title>
+
+      <p>
+        Thực hiện và cho kết quả tương tự phép chia số với số.
+        <me>a / b = a \cdot \frac{1}{b}</me>
+      </p>
+    </remark>
     
+  </subsection>
+
+  <subsection xml:id="subsec-nhan-vector-voi-1-so-code">
+    <title>Nhân vector với 1 số trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để nhân vector, ta dùng <c>*</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để chia vector, ta dùng <c>/</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        a = np.matrix([
+            [1],
+            [2],
+            [3]
+        ])
+
+        print(a * 2)
+        print()
+        print(a / 2)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
   </subsection>
 
 </section>

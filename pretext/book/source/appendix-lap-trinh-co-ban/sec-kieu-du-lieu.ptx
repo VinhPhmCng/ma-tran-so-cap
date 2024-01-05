@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-kieu-du-lieu" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Kiểu Dữ Liệu</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+  <p>
+    <term>Kiểu dữ liệu</term> là một khái niệm đi đôi với biến.
+  </p>
+
+  <p>
+    Trong Python và SageMath, khi ta khai báo biến hay gán cho biến giá trị mới,
+    biến sẽ dựa vào giá trị đó mà quyết định <term>kiểu dữ liệu</term> của mình.
+  </p>
+
+  <sage language="python">
+    <input>
+      a = 5
+      print(type(a))
+
+      a = "xin chao"
+      print(type(a)) 
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Ở ví dụ trên, ta sử dụng lệnh <c>type()</c> để biết được kiểu dữ liệu của biến,
+    trong trường hợp này là <c>int</c> và <c>str</c>.
+  </p>
+
+  <p>
+    Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:
+
+    <dl>
+      <li>
+        <title>str</title>
+        <p>
+          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc
+          kép đơn <c>''</c>.
+        </p>
+      </li>
+
+      <li>
+        <title>int</title>
+        <p>
+          <term>Số nguyên</term>. Là một số thực không có các chữ số thập phân.
+        </p>
+      </li>
+
+      <li>
+        <title>float</title>
+        <p>
+          <term>Số dấu phẩy động</term>. Là một số thực có một hoặc nhiều chữ số thập phân.
+        </p>
+      </li>
+
+      <li>
+        <title>bool</title>
+        <p>
+          <term>Boolean</term> chỉ chứa một trong hai giá trị <c>True</c> hoặc <c>False</c>.
+          Được dùng chủ yếu trong những câu lệnh điều kiện.
+        </p>
+      </li>
+
+    </dl>
+  </p>
+
+  <p>Dưới đây là ví dụ.</p>
+
+  <sage language="python">
+    <input>
+      a = 3
+      b = 1.5
+      c = "ma tran"
+      d = True
+      
+      print(type(a))
+      print(type(b))
+      print(type(c))
+      print(type(d))
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Kiểu dữ liệu quyết định <term>tương tác</term> của biến. Trong ví dụ dưới đây,
+    ta có thể cộng <c>int</c> với <c>int</c> và cộng <c>float</c> với <c>float</c>.
+    Ta cũng có thể cộng <c>int</c> với <c>float</c>, cho kết quả là <c>float</c>.
+  </p>
+
+  <sage language="python">
+    <input>
+      a = 5
+      b = -2
+      print(a + b, type(a + b))
+
+      c = 3.5
+      d = 5.6
+      print(c + d, type(c + d))
+
+      print(a + c, type(a + c))
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+
+  <p>
+    Ta cũng có thể cộng các <c>str</c> với nhau, việc này ghép chúng lại thành một chuỗi mới.
+  </p>  
+
+  <sage language="python">
+    <input>
+      s1 = "Ma tran"
+      s2 = "Ma tran " # Chu y dau cach
+      s3 = "so cap"
+
+      s4 = s1 + s2
+      s5 = s2 + s3
+      
+      print(s4, type(s4))
+      print(s5)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Nhưng ta <em>không</em> thể cộng <c>int</c> với <c>str</c>.
+  </p>
+
+  <sage language="python">
+    <input>
+      a = 5
+      s = "string"
+      print(a + s)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+
+</section>

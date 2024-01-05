@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
 <!-- This file contains all of the "backmatter" material -->
 <!-- In comments, we show examples of how to have hints to divisional -->
 <!-- excercies appear in a section, and then their -->
@@ -8,13 +15,18 @@
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
   <title>Backmatter</title>
 
-  <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
+  <xi:include href="appendix-lap-trinh-co-ban/appendix-lap-trinh-co-ban.ptx"/>
+  <xi:include href="appendix-lap-trinh-mo-rong/appendix-lap-trinh-mo-rong.ptx"/>
 
-  <!-- <solutions divisional="solution"> <title>Selected Solutions</title> </solutions> -->
+  <solutions divisional="hint"> <title>Selected Hints</title> </solutions>
 
-  <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
+  <solutions divisional="solution"> <title>Selected Solutions</title> </solutions>
 
-  <!-- <index> <title>Index</title> <index-list/> </index> -->
+  <appendix> <title>List of Symbols</title> <notation-list/> </appendix>
+
+  <xi:include href="appendix-license/appendix-gfdl.ptx"/>
+
+  <index> <title>Index</title> <index-list/> </index>
 
   <colophon>
     <p> This book was authored in <pretext />. </p>

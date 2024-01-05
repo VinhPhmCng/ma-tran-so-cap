@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-moi-truong-lt" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Môi Trường Lập Trình</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+  <p>
+    Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ
+    không mở trình soạn thảo Word để lập trình rồi, phải không nào.
+    Thay vào đó, ta sẽ sử dụng các <term>trình soạn thảo và biên dịch</term> dành cho lập trình.
+  </p>
+
+  <p>
+    Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng
+    phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây.
+    Bấm nút <c>Evaluate</c> để chạy đoạn code.
+  </p>
+
+  <sage language="python">
+    <input>
+      print("Hello World!")
+
+      # Day la mot ghi chu
+
+      a = 3
+      b = 5
+      print(a * b)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+
+  <p>
+    Môi trường trên có 3 thành phần chính:
+
+    <ol>
+      <li>
+        <p>
+          <term>Ô soạn thảo</term>: Nơi bạn viết code
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Nút</term> <c>Evaluate</c>: Ấn để chạy chương trình, hay nói cách khác là chạy trình biên
+          dịch code.
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Terminal</term>: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <p>
+    Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy.
+    Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình
+    viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la
+    rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương
+    tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra,
+    nhưng quyển sách này sẽ không hướng dẫn việc đó.
+  </p>
+
+  <p>
+    Terminal có khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. 
+    Ngoài ra, nó còn hiển thị các <term>lỗi</term>, nếu có, 
+    trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.
+    Bạn có thể tham khảo phần <xref ref="sec-loi"/>
+  </p>
+
+  <example xml:id="example-code-co-loi">
+    <title>Đoạn code có lỗi</title>
+    
+    <p>
+      Dưới đây là một đoạn code được viết bằng ngôn ngữ <term>Sage</term>, hay <term>SageMath</term>.
+      Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong
+      terminal, và sửa lỗi nhé.
+    </p>
+
+    <sage>
+      <input>
+        print("Hello world!")
+        print("This is a string.")
+        print("This is another string.) 
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+
+    <solution>
+      <p>
+        Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh.
+        Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu <c>"</c>.
+        Nếu ta bổ sung vào và chạy lại đoạn code<ellipsis /> Yay!
+      </p>
+    </solution>
+  </example>
+
+</section>

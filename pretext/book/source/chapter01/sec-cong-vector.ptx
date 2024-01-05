@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
 <section xml:id="sec-cong-vector" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Cộng Vector</title>
 
@@ -38,13 +45,94 @@
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vector cột có 8 tính chất đã nêu 
+        Phép cộng các vector cột có 8 tính chất đã nêu
         ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
     
+    <remark>
+      <title>Trừ vector cột</title>
+
+      <p>
+        Thực hiện và cho kết quả tương tự phép trừ số với số.
+        <me>a - b = a + (-b)</me>
+      </p>
+    </remark>
   </subsection>
 
+  <subsection xml:id="subsec-cong-vector-code">
+    <title>Cộng vector trong lập trình</title>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Để cộng vector, ta dùng <c>+</c>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Để trừ vector, ta dùng <c>-</c>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <sage language="python">
+      <input>
+        # Trong Numpy (Python)
+        import numpy as np # Su dung thu vien Numpy
+        
+        a = np.matrix([
+            [1],
+            [2],
+            [3]
+        ])
+
+        b = np.matrix([
+            [4],
+            [-2],
+            [0.5]
+        ])
+
+        print(a + b)
+        print()
+        print(a - b)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+    <p>
+      Ví dụ cộng 2 vectors cột không có cùng số hàng <m>\rightarrow</m> <alert>Lỗi</alert>:
+    </p>
+
+    <sage>
+      <input>
+        # Trong SageMath
+        
+        c = matrix([
+            [1],
+            [2],
+            [3],
+            [4]
+        ])
+
+        d = matrix([
+            [4],
+            [-2],
+            [0.5]
+        ])
+
+        print(c + d)
+      </input>
+      <output>
+        Provisional
+      </output>
+    </sage>
+
+  </subsection>
 
 </section>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
 <section xml:id="sec-so-thuc-va-tc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Số Thực Và Các Tính Chất</title>
 
@@ -17,14 +24,14 @@
     <p>
       <term>Tập số tự nhiên</term> (hay tập số nguyên không âm), kí hiệu <m>\N</m>
       <me>
-        \N = \{0, 1, 2, 3, \ldots, n, \ldots \}
+        \N = \{0, \, 1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}
       </me>
     </p>
 
     <p>
       <term>Tập số tự nhiên dương</term>, kí hiệu <m>\pN</m>.
       <md>
-        <mrow>\pN \amp = \{1, 2, 3, \ldots, n, \ldots \}</mrow>
+        <mrow>\pN \amp = \{1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}</mrow>
         <mrow>\amp =\N \setminus \{0\}</mrow>
       </md>
     </p>
@@ -32,7 +39,7 @@
     <p>
       <term>Tập số nguyên</term>, kí hiệu <m>\Z</m>
       <me>
-        \Z = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}
+        \Z = \{\ldots, \, -3, \, -2, \, -1, \, 0, \, 1, \, 2, \, 3, \, \ldots \}
       </me>
     </p>
       
@@ -41,7 +48,7 @@
       <me>
         \Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}
       </me>
-      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng 
+      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng
       <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
     </p>
     <p>Ví dụ:
@@ -52,7 +59,7 @@
     </p>
       
     <p>
-      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là 
+      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là
       tập các số thập phân vô hạn <em>không</em> tuần hoàn.
       <me>
         \nQ = \R \setminus \Q
@@ -66,7 +73,7 @@
     </p>
       
     <p>
-      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là 
+      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là
       tập bao gồm các số hữu tỷ và các số vô tỷ.
       <me>
         \R = \Q \cup \nQ
@@ -94,12 +101,14 @@
   <subsection xml:id="subsec-cac-phep-toan-tren-tap-so-thuc">
     <title>Các Phép Toán Trên Tập Số Thực <m>\R</m></title>
 
-    <p>Với 2 số <m>x, y \in \R</m></p>
+    <p>
+      <me>\boxed{\forall \, x, \, y \in \R}</me>
+    </p>
 
     <p><term>Phép cộng</term></p>
     <p>
-      Cộng 2 số thực <m>x, y</m> ta được 1 số thực <m>\delta</m>, 
-      gọi là tổng của <m>x \text{ và } y</m>.
+      Cộng 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\delta</m>, 
+      gọi là tổng của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
       <me>
@@ -109,8 +118,8 @@
     
     <p><term>Phép nhân</term></p>
     <p>
-      Nhân 2 số thực <m>x, y</m> ta được 1 số thực <m>\rho</m>, 
-      gọi là tích của <m>x \text{ và } y</m>.
+      Nhân 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\rho</m>, 
+      gọi là tích của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
       <me>
@@ -124,7 +133,9 @@
   <subsection xml:id="subsec-tinh-chat-cua-cac-phep-toan">
     <title>Tính Chất Của Các Phép Toán</title>
 
-    <p><m>\forall x, y, z \in \R</m></p>
+    <p>
+      <me>\boxed{\forall \, x, \, y, \, z \in \R}</me>
+    </p>
 
     <p>
       <ol marker="1">
@@ -165,7 +176,7 @@
     <observation>
       <title>Tính giao hoán và phân phối</title>
       <p>
-        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và 
+        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và
         <xref ref="giao-hoan-phep-nhan" text="local"/>, ta có:
         <md>
           <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
@@ -190,7 +201,7 @@
   <subsection xml:id="subsec-tinh-dong-cua-mot-phep-toan">
     <title>Tính Đóng Của Một Phép Toán</title>
     
-    <p>Với mọi <m>x, y \in \R</m>, khi:</p>
+    <p>Với mọi <m>x, \, y \in \R</m>, khi:</p>
     <p>
       <ul>
         <li>
@@ -214,13 +225,13 @@
     <example>
       <title>Tính đóng đối với tập số nguyên âm <m>\mZ</m></title>
       <p>
-        Trên tập các số nguyên âm <m>\mZ = \{\ldots, -n, \ldots, -3, -2, -1\}</m>    
+        Trên tập số nguyên âm <m>\mZ = \{\ldots, \, -n, \, \ldots, \, -3, \, -2, \, -1\}</m>
       </p>
       <p>
         <ul>
           <li>
             <p>
-              Phép cộng có tính đóng. 
+              Phép cộng có tính đóng.
               <me>
                 (-3) + (-2) = -5 \in \mZ
               </me>
@@ -228,7 +239,7 @@
           </li>
           <li>
             <p>
-              Phép nhân <em>không</em> có tính đóng. 
+              Phép nhân <em>không</em> có tính đóng.
               <me>
                 (-3) \cdot (-2) = 6 \notin \mZ
               </me>
@@ -241,8 +252,8 @@
     <remark>
       <title>Sự quan trọng của tính đóng</title>
       <p>
-        Tính đóng đối với phép toán có mối quan hệ mật thiết với 
-        một đặc tính khái niệm của không gian vector 
+        Tính đóng đối với phép toán có mối quan hệ mật thiết với
+        một đặc tính khái niệm của không gian vector
         <xref provisional="section-dac-tinh-khong-gian-vector"/>.
       </p>
     </remark>
@@ -266,7 +277,7 @@
 
           <hint>
             <p>
-              Nháp một vài phép cộng hai số tự nhiên bất kỳ và 
+              Nháp một vài phép cộng hai số tự nhiên bất kỳ và
               xem xét tổng có thuộc tập số tự nhiên không.
             </p>
           </hint>
@@ -277,7 +288,8 @@
 
           <solution>
             <p>
-              <me>\forall x, y \in \N, x + y = \delta \Rightarrow \delta \in \N</me>
+<!--               <me>\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N</me> -->
+              <me>\boxed{\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N}</me>
               Ví dụ:
               <me>2 + 5 = 7 \in \N</me>
             </p>
@@ -304,7 +316,8 @@
 
           <solution>
             <p>
-              <me>\exists x, y \in \N, x - y = \delta \Rightarrow \delta \notin \N</me>
+<!--               <me>\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N</me> -->
+              <me>\boxed{\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N}</me>
               Ví dụ:
               <md>
                 <mrow>5 - 2 \amp = 3 \in \N</mrow>
@@ -331,20 +344,35 @@
 
           <solution>
             <p>
-              <me>\forall x, y \in \N, x \cdot y = \rho \Rightarrow \rho \in \N</me>
-              <me></me>
-              <me>\exists x, y \in \N, x \div y = \rho \Rightarrow \rho \notin \N</me>
+<!--               <me>\forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N</me>
+              <me>\exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N</me> -->
+
+              <me>
+                \boxed{
+                  \begin{aligned}
+                    \forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N \\[0.5ex]
+                    \exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N
+                  \end{aligned}
+                }
+              </me>
+
+<!--               <me>
+                \left\lfloor\begin{aligned}
+                  \forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N \\[0.5ex]
+                  \exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N
+                \end{aligned}\right\rfloor
+              </me> -->
+
               Ví dụ:
               <md>
                 <mrow>2 \cdot 5 \amp = 10 \in \N</mrow>
                 <mrow></mrow>
-                <mrow>10 \div 5 \amp = 2 \in \N</mrow>
-                <mrow>\text{Nhưng } 5 \div 10 \amp = 0.5 \notin \N</mrow>
+                <mrow>10 / 5 \amp = 2 \in \N</mrow>
+                <mrow>\text{Nhưng } 5 / 10 \amp = 0.5 \notin \N</mrow>
               </md>
             </p>
           </solution>
         </exercise>
-
 
         <conclusion>
           <p>
@@ -359,8 +387,8 @@
 
         <introduction>
           <p>
-            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>
-            , hữu tỷ <m>\Q</m>, thực <m>\R</m>.
+            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>,
+            hữu tỷ <m>\Q</m>, thực <m>\R</m>.
           </p>
         </introduction>
         
