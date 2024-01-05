@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--*****************************************
+This is part of the Ma Trận Sơ Cấp
+Copyright (C) 2023-2024
+Phạm Công Vinh, Phạm Xuân Trung
+See the file COPYING for copying conditions.
+******************************************-->
+
 <section xml:id="sec-khong-gian-vector-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Không Gian Vector. Hạng Và Chuẩn Của Vector</title>
   <shorttitle>Không Gian Vector</shorttitle>
@@ -18,7 +25,7 @@
 
     <p>
       Giả sử ta có 1 vector <m>a = \sbmat{3 \\ 2}</m>. Để hình dung vector này trong không gian 2D,
-      ta có thể sử dụng đến sự hỗ trợ của 2 <term>vectors cơ sở</term> cơ bản  <m>\vec{i} = \sbmat{1 \\ 0}</m>
+      ta có thể sử dụng đến sự hỗ trợ của 2 <term>vectors cơ sở</term> cơ bản <m>\vec{i} = \sbmat{1 \\ 0}</m>
       và <m>\vec{j} = \sbmat{0 \\ 1}</m>.
     </p>
 
