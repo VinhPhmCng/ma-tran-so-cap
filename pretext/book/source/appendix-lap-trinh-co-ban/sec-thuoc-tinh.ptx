@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-thuoc-tinh" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thuộc Tính</title>
+
+  <objectives>
+    <ol>
+      <li>Các mục tiêu của section.</li>
+      <li></li>
+      <li></li>
+    </ol>
+  </objectives>
+  
+  <p>
+    Một cách để hiểu khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>.
+     Dưới đây là ví dụ.
+  </p>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy
+
+      mat = np.matrix([
+        [1, 2, 3],
+        [2, 3, 4],
+        [3, 4, 5] 
+      ])
+
+      print(mat.size)
+      print(mat.shape)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Có thể thấy, <c>mat.size</c> trả lại số phần tử của ma trận, còn <c>mat.shape</c>
+     trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term>
+     của cấu trúc dữ liệu ma trận của Numpy.
+  </p>
+
+  <p>
+    Như đã nói ở các phần trước, kiểu dữ liệu hay cấu trúc dữ liệu quyết định tương tác của biến.
+     Vậy nên, nếu ta thử điều tương tự với kiểu dữ liệu <c>int</c>, ta sẽ gặp lỗi vì nó không
+     có các thuộc tính ý.
+  </p>
+
+  <sage language="python">
+    <input>
+      a = 5
+      print(a.size)
+      print(a.shape)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Vậy, cú pháp để <term>truy cập</term> thuộc tính là:
+    <me>\text{tên biến.} {\color{blue} \text{tên thuộc tính}}</me>
+    hoặc
+    <me>\text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}</me>
+  </p>
+
+  <p>
+    Đúng vậy, bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>,
+    như ở ví dụ dưới đây.
+  </p>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy
+
+      print(
+          np.matrix([
+              [1, 2, 3],
+              [2, 3, 4],
+              [3, 4, 5] 
+          ]).size
+      )
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+
+  <p>
+    Vì thuộc tính cũng thuộc một kiểu dự liệu hoặc cấu trúc dữ liệu nào đó, nó cũng có thể
+     có thuộc tính của riêng mình. Dưới đây là ví dụ.
+  </p>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy
+      
+      mat = np.matrix([
+        [1, 2, 3, 4],
+        [2, 3, 4, 5],
+        [3, 4, 5, 6] 
+      ])
+
+      print(mat.T, type(mat.T))
+      print(mat.T.shape)
+    </input>
+    <output>
+      (for static output)
+    </output>
+  </sage>
+  
+  <p>
+    Ở trên, <c>mat.T</c> cũng là một ma trận Numpy, vậy nên nó cũng có thuộc tính <c>shape</c>
+  </p>
+
+  <p>
+  </p>
+
+</section>

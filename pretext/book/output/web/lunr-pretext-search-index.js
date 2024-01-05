@@ -931,6 +931,402 @@ var ptx_lunr_docs = [
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
+  "type": "Appendix",
+  "number": "A",
+  "title": "Selected Hints",
+  "body": " Selected Hints  "
+},
+{
+  "id": "backmatter-3",
+  "level": "1",
+  "url": "backmatter-3.html",
+  "type": "Appendix",
+  "number": "B",
+  "title": "Selected Solutions",
+  "body": " Selected Solutions  "
+},
+{
+  "id": "backmatter-4",
+  "level": "1",
+  "url": "backmatter-4.html",
+  "type": "Appendix",
+  "number": "C",
+  "title": "List of Symbols",
+  "body": " List of Symbols   "
+},
+{
+  "id": "sec-ngon-ngu-lt",
+  "level": "1",
+  "url": "sec-ngon-ngu-lt.html",
+  "type": "Section",
+  "number": "D.1",
+  "title": "Ngôn Ngữ Lập Trình",
+  "body": " Ngôn Ngữ Lập Trình    Các mục tiêu của section.      Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những chỉ dẫn này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.  Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình Python một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Bấm nút Evaluate để chạy đoạn code.   Khi chạy đoạn code trên bạn sẽ thấy dòng chữ Hello world! được hiển thị ở terminal (hay console ) ở ngay phía dưới.  Đây là một đoạn code nữa được viết bằng Python.   a = 0 while a < 10: print(a, end=\" \") if a % 2 == 0: print(\"is even\") else: print(\"is odd\") a += 1   Python là một ngôn ngữ lập trình bậc cao . Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp Python trở thành một trong những ngôn ngữ lập trình phổ biến nhất.  Dưới đây là một đoạn code trong ngôn ngữ Assembly một ngôn ngữ lập trình bậc thấp . Khi chạy, ta cũng thu được dòng chữ \"Hello World!\".   org 0x100 mov dx, msg mov ah, 9 int 0x21 mov ah, 0x4c int 0x21 msg db 'Hello World!', 0x0d, 0x0a, '$'   Khi một người mới bắt đầu học lập trình, họ thường gặp phải những câu hỏi hay chủ đề như:   Nên bắt đầu với ngôn ngữ lập trình nào?    Ngôn ngữ lập trình nào nên học trong năm 2024?    Ngôn ngữ lập trình nào nên học để có việc lương cao?    v.v.   Đó là những câu hỏi không mấy thiết thực và tôi khuyên bạn không nên có lối suy nghĩ như vậy. Thay vào đó, những câu hỏi bạn nên hỏi là:   Mục đích của mình khi học một ngôn ngữ lập trình mới là gì?    Với mục đích đó thì ngôn ngữ lập trình nào là phù hợp?    Mình muốn ngôn ngữ lập trình ấy là bậc cao hay bậc thấp?    v.v.   Hiện tại, số lượng ngôn ngữ lập trình là nhiều vô kể, và mỗi một trong số đó đều có mục đích, điểm mạnh và điểm yếu riêng biệt .  Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình rất thân thiện với người dùng, ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được. Và hiển nhiên rồi, đổi lại chiếc xe đua F1 bậc thấp sẽ có tốc độ vượt xa chiếc xe ô tô bậc cao .   Python là một ngôn ngữ lập trình bậc cao, đa mục đích. Nó được dùng bởi các nhà toán học, nhà khoa học dữ liệu, người phát triển phần mềm, phát triển game, v.v. Numpy là một thư viện mở rộng cho Python với rất nhiều tính năng toán học.   SageMath là một ngôn ngữ lập trình bậc cao, được xây dựng dựa trên Python, với mục đích quan trọng nhất là toán học, như cái tên nói lên.   Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, phần lớn là Python và SageMath, giúp bạn dễ dàng theo dõi và thử nghiệm.  Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python. Mỗi ngôn ngữ đều có một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó. Vì Python là một ngôn ngữ bậc cao và đa mục đích, cú pháp của nó rất thân thiện với người mới bắt đầu.   "
+},
+{
+  "id": "sec-ngon-ngu-lt-2",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-2",
+  "type": "Objectives",
+  "number": "D.1",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ngon-ngu-lt-4",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Python "
+},
+{
+  "id": "sec-ngon-ngu-lt-6",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "terminal console "
+},
+{
+  "id": "sec-ngon-ngu-lt-9",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "bậc cao "
+},
+{
+  "id": "sec-ngon-ngu-lt-10",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Assembly bậc thấp "
+},
+{
+  "id": "sec-ngon-ngu-lt-14",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Python Numpy "
+},
+{
+  "id": "sec-ngon-ngu-lt-15",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "SageMath "
+},
+{
+  "id": "sec-ngon-ngu-lt-16",
+  "level": "2",
+  "url": "sec-ngon-ngu-lt.html#sec-ngon-ngu-lt-16",
+  "type": "Remark",
+  "number": "D.1.1",
+  "title": "",
+  "body": " Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, phần lớn là Python và SageMath, giúp bạn dễ dàng theo dõi và thử nghiệm.  Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python. Mỗi ngôn ngữ đều có một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó. Vì Python là một ngôn ngữ bậc cao và đa mục đích, cú pháp của nó rất thân thiện với người mới bắt đầu.  "
+},
+{
+  "id": "sec-moi-truong-lt",
+  "level": "1",
+  "url": "sec-moi-truong-lt.html",
+  "type": "Section",
+  "number": "D.2",
+  "title": "Môi Trường Lập Trình",
+  "body": " Môi Trường Lập Trình    Các mục tiêu của section.      Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó , ta sẽ sử dụng các trình soạn thảo và biên dịch dành cho lập trình.  Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản online của quyển sách) sẽ chính là môi trường code như dưới đây. Bấm nút Evaluate để chạy đoạn code.   Môi trường trên có 3 thành phần chính:   Ô soạn thảo: Nơi bạn viết code    Nút Evaluate : Ấn để chạy chương trình, hay nói cách khác là chạy trình biên dịch code.    Terminal: Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.     Trong quyển sách này, môi trường lập trình của chúng ta sẽ vô cùng giản dị như vậy. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những khả năng cuốn sách này cung cấp. Những đoạn code mà bạn sẽ tương tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài do chính bạn tạo ra, nhưng quyển sách này sẽ không hướng dẫn việc đó.  Terminal có khả năng hiển thị dữ liệu ngay trong khi chạy chương trình, như trên. Ngoài ra, nó còn hiển thị các lỗi , nếu có, trong một đoạn code và những thông tin đi kèm giúp ta sửa lỗi đó.   Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!    "
+},
+{
+  "id": "sec-moi-truong-lt-2",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-2",
+  "type": "Objectives",
+  "number": "D.2",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-moi-truong-lt-3",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Word trình soạn thảo và biên dịch "
+},
+{
+  "id": "sec-moi-truong-lt-8",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#sec-moi-truong-lt-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "lỗi "
+},
+{
+  "id": "example-code-co-loi",
+  "level": "2",
+  "url": "sec-moi-truong-lt.html#example-code-co-loi",
+  "type": "Example",
+  "number": "D.2.1",
+  "title": "Đoạn code có lỗi.",
+  "body": " Đoạn code có lỗi  Dưới đây là một đoạn code được viết bằng ngôn ngữ Sage , hay SageMath . Tiếc thay, nó đang có một lỗi cú pháp. Bạn hãy thử chạy nó, đọc lỗi hiển thị trong terminal, và sửa lỗi nhé.    Ồ! Terminal báo rằng ở dòng số 3, ta đang có một chuỗi ký tự (string) không hoàn chỉnh. Nhìn rõ hơn, ta sẽ thấy dòng 3 khác với hai dòng trên ở chỗ nó thiếu mất một dấu \" . Nếu ta bổ sung vào và chạy lại đoạn code Yay!   "
+},
+{
+  "id": "sec-ghi-chu",
+  "level": "1",
+  "url": "sec-ghi-chu.html",
+  "type": "Section",
+  "number": "D.3",
+  "title": "Ghi Chú",
+  "body": " Ghi Chú    Các mục tiêu của section.      Khi viết code, có những lúc ta muốn để lại những ghi chú, có thể là để giải thích một thuật toán nào đó hay ghi chép lại luồng suy nghĩ bản thân khi đó. Trong tương lai, khi quay lại ta sẽ dễ dàng đọc hiểu đoạn code với sự giúp đỡ của các ghi chú ấy.  Cú pháp của ghi chú trong Python và SageMath là dấu thăng # . Những gì được viết ở phía sau # (trên cùng 1 dòng) sẽ được trình biên dịch coi là văn bản thuần túy thay vì code.  Cú pháp ghi chú cũng được sử dụng để tạm thời tắt một đoạn code. Dưới đây là ví dụ.   "
+},
+{
+  "id": "sec-ghi-chu-2",
+  "level": "2",
+  "url": "sec-ghi-chu.html#sec-ghi-chu-2",
+  "type": "Objectives",
+  "number": "D.3",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-ghi-chu-4",
+  "level": "2",
+  "url": "sec-ghi-chu.html#sec-ghi-chu-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ghi chú "
+},
+{
+  "id": "sec-bien",
+  "level": "1",
+  "url": "sec-bien.html",
+  "type": "Section",
+  "number": "D.4",
+  "title": "Biến",
+  "body": " Biến    Các mục tiêu của section.       Biến là một trong những khái niệm cơ bản và quan trọng nhất của lập trình.  Trong toán học, ta thường hay thấy biến số trong các hàm số, ví dụ như: Ở đây, biến có nghĩa là chưa xác định, hay nói cách khác là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế với những con số xác định.  Còn trong lập trình thì biến được dùng để lưu trữ dữ liệu, nên nó mang tính xác định, nhưng đồng thời nó cũng thường xuyên thay đổi trong quá trình chương trình chạy.  Để khai báo biến hoặc gán cho biến giá trị mới, ta sử dụng dấu = . Vế trái là tên biến và vế phải là giá trị. Dưới đây là ví dụ.   Đầu tiên, ta khai báo biến a và gán cho nó giá trị là 1 . Ta khai báo b và gán cho nó giá trị bằng giá trị hiện tại của a . Ta sử dụng lệnh print() để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.  Sau đó, ta lại gán cho a một giá trị mới, hay nói cách khác là update giá trị của a , thành 2 , nhưng ta không động đến b .  Ví dụ trên thể hiện tính xác định của biến. Vì trình biên dịch code sẽ đọc từ trên xuống dưới, tại dòng số 3 b = a thì giá trị của a vẫn đang là 1 .  Trong ví dụ dưới đây, bạn hãy thử thay đổi giá trị của các biến, chạy lại code, và xem kết quả thay đổi.   "
+},
+{
+  "id": "sec-bien-2",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-2",
+  "type": "Objectives",
+  "number": "D.4",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-bien-3",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Biến "
+},
+{
+  "id": "sec-bien-5",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "biến "
+},
+{
+  "id": "sec-bien-6",
+  "level": "2",
+  "url": "sec-bien.html#sec-bien-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "khai báo gán "
+},
+{
+  "id": "sec-kieu-du-lieu",
+  "level": "1",
+  "url": "sec-kieu-du-lieu.html",
+  "type": "Section",
+  "number": "D.5",
+  "title": "Kiểu Dữ Liệu",
+  "body": " Kiểu Dữ Liệu    Các mục tiêu của section.       Kiểu dữ liệu là một khái niệm đi đôi với biến.  Trong Python và SageMath, khi ta khai báo biến hay gán cho biến giá trị mới, biến sẽ dựa vào giá trị đó mà quyết định kiểu dữ liệu của mình.   Ở ví dụ trên, ta sử dụng lệnh type() để biết được kiểu dữ liệu của biến, trong trường hợp này là int và str .  Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:   str   Chuỗi ký tự. Được bao quanh bởi dấu ngoặc kép \"\" hoặc dấu ngoặc kép đơn '' .    int   Số nguyên . Là một số thực không có các chữ số thập phân.    float   Số dấu phẩy động . Là một số thực có một hoặc nhiều chữ số thập phân.    bool   Boolean chỉ chứa một trong hai giá trị True hoặc False . Được dùng chủ yếu trong những câu lệnh điều kiện.     Dưới đây là ví dụ.   Kiểu dữ liệu quyết định tương tác của biến. Trong ví dụ dưới đây, ta có thể cộng int với int và cộng float với float . Ta cũng có thể cộng int với float , cho kết quả là float .   Ta cũng có thể cộng các str với nhau, việc này ghép chúng lại thành một chuỗi mới.   Nhưng ta không thể cộng int với str .   "
+},
+{
+  "id": "sec-kieu-du-lieu-2",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-2",
+  "type": "Objectives",
+  "number": "D.5",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-kieu-du-lieu-3",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Kiểu dữ liệu "
+},
+{
+  "id": "sec-kieu-du-lieu-4",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kiểu dữ liệu "
+},
+{
+  "id": "sec-kieu-du-lieu-7",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Chuỗi Số nguyên Số dấu phẩy động Boolean "
+},
+{
+  "id": "sec-kieu-du-lieu-10",
+  "level": "2",
+  "url": "sec-kieu-du-lieu.html#sec-kieu-du-lieu-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tương tác "
+},
+{
+  "id": "sec-mang",
+  "level": "1",
+  "url": "sec-mang.html",
+  "type": "Section",
+  "number": "D.6",
+  "title": "Mảng",
+  "body": " Mảng    Các mục tiêu của section.      Có một khái niệm được xây dựng dựa trên kiểu dữ liệu , và đó chính là cấu trúc dữ liệu . Các cấu trúc  Ta có một khái niệm mới, và đó là cấu trúc dữ liệu . Cấu trúc dữ liệu được xây dựng dựa trên  kiểu dữ liệu , hay nói cách khác nó cũng là một kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.  Để nói một cách dễ hiểu thì cấu trúc dữ liệu giúp biến có khả năng chứa cùng một lúc nhiều dữ liệu, có thể giống nhau hoặc khác nhau. Dưới đây là ví dụ.   Ở trên, ta đang sử dụng cấu trúc dữ liệu list , hay còn được gọi là danh sách. Đây là một cấu trúc dữ liệu có sẵn của Python rất phổ biến. Ta có thể thấy arr1 là một danh sách chứa các giá trị có kiểu int , còn arr2 lại chứa một hỗn hợp các kiểu dữ liệu. Và để khai báo một list , bạn phải sử dụng ngoặc vuông [] bao quanh các phần tử và dấu phẩy , để ngăn cách chúng.  Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập hợp các cấu trúc dữ liệu riêng của mình, và, một lần nữa, điều này dựa trên mục đích của nó.  Đối với quyển sách về ma trận này, hai cấu trúc dữ liệu quan trọng nhất chắc chắn phải là:   Mảng    Ma trận     "
+},
+{
+  "id": "sec-mang-2",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-2",
+  "type": "Objectives",
+  "number": "D.6",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-mang-3",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kiểu dữ liệu cấu trúc dữ liệu "
+},
+{
+  "id": "sec-mang-4",
+  "level": "2",
+  "url": "sec-mang.html#sec-mang-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cấu trúc dữ liệu kiểu dữ liệu "
+},
+{
+  "id": "sec-toan-tu",
+  "level": "1",
+  "url": "sec-toan-tu.html",
+  "type": "Section",
+  "number": "D.7",
+  "title": "Toán Tử",
+  "body": " Toán Tử    Các mục tiêu của section.      Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v. Đối với lập trình, ta có các toán tử giúp miêu tả tương tác giữa các biến cũng như các dữ liệu tự do.  Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử = và + Và như đã đề cập, kiểu dữ liệu đóng vai trò quyết định tương tác có thể thực hiện với biến. Ý này sẽ được làm rõ hơn ở dưới đây.  Dưới đây là một vài những toán tử cơ bản.   Toán Tử Số Học    Toán Tử Gán    Toán Tử Quan Hệ    Toán Tử Logic   "
+},
+{
+  "id": "sec-toan-tu-2",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-2",
+  "type": "Objectives",
+  "number": "D.7",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-toan-tu-3",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "toán tử "
+},
+{
+  "id": "sec-toan-tu-4",
+  "level": "2",
+  "url": "sec-toan-tu.html#sec-toan-tu-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kiểu dữ liệu "
+},
+{
+  "id": "sec-ham",
+  "level": "1",
+  "url": "sec-ham.html",
+  "type": "Section",
+  "number": "D.8",
+  "title": "Hàm",
+  "body": " Hàm    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-ham-2",
+  "level": "2",
+  "url": "sec-ham.html#sec-ham-2",
+  "type": "Objectives",
+  "number": "D.8",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "sec-loi",
+  "level": "1",
+  "url": "sec-loi.html",
+  "type": "Section",
+  "number": "D.9",
+  "title": "Lỗi",
+  "body": " Lỗi    Các mục tiêu của section.      Coming soon.  "
+},
+{
+  "id": "sec-loi-2",
+  "level": "2",
+  "url": "sec-loi.html#sec-loi-2",
+  "type": "Objectives",
+  "number": "D.9",
+  "title": "",
+  "body": "  Các mục tiêu của section.     "
+},
+{
+  "id": "backmatter-6",
+  "level": "1",
+  "url": "backmatter-6.html",
+  "type": "Index",
+  "number": "",
+  "title": "Index",
+  "body": " Index   "
+},
+{
+  "id": "backmatter-7",
+  "level": "1",
+  "url": "backmatter-7.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
