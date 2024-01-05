@@ -49,7 +49,7 @@
     Ở phần này ta chưa đi sâu vào cú pháp để khai báo hàm,
     mà ta sẽ chỉ tập trung vào cú pháp để sử dụng những hàm có sẵn hoặc
     được cung cấp bởi thư viện.
-    Để biết thêm về cú pháp <c>khai báo hàm</c>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
+    Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
   </p>
 
   <p>
@@ -62,15 +62,15 @@
   <p>
     Một ví dụ điển hình của hàm toàn cục chính là hàm <c>print()</c>.
     Nó có thể được gọi ở bất cứ nơi nào trong code, và với bất kỳ giá trị đầu vào nào.
+    Ta cũng có thể truyền cho nó nhiều dữ liệu đầu vào cùng một lúc.
   </p>
 
   <sage language="python">
     <input>
       print(5) 
-      
-      print("Hello World!")
-
       print([1, 2, 3, 4])
+      print("Hello World!", 5, [0, 1, 2], "Xin chao!")
+
     </input>
     <output>
       (for static output)
@@ -78,7 +78,7 @@
   </sage>
 
   <p>
-    Sau đó, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó,
+    Tiếp theo, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó,
     còn được gọi là <term>hàm cục bộ</term>.
     Mỗi kiểu dữ liệu hay cấu trúc dữ liệu đều có tập hợp các hàm cục bộ của riêng mình.
   </p>
@@ -205,7 +205,7 @@
 
     <p>
       Nhưng cũng có những hàm có thể nhận giá trị đầu vào có kiểu dữ liệu tự do.
-      Cũng có những hàm trả lại kiểu dữ liệu tự do, hoặc nó có thể không trả lại gì cả.
+      Cũng có những hàm trả lại kiểu dữ liệu tự do hoặc không trả lại gì cả.
       Khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
     </p>
 
