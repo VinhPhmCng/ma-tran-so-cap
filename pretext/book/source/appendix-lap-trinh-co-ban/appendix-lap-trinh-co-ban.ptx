@@ -12,21 +12,11 @@ See the file COPYING for copying conditions.
 
   <introduction>
     <p>
-      Trong quyển sách này, các đoạn code mang tính tương tác là một cách trực quan
-      để giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận.
-      Một phần lí do cũng là vì ma trận là một đối tượng rất phổ biến trong lập trình và
-      khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI).
-      Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một
-      kỹ năng có giá trị trong thế giới ngày nay.
+      Trong quyển sách này, các đoạn code mang tính tương tác là một cách trực quan để giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận. Một phần lí do cũng là vì ma trận là một đối tượng rất phổ biến trong lập trình và khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI). Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một kỹ năng có giá trị trong thế giới ngày nay.
     </p>
 
     <p>
-      Phụ lục này là dành cho những bạn đọc mới làm quen với khái niệm lập trình,
-      với mục đích là giúp bạn có thể đọc hiểu những đoạn code ví dụ, cũng như chỉnh sửa
-      và thí nghiệm với chúng theo ý mình.
-      Vì vậy, những khái niệm được trình bày sẽ ở mức đơn giản nhất và không chuyên sâu.
-      Nhưng nếu bạn có hứng thú với thế giới của lập trình, thì mạng internet là tất cả những
-      gì bạn cần để bắt đầu!
+      Phụ lục này là dành cho những bạn đọc mới làm quen với khái niệm lập trình, với mục đích là giúp bạn có thể đọc hiểu những đoạn code ví dụ, cũng như chỉnh sửa và thí nghiệm với chúng theo ý mình. Vì vậy, những khái niệm được trình bày sẽ ở mức đơn giản nhất và không chuyên sâu. Nhưng nếu bạn có hứng thú với thế giới của lập trình, thì mạng internet là tất cả những gì bạn cần để bắt đầu!
     </p>
   </introduction>
 

@@ -45,8 +45,7 @@ See the file COPYING for copying conditions.
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vector cột có 8 tính chất đã nêu
-        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+        Phép cộng các vector cột có 8 tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
@@ -55,8 +54,7 @@ See the file COPYING for copying conditions.
       <title>Trừ vector cột</title>
 
       <p>
-        Thực hiện và cho kết quả tương tự phép trừ số với số.
-        <me>a - b = a + (-b)</me>
+        Thực hiện và cho kết quả tương tự phép trừ số với số. <me>a - b = a + (-b)</me>
       </p>
     </remark>
   </subsection>

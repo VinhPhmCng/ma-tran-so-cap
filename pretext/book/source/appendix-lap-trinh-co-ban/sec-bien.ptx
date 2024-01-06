@@ -23,26 +23,15 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như:
-
-    <me>f(x) = x^2 + 2x + 1</me>
-
-    Ở đây, <q>biến</q> có nghĩa là chưa xác định, hay nói cách khác <m>x</m> là trừu tượng
-    cho tất cả những kết quả của hàm số trên khi ta thay thế <m>x</m> với những con số
-    xác định.
+    Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như: <me>f(x) = x^2 + 2x + 1</me> Ở đây, <q>biến</q> có nghĩa là chưa xác định, hay nói cách khác <m>x</m> là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế <m>x</m> với những con số xác định.
   </p>
 
   <p>
-    Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu,
-    nên nó mang <term>tính xác định</term>,
-    nhưng đồng thời nó cũng <em>thường xuyên thay đổi</em>
-    trong quá trình chương trình chạy.
+    Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu, nên nó mang <term>tính xác định</term>, nhưng đồng thời nó cũng <em>thường xuyên thay đổi</em> trong quá trình chương trình chạy.
   </p>
 
   <p>
-    Để <term>khai báo</term> biến hoặc <term>gán</term> cho biến giá trị mới,
-    ta sử dụng dấu <c>=</c>. Vế trái là tên biến và vế phải là giá trị.
-    Dưới đây là ví dụ.
+    Để <term>khai báo</term> biến hoặc <term>gán</term> cho biến giá trị mới, ta sử dụng dấu <c>=</c>. Vế trái là tên biến và vế phải là giá trị. Dưới đây là ví dụ.
   </p>
 
   <sage>
@@ -63,26 +52,19 @@ See the file COPYING for copying conditions.
   </sage>
   
   <p>
-    Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>.
-    Ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>.
-    Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của
-    hai biến ra terminal.
+    Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>. Ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>. Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.
   </p>
 
   <p>
-    Sau đó, ta lại gán cho <c>a</c> một giá trị mới, hay nói cách khác là update
-    giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
+    Sau đó, ta lại gán cho <c>a</c> một giá trị mới, hay nói cách khác là update giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
   </p>
 
   <p>
-    Ví dụ trên thể hiện tính xác định của biến. Vì trình biên dịch code sẽ đọc
-    từ trên xuống dưới, tại dòng số 3 <c>b = a</c> thì giá trị của <c>a</c>
-    vẫn đang là <c>1</c>.
+    Ví dụ trên thể hiện tính xác định của biến. Vì trình biên dịch code sẽ đọc từ trên xuống dưới, tại dòng số 3 <c>b = a</c> thì giá trị của <c>a</c> vẫn đang là <c>1</c>.
   </p>
 
   <p>
-    Trong ví dụ dưới đây, bạn hãy thử thay đổi giá trị của các biến, chạy lại code,
-    và xem kết quả thay đổi.
+    Trong ví dụ dưới đây, bạn hãy thử thay đổi giá trị của các biến, chạy lại code, và xem kết quả thay đổi.
   </p>
 
   <sage>

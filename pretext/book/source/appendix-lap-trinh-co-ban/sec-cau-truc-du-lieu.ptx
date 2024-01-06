@@ -19,14 +19,11 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Ta có một khái niệm mới, và đó là <term>cấu trúc dữ liệu</term>.
-    Cấu trúc dữ liệu được xây dựng <em>dựa trên</em> <term>kiểu dữ liệu</term>,
-    hay nói cách khác nó cũng là kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.
+    Ta có một khái niệm mới, và đó là <term>cấu trúc dữ liệu</term>. Cấu trúc dữ liệu được xây dựng <em>dựa trên</em> <term>kiểu dữ liệu</term>, hay nói cách khác nó cũng là kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.
   </p>
 
   <p>
-    Để nói một cách dễ hiểu thì cấu trúc dữ liệu giúp biến có khả năng chứa cùng một lúc nhiều
-    dữ liệu, có thể giống nhau hoặc khác nhau. Dưới đây là ví dụ.
+    Để nói một cách dễ hiểu thì cấu trúc dữ liệu giúp biến có khả năng chứa cùng một lúc nhiều dữ liệu, có thể giống nhau hoặc khác nhau. Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
@@ -44,17 +41,11 @@ See the file COPYING for copying conditions.
   </sage>
 
   <p>
-    Ở trên, ta đang sử dụng cấu trúc dữ liệu <c>list</c>, hay còn được gọi là danh sách.
-    Đây là một cấu trúc dữ liệu có sẵn của Python. Ta có thể thấy <c>l1</c>
-    là một danh sách chứa các giá trị có kiểu <c>int</c>, còn <c>l2</c> lại chứa một
-    hỗn hợp các kiểu dữ liệu. Và để khai báo một <c>list</c>, bạn phải sử dụng ngoặc vuông
-    <c>[]</c> bao quanh các phần tử và dấu phẩy <c>,</c> để ngăn cách chúng.
+    Ở trên, ta đang sử dụng cấu trúc dữ liệu <c>list</c>, hay còn được gọi là danh sách. Đây là một cấu trúc dữ liệu có sẵn của Python. Ta có thể thấy <c>l1</c> là một danh sách chứa các giá trị có kiểu <c>int</c>, còn <c>l2</c> lại chứa một hỗn hợp các kiểu dữ liệu. Và để khai báo một <c>list</c>, bạn phải sử dụng ngoặc vuông <c>[]</c> bao quanh các phần tử và dấu phẩy <c>,</c> để ngăn cách chúng.
   </p>
   
   <p>
-    Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập
-    hợp các cấu trúc dữ liệu riêng của mình, và, một lần nữa, điều này dựa trên mục đích
-    của nó.
+    Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập hợp các cấu trúc dữ liệu riêng của mình, và, một lần nữa, điều này dựa trên mục đích của nó.
   </p>
 
   <p>
@@ -77,16 +68,11 @@ See the file COPYING for copying conditions.
     <title>Mảng</title>
 
     <p>
-      <term>Mảng</term> là một cấu trúc dữ liệu rất phổ biến.
-      Nó giúp biến có khả năng chứa cùng một lúc nhiều phần tử có <em>cùng kiểu dữ liệu</em>.
-      Khi khai báo mảng, bạn phải xác định rõ kiểu dữ liệu ấy.
+      <term>Mảng</term> là một cấu trúc dữ liệu rất phổ biến. Nó giúp biến có khả năng chứa cùng một lúc nhiều phần tử có <em>cùng kiểu dữ liệu</em>. Khi khai báo mảng, bạn phải xác định rõ kiểu dữ liệu ấy.
     </p>
 
     <p>
-      Mảng <em>không</em> phải là một cấu trúc dữ liệu có sẵn trong Python.
-      Để dùng mảng, ta phải sử dụng thư viện mở rộng.
-      Và trong quyển sách này, <term>Numpy</term> sẽ đóng vai trò ý.
-      Dưới đây là ví dụ.
+      Mảng <em>không</em> phải là một cấu trúc dữ liệu có sẵn trong Python. Để dùng mảng, ta phải sử dụng thư viện mở rộng. Và trong quyển sách này, <term>Numpy</term> sẽ đóng vai trò ý. Dưới đây là ví dụ.
     </p>
 
     <sage language="python">
@@ -105,13 +91,11 @@ See the file COPYING for copying conditions.
     </sage>
 
     <p>
-      Ở trên, ta khai báo mảng <c>arr</c> có 3 phần tử, đồng thời cũng xác định kiểu dữ liệu
-      của mảng là <c>int64</c>, là tương ứng của <c>int</c>.
+      Ở trên, ta khai báo mảng <c>arr</c> có 3 phần tử, đồng thời cũng xác định kiểu dữ liệu của mảng là <c>int64</c>, là tương ứng của <c>int</c>.
     </p>
     
     <p>
-      Nếu ta thử khai báo mảng có kiểu <c>int64</c> nhưng lại chứa phần tử số thập phân,
-      mảng sẽ tự động chuyển đổi kiểu dữ liệu của tất cả các phần tử cho phù hợp.
+      Nếu ta thử khai báo mảng có kiểu <c>int64</c> nhưng lại chứa phần tử số thập phân, mảng sẽ tự động chuyển đổi kiểu dữ liệu của tất cả các phần tử cho phù hợp.
     </p>
     
     <sage language="python">
@@ -130,9 +114,7 @@ See the file COPYING for copying conditions.
     </sage>
 
     <p>
-      Ở trên, phần tử <c>2.5</c> là số thập phân được chuyển đổi thành kiểu <c>int64</c>,
-      vì thế nó được làm tròn xuống thành <c>2</c>.
-      Dưới đây là một ví dụ nữa khi phần tử mới được thêm vào mảng.
+      Ở trên, phần tử <c>2.5</c> là số thập phân được chuyển đổi thành kiểu <c>int64</c>, vì thế nó được làm tròn xuống thành <c>2</c>. Dưới đây là một ví dụ nữa khi phần tử mới được thêm vào mảng.
     </p>
     
     <sage language="python">
@@ -149,9 +131,7 @@ See the file COPYING for copying conditions.
     </sage>
 
     <p>
-      Dễ thấy, nếu ta thêm phần tử <c>4</c> vào mảng, kiểu dữ liệu không thay đổi.
-      Nhưng nếu ta thêm phần tử <c>5.5</c>, mảng sẽ tự động update kiểu dữ liệu
-      thành <c>float64</c>, nghĩa là tất cả các phần tử đều trở thành số thập phân.
+      Dễ thấy, nếu ta thêm phần tử <c>4</c> vào mảng, kiểu dữ liệu không thay đổi. Nhưng nếu ta thêm phần tử <c>5.5</c>, mảng sẽ tự động update kiểu dữ liệu thành <c>float64</c>, nghĩa là tất cả các phần tử đều trở thành số thập phân.
     </p>
 
   </subsection>
@@ -160,8 +140,7 @@ See the file COPYING for copying conditions.
     <title>Ma Trận</title>
 
     <p>
-      <term>Ma trận</term> là một cấu trúc dữ liệu giúp biến có khả năng lưu trữ nhiều phần tử
-      cùng một lúc và sắp xếp chúng thành các <term>hàng</term> và các <term>cột</term>.
+      <term>Ma trận</term> là một cấu trúc dữ liệu giúp biến có khả năng lưu trữ nhiều phần tử cùng một lúc và sắp xếp chúng thành các <term>hàng</term> và các <term>cột</term>.
     </p>
 
     <p>
@@ -187,23 +166,15 @@ See the file COPYING for copying conditions.
     </sage>
     
     <p>
-      Như vậy, cú pháp của ma trận là một cặp ngoặc vuông <c>[]</c> ở ngoài cùng,
-      bao trùm các cặp ngoặc vuông khác ở bên trong nó.
-      Trong đó, mỗi cặp ngoặc vuông con là một hàng của ma trận, và mỗi hàng ý phải có cùng số phần tử.
-      Bạn có thể tham khảo phần <xref ref="sec-thao-tac-ma-tran"/>
+      Như vậy, cú pháp của ma trận là một cặp ngoặc vuông <c>[]</c> ở ngoài cùng, bao trùm các cặp ngoặc vuông khác ở bên trong nó. Trong đó, mỗi cặp ngoặc vuông con là một hàng của ma trận, và mỗi hàng ý phải có cùng số phần tử. Bạn có thể tham khảo phần <xref ref="sec-thao-tac-ma-tran"/>
     </p>
 
     <p>
-      SageMath có sẵn ma trận, và ta chỉ việc dùng lệnh <c>matrix()</c>.
-      Ví dụ dưới đây sử dụng một cách viết khác, gọn hơn so với ở trên,
-      có thể thấy với cặp ngoặc vuông ngoài cùng.
-      Hai cách trình bày này là tương đương nhau khi biên dịch code.
+      SageMath có sẵn ma trận, và ta chỉ việc dùng lệnh <c>matrix()</c>. Ví dụ dưới đây sử dụng một cách viết khác, gọn hơn so với ở trên, có thể thấy với cặp ngoặc vuông ngoài cùng. Hai cách trình bày này là tương đương nhau khi biên dịch code.
     </p>
 
     <p>
-      Ngoài ra, SageMath cung cấp lựa chọn biểu diễn ma trận và các đối tượng toán học khác bằng
-      <latex /><mdash />một hệ thống phần mềm soạn thảo chuyên dành cho toán học. Ta chỉ
-      việc sử dụng lệnh <c>show()</c>.
+      Ngoài ra, SageMath cung cấp lựa chọn biểu diễn ma trận và các đối tượng toán học khác bằng <latex /><mdash />một hệ thống phần mềm soạn thảo chuyên dành cho toán học. Ta chỉ việc sử dụng lệnh <c>show()</c>.
     </p>
 
     <sage>
@@ -221,16 +192,9 @@ See the file COPYING for copying conditions.
       </output>
     </sage>
     
-    <p>
-    </p>
-
     <remark>
       <p>
-        Trong quyển sách này, các ví dụ lập trình ma trận sẽ có độ phức tạp ở mức thấp.
-        Vì vậy, những thao tác như <term>truy cập</term>, <term>thêm</term>,
-        <term>xóa</term> phần tử là <em>không quá cần thiết</em>.
-        Nhưng nếu bạn muốn biết thêm, hãy tham khảo
-        <xref ref="sec-thao-tac-ma-tran" text="phrase-global"/>.
+        Trong quyển sách này, các ví dụ lập trình ma trận sẽ có độ phức tạp ở mức thấp. Vì vậy, những thao tác như <term>truy cập</term>, <term>thêm</term>, <term>xóa</term> phần tử là <em>không quá cần thiết</em>. Nhưng nếu bạn muốn biết thêm, hãy tham khảo <xref ref="sec-thao-tac-ma-tran" text="phrase-global"/>.
       </p>
     </remark>
     

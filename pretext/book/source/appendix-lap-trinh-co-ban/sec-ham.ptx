@@ -19,8 +19,7 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>Hàm</term>.
-    Và nó cũng đóng vai trò thiết yếu trong lập trình.
+    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>Hàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
   </p>
 
   <p>
@@ -33,8 +32,7 @@ See the file COPYING for copying conditions.
       <mrow>100^2 + 2 \cdot 100 + 1</mrow>
     </md>
 
-    Ta nhận ra là các biểu thức trên có cùng một dạng là đa thức bậc hai.
-    Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
+    Ta nhận ra là các biểu thức trên có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
 
     <md>
       <mrow>f(x) = x^2 + 2 \cdot x + 1</mrow>
@@ -47,29 +45,19 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    <term>Hàm</term> trong lập trình cũng được tạo ra để giúp ta theo cách tương tự như vậy.
-    Khi xuất hiện những đoạn code được dùng đi dùng lại nhiều lần, ta thường sử dụng
-    hàm để trừu tượng hóa chúng.
+    <term>Hàm</term> trong lập trình cũng được tạo ra để giúp ta theo cách tương tự như vậy. Khi xuất hiện những đoạn code được dùng đi dùng lại nhiều lần, ta thường sử dụng hàm để trừu tượng hóa chúng.
   </p>
 
   <p>
-    Ở phần này ta chưa đi sâu vào cú pháp để khai báo hàm,
-    mà ta sẽ chỉ tập trung vào cú pháp để sử dụng những hàm có sẵn hoặc
-    được cung cấp bởi thư viện.
-    Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
+    Ở phần này ta chưa đi sâu vào cú pháp để khai báo hàm, mà ta sẽ chỉ tập trung vào cú pháp để sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện. Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
   </p>
 
   <p>
-    Trước hết, ta có những <term>hàm toàn cục</term>
-    là những hàm có thể sử dụng được ở bất kỳ nơi nào trong code.
-    Để sử dụng nó ta chỉ việc <term>gọi hàm</term> bằng cú pháp:
-    <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me>
+    Trước hết, ta có những <term>hàm toàn cục</term> là những hàm có thể sử dụng được ở bất kỳ nơi nào trong code. Để sử dụng nó ta chỉ việc <term>gọi hàm</term> bằng cú pháp: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me>
   </p>
 
   <p>
-    Một ví dụ điển hình của hàm toàn cục chính là hàm <c>print()</c>.
-    Nó có thể được gọi ở bất cứ nơi nào trong code, và với bất kỳ giá trị đầu vào nào.
-    Ta cũng có thể truyền cho nó nhiều dữ liệu đầu vào cùng một lúc.
+    Một ví dụ điển hình của hàm toàn cục chính là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào trong code, và với bất kỳ giá trị đầu vào nào. Ta cũng có thể truyền cho nó nhiều dữ liệu đầu vào cùng một lúc.
   </p>
 
   <sage language="python">
@@ -85,9 +73,7 @@ See the file COPYING for copying conditions.
   </sage>
 
   <p>
-    Tiếp theo, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó,
-    còn được gọi là <term>hàm cục bộ</term>.
-    Mỗi kiểu dữ liệu hay cấu trúc dữ liệu đều có tập hợp các hàm cục bộ của riêng mình.
+    Tiếp theo, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó, còn được gọi là <term>hàm cục bộ</term>. Mỗi kiểu dữ liệu hay cấu trúc dữ liệu đều có tập hợp các hàm cục bộ của riêng mình.
   </p>
 
   <p>
@@ -101,8 +87,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Vậy, <term>đầu vào 1</term> chính là biến hay dữ liệu tự do mà ta gọi hàm lên.
-    Dưới đây là ví dụ.
+    Vậy, <term>đầu vào 1</term> chính là biến hay dữ liệu tự do mà ta gọi hàm lên. Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
@@ -117,9 +102,7 @@ See the file COPYING for copying conditions.
   </sage>
  
   <p>
-    Vậy, <c>upper()</c> là một hàm cục bộ của kiểu <c>str</c>.
-    Trong trường hợp này, nó nhận một giá trị vào là chuỗi <c>s</c>,
-    và nó trả lại chuỗi đó sau khi viết hoa từng phần tử.
+    Vậy, <c>upper()</c> là một hàm cục bộ của kiểu <c>str</c>. Trong trường hợp này, nó nhận một giá trị vào là chuỗi <c>s</c>, và nó trả lại chuỗi đó sau khi viết hoa từng phần tử.
   </p>
 
   <p>
@@ -136,8 +119,7 @@ See the file COPYING for copying conditions.
   </sage>
 
   <p>
-    Nhưng nếu ta thử dùng hàm <c>upper()</c> với kiểu <c>int</c>, ta sẽ gặp lỗi
-    vì <c>int</c> không có hàm cục bộ trên.
+    Nhưng nếu ta thử dùng hàm <c>upper()</c> với kiểu <c>int</c>, ta sẽ gặp lỗi vì <c>int</c> không có hàm cục bộ trên.
   </p>
 
   <sage language="python">
@@ -155,11 +137,7 @@ See the file COPYING for copying conditions.
     <title>Kiểu Của Tham Số Và Kiểu Trả Lại Của Hàm</title>
 
     <p>
-      Hàm có nhiệm vụ nhận một giá trị đầu vào và trả lại một giá trị đầu ra.
-      Có nhiều hàm mà tham số của nó bắt buộc phải thuộc vào một kiểu dữ liệu xác định nào đó, 
-      và giá trị trả lại của nó cũng luôn thuộc một kiểu dữ liệu xác định.
-      Ví dụ như hàm <c>upper()</c>, ta chỉ có thể truyền cho nó <c>str</c>,
-      và kiểu trả lại của nó cũng sẽ luôn là <c>str</c>.
+      Hàm có nhiệm vụ nhận một giá trị đầu vào và trả lại một giá trị đầu ra. Có nhiều hàm mà tham số của nó bắt buộc phải thuộc vào một kiểu dữ liệu xác định nào đó, và giá trị trả lại của nó cũng luôn thuộc một kiểu dữ liệu xác định. Ví dụ như hàm <c>upper()</c>, ta chỉ có thể truyền cho nó <c>str</c>, và kiểu trả lại của nó cũng sẽ luôn là <c>str</c>.
     </p>
     
     <sage language="python">
@@ -174,10 +152,7 @@ See the file COPYING for copying conditions.
     </sage>
     
     <p>
-      Ví dụ tiếp theo là hàm <c>np.sqrt()</c>.
-      Nó có thể nhận vào nhiều kiểu dữ liệu như <c>int</c>, <c>float</c>,
-      thậm chí là mảng.
-      Và nó sẽ trả lại kết quả thuộc kiểu dữ liệu phù hợp.
+      Ví dụ tiếp theo là hàm <c>np.sqrt()</c>. Nó có thể nhận vào nhiều kiểu dữ liệu như <c>int</c>, <c>float</c>, thậm chí là mảng. Và nó sẽ trả lại kết quả thuộc kiểu dữ liệu phù hợp.
     </p>
 
     <sage language="python">
@@ -211,15 +186,11 @@ See the file COPYING for copying conditions.
     </sage>
 
     <p>
-      Nhưng cũng có những hàm có thể nhận giá trị đầu vào có kiểu dữ liệu tự do.
-      Cũng có những hàm trả lại kiểu dữ liệu tự do hoặc không trả lại gì cả.
-      Khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
+      Nhưng cũng có những hàm có thể nhận giá trị đầu vào có kiểu dữ liệu tự do. Cũng có những hàm trả lại kiểu dữ liệu tự do hoặc không trả lại gì cả. Khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
     </p>
 
     <p>
-      Một ví dụ điển hình cho hàm không có kiểu của tham số và kiểu trả lại chính là hàm <c>print()</c>
-      Ta có thể truyền cho nó kiểu <c>str</c>, kiểu <c>int</c>, kiểu <c>float</c>, v.v.
-      Và nó luôn trả lại <c>None</c>.
+      Một ví dụ điển hình cho hàm không có kiểu của tham số và kiểu trả lại chính là hàm <c>print()</c> Ta có thể truyền cho nó kiểu <c>str</c>, kiểu <c>int</c>, kiểu <c>float</c>, v.v. Và nó luôn trả lại <c>None</c>.
     </p>
     
     <sage language="python">

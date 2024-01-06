@@ -19,8 +19,7 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Một cách để hiểu khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>.
-    Dưới đây là ví dụ.
+    Một cách để hiểu khái niệm <term>thuộc tính</term> là cụm từ <q>biến của biến</q>. Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
@@ -42,15 +41,11 @@ See the file COPYING for copying conditions.
   </sage>
   
   <p>
-    Có thể thấy, <c>mat.size</c> trả lại số phần tử của ma trận, còn <c>mat.shape</c>
-    trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term>
-    của cấu trúc dữ liệu ma trận của Numpy.
+    Có thể thấy, <c>mat.size</c> trả lại số phần tử của ma trận, còn <c>mat.shape</c> trả lại số hàng và số cột của nó. Vậy, <c>size</c> và <c>shape</c> là hai <term>thuộc tính</term> của cấu trúc dữ liệu ma trận của Numpy.
   </p>
 
   <p>
-    Như đã nói ở các phần trước, kiểu dữ liệu hay cấu trúc dữ liệu quyết định tương tác của biến.
-    Vậy nên, nếu ta thử điều tương tự với kiểu dữ liệu <c>int</c>, ta sẽ gặp lỗi vì nó không
-    có các thuộc tính ý.
+    Như đã nói ở các phần trước, kiểu dữ liệu hay cấu trúc dữ liệu quyết định tương tác của biến. Vậy nên, nếu ta thử điều tương tự với kiểu dữ liệu <c>int</c>, ta sẽ gặp lỗi vì nó không có các thuộc tính ý.
   </p>
 
   <sage language="python">
@@ -65,15 +60,11 @@ See the file COPYING for copying conditions.
   </sage>
   
   <p>
-    Vậy, cú pháp để <term>truy cập</term> thuộc tính là:
-    <me>\text{tên biến.} {\color{blue} \text{tên thuộc tính}}</me>
-    hoặc
-    <me>\text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}</me>
+    Vậy, cú pháp để <term>truy cập</term> thuộc tính là: <me>\text{tên biến.} {\color{blue} \text{tên thuộc tính}}</me> hoặc <me>\text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}</me>
   </p>
 
   <p>
-    Đúng vậy, bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>,
-    như ở ví dụ dưới đây.
+    Đúng vậy, bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>, như ở ví dụ dưới đây.
   </p>
 
   <sage language="python">
@@ -94,8 +85,7 @@ See the file COPYING for copying conditions.
   </sage>
 
   <p>
-    Vì thuộc tính cũng thuộc một kiểu dự liệu hoặc cấu trúc dữ liệu nào đó, nó cũng có thể
-    có thuộc tính của riêng mình. Dưới đây là ví dụ.
+    Vì thuộc tính cũng thuộc một kiểu dự liệu hoặc cấu trúc dữ liệu nào đó, nó cũng có thể có thuộc tính của riêng mình. Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
@@ -118,9 +108,6 @@ See the file COPYING for copying conditions.
   
   <p>
     Ở trên, <c>mat.T</c> cũng là một ma trận Numpy, vậy nên nó cũng có thuộc tính <c>shape</c>
-  </p>
-
-  <p>
   </p>
 
 </section>

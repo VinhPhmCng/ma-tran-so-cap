@@ -23,9 +23,7 @@ See the file COPYING for copying conditions.
 
     <p>
       <term>Tập số tự nhiên</term> (hay tập số nguyên không âm), kí hiệu <m>\N</m>
-      <me>
-        \N = \{0, \, 1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}
-      </me>
+      <me>\N = \{0, \, 1, \, 2, \, 3, \, \ldots, \, n, \, \ldots \}</me>
     </p>
 
     <p>
@@ -38,18 +36,13 @@ See the file COPYING for copying conditions.
 
     <p>
       <term>Tập số nguyên</term>, kí hiệu <m>\Z</m>
-      <me>
-        \Z = \{\ldots, \, -3, \, -2, \, -1, \, 0, \, 1, \, 2, \, 3, \, \ldots \}
-      </me>
+      <me>\Z = \{\ldots, \, -3, \, -2, \, -1, \, 0, \, 1, \, 2, \, 3, \, \ldots \}</me>
     </p>
       
     <p>
       <term>Tập số hữu tỷ</term>, kí hiệu <m>\Q</m>.
-      <me>
-        \Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}
-      </me>
-      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng
-      <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
+      <me>\Q = \{r: r = \frac{m}{n}, \, m \in \Z, \, n \in \pN\}</me>
+      Số hữu tỷ (biểu diễn dưới dạng thập phân) có dạng <em>hữu hạn</em> hoặc <em>vô hạn tuần hoàn</em>.
     </p>
     <p>Ví dụ:
       <md>
@@ -59,11 +52,8 @@ See the file COPYING for copying conditions.
     </p>
       
     <p>
-      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là
-      tập các số thập phân vô hạn <em>không</em> tuần hoàn.
-      <me>
-        \nQ = \R \setminus \Q
-      </me>
+      <term>Tập số vô tỷ</term>, kí hiệu <m>\nQ</m>, là tập các số thập phân vô hạn <em>không</em> tuần hoàn.
+      <me>\nQ = \R \setminus \Q</me>
     </p>
     <p>Ví dụ:
       <md>
@@ -73,11 +63,8 @@ See the file COPYING for copying conditions.
     </p>
       
     <p>
-      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là
-      tập bao gồm các số hữu tỷ và các số vô tỷ.
-      <me>
-        \R = \Q \cup \nQ
-      </me>
+      <term>Tập số thực</term>, kí hiệu <m>\R</m>, là tập bao gồm các số hữu tỷ và các số vô tỷ.
+      <me>\R = \Q \cup \nQ</me>
     </p>
 
     <remark>
@@ -107,24 +94,18 @@ See the file COPYING for copying conditions.
 
     <p><term>Phép cộng</term></p>
     <p>
-      Cộng 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\delta</m>, 
-      gọi là tổng của <m>x</m> và <m>y</m>.
+      Cộng 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\delta</m>, gọi là tổng của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
-      <me>
-        \delta = x + y
-      </me>
+      <me>\delta = x + y</me>
     </p>
     
     <p><term>Phép nhân</term></p>
     <p>
-      Nhân 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\rho</m>, 
-      gọi là tích của <m>x</m> và <m>y</m>.
+      Nhân 2 số thực <m>x, \, y</m> ta được 1 số thực <m>\rho</m>, gọi là tích của <m>x</m> và <m>y</m>.
     </p>
     <p>Ký hiệu:
-      <me>
-        \rho = x \cdot y = x \times y = xy
-      </me>
+      <me>\rho = x \cdot y = x \times y = xy</me>
     </p>
     
   </subsection>
@@ -176,8 +157,7 @@ See the file COPYING for copying conditions.
     <observation>
       <title>Tính giao hoán và phân phối</title>
       <p>
-        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và
-        <xref ref="giao-hoan-phep-nhan" text="local"/>, ta có:
+        Do tính giao hoán <xref ref="giao-hoan-phep-cong" text="local"/> và <xref ref="giao-hoan-phep-nhan" text="local"/>, ta có:
         <md>
           <mrow>(x + y)z = z(x + y) \amp = zx + zy</mrow>
           <mrow>\amp = xz + yz</mrow>
@@ -216,8 +196,7 @@ See the file COPYING for copying conditions.
     <note>
       <title>Sự phụ thuộc của tính đóng với tập số</title>
       <p>
-        Với phép cộng và phép nhân, tính đóng phụ thuộc vào 
-        tập chứa các phần tử mà ta thực hiện phép toán.
+        Với phép cộng và phép nhân, tính đóng phụ thuộc vào tập chứa các phần tử mà ta thực hiện phép toán.
       </p>
 
     </note>
@@ -232,17 +211,13 @@ See the file COPYING for copying conditions.
           <li>
             <p>
               Phép cộng có tính đóng.
-              <me>
-                (-3) + (-2) = -5 \in \mZ
-              </me>
+              <me>(-3) + (-2) = -5 \in \mZ</me>
             </p>
           </li>
           <li>
             <p>
               Phép nhân <em>không</em> có tính đóng.
-              <me>
-                (-3) \cdot (-2) = 6 \notin \mZ
-              </me>
+              <me>(-3) \cdot (-2) = 6 \notin \mZ</me>
             </p>
           </li>
         </ul>
@@ -252,9 +227,7 @@ See the file COPYING for copying conditions.
     <remark>
       <title>Sự quan trọng của tính đóng</title>
       <p>
-        Tính đóng đối với phép toán có mối quan hệ mật thiết với
-        một đặc tính khái niệm của không gian vector
-        <xref provisional="section-dac-tinh-khong-gian-vector"/>.
+        Tính đóng đối với phép toán có mối quan hệ mật thiết với một đặc tính khái niệm của không gian vector <xref provisional="section-dac-tinh-khong-gian-vector"/>.
       </p>
     </remark>
 
@@ -277,8 +250,7 @@ See the file COPYING for copying conditions.
 
           <hint>
             <p>
-              Nháp một vài phép cộng hai số tự nhiên bất kỳ và
-              xem xét tổng có thuộc tập số tự nhiên không.
+              Nháp một vài phép cộng hai số tự nhiên bất kỳ và xem xét tổng có thuộc tập số tự nhiên không.
             </p>
           </hint>
 
@@ -288,7 +260,6 @@ See the file COPYING for copying conditions.
 
           <solution>
             <p>
-<!--               <me>\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N</me> -->
               <me>\boxed{\forall \, x, \, y \in \N, \, x + y = \delta \Rightarrow \delta \in \N}</me>
               Ví dụ:
               <me>2 + 5 = 7 \in \N</me>
@@ -303,8 +274,7 @@ See the file COPYING for copying conditions.
 
           <hint>
             <p>
-              Nháp một vài phép trừ hai số tự nhiên bất kỳ và 
-              xem xét hiệu có thuộc tập số tự nhiên không.
+              Nháp một vài phép trừ hai số tự nhiên bất kỳ và xem xét hiệu có thuộc tập số tự nhiên không.
             </p>
           </hint>
 
@@ -316,7 +286,6 @@ See the file COPYING for copying conditions.
 
           <solution>
             <p>
-<!--               <me>\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N</me> -->
               <me>\boxed{\exists \, x, \, y \in \N, \, x - y = \delta \Rightarrow \delta \notin \N}</me>
               Ví dụ:
               <md>
@@ -330,23 +299,18 @@ See the file COPYING for copying conditions.
         <exercise xml:id="exercise-tinh-dong-cua-phep-nhan-chia-so-tu-nhien">
           <statement>
             <p>
-              Tương tự, phép nhân số tự nhiên có tính đóng không?
-              Phép chia số tự nhiên có tính đóng không?
+              Tương tự, phép nhân số tự nhiên có tính đóng không? Phép chia số tự nhiên có tính đóng không?
             </p>
           </statement>
 
           <answer>
             <p>
-              Phép nhân số tự nhiên có tính đóng.
-              Còn phép chia số tự nhiên <em>không</em> có tính đóng.
+              Phép nhân số tự nhiên có tính đóng. Còn phép chia số tự nhiên <em>không</em> có tính đóng.
             </p>
           </answer>
 
           <solution>
             <p>
-<!--               <me>\forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N</me>
-              <me>\exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N</me> -->
-
               <me>
                 \boxed{
                   \begin{aligned}
@@ -355,13 +319,6 @@ See the file COPYING for copying conditions.
                   \end{aligned}
                 }
               </me>
-
-<!--               <me>
-                \left\lfloor\begin{aligned}
-                  \forall \, x, \, y \in \N, \, x \cdot y = \rho \Rightarrow \rho \in \N \\[0.5ex]
-                  \exists \, x, \, y \in \N, \, \frac{x}{y} = \rho \Rightarrow \rho \notin \N
-                \end{aligned}\right\rfloor
-              </me> -->
 
               Ví dụ:
               <md>
@@ -387,8 +344,7 @@ See the file COPYING for copying conditions.
 
         <introduction>
           <p>
-            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>,
-            hữu tỷ <m>\Q</m>, thực <m>\R</m>.
+            Đánh giá tính đóng của các phép toán đối với các tập số nguyên <m>\Z</m>, hữu tỷ <m>\Q</m>, thực <m>\R</m>.
           </p>
         </introduction>
         
