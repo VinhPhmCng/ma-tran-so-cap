@@ -61,7 +61,10 @@ See the file COPYING for copying conditions.
       print("This is another string.) 
     </input>
     <output>
-      (for static output)
+        Cell In [1], line 3
+          print("This is another string.)
+                ^
+        SyntaxError: unterminated string literal (detected at line 3)
     </output>
   </sage>
 
@@ -76,7 +79,12 @@ See the file COPYING for copying conditions.
       print(a + s)
     </input>
     <output>
-      (for static output)
+      TypeError
+      Cell In [1], line 3
+
+      ...
+
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
     </output>
   </sage>
 
@@ -94,7 +102,12 @@ See the file COPYING for copying conditions.
       print(np.sqrt("xin chao?"))
     </input>
     <output>
-      (for static output)
+      TypeError
+      Cell In [1], line 2
+
+      ...
+
+      TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
     </output>
   </sage>
 
@@ -119,12 +132,12 @@ See the file COPYING for copying conditions.
       <ol>
         <li>
           <p>
-            <em>Đọc hiểu lỗi</em><mdash />Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu, ta có thể nhanh chóng sửa lỗi. Nếu vẫn cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.
+            <term>Đọc hiểu lỗi</term><mdash />Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu, ta có thể nhanh chóng sửa lỗi. Nếu vẫn cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.
           </p>
         </li>
         <li>
           <p>
-            <em>Tra trên mạng</em><mdash />Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi trong terminal.
+            <term>Tra trên mạng</term><mdash />Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi trong terminal.
           </p>
 
           <note>
@@ -145,17 +158,17 @@ See the file COPYING for copying conditions.
         </li>
         <li>
           <p>
-            <em>Tự miêu tả lỗi khi tra</em><mdash />Có vẻ nếu ta sử dụng miêu tả chi tiết của lỗi, những cách giải của người khác không có hiệu quả với mình. Vậy thì ta thử tự mình miêu tả lỗi xem sao. Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào, với ngôn ngữ lập trình nào, v.v. Nếu vẫn không được, ta chuyển sang bước tiếp theo.
+            <term>Tự miêu tả lỗi khi tra</term><mdash />Có vẻ nếu ta sử dụng miêu tả chi tiết của lỗi, những cách giải của người khác không có hiệu quả với mình. Vậy thì ta thử tự mình miêu tả lỗi xem sao. Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào, với ngôn ngữ lập trình nào, v.v. Nếu vẫn không được, ta chuyển sang bước tiếp theo.
           </p>
         </li>
         <li>
           <p>
-            <em>Sử dụng trí tuệ nhân tạo</em><mdash />Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>, v.v. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
+            <term>Sử dụng trí tuệ nhân tạo</term><mdash />Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>, v.v. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
           </p>
         </li>
         <li>
           <p>
-            <em>Đăng bài về lỗi</em><mdash />Đây là bước cuối cùng, khi mọi phương pháp trên đều đã thất bại. Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải. Nếu làm vậy, hãy chắc chắn rằng bạn tham khảo những bài viết về <term>quy tắc ứng xử</term> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.
+            <term>Đăng bài về lỗi</term><mdash />Đây là bước cuối cùng, khi mọi phương pháp trên đều đã thất bại. Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải. Nếu làm vậy, hãy chắc chắn rằng bạn tham khảo những bài viết về <term>quy tắc ứng xử</term> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.
           </p>
         </li>
       </ol>

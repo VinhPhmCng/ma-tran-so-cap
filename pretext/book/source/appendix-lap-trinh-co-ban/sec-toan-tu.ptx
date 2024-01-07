@@ -48,7 +48,11 @@ See the file COPYING for copying conditions.
         print("chuoi 1 " + "chuoi 2")
       </input>
       <output>
-        (for static output)
+        8
+        2
+        15
+        1.6666666666666667
+        chuoi 1 chuoi 2
       </output>
     </sage>
     
@@ -63,7 +67,9 @@ See the file COPYING for copying conditions.
         print(5 % 3) # Modulo
       </input>
       <output>
-        (for static output)
+        1
+        125
+        2
       </output>
     </sage>
     
@@ -80,7 +86,9 @@ See the file COPYING for copying conditions.
         print(np.sin(45))
       </input>
       <output>
-        (for static output)
+        3.0
+        2.0
+        0.8509035245341184
       </output>
     </sage>
     
@@ -107,7 +115,8 @@ See the file COPYING for copying conditions.
         print(a)
       </input>
       <output>
-        (for static output)
+        5
+        6
       </output>
     </sage>
     

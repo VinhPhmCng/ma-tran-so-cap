@@ -36,7 +36,8 @@ See the file COPYING for copying conditions.
       print(l2, type(l2)) 
     </input>
     <output>
-      (for static output)
+      [1, 2, 3, 4] &lt;class 'list'&gt;
+      [1, 2.5, 'so'] &lt;class 'list'&gt;
     </output>
   </sage>
 
@@ -86,7 +87,7 @@ See the file COPYING for copying conditions.
         print(arr, type(arr))
       </input>
       <output>
-        (for static output)
+        [1 2 3] &lt;class 'numpy.ndarray'&gt;
       </output>
     </sage>
 
@@ -109,7 +110,7 @@ See the file COPYING for copying conditions.
         print(arr, type(arr))
       </input>
       <output>
-        (for static output)
+        [1 2 3] &lt;class 'numpy.ndarray'&gt;
       </output>
     </sage>
 
@@ -126,7 +127,8 @@ See the file COPYING for copying conditions.
         print(arr, arr.dtype)
       </input>
       <output>
-        (for static output)
+        [1 2 3 4] int64
+        [1.  2.  3.  4.  5.5] float64
       </output>
     </sage>
 
@@ -161,7 +163,9 @@ See the file COPYING for copying conditions.
         print(mat, type(mat))
       </input>
       <output>
-        (for static output)
+        [[1 2 3]
+         [2 4 6]
+         [3 6 9]] &lt;class 'numpy.matrix'&gt;
       </output>
     </sage>
     
@@ -184,13 +188,19 @@ See the file COPYING for copying conditions.
             [2, 2, 2],
             [3, 3, 3]
         ])
-        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
         show(mat)
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
+
+    <example>
+      <title>Output</title>
+      <p>
+        <me>
+          \bmat{1 \amp 1 \amp 1 \\ 2 \amp 2 \amp 2 \\ 3 \amp 3 \amp 3}
+        </me>
+      </p>
+    </example>
     
     <remark>
       <p>

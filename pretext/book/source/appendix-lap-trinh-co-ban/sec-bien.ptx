@@ -47,7 +47,10 @@ See the file COPYING for copying conditions.
       print(b)
     </input>
     <output>
-      (for static output)
+      1
+      1
+      2
+      1
     </output>
   </sage>
   
@@ -75,7 +78,7 @@ See the file COPYING for copying conditions.
       print(c)
     </input>
     <output>
-      (for static output)
+      16
     </output>
   </sage>
   

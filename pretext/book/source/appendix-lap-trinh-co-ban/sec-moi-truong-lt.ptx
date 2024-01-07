@@ -37,7 +37,8 @@ See the file COPYING for copying conditions.
       print(a * b)
     </input>
     <output>
-      (for static output)
+      Hello World!
+      15
     </output>
   </sage>
 
@@ -85,7 +86,10 @@ See the file COPYING for copying conditions.
         print("This is another string.) 
       </input>
       <output>
-        (for static output)
+          Cell In [1], line 3
+            print("This is another string.)
+                  ^
+          SyntaxError: unterminated string literal (detected at line 3)
       </output>
     </sage>
 

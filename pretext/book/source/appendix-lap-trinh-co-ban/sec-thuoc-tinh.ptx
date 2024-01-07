@@ -36,7 +36,8 @@ See the file COPYING for copying conditions.
       print(mat.shape)
     </input>
     <output>
-      (for static output)
+      9
+      (3, 3)
     </output>
   </sage>
   
@@ -55,7 +56,12 @@ See the file COPYING for copying conditions.
       print(a.shape)
     </input>
     <output>
-      (for static output)
+      AttributeError
+      Cell In [1], line 2
+
+      ...
+
+      AttributeError: 'int' object has no attribute 'size'
     </output>
   </sage>
   
@@ -80,7 +86,7 @@ See the file COPYING for copying conditions.
       )
     </input>
     <output>
-      (for static output)
+      9
     </output>
   </sage>
 
@@ -102,7 +108,11 @@ See the file COPYING for copying conditions.
       print(mat.T.shape)
     </input>
     <output>
-      (for static output)
+      [[1 2 3]
+       [2 3 4]
+       [3 4 5]
+       [4 5 6]] &lt;class 'numpy.matrix'&gt;
+      (4, 3)
     </output>
   </sage>
   

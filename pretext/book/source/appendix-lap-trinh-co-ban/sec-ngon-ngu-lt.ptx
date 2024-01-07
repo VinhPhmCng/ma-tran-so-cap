@@ -31,7 +31,7 @@ See the file COPYING for copying conditions.
       print("Hello world!")
     </input>
     <output>
-      (for static output)
+      Hello world!
     </output>
   </sage>
   

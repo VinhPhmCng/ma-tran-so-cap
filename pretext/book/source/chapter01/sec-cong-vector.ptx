@@ -99,7 +99,13 @@ See the file COPYING for copying conditions.
         print(a - b)
       </input>
       <output>
-        Provisional
+        [[5. ]
+         [0. ]
+         [3.5]]
+
+        [[-3. ]
+         [ 4. ]
+         [ 2.5]]
       </output>
     </sage>
 
@@ -127,7 +133,12 @@ See the file COPYING for copying conditions.
         print(c + d)
       </input>
       <output>
-        Provisional
+        TypeError
+        Cell In [1], line 16
+
+        ...
+
+        TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'
       </output>
     </sage>
 

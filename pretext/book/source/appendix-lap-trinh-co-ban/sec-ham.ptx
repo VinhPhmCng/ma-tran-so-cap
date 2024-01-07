@@ -68,7 +68,9 @@ See the file COPYING for copying conditions.
 
     </input>
     <output>
-      (for static output)
+      5
+      [1, 2, 3, 4]
+      Hello World! 5 [0, 1, 2] Xin chao!
     </output>
   </sage>
 
@@ -97,7 +99,7 @@ See the file COPYING for copying conditions.
       print(s.upper())
     </input>
     <output>
-      (for static output)
+      XIN CHAO! VI DU HAM CUC BO
     </output>
   </sage>
  
@@ -114,7 +116,7 @@ See the file COPYING for copying conditions.
       print("Xin chao the gioi!".upper()) 
     </input>
     <output>
-      (for static output)
+      XIN CHAO THE GIOI!
     </output>
   </sage>
 
@@ -128,7 +130,12 @@ See the file COPYING for copying conditions.
       print(a.upper())
     </input>
     <output>
-      (for static output)
+      AttributeError
+      Cell In [1], line 2
+
+      ...
+
+      AttributeError: 'int' object has no attribute 'upper'
     </output>
   </sage>
 
@@ -147,7 +154,8 @@ See the file COPYING for copying conditions.
         print(type(s.upper()))
       </input>
       <output>
-        (for static output)
+        &lt;class 'str'&gt;
+        &lt;class 'str'&gt;
       </output>
     </sage>
     
@@ -168,7 +176,9 @@ See the file COPYING for copying conditions.
         print(c, type(c))
       </input>
       <output>
-        (for static output)
+        3.0 &lt;class 'numpy.float64'&gt;
+        2.345207879911715 &lt;class 'numpy.float64'&gt;
+        [2. 3. 4.] &lt;class 'numpy.ndarray'&gt;
       </output>
     </sage>
     
@@ -181,7 +191,12 @@ See the file COPYING for copying conditions.
         print(np.sqrt("xin chao?"))
       </input>
       <output>
-        (for static output)
+        TypeError
+        Cell In [1], line 1]
+        
+        ...
+
+        TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
       </output>
     </sage>
 
@@ -199,7 +214,8 @@ See the file COPYING for copying conditions.
         print(a)
       </input>
       <output>
-        (for static output)
+        Hello world!
+        None
       </output>
     </sage>
     

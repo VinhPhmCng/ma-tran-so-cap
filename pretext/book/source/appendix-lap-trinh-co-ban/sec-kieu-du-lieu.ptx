@@ -35,7 +35,8 @@ See the file COPYING for copying conditions.
       print(type(a)) 
     </input>
     <output>
-      (for static output)
+      &lt;class 'int'&gt;
+      &lt;class 'str'&gt;
     </output>
   </sage>
   
@@ -93,7 +94,10 @@ See the file COPYING for copying conditions.
       print(type(d))
     </input>
     <output>
-      (for static output)
+      &lt;class 'int'&gt;
+      &lt;class 'float'&gt;
+      &lt;class 'str'&gt;
+      &lt;class 'bool'&gt;
     </output>
   </sage>
   
@@ -114,7 +118,9 @@ See the file COPYING for copying conditions.
       print(a + c, type(a + c))
     </input>
     <output>
-      (for static output)
+      3 &lt;class 'int'&gt;
+      9.1 &lt;class 'float'&gt;
+      8.5 &lt;class 'float'&gt;
     </output>
   </sage>
 
@@ -135,7 +141,8 @@ See the file COPYING for copying conditions.
       print(s5)
     </input>
     <output>
-      (for static output)
+      Ma tranMa tran  &lt;class 'str'&gt;
+      Ma tran so cap
     </output>
   </sage>
   
@@ -150,7 +157,12 @@ See the file COPYING for copying conditions.
       print(a + s)
     </input>
     <output>
-      (for static output)
+      TypeError
+      Cell In [1], line 1
+
+      ...
+
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
     </output>
   </sage>
 

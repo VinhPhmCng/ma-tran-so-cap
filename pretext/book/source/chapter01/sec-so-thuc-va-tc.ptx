@@ -331,11 +331,11 @@ See the file COPYING for copying conditions.
           </solution>
         </exercise>
 
-        <conclusion>
+<!--         <conclusion>
           <p>
             The conclusion of the exercise group.
           </p>
-        </conclusion>
+        </conclusion> -->
 
       </exercisegroup>
 
@@ -358,24 +358,44 @@ See the file COPYING for copying conditions.
               <statement>
                 <p>Phép cộng</p>
               </statement>
+              <feedback>
+                <p>
+                  Phép cộng số nguyên có tính đóng. 
+                </p>
+              </feedback>
             </choice>
 
             <choice correct="yes">
               <statement>
                 <p>Phép trừ</p>
               </statement>
+              <feedback>
+                <p>
+                  Phép trừ số nguyên có tính đóng. 
+                </p>
+              </feedback>
             </choice>
 
             <choice correct="yes">
               <statement>
                 <p>Phép nhân</p>
               </statement>
+              <feedback>
+                <p>
+                  Phép nhân số nguyên có tính đóng. 
+                </p>
+              </feedback>
             </choice>
 
             <choice>
               <statement>
                 <p>Phép chia</p>
               </statement>
+              <feedback>
+                <p>
+                  Phép chia số nguyên <em>không</em> có tính đóng. 
+                </p>
+              </feedback>
             </choice>
           </choices>
         </exercise>
@@ -386,7 +406,9 @@ See the file COPYING for copying conditions.
           </statement>
 
           <feedback>
-            <p>Alo</p>
+            <p>
+              Tập số hữu tỷ <m>\Q</m> là tập số nguyên <m>\Z</m> hợp với tập các phân số của các số nguyên đó. Vì vậy, phép chia số hữu tỷ cũng có tính đóng. Vậy, cả bốn phép toán trên đều có tính đóng với tập số hữu tỷ <m>\Q</m>.
+            </p>
           </feedback>
         </exercise>
         
@@ -394,6 +416,12 @@ See the file COPYING for copying conditions.
           <statement>
             <p>Các phép toán nào có tính đóng đối với tập số thực <m>\R</m>?</p>
           </statement>
+
+          <answer>
+            <p>
+              Cả bốn phép toán cộng, trừ, nhân, chia trên tập số thực <m>\R</m> đều có tính đóng.
+            </p>
+          </answer>
         </exercise>
         
         <conclusion>

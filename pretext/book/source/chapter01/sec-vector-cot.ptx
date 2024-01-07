@@ -239,7 +239,11 @@ See the file COPYING for copying conditions.
           print(hang_1)
         </input>
         <output>
-          Provisional
+          [[1]
+           [2]
+           [3]]
+
+          [[4 5 6]]
         </output>
       </sage>
       
@@ -251,13 +255,19 @@ See the file COPYING for copying conditions.
               [0],
               [1.52]
           ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
           show(cot_2)
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+
+      <example>
+        <title>Output</title>
+        <p>
+          <me>
+            \bmat{3.33333333333333 \\ 0.000000000000000 \\ 1.52000000000000}
+          </me>
+        </p>
+      </example>
 
       <sage>
         <input>
@@ -265,13 +275,19 @@ See the file COPYING for copying conditions.
           hang_2 = matrix([
               [2, 4, -6] 
           ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
           show(hang_2)
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+
+      <example>
+        <title>Output</title>
+        <p>
+          <me>
+            \bmat{2 \amp 4 \amp -6}
+          </me>
+        </p>
+      </example>
 
     </subsubsection>
 
@@ -292,7 +308,11 @@ See the file COPYING for copying conditions.
           print(hang_1.transpose())
         </input>
         <output>
-          Provisional
+          [[1 2 3]]
+
+          [[4]
+           [5]
+           [6]]
         </output>
       </sage>
 
@@ -301,21 +321,33 @@ See the file COPYING for copying conditions.
           # Trong SageMath
           show(cot_2.transpose())
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+
+      <example>
+        <title>Output</title>
+        <p>
+          <me>
+            \bmat{3.33333333333333 \amp 0.000000000000000 \amp 1.52000000000000}
+          </me>
+        </p>
+      </example>
 
       <sage>
         <input>
           # Trong SageMath
           show(hang_2.transpose())
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
       
+      <example>
+        <title>Output</title>
+        <p>
+          <me>
+            \bmat{2 \\ 4 \\ -6}
+          </me>
+        </p>
+      </example>
+
     </subsubsection>
 
   </subsection>
