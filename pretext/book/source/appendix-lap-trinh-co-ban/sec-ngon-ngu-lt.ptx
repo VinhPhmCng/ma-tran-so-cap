@@ -19,31 +19,36 @@ See the file COPYING for copying conditions.
   </objectives>
 
   <p>
-    Ngôn ngữ lập trình là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những <q>chỉ dẫn</q> này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.
+    <term>Ngôn ngữ lập trình</term> là ngôn ngữ hình thức giúp con người viết nên các đoạn chương trình máy tính, hay nói cách khác là đưa ra những chỉ dẫn cho máy tính. Những <q>chỉ dẫn</q> này bao gồm từ tính toán phép cộng, phép trừ đến xử lý dữ liệu, hình ảnh, v.v.
   </p>
 
   <p>
-    Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình <term>Python</term><mdash />một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Bấm nút <c>Evaluate</c> để chạy đoạn code.
+    Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình <term>Python</term><mdash />một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Hãy chạy dòng code sau và xem kết quả nhé.
   </p>
 
   <sage language="python">
     <input>
-      print("Hello world!")
+      print("Hello World!")
     </input>
-    <output>
-      Hello world!
-    </output>
   </sage>
+  <problem>
+    <pre>
+      Hello World!
+    </pre>
+  </problem>
   
-  <p>
-    Khi chạy đoạn code trên bạn sẽ thấy dòng chữ <q>Hello world!</q> được hiển thị ở <term>terminal</term> (hay <term>console</term>) ở ngay phía dưới.
-  </p>  
+  <investigation>
+    <p></p>
+    <p>
+      Lệnh <c>print()</c> có nhiệm vụ rất đơn giản là đưa dữ liệu ra terminal. Ở đây, dữ liệu đó là dòng chữ <q>Hello World!</q>.
+    </p>
+  </investigation>
 
   <p>
-    Đây là một đoạn code nữa được viết bằng Python.
+    Đây là một đoạn code nữa được viết bằng Python. (Một lần nữa, bạn chưa cần phải hiểu đoạn code này.)
   </p>
 
-  <program language="python" line-numbers="yes">
+  <program language="python">
     <input>
       a = 0
       while a &lt; 10:
@@ -57,14 +62,26 @@ See the file COPYING for copying conditions.
   </program>
 
   <p>
-    Python là một ngôn ngữ lập trình <term>bậc cao</term>. Ta có thể thấy cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh. Vì vậy nó thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp Python trở thành một trong những ngôn ngữ lập trình phổ biến nhất.
+    Dễ thấy, có những <term>từ khóa</term> như <c>while</c>, <c>print</c> <c>end</c>, <c>if</c>, và <c>else</c>. Như vậy, cú pháp của Python có những từ khóa và đặc điểm rất gần gũi với ngôn ngữ tiếng Anh.
+  </p>
+
+  <definition xml:id="def-nnlt-bac-cao">
+    <statement>
+      <p>
+        Ta nói Python là một ngôn ngữ lập trình <term>bậc cao</term> vì cú pháp của nó gần gũi với ngôn ngữ con người.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    Vì vậy, Python thường được đề xuất tới những người mới học lập trình, và cũng chính là một trong những lí do giúp nó trở thành một trong những ngôn ngữ lập trình phổ biến nhất.
   </p>
 
   <p>
-    Dưới đây là một đoạn code trong ngôn ngữ <term>Assembly</term><mdash />một ngôn ngữ lập trình <term>bậc thấp</term>. Khi chạy, ta cũng thu được dòng chữ "Hello World!".
+    Tiếp theo, ta có một đoạn code trong ngôn ngữ <term>Assembly</term>. Khi chạy, ta cũng thu được dòng chữ "Hello World!" như ô code ở trên cùng.
   </p>
 
-  <program language="assy" line-numbers="yes">
+  <program language="assy">
     <input>
       org  0x100 
       mov  dx, msg
@@ -77,83 +94,120 @@ See the file COPYING for copying conditions.
       msg  db 'Hello World!', 0x0d, 0x0a, '$'
     </input>
   </program>
+
+  <p>
+    Đây gần như là ngôn ngữ máy tính. Assembly cần đến 7 dòng code (không tính dòng trống) để làm điều mà Python có thể thực hiện trong duy nhất 1 dòng.
+  </p>
+
+  <definition xml:id="def-nnlt-bac-thap">
+    <statement>
+      <p>
+        Vậy, ta nói Assembly là một ngôn ngữ lập trình <term>bậc thấp</term>, vì cú pháp của nó gần gũi với ngôn ngữ máy tính.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    Vậy, ngôn ngữ bậc cao có cú pháp ngắn gọn và thân thiện hơn ngôn ngữ bậc thấp. Có thể bạn sẽ hỏi <q>Vậy khi nào thì ta dùng ngôn ngữ bậc thấp?</q>
+  </p>
+
+  <p>
+    Có rất nhiều lý do như tốc độ xử lý, tiềm năng, sự chuyên dụng, v.v.
+  </p>
   
-  <p>
-    Khi một người mới bắt đầu học lập trình, họ thường gặp phải những câu hỏi hay chủ đề như:
-    <ul>
-      <li>
-        <p>
-          Nên bắt đầu với ngôn ngữ lập trình nào?
-        </p>
-      </li>
-      <li>
-        <p>
-          Ngôn ngữ lập trình nào nên học trong năm 2024?
-        </p>
-      </li>
-      <li>
-        <p>
-          Ngôn ngữ lập trình nào nên học để có việc lương cao?
-        </p>
-      </li>
-      <li>
-        <p>
-          v.v.
-        </p>
-      </li>
-    </ul>
-
-    Đó là những câu hỏi không mấy thiết thực và tôi khuyên bạn không nên có lối suy nghĩ như vậy. Thay vào đó, những câu hỏi bạn nên hỏi là:
-
-    <ul>
-      <li>
-        <p>
-          Mục đích của mình khi học một ngôn ngữ lập trình mới là gì?
-        </p>
-      </li>
-      <li>
-        <p>
-          Với mục đích đó thì ngôn ngữ lập trình nào là phù hợp?
-        </p>
-      </li>
-      <li>
-        <p>
-          Mình muốn ngôn ngữ lập trình ấy là bậc cao hay bậc thấp?
-        </p>
-      </li>
-      <li>
-        <p>
-          v.v.
-        </p>
-      </li>
-    </ul>
-
-    Hiện tại, số lượng ngôn ngữ lập trình là nhiều vô kể, và mỗi một trong số đó đều có <em>mục đích, điểm mạnh và điểm yếu riêng biệt</em>.
-  </p>
-
-  <p>
-    Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình rất thân thiện với người dùng, ai cũng có thể học lái được. Khi đó, ngôn ngữ lập trình bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được. Và hiển nhiên rồi, đổi lại chiếc xe đua F1 <q>bậc thấp</q> sẽ có tốc độ vượt xa chiếc xe ô tô <q>bậc cao</q>.
-  </p>
-
-  <p>
-    <term>Python</term> là một ngôn ngữ lập trình bậc cao, đa mục đích. Nó được dùng bởi các nhà toán học, nhà khoa học dữ liệu, người phát triển phần mềm, phát triển game, v.v.
-  </p>
-
-  <p>
-    <term>Numpy</term> là một thư viện mở rộng cho Python với rất nhiều tính năng toán học, trong đó có cấu trúc dữ liệu ma trận. Để sử dụng Numpy, ta chỉ cần sử dụng lệnh <c>import numpy as np</c>.
-  </p>
-
-  <p>
-    <term>SageMath</term> là một ngôn ngữ lập trình bậc cao, được xây dựng dựa trên Python, với mục đích quan trọng nhất là toán học, như cái tên nói lên.
-  </p>
-
-  <remark>
+  <insight>
     <p>
-      Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, phần lớn là Python và SageMath, giúp bạn dễ dàng theo dõi và thử nghiệm.
+      Để hình dung, bạn hãy tưởng tượng ngôn ngữ lập trình bậc cao là chiếc xe ô tô gia đình rất thân thiện với người dùng, ai cũng có thể học lái được. Khi đó, bậc thấp sẽ là chiếc xe đua F1 mà chỉ những tay đua kỳ cựu nhất mới có thể điều khiển được.
+    </p>
+    <p>
+      Và hiển nhiên rồi, đổi lại chiếc xe đua F1 <q>bậc thấp</q> sẽ có tốc độ vượt xa chiếc xe ô tô <q>bậc cao</q>.
+    </p>
+  </insight>
+
+  <convention>
+    <p>
+      Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, phần lớn là <term>Python</term> và <term>SageMath</term>, giúp bạn dễ dàng theo dõi và thử nghiệm.
     </p>
     <p>
       Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python và SageMath. Mỗi ngôn ngữ đều có một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó. Vì Python là một ngôn ngữ bậc cao và đa mục đích, cú pháp của nó rất thân thiện với người mới bắt đầu.
     </p>
-  </remark>
+  </convention>
+
+  <p>
+    Dưới đây là một vài thông tin bổ sung:
+    <ul>
+      <li>
+        <p>
+          <term>Python</term> là một ngôn ngữ lập trình bậc cao, đa mục đích. Nó được dùng bởi các nhà toán học, nhà khoa học dữ liệu, người phát triển phần mềm, phát triển game, v.v.
+        </p>
+      </li>
+      <li>
+        <p>
+          Ta sẽ thường xuyên sử dụng <term>Numpy</term><mdash />một <term>thư viện mở rộng</term> cho Python với rất nhiều tính năng toán học, trong đó có cấu trúc dữ liệu ma trận.
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>SageMath</term> là một ngôn ngữ lập trình bậc cao, được xây dựng dựa trên Python, với mục đích quan trọng nhất là toán học, như cái tên nói lên.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <insight>
+    <title>Về Cách Chọn Ngôn Ngữ Lập Trình Để Học</title>
+    <p>
+      Khi một người mới bắt đầu học lập trình, họ thường xuyên gặp phải những câu hỏi hay chủ đề như:
+      <ul>
+        <li>
+          <p>
+            Nên bắt đầu với ngôn ngữ lập trình nào?
+          </p>
+        </li>
+        <li>
+          <p>
+            Ngôn ngữ lập trình nào nên học trong năm 2024?
+          </p>
+        </li>
+        <li>
+          <p>
+            Ngôn ngữ lập trình nào nên học để có việc lương cao?
+          </p>
+        </li>
+        <li>
+          <p>
+            v.v.
+          </p>
+        </li>
+      </ul>
+
+      Đó là những câu hỏi không mấy thiết thực và tôi khuyên bạn không nên có lối suy nghĩ như vậy. Thay vào đó, những câu hỏi bạn nên hỏi là:
+
+      <ul>
+        <li>
+          <p>
+            Mục đích của mình khi học một ngôn ngữ lập trình mới là gì?
+          </p>
+        </li>
+        <li>
+          <p>
+            Với mục đích đó thì ngôn ngữ lập trình nào là phù hợp?
+          </p>
+        </li>
+        <li>
+          <p>
+            Mình muốn ngôn ngữ lập trình ấy là bậc cao hay bậc thấp?
+          </p>
+        </li>
+        <li>
+          <p>
+            v.v.
+          </p>
+        </li>
+      </ul>
+
+      Hiện tại, số lượng ngôn ngữ lập trình là nhiều vô kể, và mỗi một trong số đó đều có <em>mục đích, điểm mạnh và điểm yếu riêng biệt</em>.
+    </p>
+  </insight>
 
 </section>

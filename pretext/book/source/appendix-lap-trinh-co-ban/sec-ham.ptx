@@ -23,7 +23,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Giả sử ta có các biểu thức sau:
+    Giả sử ta có 100 biểu thức toán:
 
     <md>
       <mrow>1^2 + 2 \cdot 1 + 1</mrow>
@@ -32,7 +32,7 @@ See the file COPYING for copying conditions.
       <mrow>100^2 + 2 \cdot 100 + 1</mrow>
     </md>
 
-    Ta nhận ra là các biểu thức trên có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
+    Ta nhận ra chúng có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
 
     <md>
       <mrow>f(x) = x^2 + 2 \cdot x + 1</mrow>
@@ -45,83 +45,176 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    <term>Hàm</term> trong lập trình cũng được tạo ra để giúp ta theo cách tương tự như vậy. Khi xuất hiện những đoạn code được dùng đi dùng lại nhiều lần, ta thường sử dụng hàm để trừu tượng hóa chúng.
+    <term>Hàm</term> trong lập trình cũng được thiết kế tương tự như vậy.
   </p>
 
-  <p>
-    Ở phần này ta chưa đi sâu vào cú pháp để khai báo hàm, mà ta sẽ chỉ tập trung vào cú pháp để sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện. Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo phần <xref ref="sec-khai-bao-ham"/>.
-  </p>
+  <definition xml:id="def-ham">
+    <statement>
+      <p>
+        <term>Hàm</term> là một đoạn code có thể tái sử dụng được dùng để thực hiện một tác vụ nào đó.
+      </p>
+      <p>
+        Hàm có thể không nhận hoặc nhận một hay nhiều hơn dữ liệu <term>đầu vào</term>.
+      </p>
+      <p>
+        Hàm có thể không trả lại hoặc trả lại một hay nhiều hơn dữ liệu <term>đầu ra</term>.
+      </p>
+      <p>
+        Thuật ngữ cho việc tạo ra một hàm mới là <term>khai báo hàm</term>.
+      </p>
+      <p>
+        Thuật ngữ cho việc sử dụng một hàm là <term>gọi hàm</term>.
+      </p>
+    </statement>
+  </definition>
 
   <p>
-    Trước hết, ta có những <term>hàm toàn cục</term> là những hàm có thể sử dụng được ở bất kỳ nơi nào trong code. Để sử dụng nó ta chỉ việc <term>gọi hàm</term> bằng cú pháp: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me>
+    Ở phần này ta chưa đi sâu vào cú pháp khai báo hàm, mà ta sẽ chỉ tập trung vào việc sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện. Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo <xref ref="sec-khai-bao-ham"/>.
   </p>
 
+  <technology>
+    <title>Gọi hàm</title>
+    <p>
+      <em>Tùy vào từng hàm</em>, ta có hai cách: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
+    </p>
+  </technology>
+  
   <p>
-    Một ví dụ điển hình của hàm toàn cục chính là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào trong code, và với bất kỳ giá trị đầu vào nào. Ta cũng có thể truyền cho nó nhiều dữ liệu đầu vào cùng một lúc.
+    Một ví dụ thân thuộc là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào trong code, và với một tập hợp các dữ liệu đầu vào bất kỳ.
   </p>
 
   <sage language="python">
     <input>
       print(5) 
-      print([1, 2, 3, 4])
-      print("Hello World!", 5, [0, 1, 2], "Xin chao!")
+      print()
+      print(2, -2)
+      print(1, "Hello World!", 5.5)
 
     </input>
-    <output>
-      5
-      [1, 2, 3, 4]
-      Hello World! 5 [0, 1, 2] Xin chao!
-    </output>
   </sage>
+  <problem>
+    <pre>
+      5
+      
+      2 -2
+      1 Hello World! 5.5
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Dòng 1: Ta truyền cho hàm <c>print()</c> một dữ liệu đầu vào là <c>5</c>.
+    </p>
+    <p>
+      Dòng 2: Ta không truyền dữ liệu đầu vào, nên <c>print()</c> xuất ra terminal một dòng trắng.
+    </p>
+    <p>
+      Dòng 3: Ta truyền cho nó hai dữ liệu đầu vào là <c>2</c> và <c>-2</c>.
+    </p>
+    <p>
+      Dòng 4: Ta truyền cho nó nhiều dữ liệu đầu vào, và chúng có các kiểu dữ liệu khác nhau.
+    </p>
+  </investigation>
 
   <p>
-    Tiếp theo, ta có những hàm thuộc quyền sở hữu của một kiểu dữ liệu xác định nào đó, còn được gọi là <term>hàm cục bộ</term>. Mỗi kiểu dữ liệu hay cấu trúc dữ liệu đều có tập hợp các hàm cục bộ của riêng mình.
-  </p>
-
-  <p>
-    Cú pháp <term>gọi</term> hàm cục bộ là:
-
-    <me>\text{tên biến.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
-
-    hoặc
-
-    <me>\text{dữ liệu.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
-  </p>
-
-  <p>
-    Vậy, <term>đầu vào 1</term> chính là biến hay dữ liệu tự do mà ta gọi hàm lên. Dưới đây là ví dụ.
+    Một ví dụ nữa là hàm <c>np.sqrt()</c> của Numpy. Nó có nhiệm vụ tính toán và trả lại căn bậc hai của dữ liệu đầu vào.
   </p>
 
   <sage language="python">
     <input>
-      s = "Xin chao! Vi du ham cuc bo" 
+      import numpy as np # Su dung thu vien Numpy 
+
+      print(np.sqrt(9))
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      3.0
+    </pre>
+  </problem>
+  <investigation>
+    <p>
+      Hàm <c>np.sqrt()</c> nhận một giá trị đầu vào và trả lại căn bậc hai của nó.
+    </p>
+  </investigation>
+  
+  <p>
+    Nhưng hàm <c>np.sqrt()</c> có nhiều yêu cầu hơn <c>print()</c>. Nó chỉ nhận <em>duy nhất một</em> giá trị đầu vào, và giá trị đó phải là <em>số</em>. Hai ví dụ dưới đây sẽ xuất hiện lỗi.
+  </p>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy 
+
+      print(np.sqrt(9, 10))
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
+
+      ...
+
+      TypeError: return arrays must be of ArrayType
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>Hàm <c>np.sqrt()</c> chỉ nhận duy nhất một dữ liệu đầu vào.</p>
+    <p>
+      Ta đang truyền cho nó nhiều hơn một dữ liệu đầu vào, nên hàm trả lại lỗi.
+    </p>
+  </investigation>
+
+  <sage language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy 
+
+      print(np.sqrt("Hello World!"))
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
+
+      ...
+
+      TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Dữ liệu đầu vào của <c>np.sqrt()</c> phải là số.</p>
+    <p>
+      Ta đang truyền cho nó kiểu <c>str</c>, nên hàm trả lại lỗi.
+    </p>
+  </investigation>
+
+  <p>
+    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Để sử dụng hàm này, ta phải tuân theo cú pháp gọi hàm thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. <c>upper()</c> trả lại một chuỗi mới với mọi ký tự đều được viết hoa.
+  </p>
+
+  <sage language="python">
+    <input>
+      s = "Xin chao!" 
 
       print(s.upper())
     </input>
-    <output>
-      XIN CHAO! VI DU HAM CUC BO
-    </output>
   </sage>
+  <problem>
+    <pre>
+      XIN CHAO!
+    </pre>
+  </problem>
+  <investigation>
+    <p>Hàm <c>upper()</c> trả lại chuỗi ký tự đầu vào sau khi đã được viết hoa.</p>
+  </investigation>
  
   <p>
-    Vậy, <c>upper()</c> là một hàm cục bộ của kiểu <c>str</c>. Trong trường hợp này, nó nhận một giá trị vào là chuỗi <c>s</c>, và nó trả lại chuỗi đó sau khi viết hoa từng phần tử.
-  </p>
-
-  <p>
-    Ta cũng có thể sử dụng nó trên một chuỗi tự do, không thuộc vào biến nào cả.
-  </p>
-
-  <sage language="python">
-    <input>
-      print("Xin chao the gioi!".upper()) 
-    </input>
-    <output>
-      XIN CHAO THE GIOI!
-    </output>
-  </sage>
-
-  <p>
-    Nhưng nếu ta thử dùng hàm <c>upper()</c> với kiểu <c>int</c>, ta sẽ gặp lỗi vì <c>int</c> không có hàm cục bộ trên.
+    Đây là một ví dụ có lỗi.
   </p>
 
   <sage language="python">
@@ -129,96 +222,25 @@ See the file COPYING for copying conditions.
       a = 5 
       print(a.upper())
     </input>
-    <output>
+  </sage>
+  <problem>
+    <pre>
       AttributeError
       Cell In [1], line 2
 
       ...
 
       AttributeError: 'int' object has no attribute 'upper'
-    </output>
-  </sage>
-
-
-  <subsection xml:id="subsec-kieu-tra-lai-cua-ham">
-    <title>Kiểu Của Tham Số Và Kiểu Trả Lại Của Hàm</title>
-
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
     <p>
-      Hàm có nhiệm vụ nhận một giá trị đầu vào và trả lại một giá trị đầu ra. Có nhiều hàm mà tham số của nó bắt buộc phải thuộc vào một kiểu dữ liệu xác định nào đó, và giá trị trả lại của nó cũng luôn thuộc một kiểu dữ liệu xác định. Ví dụ như hàm <c>upper()</c>, ta chỉ có thể truyền cho nó <c>str</c>, và kiểu trả lại của nó cũng sẽ luôn là <c>str</c>.
+      Hàm <c>upper()</c> chỉ nhận duy nhất một dữ liệu đầu vào có kiểu <c>str</c>.
     </p>
-    
-    <sage language="python">
-      <input>
-        s = "Hello world!" 
-        print(type(s))
-        print(type(s.upper()))
-      </input>
-      <output>
-        &lt;class 'str'&gt;
-        &lt;class 'str'&gt;
-      </output>
-    </sage>
-    
     <p>
-      Ví dụ tiếp theo là hàm <c>np.sqrt()</c>. Nó có thể nhận vào nhiều kiểu dữ liệu như <c>int</c>, <c>float</c>, thậm chí là mảng. Và nó sẽ trả lại kết quả thuộc kiểu dữ liệu phù hợp.
+      Dịch nôm na miêu tả của lỗi, ta được <q>int không có thuộc tính upper</q>.
     </p>
-
-    <sage language="python">
-      <input>
-        import numpy as np # Su dung thu vien Numpy
-
-        a = np.sqrt(9)
-        b = np.sqrt(5.5)
-        c = np.sqrt([4, 9, 16])
-
-        print(a, type(a))
-        print(b, type(b))
-        print(c, type(c))
-      </input>
-      <output>
-        3.0 &lt;class 'numpy.float64'&gt;
-        2.345207879911715 &lt;class 'numpy.float64'&gt;
-        [2. 3. 4.] &lt;class 'numpy.ndarray'&gt;
-      </output>
-    </sage>
-    
-    <p>
-      Nhưng chắc chắn ta không thể truyền cho hàm <c>np.sqrt()</c> một chuỗi kiểu <c>str</c> rồi.
-    </p>
-
-    <sage language="python">
-      <input>
-        print(np.sqrt("xin chao?"))
-      </input>
-      <output>
-        TypeError
-        Cell In [1], line 1]
-        
-        ...
-
-        TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
-      </output>
-    </sage>
-
-    <p>
-      Nhưng cũng có những hàm có thể nhận giá trị đầu vào có kiểu dữ liệu tự do. Cũng có những hàm trả lại kiểu dữ liệu tự do hoặc không trả lại gì cả. Khi ấy, kiểu dữ liệu đại diện cho điều đó là <c>None</c>.
-    </p>
-
-    <p>
-      Một ví dụ điển hình cho hàm không có kiểu của tham số và kiểu trả lại chính là hàm <c>print()</c> Ta có thể truyền cho nó kiểu <c>str</c>, kiểu <c>int</c>, kiểu <c>float</c>, v.v. Và nó luôn trả lại <c>None</c>.
-    </p>
-    
-    <sage language="python">
-      <input>
-        a = print("Hello world!") 
-        print(a)
-      </input>
-      <output>
-        Hello world!
-        None
-      </output>
-    </sage>
-    
-  </subsection>
+  </investigation>
 
 </section>

@@ -145,10 +145,10 @@ See the file COPYING for copying conditions.
   <rename element='convention'>Quy Ước</rename>
   <rename element='note'>Chú Ý</rename>
   <rename element='observation'>Quan Sát</rename>
-  <rename element='warning'>Cẩn Thận</rename>
-  <rename element='insight'>Kinh Nghiệm</rename>
+  <rename element='warning'>Sai Lầm</rename>
+  <rename element='insight'>Chia Sẻ</rename>
   <rename element='computation'>Computation</rename>
-  <rename element='technology'>Technology</rename>
+  <rename element='technology'>Cú Pháp</rename>
   <!-- ASIDE-LIKE blocks -->
   <rename element='aside'>Aside</rename>
   <rename element='biographical'>Biographical Aside</rename>
@@ -156,13 +156,13 @@ See the file COPYING for copying conditions.
   <!-- EXAMPLE-LIKE blocks -->
   <rename element='example'>Ví Dụ</rename>
   <rename element='question'>Câu Hỏi</rename>
-  <rename element='problem'>Vấn Đề</rename>
+  <rename element='problem'>Output</rename> <!-- Dùng để hiện Output tĩnh cho các ô code (tentative) -->
   <!-- PROJECT-LIKE blocks -->
   <rename element='project'>Dự Án</rename>
   <rename element='activity'>Hoạt Động</rename>
   <rename element='exploration'>Khám Phá</rename>
   <rename element='task'>Nhiệm Vụ</rename>
-  <rename element='investigation'>Nghiên Cứu</rename>
+  <rename element='investigation'>Giải Thích</rename> <!-- Dùng để giải thích code trong "Lập Trình Cơ Bản" --> 
   <!-- assemblages are collections of minimally structured material -->
   <rename element='assemblage'>Assemblage</rename>
   <rename element='poem'>Thơ</rename>
@@ -277,7 +277,7 @@ See the file COPYING for copying conditions.
   <rename element='copyright'>Bản Quyền</rename>
   <!-- HTML clickables (lowercase strings to click on) -->
   <rename element='permalink'>liên kết tĩnh</rename>
-  <rename element='incontext'>trong ngữ cảnh</rename>
+  <rename element='incontext'>đi đến</rename>
   <!-- Sage Cell evaluate button      -->
   <!-- eg, "Evaluate (Maxima)"        -->
   <!-- 2017-05-14: 'code' is obsolete -->

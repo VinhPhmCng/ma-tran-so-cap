@@ -26,12 +26,35 @@ See the file COPYING for copying conditions.
     Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như: <me>f(x) = x^2 + 2x + 1</me> Ở đây, <q>biến</q> có nghĩa là chưa xác định, hay nói cách khác <m>x</m> là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế <m>x</m> với những con số xác định.
   </p>
 
-  <p>
-    Còn trong lập trình thì <term>biến</term> được dùng để lưu trữ dữ liệu, nên nó mang <term>tính xác định</term>, nhưng đồng thời nó cũng <em>thường xuyên thay đổi</em> trong quá trình chương trình chạy.
-  </p>
+  <definition xml:id="def-bien">
+    <statement>
+      <p>
+        Trong lập trình, <term>biến</term> được dùng để lưu trữ một hay nhiều dữ liệu <term>xác định</term>.
+      </p>
 
+      <p>
+        Dữ liệu được chứa trong biến còn được gọi là <term>giá trị</term> của biến, và nó <em>thường xuyên được cập nhật</em> trong quá trình chương trình chạy.
+      </p>
+
+      <p>
+        Thuật ngữ để chỉ việc tạo ra một biến mới là <term>khai báo</term>.
+      </p>
+      
+      <p>
+        Thuật ngữ để chỉ việc cập nhật giá trị của một biến đã tồn tại là <term>gán</term>.
+      </p>
+    </statement>
+  </definition>
+
+  <technology>
+    <title>Khai báo hoặc gán</title>
+    <p>
+      Để khai báo biến hoặc gán cho biết giá trị mới, ta đều sử dụng dấu <c>=</c> như sau: <me>{\color{blue} \text{tên biến}} = \text{giá trị}</me>
+    </p>
+  </technology>
+  
   <p>
-    Để <term>khai báo</term> biến hoặc <term>gán</term> cho biến giá trị mới, ta sử dụng dấu <c>=</c>. Vế trái là tên biến và vế phải là giá trị. Dưới đây là ví dụ.
+    Dưới đây là ví dụ.
   </p>
 
   <sage>
@@ -46,40 +69,106 @@ See the file COPYING for copying conditions.
       print(a)
       print(b)
     </input>
-    <output>
+  </sage>
+  <problem>
+    <pre>
       1
       1
       2
       1
-    </output>
-  </sage>
+    </pre>
+  </problem>
   
-  <p>
-    Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>. Ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>. Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.
-  </p>
+  <investigation>
+    <p></p>
+    <p>
+      Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>.
+    </p>
+    <p>
+    Ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>, vậy <c>b</c> cũng có giá trị là <c>1</c>. 
+    </p>
+    <p>
+      Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.
+    </p>
+    <p>
+      Sau đó, ta gán cho <c>a</c> một giá trị mới, hay nói cách khác là cập nhật giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
+    </p>
+
+    <p>
+      <alert>Chú ý</alert>: Nếu đến bước này bạn nghĩ rằng cả <c>a</c> và <c>b</c> đều có giá trị là <c>2</c>, thì bạn vẫn chưa thực sự hiểu hai khái niệm <term>khai báo</term> và <term>gán</term>, cũng như <term>tính xác định</term> của biến.
+    </p>
+
+    <p>
+      Biến trong lập trình khác với biến trong toán học ở chỗ nó thay đổi <em>khi và chỉ khi</em> ta gán cho nó một giá trị mới, sử dụng dấu <c>=</c>. (Bạn có thể tham khảo <xref ref="def-toan-tu-gan"/>.)
+    </p>
+
+    <p>
+      Vì vậy, khi dùng <c>print()</c> để hiển thị giá trị của 2 biến ra terminal, ta nhận được <c>2</c> và <c>1</c>, chứ không phải <c>2</c> và <c>2</c>.
+    </p>
+  </investigation>
 
   <p>
-    Sau đó, ta lại gán cho <c>a</c> một giá trị mới, hay nói cách khác là update giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
+    Nếu sau khi cập nhật biến <c>a</c>, ta lại muốn biến <c>b</c> cũng có giá trị bằng <c>a</c>, thì ta phải cập nhật biến <c>b</c> một lần nữa. Bạn thử thêm <c>b = a</c> vào dưới dòng 7 và chạy lại code xem điều này có đúng không nhé.
   </p>
+
+  <insight>
+    <p>
+      Ví dụ trên về biến dù đơn giản nhưng đã làm rối não rất nhiều người mới bắt đầu, đặc biệt là những người có bộ não toán học. Vì họ thấy <c>b = a</c> nên họ nghĩ đây là một biểu thức mang tính bao quát và luôn đúng trong chương trình. Nhưng lối suy nghĩ đó là <em>sai</em> đối với lập trình.
+    </p>
+
+    <p>
+      Và nếu bạn đã thấu hiểu được ví dụ trên, thì xin chúc mừng<mdash></mdash>bạn đã vượt qua con boss đầu tiên.
+    </p>
+  </insight>
 
   <p>
-    Ví dụ trên thể hiện tính xác định của biến. Vì trình biên dịch code sẽ đọc từ trên xuống dưới, tại dòng số 3 <c>b = a</c> thì giá trị của <c>a</c> vẫn đang là <c>1</c>.
+    Đến đây, ta có một khái niệm mới khá đơn giản.
   </p>
-
-  <p>
-    Trong ví dụ dưới đây, bạn hãy thử thay đổi giá trị của các biến, chạy lại code, và xem kết quả thay đổi.
-  </p>
-
-  <sage>
-    <input>
-      b = 3
-      c = b^2 + 2*b + 1
-
-      print(c)
-    </input>
-    <output>
-      16
-    </output>
-  </sage>
+  <definition xml:id="def-du-lieu-tu-do">
+    <statement>
+      <p>
+        Dữ liệu không được chứa trong biến được được gọi là <term>dữ liệu tự do</term>.
+      </p>
+    </statement>
+  </definition>
   
+  <note>
+    <title>Đặt tên cho biến</title>
+    
+    <p>
+      Tên của một biến có một vài yêu cầu, ví dụ như việc <em>không</em> được chứa ký tự khoảng trắng (space), cũng như một vài ký tự đặc biệt khác.
+    </p>
+    <p>
+      Chỉ cần tuân thủ chúng, bạn có thể đặt tên cho biến <term>tùy thích</term> Vì vậy, tùy vào cá nhân lập trình viên, tên biến sẽ rất đa dạng:
+      <ul>
+        <li>
+          <p>
+            dia_chi_nha 
+          </p>
+        </li>
+        <li>
+          <p>
+            diaChiNha
+          </p>
+        </li>
+        <li>
+          <p>
+            DiaChiNha 
+          </p>
+        </li>
+        <li>
+          <p>
+            v.v.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Trong cộng đồng lập trình có rất nhiều những quy ước hay tiêu chuẩn giúp ta chọn cách đặt tên biến sao cho phù hợp.
+    </p>
+    <p>
+      Quyển sách này sẽ không nhắc tới vấn đề này. Tên biến trong những ví dụ code sẽ được đặt sao cho <em>đơn giản và ngắn gọn nhất</em>.
+    </p>
+  </note>
+
 </section>
