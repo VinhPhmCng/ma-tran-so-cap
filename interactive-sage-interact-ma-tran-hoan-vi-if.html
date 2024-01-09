@@ -124,7 +124,7 @@ def matrix_dimensions(
     P2 = ('Ma trận hoán vị cột P2', matrix.identity(n)),
   ):
     pretty_print('\n')
-    latex.matrix_delimiters("[", "]")
+    latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
     pretty_print(html(r'$P_{1} \cdot A = %s \cdot %s = %s$' % (latex(P1), latex(A), latex(P1 * A))))
     pretty_print('\n\n')
     pretty_print(html(r'$A \cdot P_{2} = %s \cdot %s = %s$' % (latex(A), latex(P2), latex(A * P2))))
