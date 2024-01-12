@@ -238,14 +238,16 @@ See the file COPYING for copying conditions.
           print()
           print(hang_1)
         </input>
-        <output>
+      </sage>
+      <problem>
+        <pre>
           [[1]
            [2]
            [3]]
 
           [[4 5 6]]
-        </output>
-      </sage>
+        </pre>
+      </problem>
       
       <sage>
         <input>
@@ -259,15 +261,13 @@ See the file COPYING for copying conditions.
           show(cot_2)
         </input>
       </sage>
-
-      <example>
-        <title>Output</title>
+      <problem>
         <p>
           <me>
             \bmat{3.33333333333333 \\ 0.000000000000000 \\ 1.52000000000000}
           </me>
         </p>
-      </example>
+      </problem>
 
       <sage>
         <input>
@@ -279,15 +279,13 @@ See the file COPYING for copying conditions.
           show(hang_2)
         </input>
       </sage>
-
-      <example>
-        <title>Output</title>
+      <problem>
         <p>
           <me>
             \bmat{2 \amp 4 \amp -6}
           </me>
         </p>
-      </example>
+      </problem>
 
     </subsubsection>
 
@@ -301,53 +299,55 @@ See the file COPYING for copying conditions.
 
       <sage language="python">
         <input>
+          # ...
           # Trong Numpy (Python)
           print(cot_1.transpose())
 
           print()
           print(hang_1.transpose())
         </input>
-        <output>
+      </sage>
+      <problem>
+        <pre>
           [[1 2 3]]
 
           [[4]
            [5]
            [6]]
-        </output>
-      </sage>
+        </pre>
+      </problem>
+      
 
       <sage>
         <input>
+          # ...
           # Trong SageMath
           show(cot_2.transpose())
         </input>
       </sage>
-
-      <example>
-        <title>Output</title>
+      <problem>
         <p>
           <me>
             \bmat{3.33333333333333 \amp 0.000000000000000 \amp 1.52000000000000}
           </me>
         </p>
-      </example>
-
+      </problem>
+      
       <sage>
         <input>
+          # ...
           # Trong SageMath
           show(hang_2.transpose())
         </input>
       </sage>
-      
-      <example>
-        <title>Output</title>
+      <problem>
         <p>
           <me>
             \bmat{2 \\ 4 \\ -6}
           </me>
         </p>
-      </example>
-
+      </problem>
+      
     </subsubsection>
 
   </subsection>
