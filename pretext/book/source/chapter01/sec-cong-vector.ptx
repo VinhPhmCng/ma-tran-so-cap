@@ -45,8 +45,7 @@ See the file COPYING for copying conditions.
       <title>Tính chất</title>
       
       <p>
-        Phép cộng các vector cột có 8 tính chất đã nêu
-        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+        Phép cộng các vector cột có 8 tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
@@ -55,8 +54,7 @@ See the file COPYING for copying conditions.
       <title>Trừ vector cột</title>
 
       <p>
-        Thực hiện và cho kết quả tương tự phép trừ số với số.
-        <me>a - b = a + (-b)</me>
+        Thực hiện và cho kết quả tương tự phép trừ số với số. <me>a - b = a + (-b)</me>
       </p>
     </remark>
   </subsection>
@@ -101,7 +99,13 @@ See the file COPYING for copying conditions.
         print(a - b)
       </input>
       <output>
-        Provisional
+        [[5. ]
+         [0. ]
+         [3.5]]
+
+        [[-3. ]
+         [ 4. ]
+         [ 2.5]]
       </output>
     </sage>
 
@@ -129,7 +133,12 @@ See the file COPYING for copying conditions.
         print(c + d)
       </input>
       <output>
-        Provisional
+        TypeError
+        Cell In [1], line 16
+
+        ...
+
+        TypeError: unsupported operand parent(s) for +:'Full MatrixSpace of 4 by 1 dense matrices over Integer Ring' and 'Full MatrixSpace of 3 by 1 dense matrices over Real Field with 53 bits of precision'
       </output>
     </sage>
 

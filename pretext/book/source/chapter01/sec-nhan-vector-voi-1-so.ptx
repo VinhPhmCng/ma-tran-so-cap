@@ -45,8 +45,7 @@ See the file COPYING for copying conditions.
       <title>Tính chất</title>
       
       <p>
-        Phép nhân vector cột với 1 số có 8 tính chất đã nêu 
-        ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
+        Phép nhân vector cột với 1 số có 8 tính chất đã nêu ở <xref ref="subsec-tinh-chat-cua-cac-phep-toan"/>.
       </p>
       
     </remark>
@@ -55,8 +54,7 @@ See the file COPYING for copying conditions.
       <title>Chia vector cột cho 1 số</title>
 
       <p>
-        Thực hiện và cho kết quả tương tự phép chia số với số.
-        <me>a / b = a \cdot \frac{1}{b}</me>
+        Thực hiện và cho kết quả tương tự phép chia số với số. <me>a / b = a \cdot \frac{1}{b}</me>
       </p>
     </remark>
     
@@ -95,10 +93,18 @@ See the file COPYING for copying conditions.
         print()
         print(a / 2)
       </input>
-      <output>
-        Provisional
-      </output>
     </sage>
+    <problem>
+      <pre>
+        [[2]
+         [4]
+         [6]]
+
+        [[0.5]
+         [1. ]
+         [1.5]]
+      </pre>
+    </problem>
 
   </subsection>
 

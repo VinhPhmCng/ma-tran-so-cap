@@ -19,41 +19,24 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    <term>Kiểu dữ liệu</term> là một khái niệm đi đôi với biến.
+    Mọi thứ trên thế giới này đều có thể được lưu trữ thành dữ liệu<mdash></mdash>từ số liệu, chữ cái đến thông tin về một học sinh hay một mẫu xe ô tô.
   </p>
 
-  <p>
-    Trong Python và SageMath, khi ta khai báo biến hay gán cho biến giá trị mới,
-    biến sẽ dựa vào giá trị đó mà quyết định <term>kiểu dữ liệu</term> của mình.
-  </p>
-
-  <sage language="python">
-    <input>
-      a = 5
-      print(type(a))
-
-      a = "xin chao"
-      print(type(a)) 
-    </input>
-    <output>
-      (for static output)
-    </output>
-  </sage>
-  
-  <p>
-    Ở ví dụ trên, ta sử dụng lệnh <c>type()</c> để biết được kiểu dữ liệu của biến,
-    trong trường hợp này là <c>int</c> và <c>str</c>.
-  </p>
+  <definition xml:id="def-kieu-du-lieu">
+    <statement>
+      <p>
+        Và để <term>phân loại</term> các dữ liệu đó, ta có khái niệm <term>kiểu dữ liệu</term>.
+      </p>
+    </statement>
+  </definition>
 
   <p>
     Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:
-
     <dl>
       <li>
         <title>str</title>
         <p>
-          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc
-          kép đơn <c>''</c>.
+          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc kép đơn <c>''</c>.
         </p>
       </li>
 
@@ -74,21 +57,66 @@ See the file COPYING for copying conditions.
       <li>
         <title>bool</title>
         <p>
-          <term>Boolean</term> chỉ chứa một trong hai giá trị <c>True</c> hoặc <c>False</c>.
-          Được dùng chủ yếu trong những câu lệnh điều kiện.
+          <term>Boolean</term> chỉ chứa một trong hai giá trị <c>True</c> hoặc <c>False</c>. Được dùng chủ yếu trong những câu lệnh điều kiện.
         </p>
       </li>
 
     </dl>
   </p>
 
-  <p>Dưới đây là ví dụ.</p>
+  <note>
+    <p>
+      Trong Python và SageMath, khi ta khai báo biến hay cập nhật biến, nó sẽ dựa vào giá trị đó mà <em>tự động quyết định</em> kiểu dữ liệu của mình. Dưới đây là ví dụ.
+    </p>
+  </note>
+
+  <sage language="python">
+    <input>
+      a = 5
+      print(type(a))
+
+      a = "5"
+      print(type(a)) 
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      &lt;class 'int'&gt;
+      &lt;class 'str'&gt;
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Lệnh <c>type(a)</c> cho kết quả là kiểu dữ liệu của biến <c>a</c>, được ghi trong dấu ngoặc kép đơn. (Bạn không cần quá băn khoăn về từ khóa <c>class</c> ở đây. Bạn có thể hiểu nó đang viết tắt cho từ <q>classify</q>, nghĩa là <q>phân loại</q>.)
+    </p>
+    <p>
+      Vậy, khi khai báo <c>a = 5</c>, biến <c>a</c> có kiểu <c>int</c>.
+    </p>
+    <p>
+      Còn khi gán cho <c>a</c> giá trị mới là <c>"5"</c> (<alert>chú ý</alert> 5 nằm ở trong hai dấu ngoặc kép), nó tự động cập nhật thành kiểu <c>str</c>.
+    </p>
+  </investigation>
+
+  <p>
+    Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (hoặc ngoặc kép đơn), nó sẽ có kiểu <c>str</c>, mặc dù nó cũng chứa con số <c>5</c>. Từ đó, ta có định nghĩa sau.
+  </p>
+
+  <definition xml:id="def-kdl-cu-phap">
+    <statement>
+      <p>
+        Các kiểu dữ liệu khác nhau có quy tắc riêng khi khai báo, còn được gọi là <term>cú pháp khai báo</term>.
+      </p>
+    </statement>
+  </definition>
+  
+  <p>Ví dụ giá trị của các kiểu dữ liệu chính.</p>
 
   <sage language="python">
     <input>
       a = 3
-      b = 1.5
-      c = "ma tran"
+      b = 3.0
+      c = "3.0"
       d = True
       
       print(type(a))
@@ -96,57 +124,82 @@ See the file COPYING for copying conditions.
       print(type(c))
       print(type(d))
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
-  
+  <problem>
+    <pre>
+      &lt;class 'int'&gt;
+      &lt;class 'float'&gt;
+      &lt;class 'str'&gt;
+      &lt;class 'bool'&gt;
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Tương tự như ví dụ trên.
+    </p>
+    <p>
+      Một lần nữa, bạn không cần suy nghĩ về từ khóa <c>class</c>. Bạn có thể hiểu nó đang viết tắt cho từ <q>classify</q>, nghĩa là <q>phân loại</q>.
+    </p>
+    <p>
+      Nhưng chính xác mà nói thì nó đang liên hệ tới khái niệm <term>Class</term>. Đây là một chủ đề lớn nên nếu có hứng thú bạn có thể tìm hiểu trên mạng nhé.
+    </p>
+  </investigation>
+
   <p>
-    Kiểu dữ liệu quyết định <term>tương tác</term> của biến. Trong ví dụ dưới đây,
-    ta có thể cộng <c>int</c> với <c>int</c> và cộng <c>float</c> với <c>float</c>.
-    Ta cũng có thể cộng <c>int</c> với <c>float</c>, cho kết quả là <c>float</c>.
+    Tiếp theo, ta có
+  </p>
+
+  <definition xml:id="def-kdl-tuong-tac">
+    <statement>
+      <p>
+        Kiểu dữ liệu quyết định <term>tương tác</term> có thể giữa các dữ liệu với nhau.
+      </p>
+      <p>
+        Có rất nhiều loại tương tác. Ví dụ như các phép toán cộng, trừ, nhân, chia, v.v., là một vài tương tác có thể xảy ra giữa hai hay nhiều dữ liệu.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    Dưới đây là ví dụ.
   </p>
 
   <sage language="python">
     <input>
       a = 5
       b = -2
-      print(a + b, type(a + b))
+      print(a + b)
 
       c = 3.5
       d = 5.6
-      print(c + d, type(c + d))
+      print(c + d)
 
-      print(a + c, type(a + c))
+      print(a + c)
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
+  <problem>
+    <pre>
+      3
+      9.1
+      8.5
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Ta biết cả <c>a</c> và <c>b</c> đều có kiểu <c>int</c>. Vì vậy, ta được phép cộng hai dữ liệu ấy với nhau.
+    </p>
+    <p>
+      Tương tự, <c>c</c> và <c>d</c> là kiểu <c>float</c>, vì vậy phép cộng là được phép.
+    </p>
+    <p>
+      Dòng cuối cùng thú vị hơn một chút, vì ta vẫn có thể thực hiện phép cộng giữa <c>int</c> và <c>float</c>.
+    </p>
+  </investigation>
 
   <p>
-    Ta cũng có thể cộng các <c>str</c> với nhau, việc này ghép chúng lại thành một chuỗi mới.
-  </p>  
-
-  <sage language="python">
-    <input>
-      s1 = "Ma tran"
-      s2 = "Ma tran " # Chu y dau cach
-      s3 = "so cap"
-
-      s4 = s1 + s2
-      s5 = s2 + s3
-      
-      print(s4, type(s4))
-      print(s5)
-    </input>
-    <output>
-      (for static output)
-    </output>
-  </sage>
-  
-  <p>
-    Nhưng ta <em>không</em> thể cộng <c>int</c> với <c>str</c>.
+    Nhưng ta <em>không</em> thể cộng <c>int</c> với <c>str</c>. Làm vậy sẽ xuất hiện <term>lỗi</term>.
   </p>
 
   <sage language="python">
@@ -155,9 +208,62 @@ See the file COPYING for copying conditions.
       s = "string"
       print(a + s)
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
 
+      ...
+
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Phép toán <c>+</c> là một tương tác <em>không hợp lệ</em> cho hai kiểu dữ liệu <c>int</c> và <c>str</c>.
+    </p>
+  </investigation>
+
+  <p>
+    Nhưng ta hoàn toàn có thể cộng các <c>str</c> với nhau. Việc này ghép chúng lại thành một chuỗi mới.
+  </p>  
+
+  <note>
+    <p>
+      Giá trị của một chuỗi ký tự là mọi ký tự ở giữa hai dấu ngoặc kép, kể cả các ký tự khoảng trắng.
+    </p>
+  </note>
+
+  <p>
+    Dưới đây là ví dụ.
+  </p>
+
+  <sage language="python">
+    <input>
+      s1 = "Xin chao"
+      s2 = "Nam"
+      s3 = " Lan"
+      
+      print(s1 + s2)
+      print(s1 + s3)
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      Xin chaoNam
+      Xin chao Lan
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      <c>s1 + s2</c> là một tương tác hợp lệ và sẽ ghép chúng lại thành một chuỗi mới. Tương tự với <c>s1 + s3</c>.
+    </p>
+    <p>
+      Ta thấy chuỗi <c>s3</c> khác với chuỗi <c>s1</c> ở chỗ nó có một ký tự khoảng trắng (space) ở trước <q>Lan</q>. Sự khác biệt này được làm rõ qua phép cộng chuỗi.
+    </p>
+  </investigation>
+  
 </section>

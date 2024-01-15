@@ -13,7 +13,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Ma Trận Sơ Cấp">
-<meta property="book:author" content="You">
+<meta property="book:author" content="Phạm Công Vinh">
+<meta property="book:author" content="Phạm Xuân Trung">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -96,7 +97,7 @@ sagecell.makeSagecell({
   "languages": [
     "sage"
   ],
-  "evalButtonText": "Evaluate (Sage)"
+  "evalButtonText": "Chạy Code (Sage)"
 });
 </script><script>// Make *any* pre with class 'sagecell-python' an executable Sage cell
 // Their results will be linked, only within language type
@@ -108,13 +109,13 @@ sagecell.makeSagecell({
   "languages": [
     "python"
   ],
-  "evalButtonText": "Evaluate (Python)"
+  "evalButtonText": "Chạy Code (Python)"
 });
 </script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-nXlJLUeqPMp1Q3+Bd8Qds8tXeRVQscMscwysJm821C++9w6WtsFbJjPenZ8cQVMXyqSAismveQJc0C1splFDCA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Chạy Code (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -165,12 +166,12 @@ eBookConfig.enable_chatcodes =  false;
 <link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
 <h1 class="heading"><a href="ma-tran-so-cap.html"><span class="title">Ma Trận Sơ Cấp:</span> <span class="subtitle">Trực Quan Hóa Và Một Số Ứng Dụng</span></a></h1>
-<p class="byline">You</p>
+<p class="byline">Phạm Công Vinh, Phạm Xuân Trung</p>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-7.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Mục Lục"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Mục Lục</span></button><a class="index-button button" href="backmatter-8.html" title="Tra Cứu"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Tra Cứu</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -181,7 +182,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-so-thuc.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-cong-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{color}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="up-button button" href="ch-so-thuc.html" title="Lên"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Lên</span></a><a class="next-button button" href="sec-cong-vector.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\require{mathtools}\require{color}\require{boldsymbol}\newcommand{\N}{\mathbb{N}}
 \newcommand{\pN}{\mathbb{N}^{*}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\pZ}{\mathbb{Z}^{+}}
@@ -212,7 +213,13 @@ eBookConfig.enable_chatcodes =  false;
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
-<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Tiên Đề</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Bản Quyền</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Lời Giới Thiệu</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-so-thuc.html" class="internal"><span class="codenumber">1</span> <span class="title">Số Thực</span></a></div>
 <ul class="structural toc-item-list contains-active">
@@ -302,73 +309,71 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
-<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Hậu Đề</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
-<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
-<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
 <li class="toc-item toc-appendix">
-<div class="toc-title-box"><a href="appendix-lap-trinh-co-ban.html" class="internal"><span class="codenumber">D</span> <span class="title">Lập Trình Cơ Bản</span></a></div>
+<div class="toc-title-box"><a href="appendix-lap-trinh-co-ban.html" class="internal"><span class="codenumber">A</span> <span class="title">Lập Trình Cơ Bản</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ngon-ngu-lt.html" class="internal"><span class="codenumber">D.1</span> <span class="title">Ngôn Ngữ Lập Trình</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-moi-truong-lt.html" class="internal"><span class="codenumber">D.2</span> <span class="title">Môi Trường Lập Trình</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ghi-chu.html" class="internal"><span class="codenumber">D.3</span> <span class="title">Ghi Chú</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bien.html" class="internal"><span class="codenumber">D.4</span> <span class="title">Biến</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-kieu-du-lieu.html" class="internal"><span class="codenumber">D.5</span> <span class="title">Kiểu Dữ Liệu</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-moi-truong-lt.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Môi Trường Lập Trình</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ngon-ngu-lt.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Ngôn Ngữ Lập Trình</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ghi-chu.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Ghi Chú</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-bien.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Biến</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-kieu-du-lieu.html" class="internal"><span class="codenumber">A.5</span> <span class="title">Kiểu Dữ Liệu</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html" class="internal"><span class="codenumber">D.6</span> <span class="title">Cấu Trúc Dữ Liệu</span></a></div>
+<div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html" class="internal"><span class="codenumber">A.6</span> <span class="title">Cấu Trúc Dữ Liệu</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html#subsec-mang" class="internal"><span class="codenumber">D.6.1</span> <span class="title">Mảng</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html#subsec-ma-tran" class="internal"><span class="codenumber">D.6.2</span> <span class="title">Ma Trận</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html#subsec-mang" class="internal"><span class="codenumber">A.6.1</span> <span class="title">Mảng (Array)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-cau-truc-du-lieu.html#subsec-ma-tran" class="internal"><span class="codenumber">A.6.2</span> <span class="title">Ma Trận</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-toan-tu.html" class="internal"><span class="codenumber">D.7</span> <span class="title">Toán Tử</span></a></div>
+<div class="toc-title-box"><a href="sec-toan-tu.html" class="internal"><span class="codenumber">A.7</span> <span class="title">Toán Tử</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-so-hoc" class="internal"><span class="codenumber">D.7.1</span> <span class="title">Toán Tử Số Học</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-gan" class="internal"><span class="codenumber">D.7.2</span> <span class="title">Toán Tử Gán</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-quan-he" class="internal"><span class="codenumber">D.7.3</span> <span class="title">Toán Tử Quan Hệ</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-logic" class="internal"><span class="codenumber">D.7.4</span> <span class="title">Toán Tử Logic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-so-hoc" class="internal"><span class="codenumber">A.7.1</span> <span class="title">Toán Tử Số Học</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-gan" class="internal"><span class="codenumber">A.7.2</span> <span class="title">Toán Tử Gán</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-quan-he" class="internal"><span class="codenumber">A.7.3</span> <span class="title">Toán Tử Quan Hệ</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-toan-tu.html#subsec-tt-logic" class="internal"><span class="codenumber">A.7.4</span> <span class="title">Toán Tử Logic</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thuoc-tinh.html" class="internal"><span class="codenumber">D.8</span> <span class="title">Thuộc Tính</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thuoc-tinh.html" class="internal"><span class="codenumber">A.8</span> <span class="title">Thuộc Tính</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ham.html" class="internal"><span class="codenumber">A.9</span> <span class="title">Hàm</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-ham.html" class="internal"><span class="codenumber">D.9</span> <span class="title">Hàm</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ham.html#subsec-kieu-tra-lai-cua-ham" class="internal"><span class="codenumber">D.9.1</span> <span class="title">Kiểu Của Tham Số Và Kiểu Trả Lại Của Hàm</span></a></div></li></ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-loi.html" class="internal"><span class="codenumber">D.10</span> <span class="title">Lỗi Và Cách Sửa Lỗi</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-loi.html#subsec-cach-sua-loi" class="internal"><span class="codenumber">D.10.1</span> <span class="title">Cách Sửa Lỗi</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-loi.html" class="internal"><span class="codenumber">A.10</span> <span class="title">Lỗi Và Cách Sửa Lỗi</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-loi.html#subsec-cach-sua-loi" class="internal"><span class="codenumber">A.10.1</span> <span class="title">Cách Sửa Lỗi</span></a></div></li></ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-appendix">
-<div class="toc-title-box"><a href="appendix-lap-trinh-mo-rong.html" class="internal"><span class="codenumber">E</span> <span class="title">Lập Trình Mở Rộng</span></a></div>
+<div class="toc-title-box"><a href="appendix-lap-trinh-mo-rong.html" class="internal"><span class="codenumber">B</span> <span class="title">Lập Trình Mở Rộng</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khai-bao-ham.html" class="internal"><span class="codenumber">E.1</span> <span class="title">Khai Báo Hàm</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cau-lenh-dieu-kien.html" class="internal"><span class="codenumber">E.2</span> <span class="title">Câu Lệnh Điều Kiện</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vong-lap.html" class="internal"><span class="codenumber">E.3</span> <span class="title">Vòng Lặp</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thao-tac-ma-tran.html" class="internal"><span class="codenumber">E.4</span> <span class="title">Thao Tác Ma Trận</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-khai-bao-ham.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Khai Báo Hàm</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-cau-lenh-dieu-kien.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Câu Lệnh Điều Kiện</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-vong-lap.html" class="internal"><span class="codenumber">B.3</span> <span class="title">Vòng Lặp</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-thao-tac-ma-tran.html" class="internal"><span class="codenumber">B.4</span> <span class="title">Thao Tác Ma Trận</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-7.html" class="internal"><span class="title">Index</span></a></div></li>
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-8.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="codenumber">D</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="codenumber">E</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-gfdl.html" class="internal"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-8.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-9.html" class="internal"><span class="title">Bản Quyền</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-vector-cot"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</span>
+<span class="type">Mục</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Vector Cột—Sự Mở Rộng Số Thực Theo Chiều Dọc. Chuyển Vị Vector</span>
 </h2>
-<article class="objectives goal-like" id="sec-vector-cot-3"><h3 class="heading"><span class="type">Objectives</span></h3>
+<article class="objectives goal-like" id="sec-vector-cot-3"><h3 class="heading"><span class="type">Các Mục Tiêu</span></h3>
 <ol class="decimal">
 <li id="sec-vector-cot-3-1-1"><div class="para" id="p-derived-sec-vector-cot-3-1-1">Các mục tiêu của section.</div></li>
 <li id="sec-vector-cot-3-1-2"><div class="para" id="p-derived-sec-vector-cot-3-1-2"></div></li>
 <li id="sec-vector-cot-3-1-3"><div class="para" id="p-derived-sec-vector-cot-3-1-3"></div></li>
 </ol></article><section class="subsection" id="subsec-vector-cot"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Vector cột</span>
+<span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Vector cột</span>
 </h3>
 <article class="definition definition-like" id="def-vector-cot"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+<span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-vector-cot-1-1">
 <dfn class="terminology">Vector cột</dfn> là bộ các số thực được sắp xếp theo chiều dọc.</div></article><div class="para" id="subsec-vector-cot-3">Để biểu diễn vector cột, ta thường sắp xếp bộ các số đó trong ngoặc vuông.</div>
@@ -382,15 +387,15 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </div>
 <article class="convention remark-like" id="subsec-vector-cot-5"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-cot-5-1">Sắp xếp bộ n số thực <span class="process-math">\(x_{1}, x_{2}, \ldots, x_{n}\)</span> thành 1 cột ta được vector cột <span class="process-math">\(\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}\)</span>
 </div></article><article class="convention remark-like" id="subsec-vector-cot-6"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-cot-6-1">Vector cột có n hàng (và 1 cột) được kí hiệu <span class="process-math">\(\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}\)</span>
 </div></article><article class="convention remark-like" id="subsec-vector-cot-7"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-cot-7-1">Trong tài liệu này, khi nói đến <dfn class="terminology">vector</dfn> ta sẽ sử dụng ký hiệu <dfn class="terminology">vector cột</dfn>.</div></article><div class="para logical" id="subsec-vector-cot-8">
 <div class="para">Ví dụ: Vector <span class="process-math">\(\sbmat{-2 \\ 0 \\ 4.5}\)</span> có các <dfn class="terminology">phần tử</dfn>
@@ -406,7 +411,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Khái niệm <dfn class="terminology">chỉ số</dfn> sẽ được nhắc đến ở dưới— trong <code class="code-inline tex2jax_ignore">[provisional cross-reference: chi-so]</code>.</div>
 </div>
 <article class="note remark-like" id="subsec-vector-cot-9"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="subsec-vector-cot-9-1">
 <div class="para">Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.</div>
@@ -416,51 +421,49 @@ eBookConfig.enable_chatcodes =  false;
 \end{equation*}
 </div>
 </div></article><article class="note remark-like" id="subsec-vector-cot-10"><h4 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-cot-10-1">Kí hiệu trên khác việc sử dụng ngoặc tròn <span class="process-math">\(\spmat{x \\ y}\)</span> hoặc ngoặc nhọn <span class="process-math">\(\samat{x \\ y}\text{.}\)</span>
 </div></article><details id="example-vector2d" class="example example-like born-hidden-knowl"><summary><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 2<span class="times-sign">×</span>1 trong không gian 2 chiều với JSXGraph.</span>
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 2<span class="times-sign">×</span>1 trong không gian 2 chiều với JSXGraph.</span>
 </h4></summary><article class="example example-like"> <iframe id="interactive-vector2d" width="480" height="480" src="interactive-vector2d-if.html"></iframe><div class="instructions"><details id="interactive-vector2d-2" class="solution-like born-hidden-knowl"><summary><h5 class="heading"><span class="type">Instructions<span class="period">.</span></span></h5></summary><div class="solution-like">
 <div class="para" id="interactive-vector2d-2-1">Thay đổi giá trị của 2 số thực <span class="process-math">\(x, y\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{x \\ y}\)</span> trên không gian 2 chiều.</div>
 <div class="para" id="interactive-vector2d-2-2">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 2<span class="times-sign">×</span>1 trong không gian 2D.</div>
 </div></details></div></article></details><details id="example-vector3d" class="example example-like born-hidden-knowl"><summary><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 3<span class="times-sign">×</span>1 trong không gian 3 chiều với GeoGebra.</span>
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Biểu diễn vector 3<span class="times-sign">×</span>1 trong không gian 3 chiều với GeoGebra.</span>
 </h4></summary><article class="example example-like"> <iframe id="interactive-vector3d" width="600" height="450" src="interactive-vector3d-if.html"></iframe><div class="instructions"><details id="interactive-vector3d-2" class="solution-like born-hidden-knowl"><summary><h5 class="heading"><span class="type">Instructions<span class="period">.</span></span></h5></summary><div class="solution-like">
 <div class="para" id="interactive-vector3d-2-1">Thay đổi giá trị của 3 số thực <span class="process-math">\(u_{1}, u_{2}, u_{3}\)</span> và quan sát sự biểu diễn của vector <span class="process-math">\(\sbmat{u_{1} \\ u_{2} \\ u_{3}}\)</span> trên không gian 3 chiều.</div>
 <div class="para" id="interactive-vector3d-2-2">Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.</div>
 <div class="para" id="interactive-vector3d-2-3">Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 3<span class="times-sign">×</span>1 trong không gian 3D.</div>
 </div></details></div></article></details></section><section class="subsection" id="subsec-vector-hang"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Vector hàng</span>
+<span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Vector hàng</span>
 </h3>
 <article class="definition definition-like" id="def-vector-hang"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+<span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-vector-hang-1-1">Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được <dfn class="terminology">vector hàng</dfn>.</div></article><article class="convention remark-like" id="subsec-vector-hang-3"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-3-1">Sắp xếp bộ n số thực <span class="process-math">\(x_{1}, x_{2}, \ldots, x_{n}\)</span> thành 1 hàng ta được vector hàng <span class="process-math">\(\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}\)</span>
 </div></article><article class="convention remark-like" id="subsec-vector-hang-4"><h4 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-4-1">Vector hàng có n cột (và 1 hàng) được kí hiệu <span class="process-math">\(\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}\)</span>
 </div></article><article class="remark remark-like" id="subsec-vector-hang-5"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+<span class="type">Nhận Xét</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-vector-hang-5-1">Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.</div></article></section><section class="subsection" id="subsec-phep-chuyen-vi-vector"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Phép Chuyển Vị</span>
+<span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Phép Chuyển Vị</span>
 </h3>
 <article class="definition definition-like" id="def-phep-chuyen-vi-vector"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
+<span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def-phep-chuyen-vi-vector-1-1">
 <div class="para">
 <dfn class="terminology">Phép chuyển vị</dfn> 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bmat{\text{trên} \\ \downarrow \\ \text{dưới}}
-\quad \text{hay} \quad
-\hvec{\text{trái} \amp \rightarrow \amp \text{phải}}
+\bmat{\text{trên} \\ \downarrow \\ \text{dưới}} \quad \text{hay} \quad \hvec{\text{trái} \amp \rightarrow \amp \text{phải}} 
 \end{equation*}
 </div>
 </div></article><div class="para logical" id="subsec-phep-chuyen-vi-vector-3">
@@ -468,32 +471,30 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="displaymath process-math" id="subsec-phep-chuyen-vi-vector-3-2">
 \begin{align*}
-\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}^{T} =
-\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}\\
+\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}^{T} = \hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}\\
 \\
-\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} =
-\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}
+\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} = \bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}
 \end{align*}
 </div>
 </div>
 <article class="observation remark-like" id="subsec-phep-chuyen-vi-vector-4"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+<span class="type">Quan Sát</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-phep-chuyen-vi-vector-4-1"><span class="process-math">\((A^{T})^{T} = A\)</span></div></article></section><section class="subsection" id="subsec-vector-lap-trinh"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Vector Trong Lập Trình</span>
+<span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Vector Trong Lập Trình</span>
 </h3>
 <section class="subsubsection" id="subsubsec-nhap-xuat-vector"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">1.2.4.1</span><span class="space"> </span><span class="title">Nhập, Xuất Vector</span>
+<span class="type">Tiểu Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.4.1</span><span class="space"> </span><span class="title">Nhập, Xuất Vector</span>
 </h4>
 <pre id="subsubsec-nhap-xuat-vector-2" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 cot_1 = np.matrix([
-  [1],
-  [2],
-  [3]
+    [1],
+    [2],
+    [3]
 ])
 
 hang_1 = np.matrix([
-  [4, 5, 6]
+    [4, 5, 6]
 ])
 
 print(cot_1)
@@ -506,17 +507,30 @@ cot_2 = matrix([
     [0],
     [1.52]
 ])
-latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
 show(cot_2)
 </script></pre>
-<pre id="subsubsec-nhap-xuat-vector-4" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># SageMath
+<details id="subsubsec-nhap-xuat-vector-4" class="example example-like born-hidden-knowl"><summary><h5 class="heading">
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Output.</span>
+</h5></summary><article class="example example-like"> <div class="para logical" id="subsubsec-nhap-xuat-vector-4-2"><div class="displaymath process-math">
+\begin{equation*}
+\bmat{3.33333333333333 \\ 0.000000000000000 \\ 1.52000000000000}
+\end{equation*}
+</div></div></article></details><pre id="subsubsec-nhap-xuat-vector-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># SageMath
 hang_2 = matrix([
     [2, 4, -6] 
 ])
-latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
 show(hang_2)
-</script></pre></section><section class="subsubsection" id="subsubsec-chuyen-vi-vector"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">1.2.4.2</span><span class="space"> </span><span class="title">Tính Chuyển Vị Của Vector</span>
+</script></pre>
+<details id="subsubsec-nhap-xuat-vector-6" class="example example-like born-hidden-knowl"><summary><h5 class="heading">
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">Output.</span>
+</h5></summary><article class="example example-like"> <div class="para logical" id="subsubsec-nhap-xuat-vector-6-2"><div class="displaymath process-math">
+\begin{equation*}
+\bmat{2 \amp 4 \amp -6}
+\end{equation*}
+</div></div></article></details></section><section class="subsubsection" id="subsubsec-chuyen-vi-vector"><h4 class="heading hide-type">
+<span class="type">Tiểu Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.4.2</span><span class="space"> </span><span class="title">Tính Chuyển Vị Của Vector</span>
 </h4>
 <div class="para" id="subsubsec-chuyen-vi-vector-2">Để tính chuyển vị của một vector, ta sử dụng hàm <code class="code-inline tex2jax_ignore">transpose()</code>.</div>
 <pre id="subsubsec-chuyen-vi-vector-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># Trong Numpy (Python)
@@ -528,10 +542,23 @@ print(hang_1.transpose())
 <pre id="subsubsec-chuyen-vi-vector-4" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Trong SageMath
 show(cot_2.transpose())
 </script></pre>
-<pre id="subsubsec-chuyen-vi-vector-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Trong SageMath
+<details id="subsubsec-chuyen-vi-vector-5" class="example example-like born-hidden-knowl"><summary><h5 class="heading">
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Output.</span>
+</h5></summary><article class="example example-like"> <div class="para logical" id="subsubsec-chuyen-vi-vector-5-2"><div class="displaymath process-math">
+\begin{equation*}
+\bmat{3.33333333333333 \amp 0.000000000000000 \amp 1.52000000000000}
+\end{equation*}
+</div></div></article></details><pre id="subsubsec-chuyen-vi-vector-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Trong SageMath
 show(hang_2.transpose())
-</script></pre></section></section><section class="subsection" id="subsec-vdtt-vector-cot"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Vấn Đề Tiếp Theo (Cũ)</span>
+</script></pre>
+<details id="subsubsec-chuyen-vi-vector-7" class="example example-like born-hidden-knowl"><summary><h5 class="heading">
+<span class="type">Ví Dụ</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">Output.</span>
+</h5></summary><article class="example example-like"> <div class="para logical" id="subsubsec-chuyen-vi-vector-7-2"><div class="displaymath process-math">
+\begin{equation*}
+\bmat{2 \\ 4 \\ -6}
+\end{equation*}
+</div></div></article></details></section></section><section class="subsection" id="subsec-vdtt-vector-cot"><h3 class="heading hide-type">
+<span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Vấn Đề Tiếp Theo (Cũ)</span>
 </h3>
 <ol class="lower-alpha">
 <li id="subsec-vdtt-vector-cot-2-1"><div class="para" id="subsec-vdtt-vector-cot-2-1-1">Như vậy, ta có thể coi vector cột là sự “mở rộng” của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự “mở rộng” của các số thực theo chiều ngang.</div></li>
@@ -539,7 +566,7 @@ show(hang_2.transpose())
 <li id="subsec-vdtt-vector-cot-2-3"><div class="para" id="subsec-vdtt-vector-cot-2-3-1">Ngoài phép nhân vector với 1 số, ta có thể thực hiện phép nhân giữa các vector như thế nào?</div></li>
 </ol></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-cong-vector.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-so-thuc-va-tc.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-cong-vector.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

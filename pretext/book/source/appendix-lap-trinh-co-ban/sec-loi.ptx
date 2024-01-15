@@ -23,16 +23,11 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Cuối cùng, để thuận tiện cho quá trình học tập và thử nghiệm của bạn,
-    một kỹ năng không thể thiếu chính là khả năng đọc hiểu <c>lỗi</c>,
-    cũng như sửa chúng.
-    Bạn cũng có thể tham khảo phần <xref provisional="cac-loi-thuong-gap"/>.
-    Dưới đây là một vài khái niệm cơ bản.
+    Cuối cùng, để thuận tiện cho quá trình học tập và thử nghiệm của bạn, một kỹ năng không thể thiếu chính là khả năng đọc hiểu các <term>lỗi</term>, cũng như sửa chúng. Bạn cũng có thể tham khảo <xref provisional="cac-loi-thuong-gap"/>. Dưới đây là một vài khái niệm cơ bản.
   </p>
 
   <p>
-    Như đã đề cập đến, lỗi, nếu có, sẽ được thông báo ở <c>terminal</c>.
-    Một vài thông tin kèm theo lỗi bao gồm:
+    Như đã đề cập đến, lỗi, nếu có, sẽ được thông báo ở <term>terminal</term>. Một vài thông tin kèm theo lỗi bao gồm:
 
     <ul>
       <li>
@@ -65,15 +60,27 @@ See the file COPYING for copying conditions.
       print("This is a string.")
       print("This is another string.) 
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
-
-  <p>
-    Dễ thấy, lỗi được phát hiện ở dòng số 3, có kiểu <c>SyntaxError</c> (lỗi cú pháp).
-    Và miêu tả của lỗi là <q>chuỗi ký tự chưa được kết thúc</q>.
-  </p>
+  <problem>
+    <pre>
+      Cell In [1], line 3
+        print("This is another string.)
+              ^
+      SyntaxError: unterminated string literal (detected at line 3)
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      Lỗi được phát hiện ở dòng số 3, có kiểu <c>SyntaxError</c> (lỗi cú pháp)
+    </p>
+    <p>
+      Miêu tả của lỗi là <q>chuỗi ký tự chưa được kết thúc</q>.
+    </p>
+    <p>
+      Nhìn kỹ hơn, ta sẽ thấy ở dòng 3, ta thiếu mất một dấu ngoặc kép.
+    </p>
+  </investigation>
 
   <sage language="python">
     <input>
@@ -81,124 +88,113 @@ See the file COPYING for copying conditions.
       s = "string"
       print(a + s)
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
 
-  <p>
-    Ta thấy lỗi có kiểu <c>TypeError</c>, và dịch qua miêu tả ta được
-    <q>không hỗ trợ toán tử + giữa hai kiểu int và str</q>.
-  </p>
-  
-  <p>
-    Và một ví dụ nữa.
-  </p>
+      ...
+
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      <c>TypeError</c> (lỗi về kiểu) phát hiện ở dòng 3.
+    </p>
+    <p>
+      Dịch qua miêu tả của lỗi, ta được <q>không hỗ trợ toán tử + giữa hai kiểu int và str</q>.
+    </p>
+  </investigation>
 
   <sage language="python">
     <input>
       import numpy as np # Su dung thu vien Numpy
       print(np.sqrt("xin chao?"))
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 2
+
+      ...
+
+      TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+    </pre>
+  </problem>
+  <investigation>
+    <p></p>
+    <p>
+      <c>TypeError</c> (lỗi về kiểu) phát hiện ở dòng 2.
+    </p>
+    <p>
+      Dịch nôm na miêu tả của lỗi, ta được <q>hàm sqrt không hỗ trợ kiểu của dữ liệu đầu vào...</q>.
+    </p>
+  </investigation>
 
   <p>
-    Lỗi này phức tạp hơn một tí xíu.
-    Ta thấy kiểu lỗi là <c>TypeError</c>, và dịch nôm na miêu tả ta có
-    <q>hàm sqrt không hỗ trợ kiểu của dữ liệu đầu vào...</q>.
-    Từ đó, ta có thể dễ dàng suy ra là lỗi được phát hiện ở dòng 2.
-  </p>
-
-  <p>
-    Vậy nếu ta đọc lỗi nhưng vẫn cảm thấy khó hiểu và không biết cách sửa lỗi,
-    thì ta nên làm gì?
+    Vậy nếu ta đọc lỗi nhưng vẫn cảm thấy khó hiểu và không biết cách sửa lỗi, thì ta nên làm gì?
   </p>
 
   <subsection xml:id="subsec-cach-sua-loi">
     <title>Cách Sửa Lỗi</title>
 
     <p>
-      Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra.
-      Có những lỗi họ đã gặp và sửa vài lần rồi,
-      nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó.
-      Không vấn đề gì, càng lập trình nhiều kinh nghiệm của họ càng tăng,
-      và khả năng giải quyết lỗi của họ sẽ ngày càng nhanh nhẹn và hiệu quả.
+      Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó. Không vấn đề gì, càng ngày kinh nghiệm của họ càng tăng, và khả năng giải quyết lỗi của họ sẽ ngày càng nhanh nhẹn và hiệu quả.
     </p>
 
     <p>
-      Hiện tượng trên là hoàn toàn bình thường.
-      Vậy nên, dưới đây tôi sẽ chỉ cho bạn một vài kinh nghiệm trong việc sửa lỗi. 
-      Khi gặp bất kỳ lỗi nào, ta có thể lần lượt đi qua các bước sau.
+      Hiện tượng trên là hoàn toàn bình thường. Vậy nên, dưới đây tôi sẽ chỉ cho bạn một vài <em>kinh nghiệm</em> trong việc sửa lỗi. Khi gặp bất kỳ lỗi nào, ta có thể lần lượt đi qua các bước sau.
 
       <ol>
         <li>
           <p>
-            <em>Đọc hiểu lỗi</em><mdash />Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu,
-            ta có thể nhanh chóng sửa lỗi.
-            Nếu vẫn cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.
+            <term>Đọc hiểu lỗi</term><mdash />Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu, ta có thể nhanh chóng sửa lỗi. Nếu cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.
           </p>
         </li>
         <li>
           <p>
-            <em>Tra trên mạng</em><mdash />Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi
-            trong terminal.
+            <term>Tra trên mạng</term><mdash />Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi trong terminal.
           </p>
 
           <note>
             <p>
-              Bạn nên kèm theo tên ngôn ngữ lập trình bạn đang sử dụng làm từ khóa để tăng hiệu quả.
-              Ví dụ như <q>python unterminated string literal...</q>.
+              Bạn nên kèm theo tên ngôn ngữ lập trình bạn đang sử dụng làm từ khóa để tăng hiệu quả. Ví dụ như <q>python unterminated string literal...</q>.
             </p>
           </note>
 
           <remark>
             <p>
-              Bạn có thể tra cứu trên những diễn đàn Việt Nam,
-              nhưng nếu bạn biết Tiếng Anh thì lượng kiến thức và kinh nghiệm
-              mà bạn có thể học hỏi sẽ tăng lên rất nhiều.
+              Bạn có thể tham khảo tài liệu tiếng Việt, nhưng nếu bạn biết Tiếng Anh thì lượng kiến thức và kinh nghiệm mà bạn có thể học hỏi sẽ tăng lên rất nhiều.
             </p>
           </remark>
 
           <p>
-            Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước bạn rồi.
-            Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải,
-            áp dụng cách giải quyết của họ.
-            Một vài diễn đàn phổ biến nhất là <term>Stack Overflow</term>,
-            <term>Github</term>, <term>Stack Exchange</term>, <term>Reddit</term>, v.v.
-            Đến đây, nếu lỗi vẫn tồn tại, hoặc nó chuyển thành một loại lỗi khác,
-            ta có thể lặp lại quá trình, hoặc chuyển qua bước 3.
+            Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải, tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <term>Stack Overflow</term>, <term>Github</term>, <term>Stack Exchange</term>, <term>Reddit</term>, v.v. 
+          </p>
+          <p>
+            Đến đây, nếu lỗi vẫn tồn tại, hoặc nó chuyển thành một loại lỗi khác, ta có thể lặp lại quá trình, hoặc chuyển qua bước 3.
           </p>
         </li>
         <li>
           <p>
-            <em>Tự miêu tả lỗi khi tra</em><mdash />Có vẻ nếu ta sử dụng miêu tả chi tiết của lỗi,
-            những cách giải của người khác không có hiệu quả với mình.
-            Vậy thì ta thử tự mình miêu tả lỗi xem sao.
-            Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào,
-            với ngôn ngữ lập trình nào, v.v.
-            Nếu vẫn không được, ta chuyển sang bước tiếp theo.
+            <term>Tự miêu tả lỗi khi tra</term><mdash />Có vẻ nếu ta sử dụng miêu tả chi tiết của lỗi, những cách giải của người khác không có hiệu quả với mình. Vậy thì ta thử tự mình miêu tả lỗi xem sao. Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào, với ngôn ngữ lập trình nào, v.v. Nếu vẫn không được, ta chuyển sang bước tiếp theo.
           </p>
         </li>
         <li>
           <p>
-            <em>Sử dụng trí tuệ nhân tạo</em><mdash />Nếu có thể,
-            bạn nên thử tìm đến những model trí tuệ nhân tạo như
-            <term>ChatGPT</term> hoặc <term>Github Copilot</term>, v.v.
-            Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
+            <term>Sử dụng trí tuệ nhân tạo</term><mdash />Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>, v.v. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
           </p>
         </li>
         <li>
           <p>
-            <em>Đăng bài về lỗi</em><mdash />Đây là bước cuối cùng,
-            khi mọi phương pháp trên đều đã thất bại.
-            Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải.
-            Nếu làm vậy, hãy chắc chắn rằng bạn tham khảo những bài viết về
-            <term>quy tắc ứng xử</term> trên những diễn đàn này.
-            Vì bạn đang mong muốn sự giúp đỡ của người khác,
-            văn minh trên mạng xã hội là quan trọng thiết yếu.
+            <term>Đăng bài về lỗi</term><mdash />Đây là bước cuối cùng, khi mọi phương pháp trên đều đã thất bại. Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải. 
+          </p>
+          <p>
+            Hãy chắc chắn rằng bạn tham khảo những bài viết về <term>quy tắc ứng xử</term> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.
           </p>
         </li>
       </ol>

@@ -19,26 +19,26 @@ See the file COPYING for copying conditions.
   </objectives>
 
   <p>
-    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v.
-    Đối với lập trình, ta có các <term>toán tử</term> giúp miêu tả tương tác giữa các biến
-    cũng như các dữ liệu tự do.
-  </p>
-  
-  <p>
-    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>.
-    Và như đã đề cập, <term>kiểu dữ liệu</term> đóng vai trò quyết định tương tác có thể thực hiện
-    với biến. Ý này sẽ được làm rõ hơn ở dưới đây.
+    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v. Đối với lập trình, ta có các <term>toán tử</term>.
   </p>
 
+  <definition xml:id="def-toan-tu">
+    <statement>
+      <p>
+        <term>Toán tử</term> miêu tả tương tác giữa các dữ liệu.
+      </p>
+    </statement>
+  </definition>
+  
   <p>
-    Dưới đây là một vài những toán tử cơ bản.
+    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>. Ta cùng tìm hiểu những toán tử cơ bản nhé.
   </p>
 
   <subsection xml:id="subsec-tt-so-hoc">
     <title>Toán Tử Số Học</title>
 
     <p>
-      Dưới đây là ví dụ của những toán tử số học cơ bản.
+      Bốn toán tử số học cơ bản.
     </p>
 
     <sage language="python">
@@ -51,13 +51,28 @@ See the file COPYING for copying conditions.
         # Ta cung co the cong hai chuoi
         print("chuoi 1 " + "chuoi 2")
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
+    <problem>
+      <pre>
+        8
+        2
+        15
+        1.6666666666666667
+        chuoi 1 chuoi 2
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Bốn dòng đầu là các phép tính toán như trong toán học.
+      </p>
+      <p>
+        Ở dòng 7, toán tử <c>+</c> được dùng để ghép hai chuỗi ký tự với nhau.
+      </p>
+    </investigation>
     
     <p>
-      Ta cũng có một vài toán tử khác ít được dùng hơn như:
+      Ta cũng có một vài toán tử khác ít được dùng hơn.
     </p>
 
     <sage language="python">
@@ -66,27 +81,24 @@ See the file COPYING for copying conditions.
         print(5 ** 3) # Luy thua
         print(5 % 3) # Modulo
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
-    
+    <problem>
+      <pre>
+        1
+        125
+        2
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Bạn có thể tra mạng những phép toán ít phổ biến hơn này nếu có hứng thú nhé.
+      </p>
+    </investigation>
+
     <p>
-      Có những phép toán được cung cấp bởi thư viện mở rộng như:
+      Và một kiến thức quan trọng bạn phải nhớ là <xref ref="def-kdl-tuong-tac"/>.
     </p>
-
-    <sage language="python">
-      <input>
-        import numpy as np # Su dung thu vien Numpy
-
-        print(np.sqrt(9)) # Can bac 2
-        print(np.cbrt(8)) # Can bac 3
-        print(np.sin(45))
-      </input>
-      <output>
-        (for static output)
-      </output>
-    </sage>
     
   </subsection>
 
@@ -94,41 +106,62 @@ See the file COPYING for copying conditions.
     <title>Toán Tử Gán</title>
 
     <p>
-      Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên.
-      Đây là <term>toán tử gán</term> quan trọng nhất mà bạn cần biết.
+      Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
     </p>
 
-    <p>
-      Ta sử dụng toán tử gán khi ta muốn <q>gán</q> cho biến một giá trị mới.
-      Lần đầu tiên ta gán cho biến một giá trị được gọi là <term>khai báo</term>,
-      và những lần tiếp theo được gọi là <term>gán</term>, hay <term>update</term>.
-      Dưới đây là một ví dụ
-    </p>
+    <definition xml:id="def-toan-tu-gan">
+      <statement>
+        <p>
+          <term>Toán tử gán</term> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.
+        </p>
+        <p>
+          Việc sử dụng toán tử <c>=</c> để tạo ra một biến mới được gọi là <term>khai báo</term>.
+        </p>
+        <p>
+          Việc sử dụng toán tử <c>=</c> để cập nhật giá trị của một biến đã tồn tại được gọi là <term>gán</term>.
+        </p>
+        <p>
+          Giá trị của một biến thay đổi <em>khi và chỉ khi</em> ta sử dụng toán tử gán.
+        </p>
+      </statement>
+    </definition>
+
+    <p>Dưới đây là ví dụ.</p>
 
     <sage language="python">
       <input>
         a = 5
+        print(a)
+
         a + 1
         print(a)
 
         a = a + 1
         print(a)
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
+    <problem>
+      <pre>
+        5
+        5
+        6
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Đầu tiên, ta khai báo <c>a</c> có giá trị bằng <c>5</c>.
+      </p>
+      <p>
+        Ở dòng 4, ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 5, kết quả vẫn là <c>5</c>.
+      </p>
+      <p>
+        Ở dòng 7, ta mới <em>cập nhật</em> biến với <c>a = a + 1</c>. Vì vậy ở dòng 8 biến <c>a</c> mới có giá trị bằng <c>6</c>.
+      </p>
+    </investigation>
     
     <p>
-      Ta thấy ở dòng 2, dù ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 3,
-      kết quả vẫn là <c>5</c>.
-      Chỉ khi ta sử dụng toán tử gán như <c>=</c>, như ở dòng 5, thì biến a mới được update giá trị.
-    </p>
-
-    <p>
-      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết.
-      Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên gọn gàng hơn,
-      ví dụ như:
+      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em>gọn gàng hơn</em>, ví dụ như:
     </p>
 
     <p>
@@ -166,9 +199,7 @@ See the file COPYING for copying conditions.
     <title>Toán Tử Quan Hệ</title>
 
     <p>
-      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện,
-      vì vậy nó sẽ được trình bày rõ hơn ở
-      <xref provisional="cau-lenh-dieu-kien"/>
+      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
     </p>
 
     <p>
@@ -229,9 +260,7 @@ See the file COPYING for copying conditions.
     <title>Toán Tử Logic</title>
     
     <p>
-      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện,
-      vì vậy nó sẽ được trình bày rõ hơn ở
-      <xref provisional="cau-lenh-dieu-kien"/>
+      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
     </p>
 
     <p>

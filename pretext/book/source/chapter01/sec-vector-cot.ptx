@@ -44,8 +44,7 @@ See the file COPYING for copying conditions.
         </li>
         <li>
           <p>
-            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được
-            vector cột <m>\sbmat{x \\ y \\ z}</m>
+            Sắp xếp bộ 3 số thực <m>x, y, z</m> thành 1 cột ta được vector cột <m>\sbmat{x \\ y \\ z}</m>
           </p>
         </li>
       </ul>
@@ -53,15 +52,13 @@ See the file COPYING for copying conditions.
 
     <convention>
       <p>
-        Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 cột
-        ta được vector cột <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</m>
+        Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 cột ta được vector cột <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</m>
       </p>
     </convention>
 
     <convention>
       <p>
-        Vector cột có n hàng (và 1 cột) được kí
-        hiệu <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}</m>
+        Vector cột có n hàng (và 1 cột) được kí hiệu <m>\sbmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}_{n \times 1}</m>
       </p>
     </convention>
 
@@ -96,15 +93,13 @@ See the file COPYING for copying conditions.
 
     <note>
       <p>
-        Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng.
-        <me>\bmat{1 \\ 2} \quad \text{khác} \quad \bmat{1 \\ 2 \\ 0} \quad \text{khác} \quad \bmat{0 \\ 1 \\ 2}</me>
+        Số phần tử, hay kích thước, của một vector và thứ tự của chúng rất quan trọng. <me>\bmat{1 \\ 2} \quad \text{khác} \quad \bmat{1 \\ 2 \\ 0} \quad \text{khác} \quad \bmat{0 \\ 1 \\ 2}</me>
       </p>
     </note>
 
     <note>
       <p>
-        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc
-        ngoặc nhọn <m>\samat{x \\ y}</m>.
+        Kí hiệu trên khác việc sử dụng ngoặc tròn <m>\spmat{x \\ y}</m> hoặc ngoặc nhọn <m>\samat{x \\ y}</m>.
       </p>
     </note>
 
@@ -115,12 +110,10 @@ See the file COPYING for copying conditions.
         <slate xml:id="vector2d" surface="jsxboard" aspect="1:1"/>
         <instructions>
           <p>
-            Thay đổi giá trị của 2 số thực <m>x, y</m> và quan sát sự biểu diễn của
-            vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
+            Thay đổi giá trị của 2 số thực <m>x, y</m> và quan sát sự biểu diễn của vector <m>\sbmat{x \\ y}</m> trên không gian 2 chiều.
           </p>
           <p>
-            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-            1 vector 2<times/>1 trong không gian 2D.
+            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 2<times/>1 trong không gian 2D.
           </p>
         </instructions>
       </interactive>
@@ -139,15 +132,13 @@ See the file COPYING for copying conditions.
 
         <instructions>
           <p>
-            Thay đổi giá trị của 3 số thực <m>u_{1}, u_{2}, u_{3}</m> và quan sát sự biểu diễn của
-            vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
+            Thay đổi giá trị của 3 số thực <m>u_{1}, u_{2}, u_{3}</m> và quan sát sự biểu diễn của vector <m>\sbmat{u_{1} \\ u_{2} \\ u_{3}}</m> trên không gian 3 chiều.
           </p>
           <p>
             Giữ và di chuột trái để di chuyển góc nhìn. Dùng con lăn chuột để phóng to / nhỏ.
           </p>
           <p>
-            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa
-            1 vector 3<times/>1 trong không gian 3D.
+            Có 2 chế độ hiển thị (Mũi tên / Điểm). Cả 2 đều là sự trực quan hóa 1 vector 3<times/>1 trong không gian 3D.
           </p>
         </instructions>
       </interactive>
@@ -171,30 +162,26 @@ See the file COPYING for copying conditions.
     <definition xml:id="def-vector-hang">
       <statement>
         <p>
-          Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng
-          thì sẽ thu được <term>vector hàng</term>.
+          Thay vì sắp xếp bộ các số thực thành 1 cột, ta sắp xếp chúng thành 1 hàng thì sẽ thu được <term>vector hàng</term>.
         </p>
       </statement>
     </definition>
 
     <convention>
       <p>
-        Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 hàng
-        ta được vector hàng <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
+        Sắp xếp bộ n số thực <m>x_{1}, x_{2}, \ldots, x_{n}</m> thành 1 hàng ta được vector hàng <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</m>
       </p>
     </convention>
 
     <convention>
       <p>
-        Vector hàng có n cột (và 1 hàng) được kí 
-        hiệu <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}</m>
+        Vector hàng có n cột (và 1 hàng) được kí hiệu <m>\shvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}_{1 \times n}</m>
       </p>
     </convention>
     
     <remark>
       <p>
-        Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và
-        phép nhân vector hàng với 1 số như đối với các vector cột.
+        Ta cũng có thể thực hiện phép cộng các vector hàng (có cùng số thành phần) và phép nhân vector hàng với 1 số như đối với các vector cột.
       </p>
     </remark>
 
@@ -207,14 +194,8 @@ See the file COPYING for copying conditions.
     <definition xml:id="def-phep-chuyen-vi-vector">
       <statement>
         <p>
-          <term>Phép chuyển vị</term> 1 vector là sự biến đổi vị trí bộ các số
-          thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột
-          nhưng giữ nguyên thứ tự các số.
-          <me>
-            \bmat{\text{trên} \\ \downarrow \\ \text{dưới}}
-            \quad \text{hay} \quad
-            \hvec{\text{trái} \amp \rightarrow \amp \text{phải}}
-          </me>
+          <term>Phép chuyển vị</term> 1 vector là sự biến đổi vị trí bộ các số thuộc vector đó từ cột thành hàng hoặc từ hàng thành cột nhưng giữ nguyên thứ tự các số.
+          <me> \bmat{\text{trên} \\ \downarrow \\ \text{dưới}} \quad \text{hay} \quad \hvec{\text{trái} \amp \rightarrow \amp \text{phải}} </me>
         </p>
       </statement>
     </definition>
@@ -222,11 +203,9 @@ See the file COPYING for copying conditions.
     <p>
       Phép chuyển vị được kí hiệu bằng chữ <m>T</m>.
       <md>
-        <mrow>\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}^{T} =
-           \hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</mrow>
+        <mrow>\bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}^{T} = \hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}</mrow>
         <mrow></mrow>
-        <mrow>\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} =
-           \bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</mrow>
+        <mrow>\hvec{x_{1} \amp x_{2} \amp \cdots \amp x_{n}}^{T} = \bmat{x_{1} \\ x_{2} \\ \vdots \\ x_{n}}</mrow>
       </md>
     </p>
 
@@ -259,10 +238,16 @@ See the file COPYING for copying conditions.
           print()
           print(hang_1)
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+      <problem>
+        <pre>
+          [[1]
+           [2]
+           [3]]
+
+          [[4 5 6]]
+        </pre>
+      </problem>
       
       <sage>
         <input>
@@ -272,13 +257,17 @@ See the file COPYING for copying conditions.
               [0],
               [1.52]
           ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
           show(cot_2)
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+      <problem>
+        <p>
+          <me>
+            \bmat{3.33333333333333 \\ 0.000000000000000 \\ 1.52000000000000}
+          </me>
+        </p>
+      </problem>
 
       <sage>
         <input>
@@ -286,13 +275,17 @@ See the file COPYING for copying conditions.
           hang_2 = matrix([
               [2, 4, -6] 
           ])
-          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
+          latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
           show(hang_2)
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+      <problem>
+        <p>
+          <me>
+            \bmat{2 \amp 4 \amp -6}
+          </me>
+        </p>
+      </problem>
 
     </subsubsection>
 
@@ -306,36 +299,54 @@ See the file COPYING for copying conditions.
 
       <sage language="python">
         <input>
+          # ...
           # Trong Numpy (Python)
           print(cot_1.transpose())
 
           print()
           print(hang_1.transpose())
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+      <problem>
+        <pre>
+          [[1 2 3]]
+
+          [[4]
+           [5]
+           [6]]
+        </pre>
+      </problem>
+      
 
       <sage>
         <input>
+          # ...
           # Trong SageMath
           show(cot_2.transpose())
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
-
+      <problem>
+        <p>
+          <me>
+            \bmat{3.33333333333333 \amp 0.000000000000000 \amp 1.52000000000000}
+          </me>
+        </p>
+      </problem>
+      
       <sage>
         <input>
+          # ...
           # Trong SageMath
           show(hang_2.transpose())
         </input>
-        <output>
-          Provisional
-        </output>
       </sage>
+      <problem>
+        <p>
+          <me>
+            \bmat{2 \\ 4 \\ -6}
+          </me>
+        </p>
+      </problem>
       
     </subsubsection>
 
@@ -348,15 +359,13 @@ See the file COPYING for copying conditions.
     <ol marker="a">
       <li>
         <p>
-          Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc.
-          Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
+          Như vậy, ta có thể coi vector cột là sự <lq/>mở rộng<rq/> của các số thực theo chiều dọc. Tương tự, vector hàng được coi là sự <lq/>mở rộng<rq/> của các số thực theo chiều ngang.
         </p>
       </li>
 
       <li>
         <p>
-          Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc)
-          ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
+          Tiếp theo, khi mở rộng các vector cột theo chiều ngang (hoặc các vector hàng theo chiều dọc) ta sẽ có được đối tượng mới, gọi là <term>ma trận</term>.
         </p>
       </li>
 

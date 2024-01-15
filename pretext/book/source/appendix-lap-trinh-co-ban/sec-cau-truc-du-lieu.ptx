@@ -17,75 +17,82 @@ See the file COPYING for copying conditions.
       <li></li>
     </ol>
   </objectives>
-  
-  <p>
-    Ta có một khái niệm mới, và đó là <term>cấu trúc dữ liệu</term>.
-    Cấu trúc dữ liệu được xây dựng <em>dựa trên</em> <term>kiểu dữ liệu</term>,
-    hay nói cách khác nó cũng là kiểu dữ liệu và mang tính quyết định tính năng và tương tác của biến.
-  </p>
 
   <p>
-    Để nói một cách dễ hiểu thì cấu trúc dữ liệu giúp biến có khả năng chứa cùng một lúc nhiều
-    dữ liệu, có thể giống nhau hoặc khác nhau. Dưới đây là ví dụ.
+    Trong các ví dụ từ trước đến giờ, mỗi một biến chỉ chứa duy nhất một giá trị. Giả sử ta có một chương trình để lưu trữ các số chính phương. Nó có thể trông như sau:
   </p>
 
-  <sage language="python">
+  <program language="python">
     <input>
-      # Trong Python
-      l1 = [1, 2, 3, 4]
-      print(l1, type(l1))
-
-      l2 = [1, 2.5, "so"]
-      print(l2, type(l2)) 
+      cp1 = 0
+      cp2 = 1
+      cp3 = 4
+      cp4 = 9
+      # ...
+      cp100 = 9801
     </input>
-    <output>
-      (for static output)
-    </output>
-  </sage>
+  </program>
 
   <p>
-    Ở trên, ta đang sử dụng cấu trúc dữ liệu <c>list</c>, hay còn được gọi là danh sách.
-    Đây là một cấu trúc dữ liệu có sẵn của Python. Ta có thể thấy <c>l1</c>
-    là một danh sách chứa các giá trị có kiểu <c>int</c>, còn <c>l2</c> lại chứa một
-    hỗn hợp các kiểu dữ liệu. Và để khai báo một <c>list</c>, bạn phải sử dụng ngoặc vuông
-    <c>[]</c> bao quanh các phần tử và dấu phẩy <c>,</c> để ngăn cách chúng.
+    Để không phải tạo ra một số lượng lớn các biến như vậy, ta có một đối tượng mới là <term>cấu trúc dữ liệu</term>.
   </p>
+
+  <definition xml:id="def-ctdl">
+    <statement>
+      <p>
+        <term>Cấu trúc dữ liệu</term> là những dữ liệu có khả năng chứa cùng một lúc nhiều dữ liệu khác.
+      </p>
+      <p>
+        Các dữ liệu <q>con</q> của cấu trúc dữ liệu được gọi là <term>phần tử</term>.
+      </p>
+      <p>
+        Cấu trúc dữ liệu được xây dựng <em>dựa trên</em> kiểu dữ liệu, vì vậy những kiến thức ở <xref ref="sec-kieu-du-lieu"/> có thể được áp dụng cho nó.
+      </p>
+    </statement>
+  </definition>
   
   <p>
-    Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập
-    hợp các cấu trúc dữ liệu riêng của mình, và, một lần nữa, điều này dựa trên mục đích
-    của nó.
+    Dưới đây là một phiên bản khác của chương trình trên.
+  </p>
+  
+  <program language="python">
+    <input>
+      import numpy as np # Su dung thu vien Numpy
+      cp = np.array([0, 1, 4, 9, ..., 9801])
+    </input>
+  </program>
+
+  <p>
+    Dễ thấy, thay vì phải tạo ra 100 biến khác nhau, ta chỉ cần duy nhất 1 biến để đựng 100 giá trị. (Bạn đừng lo về cú pháp vội nhé.)
   </p>
 
   <p>
-    Đối với quyển sách về ma trận này, hai cấu trúc dữ liệu quan trọng nhất chắc chắn phải là:
-    <ol>
-      <li>
-        <p>
-          Mảng
-        </p>
-      </li>
-      <li>
-        <p>
-          Ma trận
-        </p>
-      </li>
-    </ol>
+    Có rất nhiều cấu trúc dữ liệu thú vị và đặc biệt. Mỗi ngôn ngữ lập trình đều có tập hợp các cấu trúc dữ liệu của riêng mình.
+  </p>
+
+  <p>
+    Đối với quyển sách về ma trận này, hai cấu trúc dữ liệu quan trọng nhất chắc chắn phải là <term>mảng (array)</term> và <term>ma trận (matrix)</term>.
+  </p>
+
+  <p>
+    Hai tiểu mục dưới đây sẽ chỉ <em>giới thiệu sơ qua</em> hai đối tượng này. Nếu bạn có hứng thú với những vấn đề phức tạp hơn như cú pháp khai báo, nhập, truy, xuất phần tử, v.v., xem <xref provisional="sec-lap-trinh-mo-rong"/>.
   </p>
 
   <subsection xml:id="subsec-mang">
-    <title>Mảng</title>
+    <title>Mảng (Array)</title>
+
+    <definition xml:id="def-mang">
+      <statement>
+        <p>
+          Cấu trúc dữ liệu <term>mảng</term>, hay <term>array</term>, có thể chứa cùng một lúc nhiều phần tử.
+        </p>
+        <p>
+          Các phần tử của mảng phải có <em>cùng kiểu dữ liệu</em>.
+        </p>
+      </statement>
+    </definition>
 
     <p>
-      <term>Mảng</term> là một cấu trúc dữ liệu rất phổ biến.
-      Nó giúp biến có khả năng chứa cùng một lúc nhiều phần tử có <em>cùng kiểu dữ liệu</em>.
-      Khi khai báo mảng, bạn phải xác định rõ kiểu dữ liệu ấy.
-    </p>
-
-    <p>
-      Mảng <em>không</em> phải là một cấu trúc dữ liệu có sẵn trong Python.
-      Để dùng mảng, ta phải sử dụng thư viện mở rộng.
-      Và trong quyển sách này, <term>Numpy</term> sẽ đóng vai trò ý.
       Dưới đây là ví dụ.
     </p>
 
@@ -93,79 +100,139 @@ See the file COPYING for copying conditions.
       <input>
         import numpy as np # Su dung thu vien Numpy
 
-        arr = np.array(
-            [1, 2, 3],
-            dtype = np.int64
-        )
+        arr = np.array([1, 2, 3])
         print(arr, type(arr))
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
-
-    <p>
-      Ở trên, ta khai báo mảng <c>arr</c> có 3 phần tử, đồng thời cũng xác định kiểu dữ liệu
-      của mảng là <c>int64</c>, là tương ứng của <c>int</c>.
-    </p>
+    <problem>
+      <pre>
+        [1 2 3] &lt;class 'numpy.ndarray'&gt;
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Ta khai báo một mảng có 3 phần tử, và chúng đều thuộc kiểu <c>int</c>.
+      </p>
+      <p>
+        Lệnh <c>type()</c> trả lại tên của kiểu dữ liệu là <c>numpy.ndarray</c>, có thể hiểu là <q>array của Numpy</q>.
+      </p>
+    </investigation>
     
     <p>
-      Nếu ta thử khai báo mảng có kiểu <c>int64</c> nhưng lại chứa phần tử số thập phân,
-      mảng sẽ tự động chuyển đổi kiểu dữ liệu của tất cả các phần tử cho phù hợp.
+      Nếu ta thử khai báo mảng có chứa lẫn cả phần tử số nguyên và số thập phân, mảng sẽ <em>tự động</em> chuyển đổi kiểu dữ liệu của tất cả các phần tử sao cho phù hợp.
     </p>
     
     <sage language="python">
       <input>
         import numpy as np # Su dung thu vien Numpy
 
-        arr = np.array(
-            [1, 2.5, 3],
-            dtype = np.int64
-        )
-        print(arr, type(arr))
+        arr1 = np.array([1, 2.5, 3])
+        print(arr1)
+
+        arr2 = np.array([1, "test", 3])
+        print(arr2)
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
-
-    <p>
-      Ở trên, phần tử <c>2.5</c> là số thập phân được chuyển đổi thành kiểu <c>int64</c>,
-      vì thế nó được làm tròn xuống thành <c>2</c>.
-      Dưới đây là một ví dụ nữa khi phần tử mới được thêm vào mảng.
-    </p>
-    
-    <sage language="python">
-      <input>
-        arr = np.append(arr, 4)
-        print(arr, arr.dtype)
-
-        arr = np.append(arr, 5.5)
-        print(arr, arr.dtype)
-      </input>
-      <output>
-        (for static output)
-      </output>
-    </sage>
-
-    <p>
-      Dễ thấy, nếu ta thêm phần tử <c>4</c> vào mảng, kiểu dữ liệu không thay đổi.
-      Nhưng nếu ta thêm phần tử <c>5.5</c>, mảng sẽ tự động update kiểu dữ liệu
-      thành <c>float64</c>, nghĩa là tất cả các phần tử đều trở thành số thập phân.
-    </p>
+    <problem>
+      <pre>
+        [1.  2.5 3. ]
+        ['1' 'test' '3']
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Mảng <c>arr1</c> nhận ra phần tử <c>2.5</c> là số thập phân nên nó tự động chuyển đổi kiểu dữ liệu của các phần tử số nguyên còn lại thành <c>float</c>.
+      </p>
+      <p>
+        Tương tự, mảng <c>arr2</c> được khai báo với các giá trị gồm chuỗi ký tự và số nguyên, nên nó tự chuyển đổi tất cả các phần tử thành kiểu <c>str</c>.
+      </p>
+    </investigation>
 
   </subsection>
 
   <subsection xml:id="subsec-ma-tran">
     <title>Ma Trận</title>
 
+    <definition xml:id="def-ma-tran">
+      <statement>
+        <p>
+          Cấu trúc dữ liệu <term>ma trận</term>, hay <term>matrix</term>, có thể chứa cùng một lúc nhiều phần tử.
+        </p>
+        <p>
+          Ma trận có <term>hai chiều</term>. Nói cách khác, các phần tử của một ma trận được sắp xếp thành các <term>hàng</term> và <term>cột</term>. 
+        </p>
+        <p>
+          Các phần tử của ma trận phải có <em>cùng kiểu dữ liệu</em>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>Dưới đây là ví dụ</p>
+
+    <sage language="python">
+      <input>
+        import numpy as np # Su dung thu vien Numpy
+
+        mat = np.matrix([[1, 2, 3], [2, 4, 6]])
+        print(mat, type(mat))
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        [[1 2 3]
+         [2 4 6]] &lt;class 'numpy.matrix'&gt;
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Ta khai báo một ma trận có 6 phần tử thuộc kiểu <c>int</c>. Hàng 1 gồm 3 phần tử <c>1 2 3</c>, và hàng 2 gồm 3 phần tử <c>2 4 6</c>. (Vậy đây là một ma trận có 2 hàng và 3 cột.)
+      </p>
+      <p>
+        Lệnh <c>type()</c> cho thấy tên của kiểu dữ liệu là <c>numpy.matrix</c>, có thể hiểu là <q>ma trận của Numpy</q>.
+      </p>
+    </investigation>
+    
     <p>
-      <term>Ma trận</term> là một cấu trúc dữ liệu giúp biến có khả năng lưu trữ nhiều phần tử
-      cùng một lúc và sắp xếp chúng thành các <term>hàng</term> và các <term>cột</term>.
+      Ta cũng có thể khai báo ma trận một cách dễ nhìn hơn như sau.
     </p>
 
+    <sage language="python">
+      <input>
+        import numpy as np # Su dung thu vien Numpy
+
+        mat = np.matrix(
+          [
+            [1, 2, 3],
+            [2, 4, 6]
+          ]
+        )
+        print(mat, type(mat))
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        [[1 2 3]
+         [2 4 6]] &lt;class 'numpy.matrix'&gt;
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
+      <p>
+        Đoạn code này là hoàn toàn tương đương với đoạn code trên.
+      </p>
+      <p>
+        Với cách trình bày này, người đọc code có thể dễ dàng nhìn thấy số hàng và số cột của ma trận.
+      </p>
+      <p>
+        Và có một điều khá thú vị có thể bạn đã nhận ra: ma trận chính là một mảng to, và mỗi phần tử của nó là mảng con.
+      </p>
+    </investigation>
+
     <p>
-      Để sử dụng ma trận trong Python, ta phải dùng thư viện Numpy và lệnh <c>np.matrix()</c> để khai báo.
+      Và tương tự như mảng, ma trận cũng sẽ tự động cập nhật tất cả các phần tử sao cho chúng thuộc cùng một kiểu dữ liệu.
     </p>
     
     <sage language="python">
@@ -174,66 +241,26 @@ See the file COPYING for copying conditions.
 
         mat = np.matrix(
           [
-            [1, 2, 3],
-            [2, 4, 6],
-            [3, 6, 9]
+            [1, 2.5, 3],
+            [2, 4, 6]
           ]
         )
-        print(mat, type(mat))
+        print(mat)
       </input>
-      <output>
-        (for static output)
-      </output>
     </sage>
-    
-    <p>
-      Như vậy, cú pháp của ma trận là một cặp ngoặc vuông <c>[]</c> ở ngoài cùng,
-      bao trùm các cặp ngoặc vuông khác ở bên trong nó.
-      Trong đó, mỗi cặp ngoặc vuông con là một hàng của ma trận, và mỗi hàng ý phải có cùng số phần tử.
-      Bạn có thể tham khảo phần <xref ref="sec-thao-tac-ma-tran"/>
-    </p>
-
-    <p>
-      SageMath có sẵn ma trận, và ta chỉ việc dùng lệnh <c>matrix()</c>.
-      Ví dụ dưới đây sử dụng một cách viết khác, gọn hơn so với ở trên,
-      có thể thấy với cặp ngoặc vuông ngoài cùng.
-      Hai cách trình bày này là tương đương nhau khi biên dịch code.
-    </p>
-
-    <p>
-      Ngoài ra, SageMath cung cấp lựa chọn biểu diễn ma trận và các đối tượng toán học khác bằng
-      <latex /><mdash />một hệ thống phần mềm soạn thảo chuyên dành cho toán học. Ta chỉ
-      việc sử dụng lệnh <c>show()</c>.
-    </p>
-
-    <sage>
-      <input>
-        mat = matrix([
-            [1, 1, 1],
-            [2, 2, 2],
-            [3, 3, 3]
-        ])
-        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong (mac dinh la ngoac tron)
-        show(mat)
-      </input>
-      <output>
-        (for static output)
-      </output>
-    </sage>
-    
-    <p>
-    </p>
-
-    <remark>
+    <problem>
+      <pre>
+        [[1.  2.5 3. ]
+         [2.  4.  6. ]]
+      </pre>
+    </problem>
+    <investigation>
+      <p></p>
       <p>
-        Trong quyển sách này, các ví dụ lập trình ma trận sẽ có độ phức tạp ở mức thấp.
-        Vì vậy, những thao tác như <term>truy cập</term>, <term>thêm</term>,
-        <term>xóa</term> phần tử là <em>không quá cần thiết</em>.
-        Nhưng nếu bạn muốn biết thêm, hãy tham khảo
-        <xref ref="sec-thao-tac-ma-tran" text="phrase-global"/>.
+        Ma trận trên nhận ra phần tử <c>2.5</c> là số thập phân nên nó tự động chuyển đổi kiểu dữ liệu của các phần tử số nguyên còn lại thành <c>float</c>.
       </p>
-    </remark>
-    
+    </investigation>
+
   </subsection>
 
 </section>

@@ -19,21 +19,25 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Khi viết code, có những lúc ta muốn để lại những ghi chú, có thể là để giải thích
-    một thuật toán nào đó hay ghi chép lại luồng suy nghĩ bản thân khi đó. Trong tương lai,
-    khi quay lại ta sẽ dễ dàng đọc hiểu đoạn code với sự giúp đỡ của các ghi chú ấy.
+    Khi viết code, có những lúc ta muốn để lại những ghi chú, có thể là để giải thích một thuật toán nào đó hay ghi chép lại luồng suy nghĩ bản thân khi đó. Trong tương lai, khi quay lại ta sẽ dễ dàng đọc hiểu đoạn code với sự giúp đỡ của các ghi chú ấy.
   </p>
 
-  <p>
-    Cú pháp của <term>ghi chú</term> trong Python và SageMath là dấu thăng <c>#</c>.
-    Những gì được viết ở phía sau <c>#</c> (trên cùng 1 dòng) sẽ được trình biên dịch
-    coi là <term>văn bản thuần túy</term> thay vì code. 
-  </p>
+  <definition xml:id="def-ghi-chu">
+    <statement>
+      <p>
+        Cú pháp để viết một <term>ghi chú</term> trong Python và SageMath là dấu thăng <c>#</c>.
+      </p>
+      <p>
+        Những gì được viết ở phía sau <c>#</c> (trên cùng 1 dòng) sẽ được trình biên dịch coi là <term>văn bản thuần túy</term> thay vì code. 
+      </p>
+    </statement>
+  </definition>
 
-  <p>
-    Cú pháp ghi chú cũng được sử dụng để tạm thời <q>tắt</q> một đoạn code.
-    Dưới đây là ví dụ.
-  </p>
+  <remark>
+    <p>
+      Cú pháp ghi chú cũng được sử dụng để tạm thời <term>tắt</term> một đoạn code. Dưới đây là ví dụ.
+    </p>
+  </remark>
 
   <sage language="python">
     <input>
@@ -45,10 +49,25 @@ See the file COPYING for copying conditions.
 
       print("Lai la code")
     </input>
-    <output>
-      (for static output)
-    </output>
   </sage>
-  
+  <problem>
+    <pre>
+      Day la code
+      Lai la code
+    </pre>
+  </problem>
+
+  <investigation>
+    <p></p>
+    <p>
+      Dòng 1 là 1 ghi chú văn bản thuần túy.
+    </p>
+    <p>
+      Dòng 3 và 7 là hai dòng lệnh chạy bình thường, cho kết quả ra terminal.
+    </p>
+    <p>
+      Dòng 5 là một dòng lệnh đã được <q>tắt</q> với cú pháp ghi chú. Vậy nên nó không cho kết quả ra terminal.
+    </p>
+  </investigation>
 
 </section>
