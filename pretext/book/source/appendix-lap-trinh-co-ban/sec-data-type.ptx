@@ -7,8 +7,8 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-kieu-du-lieu" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Kiểu Dữ Liệu</title>
+<section xml:id="sec-data-type" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Data Types</title>
 
   <objectives>
     <ol>
@@ -19,45 +19,45 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Mọi thứ trên thế giới này đều có thể được lưu trữ thành dữ liệu<mdash></mdash>từ số liệu, chữ cái đến thông tin về một học sinh hay một mẫu xe ô tô.
+    Pretty much everything in existence can be stored as data<mdash></mdash>from numbers and letters to information about a student or a car model.
   </p>
 
   <definition xml:id="def-kieu-du-lieu">
     <statement>
       <p>
-        Và để <term>phân loại</term> các dữ liệu đó, ta có khái niệm <term>kiểu dữ liệu</term>.
+        To <term>categorize</term> data, we make use of <term>data types</term>.
       </p>
     </statement>
   </definition>
 
   <p>
-    Hầu hết các ngôn ngữ lập trình hiện đại đều không thể thiếu các kiểu dữ liệu sau đây:
+    Most modern programming languages have the following data types:
     <dl>
       <li>
         <title>str</title>
         <p>
-          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc kép đơn <c>''</c>.
+          <term>A sequence of characters</term> enclosed in quotation marks <c>""</c> or single quotation marks <c>''</c>.
         </p>
       </li>
 
       <li>
         <title>int</title>
         <p>
-          <term>Số nguyên</term>. Là một số thực không có các chữ số thập phân.
+          <term>An integer</term>, which is a whole number (without a decimal point).
         </p>
       </li>
 
       <li>
         <title>float</title>
         <p>
-          <term>Số dấu phẩy động</term>. Là một số thực có một hoặc nhiều chữ số thập phân.
+          <term>A floating-point number</term> (with a decimal point).
         </p>
       </li>
 
       <li>
         <title>bool</title>
         <p>
-          <term>Boolean</term> chỉ chứa một trong hai giá trị <c>True</c> hoặc <c>False</c>. Được dùng chủ yếu trong những câu lệnh điều kiện.
+          <term>A Boolean value</term>, which can only equate to either <c>True</c> or <c>False</c>. It's frequently used in conditional statements.
         </p>
       </li>
 
@@ -66,7 +66,7 @@ See the file COPYING for copying conditions.
 
   <note>
     <p>
-      Trong Python và SageMath, khi ta khai báo biến hay cập nhật biến, nó sẽ dựa vào giá trị đó mà <em>tự động quyết định</em> kiểu dữ liệu của mình. Dưới đây là ví dụ.
+      In Python and SageMath, when we declare or update a variable, it will <em>automatically</em> determine or re-determine its data type. For example:
     </p>
   </note>
 
@@ -88,29 +88,31 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Lệnh <c>type(a)</c> cho kết quả là kiểu dữ liệu của biến <c>a</c>, được ghi trong dấu ngoặc kép đơn. (Bạn không cần quá băn khoăn về từ khóa <c>class</c> ở đây. Bạn có thể hiểu nó đang viết tắt cho từ <q>classify</q>, nghĩa là <q>phân loại</q>.)
+      The command <c>type(a)</c> returns the data type of <c>a</c> written in single quotation marks. (You don't have to care about <c>class</c> here. In this context it can be understood as <q>classify</q>.)
     </p>
     <p>
-      Vậy, khi khai báo <c>a = 5</c>, biến <c>a</c> có kiểu <c>int</c>.
+      So, when we declare <c>a = 5</c>, the variable <c>a</c> is of type <c>int</c>.
     </p>
     <p>
-      Còn khi gán cho <c>a</c> giá trị mới là <c>"5"</c> (<alert>chú ý</alert> 5 nằm ở trong hai dấu ngoặc kép), nó tự động cập nhật thành kiểu <c>str</c>.
+      But when we assign <c>a</c> the value <c>"5"</c> (<alert>notice</alert> the quotation marks), it automatically updates to <c>str</c>.
     </p>
   </investigation>
 
   <p>
     Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (hoặc ngoặc kép đơn), nó sẽ có kiểu <c>str</c>, mặc dù nó cũng chứa con số <c>5</c>. Từ đó, ta có định nghĩa sau.
+    To conclude, <c>a = "5"</c> differs from <c>a = 5</c>. If data is surrounded by (single) quotation marks, it is of type <c>str</c>. From that, we have the following definition:
   </p>
 
   <definition xml:id="def-kdl-cu-phap">
     <statement>
       <p>
-        Các kiểu dữ liệu khác nhau có quy tắc riêng khi khai báo, còn được gọi là <term>cú pháp khai báo</term>.
+        Different data types have their own representation when declared, in other words different <term>syntax</term>.
       </p>
     </statement>
   </definition>
   
   <p>Ví dụ giá trị của các kiểu dữ liệu chính.</p>
+  <p>Some examples of the main data types:</p>
 
   <sage language="python">
     <input>
@@ -136,33 +138,35 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Tương tự như ví dụ trên.
+      Same as above.
     </p>
     <p>
-      Một lần nữa, bạn không cần suy nghĩ về từ khóa <c>class</c>. Bạn có thể hiểu nó đang viết tắt cho từ <q>classify</q>, nghĩa là <q>phân loại</q>.
+      Again, you don't have to care about <c>class</c> yet. You can understand it as <q>classify</q>.
     </p>
     <p>
-      Nhưng chính xác mà nói thì nó đang liên hệ tới khái niệm <term>Class</term>. Đây là một chủ đề lớn nên nếu có hứng thú bạn có thể tìm hiểu trên mạng nhé.
+      But to be accurate, it stands for <term>Class</term>. This is a big topic, so you can do some research on the Internet if you wish.
     </p>
   </investigation>
 
   <p>
     Tiếp theo, ta có
+    Next, we have: 
   </p>
 
   <definition xml:id="def-kdl-tuong-tac">
     <statement>
       <p>
-        Kiểu dữ liệu quyết định <term>tương tác</term> có thể giữa các dữ liệu với nhau.
+        Data type determine possible <term>interactions</term> between data.
       </p>
       <p>
         Có rất nhiều loại tương tác. Ví dụ như các phép toán cộng, trừ, nhân, chia, v.v., là một vài tương tác có thể xảy ra giữa hai hay nhiều dữ liệu.
+        There are many possible interactions such as mathematical calculations or string concatenation.
       </p>
     </statement>
   </definition>
 
   <p>
-    Dưới đây là ví dụ.
+    For example:
   </p>
 
   <sage language="python">
@@ -189,17 +193,18 @@ See the file COPYING for copying conditions.
     <p></p>
     <p>
       Ta biết cả <c>a</c> và <c>b</c> đều có kiểu <c>int</c>. Vì vậy, ta được phép cộng hai dữ liệu ấy với nhau.
+      We know both <c>a</c> and <c>b</c> are of type <c>int</c>. So, adding them together makes sense and is allowed.
     </p>
     <p>
-      Tương tự, <c>c</c> và <c>d</c> là kiểu <c>float</c>, vì vậy phép cộng là được phép.
+      Similarly, <c>c</c> and <c>d</c> are of type <c>float</c>, so addition is allowed.
     </p>
     <p>
-      Dòng cuối cùng thú vị hơn một chút, vì ta vẫn có thể thực hiện phép cộng giữa <c>int</c> và <c>float</c>.
+      The last line is a bit more interesting since we can still perform an addition between <c>int</c> and <c>float</c>.
     </p>
   </investigation>
 
   <p>
-    Nhưng ta <em>không</em> thể cộng <c>int</c> với <c>str</c>. Làm vậy sẽ xuất hiện <term>lỗi</term>.
+    However, we <em>cannot</em> add <c>int</c> and <c>str</c>. That will result in an <term>error</term>.
   </p>
 
   <sage language="python">
@@ -222,29 +227,30 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Phép toán <c>+</c> là một tương tác <em>không hợp lệ</em> cho hai kiểu dữ liệu <c>int</c> và <c>str</c>.
+      The operator <c>+</c> is an <em>invalid</em> interaction between <c>int</c> và <c>str</c>.
     </p>
   </investigation>
 
   <p>
     Nhưng ta hoàn toàn có thể cộng các <c>str</c> với nhau. Việc này ghép chúng lại thành một chuỗi mới.
+    But we can <q>add</q> two or more strings together, which results in a new string that is the concatenation of the component strings.
   </p>  
 
   <note>
     <p>
-      Giá trị của một chuỗi ký tự là mọi ký tự ở giữa hai dấu ngoặc kép, kể cả các ký tự khoảng trắng.
+      The value of a string is all characters in-between the quotation marks, including white-spaces.
     </p>
   </note>
 
   <p>
-    Dưới đây là ví dụ.
+    For example:
   </p>
 
   <sage language="python">
     <input>
-      s1 = "Xin chao"
-      s2 = "Nam"
-      s3 = " Lan"
+      s1 = "Hello"
+      s2 = "Jack"
+      s3 = " Jane"
       
       print(s1 + s2)
       print(s1 + s3)
@@ -252,17 +258,17 @@ See the file COPYING for copying conditions.
   </sage>
   <problem>
     <pre>
-      Xin chaoNam
-      Xin chao Lan
+      HelloJack
+      Hello Jane
     </pre>
   </problem>
   <investigation>
     <p></p>
     <p>
-      <c>s1 + s2</c> là một tương tác hợp lệ và sẽ ghép chúng lại thành một chuỗi mới. Tương tự với <c>s1 + s3</c>.
+      <c>s1 + s2</c> is valid and concatenates the strings, same with <c>s1 + s3</c>.
     </p>
     <p>
-      Ta thấy chuỗi <c>s3</c> khác với chuỗi <c>s1</c> ở chỗ nó có một ký tự khoảng trắng (space) ở trước <q>Lan</q>. Sự khác biệt này được làm rõ qua phép cộng chuỗi.
+      Notice the difference between <c>s1</c> and <c>s3</c> as the latter has a preceding white-space, which is better seen after the concatenation.
     </p>
   </investigation>
   

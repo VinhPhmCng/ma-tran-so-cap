@@ -7,8 +7,8 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-thuoc-tinh" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Thuộc Tính</title>
+<section xml:id="sec-attribute" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Attributes</title>
 
   <objectives>
     <ol>
@@ -21,29 +21,32 @@ See the file COPYING for copying conditions.
   <definition xml:id="def-thuoc-tinh">
     <statement>
       <p>
-        <term>Thuộc tính</term> là biến chứa <em>thông tin miêu tả</em> của một dữ liệu to hơn. Một cách để dễ hiểu đối tượng này là cụm từ <q>biến của biến</q>.
+        <!--  -->
+        <term>Thuộc tính</term> là biến chứa <em>thông tin miêu tả</em> của một dữ liệu khác. Một cách để dễ hiểu đối tượng này là cụm từ <q>biến của biến</q>.
+        An <term>attribute</term> is a variable storing <em>descriptive information</em> regarding another piece of data.
       </p>
       <p>
         Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được <em>khai báo sẵn</em>.
+        Every data type has its own set of built-in attributes.
       </p>
       <p>
-        Các thuộc tính của một dữ liệu sẽ <em>tự động cập nhật</em> khi dữ liệu đó được cập nhật.
+        The attributes of a piece of data <em>automatically update</em> when that data is updated.
       </p>
     </statement>
   </definition>
 
   <technology>
-    <title>Truy cập thuộc tính</title>
+    <title>Accessing an attribute</title>
     <p>
-      <me>\text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}</me>
+      <me>\text{data.} {\color{blue} \text{attribute's name}}</me>
     </p>
   </technology>
 
-  <p>Dưới đây là ví dụ.</p>
+  <p>For example:</p>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy
+      import numpy as np # Use library Numpy
 
       mat = np.matrix([
         [1, 2, 3],
@@ -63,20 +66,21 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      <c>mat.size</c> trả lại số phần tử của <c>mat</c>.
+      <c>mat.size</c> returns the number of elements of <c>mat</c>.
     </p>
     <p>
-      <c>mat.shape</c> trả lại số hàng và số cột của <c>mat</c>.
+      <c>mat.shape</c> returns the number of rows and columns of <c>mat</c>.
     </p>
   </investigation>
 
-  <p>
+<!--   <p>
     Bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>.
+    You can also access the attributes of a piece of data that isn't stored by any variable.
   </p>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy
+      import numpy as np # Use library Numpy
 
       print(
           np.matrix([
@@ -95,11 +99,12 @@ See the file COPYING for copying conditions.
     <p></p>
     <p>
       Dù ma trận trên không được chứa bởi biến nào, ta vẫn có thể truy cập thuộc tính <c>size</c> của nó.
+      Though the matrix isn't stored by a variable, we can still access its <c>size</c> của nó.
     </p>
-  </investigation>
+  </investigation> -->
 
   <p>
-    Nhưng kiểu dữ liệu <c>int</c> không có các thuộc tính trên.
+    However, the data type <c>int</c> does not have such attributes.
   </p>
 
   <sage language="python">
@@ -121,7 +126,7 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Lỗi xuất hiện ở dòng 2, dịch nôm na ra ta được <q>int không có thuộc tính size</q>.
+      As the error states.
     </p>
   </investigation>
   

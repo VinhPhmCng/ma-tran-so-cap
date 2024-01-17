@@ -223,7 +223,7 @@ See the file COPYING for copying conditions.
 
       <sage language="python">
         <input>
-          import numpy as np # Su dung thu vien Numpy
+          import numpy as np # Use library Numpy
           cot_1 = np.matrix([
               [1],
               [2],

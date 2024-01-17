@@ -7,8 +7,8 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-toan-tu" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Toán Tử</title>
+<section xml:id="sec-operator" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Operators</title>
 
   <objectives>
     <ol>
@@ -19,37 +19,40 @@ See the file COPYING for copying conditions.
   </objectives>
 
   <p>
-    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v. Đối với lập trình, ta có các <term>toán tử</term>.
+    In programming, an <term>operator</term> is a symbol that describes a specific assignment or a mathematical, relational, or logical operation.
   </p>
 
   <definition xml:id="def-toan-tu">
     <statement>
       <p>
-        <term>Toán tử</term> miêu tả tương tác giữa các dữ liệu.
+        <term>Operators</term> miêu tả tương tác giữa các dữ liệu.
+        <term>An operator</term> describes an interaction between data.
       </p>
     </statement>
   </definition>
   
   <p>
     Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>. Ta cùng tìm hiểu những toán tử cơ bản nhé.
+    Previously, the two operators <c>=</c> and <c>+</c> often show up in examples. Let's take a look at the most basic operators.
   </p>
 
   <subsection xml:id="subsec-tt-so-hoc">
-    <title>Toán Tử Số Học</title>
+    <title>Arithmetic Operators</title>
 
     <p>
       Bốn toán tử số học cơ bản.
+      The four most basic arithmetic operators are:
     </p>
 
     <sage language="python">
       <input>
-        print(5 + 3) # Cong
-        print(5 - 3) # Tru
-        print(5 * 3) # Nhan
-        print(5 / 3) # Chia
+        print(5 + 3) # Addition
+        print(5 - 3) # Subtraction
+        print(5 * 3) # Multiplication
+        print(5 / 3) # Division
 
-        # Ta cung co the cong hai chuoi
-        print("chuoi 1 " + "chuoi 2")
+        # Concatenation
+        print("string 1 " + "string 2")
       </input>
     </sage>
     <problem>
@@ -58,28 +61,29 @@ See the file COPYING for copying conditions.
         2
         15
         1.6666666666666667
-        chuoi 1 chuoi 2
+        string 1 string 2
       </pre>
     </problem>
     <investigation>
       <p></p>
       <p>
-        Bốn dòng đầu là các phép tính toán như trong toán học.
+        The first four lines are the same as mathematical operations.
       </p>
       <p>
-        Ở dòng 7, toán tử <c>+</c> được dùng để ghép hai chuỗi ký tự với nhau.
+        In line 7, the operator <c>+</c> represents string concatenation.
       </p>
     </investigation>
     
     <p>
       Ta cũng có một vài toán tử khác ít được dùng hơn.
+      There are also less popular operators such as:
     </p>
 
     <sage language="python">
       <input>        
-        print(5 // 3) # Chia lay phan nguyen
-        print(5 ** 3) # Luy thua
-        print(5 % 3) # Modulo
+        print(5 // 3) # Floor division
+        print(5 ** 3) # Exponentiation
+        print(5 % 3) # Modulus
       </input>
     </sage>
     <problem>
@@ -92,41 +96,51 @@ See the file COPYING for copying conditions.
     <investigation>
       <p></p>
       <p>
-        Bạn có thể tra mạng những phép toán ít phổ biến hơn này nếu có hứng thú nhé.
+        You can look them up on the Internet if you wish.
       </p>
     </investigation>
 
+    <!-- Translate ref and xml:id too -->
     <p>
       Và một kiến thức quan trọng bạn phải nhớ là <xref ref="def-kdl-tuong-tac"/>.
+      And you should always keep in mind <xref ref="def-kdl-tuong-tac"/>.
     </p>
     
   </subsection>
 
   <subsection xml:id="subsec-tt-gan">
-    <title>Toán Tử Gán</title>
+    <title>Assignment Operators</title>
 
     <p>
       Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
+      Previously, you've seen <c>=</c> being used frequently. This is the most important <term>assignment operator</term> that you need to know.
     </p>
 
     <definition xml:id="def-toan-tu-gan">
       <statement>
         <p>
-          <term>Toán tử gán</term> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.
+          An <term>assignment operator</term> is used to declare or update a variable.
         </p>
-        <p>
+<!--         <p>
           Việc sử dụng toán tử <c>=</c> để tạo ra một biến mới được gọi là <term>khai báo</term>.
         </p>
         <p>
-          Việc sử dụng toán tử <c>=</c> để cập nhật giá trị của một biến đã tồn tại được gọi là <term>gán</term>.
+          Việc sử dụng toán tử <c>=</c> để cập nhật giá trị của một biến đã tồn tại được gọi là <term>gán</term>. -->
         </p>
         <p>
           Giá trị của một biến thay đổi <em>khi và chỉ khi</em> ta sử dụng toán tử gán.
+          The value of a variable changes <em>if and only if</em> an assignment operator is used.
         </p>
       </statement>
     </definition>
+    
+    <note>
+      <p>
+        In programming, the assignment operator <c>=</c> should never be associated with equality.
+      </p>
+    </note>
 
-    <p>Dưới đây là ví dụ.</p>
+    <p>For example:</p>
 
     <sage language="python">
       <input>
@@ -150,18 +164,19 @@ See the file COPYING for copying conditions.
     <investigation>
       <p></p>
       <p>
-        Đầu tiên, ta khai báo <c>a</c> có giá trị bằng <c>5</c>.
+        Firstly, we declare <c>a</c> and gives it the value <c>5</c>.
       </p>
       <p>
-        Ở dòng 4, ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 5, kết quả vẫn là <c>5</c>.
+        In line 4, we have <c>a + 1</c>, but when we access the value of <c>a</c> in line 5, we still get <c>5</c>.
       </p>
       <p>
-        Ở dòng 7, ta mới <em>cập nhật</em> biến với <c>a = a + 1</c>. Vì vậy ở dòng 8 biến <c>a</c> mới có giá trị bằng <c>6</c>.
+        In line 7, we <em>update</em> the variable with <c>a = a + 1</c>. Therefore, in line 8 <c>a</c> has a value of <c>6</c>.
       </p>
     </investigation>
     
     <p>
       Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em>gọn gàng hơn</em>, ví dụ như:
+      Theoretically, <c>=</c> is the only assignment operator you need to know. But we also have others that serve as a short-hand:
     </p>
 
     <p>
@@ -169,25 +184,25 @@ See the file COPYING for copying conditions.
         <li>
           <title><c>x += 5</c></title>
           <p>
-            Tương đương với <c>x = x + 5</c> 
+            Is equivalent to <c>x = x + 5</c> 
           </p>
         </li>
         <li>
           <title><c>x -= 5</c></title>
           <p>
-            Tương đương với <c>x = x - 5</c> 
+            Is equivalent to <c>x = x - 5</c> 
           </p>
         </li>
         <li>
           <title><c>x *= 5</c></title>
           <p>
-            Tương đương với <c>x = x * 5</c> 
+            Is equivalent to <c>x = x * 5</c> 
           </p>
         </li>
         <li>
           <title><c>x /= 5</c></title>
           <p>
-            Tương đương với <c>x = x / 5</c> 
+            Is equivalent to <c>x = x / 5</c> 
           </p>
         </li>
       </dl>
@@ -196,59 +211,59 @@ See the file COPYING for copying conditions.
   </subsection>
 
   <subsection xml:id="subsec-tt-quan-he">
-    <title>Toán Tử Quan Hệ</title>
+    <title>Relational Operators</title>
 
     <p>
-      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
+      <term>A relational operator</term> are mostly used in conditional statements, so it will be described in more details in <xref provisional="cau-lenh-dieu-kien"/>.
     </p>
 
     <p>
-      Dưới đây là tóm tắt sơ bộ:
+      To summarize:
 
       <dl>
         <li>
           <title><c>x == y</c></title>
           <p>
-            Trả lại <c>True</c> nếu x bằng y
+            Returns <c>True</c> if x equals y
           </p>
           <p>
-            Trả lại <c>False</c> nếu x <em>không</em> bằng y
+            Returns <c>False</c> if x does <em>not</em> equal y
           </p>
         </li>
         <li>
           <title><c>x != y</c></title>
           <p>
-            Ngược lại với <c>x == y</c>
+            Opposite to <c>x == y</c>
           </p>
         </li>
         <li>
           <title><c>x &lt; y</c></title>
           <p>
-            Trả lại <c>True</c> nếu x nhỏ hơn y
+            Returns <c>True</c> if x is less than y
           </p>
           <p>
-            Trả lại <c>False</c> nếu x lớn hơn hoặc bằng y
+            Returns <c>False</c> if x is greater than or equal to y
           </p>
         </li>
         <li>
           <title><c>x &gt; y </c></title>
           <p>
-            Trả lại <c>True</c> nếu x lớn hơn y
+            Returns <c>True</c> if x is greater than y
           </p>
           <p>
-            Trả lại <c>False</c> nếu x nhỏ hơn hoặc bằng y
+            Returns <c>False</c> if x is less than or equal to y
           </p>
         </li>
         <li>
           <title><c>x &lt;= y </c></title>
           <p>
-            Ngược lại với <c>x &gt; y</c> 
+            Opposite to <c>x &gt; y</c> 
           </p>
         </li>
         <li>
           <title><c>x &gt;= y</c></title>
           <p>
-            Ngược lại với <c>x &lt; y</c> 
+            Opposite to <c>x &lt; y</c> 
           </p>
         </li>
       </dl>
@@ -257,43 +272,44 @@ See the file COPYING for copying conditions.
   </subsection>
 
   <subsection xml:id="subsec-tt-logic">
-    <title>Toán Tử Logic</title>
+    <title>Logical Operators</title>
     
     <p>
-      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
+      <term>Logical operators</term> are mostly used in conditional statements, so it will be described in more details in <xref provisional="cau-lenh-dieu-kien"/>.
     </p>
 
     <p>
-      Dưới đây là tóm tắt sơ bộ:
+      To summarize:
       <dl>
         <li>
           <title><c>x and y</c></title>
           <p>
-            Trả lại <c>True</c> nếu cả x và y đều bằng <c>True</c>
+            Returns <c>True</c> if both statements are ,<c>True</c>
           </p>
           <p>
             Trả lại <c>False</c> nếu ít nhất một trong hai biến bằng <c>False</c>
+            Returns <c>False</c> if at least one statement is <c>False</c>
           </p>
         </li>
         <li>
           <title><c>x or y</c></title>
           <p>
             Trả lại <c>True</c> nếu ít nhất một trong hai biến bằng <c>True</c>
+            Returns <c>True</c> if at least one statement is <c>True</c>
           </p>
           <p>
             Trả lại <c>False</c> nếu cả x và y đều bằng <c>False</c>
+            Returns <c>False</c> if both statements are <c>False</c>
           </p>
         </li>
         <li>
           <title><c>not x</c></title>
           <p>
             Đảo ngược boolean
+            Reverses the Boolean
           </p>
           <p>
-            Trả lại <c>True</c> nếu x bằng <c>False</c>
-          </p>
-          <p>
-            Trả lại <c>False</c> nếu x bằng <c>True</c>
+            Returns <c>True</c> if x is equal to <c>False</c> and vice-versa.
           </p>
         </li>
       </dl>

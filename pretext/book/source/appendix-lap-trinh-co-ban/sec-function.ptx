@@ -7,8 +7,8 @@ Phạm Công Vinh, Phạm Xuân Trung
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-ham" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Hàm</title>
+<section xml:id="sec-function" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Functions</title>
 
   <objectives>
     <ol>
@@ -19,11 +19,12 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>Hàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
+    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>hHàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
+    Again we are met with another familiar mathematical concept<mdash /><term>functions</term>, which also plays a big role in programming.
   </p>
 
   <p>
-    Giả sử ta có 100 biểu thức toán:
+    Suppose we have 100 mathematical expressions:
 
     <md>
       <mrow>1^2 + 2 \cdot 1 + 1</mrow>
@@ -33,6 +34,7 @@ See the file COPYING for copying conditions.
     </md>
 
     Ta nhận ra chúng có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
+    We realize they are all quadratics; therefore, we can shorten our representation using a function as follows:
 
     <md>
       <mrow>f(x) = x^2 + 2 \cdot x + 1</mrow>
@@ -45,42 +47,45 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    <term>Hàm</term> trong lập trình cũng được thiết kế tương tự như vậy.
+    That is also the essence of <term>functions</term> in programming.
   </p>
 
   <definition xml:id="def-ham">
     <statement>
       <p>
-        <term>Hàm</term> là một đoạn code có thể tái sử dụng được dùng để thực hiện một tác vụ nào đó.
+        A <term>function</term> is a reusable block of code designed to perform a specific task.
       </p>
       <p>
         Hàm có thể không nhận hoặc nhận một hay nhiều hơn dữ liệu <term>đầu vào</term>.
+        A function can accept zero, one, or more <term>inputs</term>, which is also called <term>parameters</term>.
       </p>
       <p>
         Hàm có thể không trả lại hoặc trả lại một hay nhiều hơn dữ liệu <term>đầu ra</term>.
+        A function can return zero, one, or more <term>outputs</term>, which is also called <term>return values</term>.
       </p>
       <p>
-        Thuật ngữ cho việc tạo ra một hàm mới là <term>khai báo hàm</term>.
+        To <term>declare</term> a new function is to create a new one.
       </p>
       <p>
-        Thuật ngữ cho việc sử dụng một hàm là <term>gọi hàm</term>.
+        To <term>call</term> a function is to use an existing function.
       </p>
     </statement>
   </definition>
 
   <p>
-    Ở phần này ta chưa đi sâu vào cú pháp khai báo hàm, mà ta sẽ chỉ tập trung vào việc sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện. Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo <xref ref="sec-khai-bao-ham"/>.
+    In this section, we will not go into function declaration. Instead, we will focus on using functions that are built-in or provided by libraries. To read more about function declaration, refer to <xref ref="sec-khai-bao-ham"/>.
   </p>
 
   <technology>
-    <title>Gọi hàm</title>
+    <title>Calling a function</title>
     <p>
       <em>Tùy vào từng hàm</em>, ta có hai cách: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
+      <em>Depending on how a function is declared</em>, we have two ways to call it: <me>{\color{blue} \text{function's name}} \, \text{(input 1, input 2, ...)}</me> or <me>\text{input 1.} {\color{blue} \text{function's name}} \, \text{(input 2, input 3, ...)}</me>
     </p>
   </technology>
   
   <p>
-    Một ví dụ thân thuộc là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào trong code, và với một tập hợp các dữ liệu đầu vào bất kỳ.
+    A familiar example is the function <c>print()</c>, which can be called anywhere in the code and with any number of inputs.
   </p>
 
   <sage language="python">
@@ -89,7 +94,6 @@ See the file COPYING for copying conditions.
       print()
       print(2, -2)
       print(1, "Hello World!", 5.5)
-
     </input>
   </sage>
   <problem>
@@ -103,26 +107,27 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Dòng 1: Ta truyền cho hàm <c>print()</c> một dữ liệu đầu vào là <c>5</c>.
+      Line 1: We call the function <c>print()</c> with the input <c>5</c>.
     </p>
     <p>
-      Dòng 2: Ta không truyền dữ liệu đầu vào, nên <c>print()</c> xuất ra terminal một dòng trắng.
+      Line 2: We provide no inputs, so <c>print()</c> outputs an empty line into the terminal.
     </p>
     <p>
-      Dòng 3: Ta truyền cho nó hai dữ liệu đầu vào là <c>2</c> và <c>-2</c>.
+      Line 3: We give it two inputs <c>2</c> and <c>-2</c>.
     </p>
     <p>
-      Dòng 4: Ta truyền cho nó nhiều dữ liệu đầu vào, và chúng có các kiểu dữ liệu khác nhau.
+      Line 4: We give it multiple inputs of different data types.
     </p>
   </investigation>
 
   <p>
     Một ví dụ nữa là hàm <c>np.sqrt()</c> của Numpy. Nó có nhiệm vụ tính toán và trả lại căn bậc hai của dữ liệu đầu vào.
+    Another example is <c>np.sqrt()</c>, which is a Numpy function. It accepts only one input, then it calculates and returns the square root.
   </p>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy 
+      import numpy as np # Use library Numpy 
 
       print(np.sqrt(9))
     </input>
@@ -134,17 +139,17 @@ See the file COPYING for copying conditions.
   </problem>
   <investigation>
     <p>
-      Hàm <c>np.sqrt()</c> nhận một giá trị đầu vào và trả lại căn bậc hai của nó.
+      The function <c>np.sqrt()</c> receives one input and returns the square root.
     </p>
   </investigation>
   
   <p>
-    Nhưng hàm <c>np.sqrt()</c> có nhiều yêu cầu hơn <c>print()</c>. Nó chỉ nhận <em>duy nhất một</em> giá trị đầu vào, và giá trị đó phải là <em>số</em>. Hai ví dụ dưới đây sẽ xuất hiện lỗi.
+    So, <c>np.sqrt()</c> has more specifications than <c>print()</c>. You have to call it with exactly one input, which must be <em>numeric</em>. The following examples will return errors.
   </p>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy 
+      import numpy as np # Use library Numpy 
 
       print(np.sqrt(9, 10))
     </input>
@@ -161,15 +166,15 @@ See the file COPYING for copying conditions.
   </problem>
   <investigation>
     <p></p>
-    <p>Hàm <c>np.sqrt()</c> chỉ nhận duy nhất một dữ liệu đầu vào.</p>
+    <p>The function <c>np.sqrt()</c> accepts exactly one input.</p>
     <p>
-      Ta đang truyền cho nó nhiều hơn một dữ liệu đầu vào, nên hàm trả lại lỗi.
+      We are giving it more than one inputs, so an error appears.
     </p>
   </investigation>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy 
+      import numpy as np # Use library Numpy 
 
       print(np.sqrt("Hello World!"))
     </input>
@@ -186,15 +191,18 @@ See the file COPYING for copying conditions.
   </problem>
   <investigation>
     <p></p>
+    <!--  -->
+    <!-- Also, du lieu dau vao -> dau vao? -->
     <p>
-      Dữ liệu đầu vào của <c>np.sqrt()</c> phải là số.</p>
+      The input of <c>np.sqrt()</c> must be numeric.
+    </p>
     <p>
-      Ta đang truyền cho nó kiểu <c>str</c>, nên hàm trả lại lỗi.
+      We are calling it with a string, so it returns an error.
     </p>
   </investigation>
 
   <p>
-    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Để sử dụng hàm này, ta phải tuân theo cú pháp gọi hàm thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. <c>upper()</c> trả lại một chuỗi mới với mọi ký tự đều được viết hoa.
+    Our final example is <c>upper()</c>, which follows the second syntax for calling a function. In this case, <q>input 1</q> must be a string. And the function returns a new string with every character capitalized.
   </p>
 
   <sage language="python">
@@ -210,11 +218,12 @@ See the file COPYING for copying conditions.
     </pre>
   </problem>
   <investigation>
-    <p>Hàm <c>upper()</c> trả lại chuỗi ký tự đầu vào sau khi đã được viết hoa.</p>
+    <p>The function <c>upper()</c> returns a new capitalized string.</p>
   </investigation>
  
   <p>
     Đây là một ví dụ có lỗi.
+    The following example produces an error:
   </p>
 
   <sage language="python">
@@ -236,10 +245,10 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Hàm <c>upper()</c> chỉ nhận duy nhất một dữ liệu đầu vào có kiểu <c>str</c>.
+      The function <c>upper()</c> accepts exactly one input of type <c>str</c>.
     </p>
     <p>
-      Dịch nôm na miêu tả của lỗi, ta được <q>int không có thuộc tính upper</q>.
+      We can understand the error's description as <q>int does not have the function upper</q>.
     </p>
   </investigation>
 

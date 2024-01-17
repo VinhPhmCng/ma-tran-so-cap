@@ -81,7 +81,7 @@ See the file COPYING for copying conditions.
     <sage language="python">
       <input>
         # Trong Numpy (Python)
-        import numpy as np # Su dung thu vien Numpy
+        import numpy as np # Use library Numpy
         
         a = np.matrix([
             [1],

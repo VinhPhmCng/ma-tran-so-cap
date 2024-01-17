@@ -13,9 +13,9 @@ See the file COPYING for copying conditions.
 <!-- solutions in the next. Then there is an appendix -->
 <!-- with all notation generated, and finally the index. -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
-  <title>Hậu Đề</title>
+  <title>Appendices</title>
 
-  <xi:include href="appendix-lap-trinh-co-ban/appendix-lap-trinh-co-ban.ptx"/>
+  <xi:include href="appendix-lap-trinh-co-ban/appendix-basic-programming.ptx"/>
   <xi:include href="appendix-lap-trinh-mo-rong/appendix-lap-trinh-mo-rong.ptx"/>
 
   <solutions divisional="hint"> <title>Selected Hints</title> </solutions>
