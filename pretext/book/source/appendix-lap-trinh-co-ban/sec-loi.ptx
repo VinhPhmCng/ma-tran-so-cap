@@ -37,12 +37,12 @@ See the file COPYING for copying conditions.
       </li>
       <li>
         <p>
-          Kiểu lỗi
+          Kiểu của lỗi
         </p>
       </li>
       <li>
         <p>
-          Miêu tả lỗi
+          Miêu tả của lỗi
         </p>
       </li>
       <li>
@@ -51,7 +51,7 @@ See the file COPYING for copying conditions.
         </p>
       </li>
     </ul>
-    Dưới đây là một vài ví dụ từ các phần trước.
+    Dưới đây là một vài ví dụ từ các phần trước:
   </p>
 
   <sage>
@@ -143,37 +143,37 @@ See the file COPYING for copying conditions.
     <title>Cách Sửa Lỗi</title>
 
     <p>
-      Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó. Không vấn đề gì, càng ngày kinh nghiệm của họ càng tăng, và khả năng giải quyết lỗi của họ sẽ ngày càng nhanh nhẹn và hiệu quả.
+      Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó. Nhưng một điều chắc chắn là kinh nghiệm của họ ngày càng tăng, và khả năng giải quyết lỗi sẽ ngày càng nhanh nhẹn và hiệu quả.
     </p>
 
     <p>
-      Hiện tượng trên là hoàn toàn bình thường. Vậy nên, dưới đây tôi sẽ chỉ cho bạn một vài <em>kinh nghiệm</em> trong việc sửa lỗi. Khi gặp bất kỳ lỗi nào, ta có thể lần lượt đi qua các bước sau.
+      Tiếp đến là một vài những kinh nghiệm cá nhân của tôi khi sửa lỗi. Bạn có thể thử các cách tiếp cận sau:
 
       <ol>
         <li>
           <p>
-            <term>Đọc hiểu lỗi</term><mdash />Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu, ta có thể nhanh chóng sửa lỗi. Nếu cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.
+            <term>Sửa lỗi</term><mdash />Trong trường hợp ta gặp lỗi dễ hiểu, ta chỉ việc sửa nó. Nếu không, ta chuyển sang bước tiếp theo.
           </p>
         </li>
         <li>
           <p>
-            <term>Tra trên mạng</term><mdash />Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi trong terminal.
+            <term>Tra trên mạng</term><mdash />Ta tra cứu lỗi trên mạng bằng cách sao chép và dán miêu tả của nó lên Google.
           </p>
 
           <note>
             <p>
-              Bạn nên kèm theo tên ngôn ngữ lập trình bạn đang sử dụng làm từ khóa để tăng hiệu quả. Ví dụ như <q>python unterminated string literal...</q>.
+              Bạn nên kèm theo tên ngôn ngữ lập trình đang sử dụng làm từ khóa để tăng hiệu quả. Ví dụ như <q>python unterminated string literal...</q>.
             </p>
           </note>
 
           <remark>
             <p>
-              Bạn có thể tham khảo tài liệu tiếng Việt, nhưng nếu bạn biết Tiếng Anh thì lượng kiến thức và kinh nghiệm mà bạn có thể học hỏi sẽ tăng lên rất nhiều.
+              Bạn có thể tham khảo tài liệu bằng tiếng Việt hoặc bất cứ ngôn ngữ nào bạn muốn. Nhưng thông thường thì các tài liệu tiếng Anh có độ có sẵn và tính cập nhật cao nhất. 
             </p>
           </remark>
 
           <p>
-            Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải, tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <term>Stack Overflow</term>, <term>Github</term>, <term>Stack Exchange</term>, <term>Reddit</term>, v.v. 
+            Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải, tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <term>Stack Overflow</term>, <term>Github</term>, <term>Stack Exchange</term>, <term>Reddit</term>. 
           </p>
           <p>
             Đến đây, nếu lỗi vẫn tồn tại, hoặc nó chuyển thành một loại lỗi khác, ta có thể lặp lại quá trình, hoặc chuyển qua bước 3.
@@ -186,12 +186,12 @@ See the file COPYING for copying conditions.
         </li>
         <li>
           <p>
-            <term>Sử dụng trí tuệ nhân tạo</term><mdash />Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>, v.v. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
+            <term>Sử dụng trí tuệ nhân tạo (AI)</term><mdash />Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
           </p>
         </li>
         <li>
           <p>
-            <term>Đăng bài về lỗi</term><mdash />Đây là bước cuối cùng, khi mọi phương pháp trên đều đã thất bại. Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải. 
+            <term>Đăng bài về lỗi</term><mdash />Khi mọi phương pháp trên đều đã thất bại, thì có lẽ bạn nên tìm kiếm sự giúp đỡ trực tiếp từ mọi người. Bạn có thể hỏi những lập trình viên mình biết, hoặc lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải. 
           </p>
           <p>
             Hãy chắc chắn rằng bạn tham khảo những bài viết về <term>quy tắc ứng xử</term> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.

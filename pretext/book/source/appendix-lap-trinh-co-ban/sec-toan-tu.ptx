@@ -25,7 +25,10 @@ See the file COPYING for copying conditions.
   <definition xml:id="def-toan-tu">
     <statement>
       <p>
-        <term>Toán tử</term> miêu tả tương tác giữa các dữ liệu.
+        Trong lập trình, một <term>toán tử</term> là ký tự miêu tả phép gán, phép toán, phép quan hệ, hoặc phép logic.
+      </p>
+      <p>
+        Nói cách khác, một toán tử miêu tả tương tác giữa các dữ liệu.
       </p>
     </statement>
   </definition>
@@ -38,7 +41,7 @@ See the file COPYING for copying conditions.
     <title>Toán Tử Số Học</title>
 
     <p>
-      Bốn toán tử số học cơ bản.
+      Bốn toán tử số học cơ bản nhất là:
     </p>
 
     <sage language="python">
@@ -48,7 +51,7 @@ See the file COPYING for copying conditions.
         print(5 * 3) # Nhan
         print(5 / 3) # Chia
 
-        # Ta cung co the cong hai chuoi
+        # Noi chuoi (Concatenation)
         print("chuoi 1 " + "chuoi 2")
       </input>
     </sage>
@@ -72,7 +75,7 @@ See the file COPYING for copying conditions.
     </investigation>
     
     <p>
-      Ta cũng có một vài toán tử khác ít được dùng hơn.
+      Ta cũng có một vài toán tử khác ít được dùng hơn như:
     </p>
 
     <sage language="python">
@@ -109,16 +112,10 @@ See the file COPYING for copying conditions.
       Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
     </p>
 
-    <definition xml:id="def-toan-tu-gan">
+    <definition xml:id="def-tt-gan">
       <statement>
         <p>
           <term>Toán tử gán</term> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.
-        </p>
-        <p>
-          Việc sử dụng toán tử <c>=</c> để tạo ra một biến mới được gọi là <term>khai báo</term>.
-        </p>
-        <p>
-          Việc sử dụng toán tử <c>=</c> để cập nhật giá trị của một biến đã tồn tại được gọi là <term>gán</term>.
         </p>
         <p>
           Giá trị của một biến thay đổi <em>khi và chỉ khi</em> ta sử dụng toán tử gán.
@@ -126,7 +123,13 @@ See the file COPYING for copying conditions.
       </statement>
     </definition>
 
-    <p>Dưới đây là ví dụ.</p>
+    <note>
+      <p>
+        Trong lập trình, toán tử gán <c>=</c> không bao giờ mang nghĩa của đẳng thức.
+      </p>
+    </note>
+
+    <p>Dưới đây là ví dụ:</p>
 
     <sage language="python">
       <input>
@@ -269,31 +272,28 @@ See the file COPYING for copying conditions.
         <li>
           <title><c>x and y</c></title>
           <p>
-            Trả lại <c>True</c> nếu cả x và y đều bằng <c>True</c>
+            Trả lại <c>True</c> nếu cả hai biểu thức đều bằng <c>True</c>
           </p>
           <p>
-            Trả lại <c>False</c> nếu ít nhất một trong hai biến bằng <c>False</c>
+            Trả lại <c>False</c> nếu ít nhất một trong hai biểu thức bằng <c>False</c>
           </p>
         </li>
         <li>
           <title><c>x or y</c></title>
           <p>
-            Trả lại <c>True</c> nếu ít nhất một trong hai biến bằng <c>True</c>
+            Trả lại <c>True</c> nếu ít nhất một trong hai biểu thức bằng <c>True</c>
           </p>
           <p>
-            Trả lại <c>False</c> nếu cả x và y đều bằng <c>False</c>
+            Trả lại <c>False</c> nếu cả hai biểu thức đều bằng <c>False</c>
           </p>
         </li>
         <li>
           <title><c>not x</c></title>
           <p>
-            Đảo ngược boolean
+            Đảo ngược Boolean
           </p>
           <p>
-            Trả lại <c>True</c> nếu x bằng <c>False</c>
-          </p>
-          <p>
-            Trả lại <c>False</c> nếu x bằng <c>True</c>
+            Trả lại <c>True</c> nếu x bằng <c>False</c> và ngược lại.
           </p>
         </li>
       </dl>

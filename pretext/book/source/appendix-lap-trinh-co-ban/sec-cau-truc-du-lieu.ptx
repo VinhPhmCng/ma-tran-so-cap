@@ -40,7 +40,7 @@ See the file COPYING for copying conditions.
   <definition xml:id="def-ctdl">
     <statement>
       <p>
-        <term>Cấu trúc dữ liệu</term> là những dữ liệu có khả năng chứa cùng một lúc nhiều dữ liệu khác.
+        <term>Cấu trúc dữ liệu</term> là dữ liệu có khả năng chứa cùng một lúc nhiều dữ liệu khác.
       </p>
       <p>
         Các dữ liệu <q>con</q> của cấu trúc dữ liệu được gọi là <term>phần tử</term>.
@@ -52,7 +52,7 @@ See the file COPYING for copying conditions.
   </definition>
   
   <p>
-    Dưới đây là một phiên bản khác của chương trình trên.
+    Dưới đây là một phiên bản khác của chương trình trên:
   </p>
   
   <program language="python">
@@ -93,7 +93,7 @@ See the file COPYING for copying conditions.
     </definition>
 
     <p>
-      Dưới đây là ví dụ.
+      Dưới đây là ví dụ:
     </p>
 
     <sage language="python">
@@ -112,7 +112,7 @@ See the file COPYING for copying conditions.
     <investigation>
       <p></p>
       <p>
-        Ta khai báo một mảng có 3 phần tử, và chúng đều thuộc kiểu <c>int</c>.
+        Ta khai báo một mảng có 3 phần tử là những số nguyên.
       </p>
       <p>
         Lệnh <c>type()</c> trả lại tên của kiểu dữ liệu là <c>numpy.ndarray</c>, có thể hiểu là <q>array của Numpy</q>.
@@ -146,7 +146,7 @@ See the file COPYING for copying conditions.
         Mảng <c>arr1</c> nhận ra phần tử <c>2.5</c> là số thập phân nên nó tự động chuyển đổi kiểu dữ liệu của các phần tử số nguyên còn lại thành <c>float</c>.
       </p>
       <p>
-        Tương tự, mảng <c>arr2</c> được khai báo với các giá trị gồm chuỗi ký tự và số nguyên, nên nó tự chuyển đổi tất cả các phần tử thành kiểu <c>str</c>.
+        Tương tự, mảng <c>arr2</c> tự chuyển đổi tất cả các phần tử thành kiểu <c>str</c>.
       </p>
     </investigation>
 
@@ -169,7 +169,7 @@ See the file COPYING for copying conditions.
       </statement>
     </definition>
 
-    <p>Dưới đây là ví dụ</p>
+    <p>Dưới đây là ví dụ:</p>
 
     <sage language="python">
       <input>
@@ -196,7 +196,7 @@ See the file COPYING for copying conditions.
     </investigation>
     
     <p>
-      Ta cũng có thể khai báo ma trận một cách dễ nhìn hơn như sau.
+      Ta cũng có thể khai báo ma trận một cách dễ nhìn hơn như sau:
     </p>
 
     <sage language="python">

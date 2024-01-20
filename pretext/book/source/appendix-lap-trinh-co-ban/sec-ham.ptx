@@ -19,7 +19,7 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>Hàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
+    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>hàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
   </p>
 
   <p>
@@ -45,7 +45,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    <term>Hàm</term> trong lập trình cũng được thiết kế tương tự như vậy.
+    Đó cũng là cốt lõi của <term>hàm</term> trong lập trình.
   </p>
 
   <definition xml:id="def-ham">
@@ -54,10 +54,10 @@ See the file COPYING for copying conditions.
         <term>Hàm</term> là một đoạn code có thể tái sử dụng được dùng để thực hiện một tác vụ nào đó.
       </p>
       <p>
-        Hàm có thể không nhận hoặc nhận một hay nhiều hơn dữ liệu <term>đầu vào</term>.
+        Hàm có thể nhận không, một, hay nhiều hơn dữ liệu <term>đầu vào</term>, còn được gọi là <term>tham số</term>.
       </p>
       <p>
-        Hàm có thể không trả lại hoặc trả lại một hay nhiều hơn dữ liệu <term>đầu ra</term>.
+        Hàm có thể trả lại không, một, hay nhiều hơn dữ liệu <term>đầu ra</term>, còn được gọi là <term>giá trị trả lại</term>.
       </p>
       <p>
         Thuật ngữ cho việc tạo ra một hàm mới là <term>khai báo hàm</term>.
@@ -75,7 +75,7 @@ See the file COPYING for copying conditions.
   <technology>
     <title>Gọi hàm</title>
     <p>
-      <em>Tùy vào từng hàm</em>, ta có hai cách: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
+      <em>Tùy vào cách một hàm được khai báo</em>, ta có hai cách để gọi nó: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
     </p>
   </technology>
   
@@ -117,7 +117,7 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Một ví dụ nữa là hàm <c>np.sqrt()</c> của Numpy. Nó có nhiệm vụ tính toán và trả lại căn bậc hai của dữ liệu đầu vào.
+    Một ví dụ nữa là hàm <c>np.sqrt()</c> của Numpy. Nó chấp nhận duy nhất một đầu vào, rồi tính toán và trả lại căn bậc hai.
   </p>
 
   <sage language="python">
@@ -134,12 +134,12 @@ See the file COPYING for copying conditions.
   </problem>
   <investigation>
     <p>
-      Hàm <c>np.sqrt()</c> nhận một giá trị đầu vào và trả lại căn bậc hai của nó.
+      Hàm <c>np.sqrt()</c> nhận một giá trị đầu vào và trả lại căn bậc hai.
     </p>
   </investigation>
   
   <p>
-    Nhưng hàm <c>np.sqrt()</c> có nhiều yêu cầu hơn <c>print()</c>. Nó chỉ nhận <em>duy nhất một</em> giá trị đầu vào, và giá trị đó phải là <em>số</em>. Hai ví dụ dưới đây sẽ xuất hiện lỗi.
+    Vậy, hàm <c>np.sqrt()</c> có nhiều yêu cầu hơn <c>print()</c>. Bạn phải gọi hàm này với duy nhất một giá trị đầu vào, và giá trị đó phải là <em>số</em>. Hai ví dụ dưới đây sẽ xuất hiện lỗi:
   </p>
 
   <sage language="python">
@@ -163,7 +163,7 @@ See the file COPYING for copying conditions.
     <p></p>
     <p>Hàm <c>np.sqrt()</c> chỉ nhận duy nhất một dữ liệu đầu vào.</p>
     <p>
-      Ta đang truyền cho nó nhiều hơn một dữ liệu đầu vào, nên hàm trả lại lỗi.
+      Ta đang truyền cho nó nhiều hơn một đầu vào, nên hàm trả lại lỗi.
     </p>
   </investigation>
 
@@ -187,14 +187,14 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Dữ liệu đầu vào của <c>np.sqrt()</c> phải là số.</p>
+      Đầu vào của <c>np.sqrt()</c> phải là số.</p>
     <p>
       Ta đang truyền cho nó kiểu <c>str</c>, nên hàm trả lại lỗi.
     </p>
   </investigation>
 
   <p>
-    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Để sử dụng hàm này, ta phải tuân theo cú pháp gọi hàm thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. <c>upper()</c> trả lại một chuỗi mới với mọi ký tự đều được viết hoa.
+    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Nó tuân theo cú pháp gọi hàm thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. Và nó trả lại một chuỗi mới với mọi ký tự đều được viết hoa.
   </p>
 
   <sage language="python">
@@ -214,7 +214,7 @@ See the file COPYING for copying conditions.
   </investigation>
  
   <p>
-    Đây là một ví dụ có lỗi.
+    Đây là một ví dụ có lỗi:
   </p>
 
   <sage language="python">

@@ -23,7 +23,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản <term>online</term> của quyển sách) sẽ chính là môi trường code như dưới đây.
+    Trong bản online của quyển sách này, trình soạn thảo và biên dịch của chúng ta sẽ chính là môi trường code như dưới đây.
   </p>
 
   <sage language="python">
@@ -46,7 +46,7 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Môi trường trên có 3 thành phần chính:
+    Môi trường trên có những thành phần sau:
 
     <ol>
       <li>
@@ -66,7 +66,7 @@ See the file COPYING for copying conditions.
       </li>
       <li>
         <p>
-          <term>Output</term>: Nơi hiển thị kết quả <term>tĩnh</term> cho bản cứng hoặc PDF. Nhưng cũng có ích với bản Online, ví dụ như khi thiết bị của bạn không có kết nối mạng nên không thể chạy code.
+          <term>Output</term>: Nơi hiển thị kết quả <term>tĩnh</term>. Được thiết kế cho bản cứng hoặc PDF, nhưng cũng có thể giúp người dùng bản Online, trong trường hợp thiết bị không có kết nối mạng nên không thể chạy code.
         </p>
       </li>
     </ol>
@@ -80,7 +80,7 @@ See the file COPYING for copying conditions.
   </note>
 
   <p>
-    Trong quyển sách này, môi trường lập trình của chúng ta sẽ được hạn chế xuống bốn thành phần đó. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những tính năng cuốn sách này cung cấp.
+    Trong quyển sách này, môi trường lập trình của chúng ta sẽ được hạn chế xuống những thành phần đó. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng.
   </p>
 
   <p>
@@ -154,7 +154,7 @@ See the file COPYING for copying conditions.
     
   <note>
     <p>
-      Vậy, khi bạn chạy một ô code bắt đầu với <c># ...</c> mà xuất hiện lỗi, thì khả năng cao là do bạn chưa chạy những ô code trước nó.
+      Vậy, khi bạn chạy một ô code bắt đầu với <c># ...</c> mà xuất hiện lỗi hoặc kết quả ngoài ý muốn, thì khả năng cao là do bạn chưa chạy những ô code trước nó.
     </p>
   </note>
 

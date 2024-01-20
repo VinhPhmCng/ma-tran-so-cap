@@ -23,7 +23,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Dưới đây là một đoạn code được viết bằng ngôn ngữ lập trình <term>Python</term><mdash />một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Hãy chạy dòng code sau và xem kết quả nhé.
+    Dưới đây là một đoạn code được viết bằng <term>Python</term><mdash />một trong những ngôn ngữ lập trình phổ biến nhất trong những năm gần đây. Hãy chạy dòng code sau và xem kết quả nhé.
   </p>
 
   <sage language="python">
@@ -45,7 +45,7 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Đây là một đoạn code nữa được viết bằng Python. (Một lần nữa, bạn chưa cần phải hiểu đoạn code này.)
+    Đây là một đoạn code nữa được viết bằng Python (Bạn chưa cần phải hiểu đoạn code này nhé.)
   </p>
 
   <program language="python">
@@ -78,7 +78,7 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Tiếp theo, ta có một đoạn code trong ngôn ngữ <term>Assembly</term>. Khi chạy, ta cũng thu được dòng chữ "Hello World!" như ô code ở trên cùng.
+    Tiếp theo, ta có một đoạn code trong ngôn ngữ <term>Assembly</term>. Khi chạy, ta cũng thu được dòng chữ <q>Hello World!</q>.
   </p>
 
   <program language="assy">
@@ -96,7 +96,7 @@ See the file COPYING for copying conditions.
   </program>
 
   <p>
-    Đây gần như là ngôn ngữ máy tính. Assembly cần đến 7 dòng code (không tính dòng trống) để làm điều mà Python có thể thực hiện trong duy nhất 1 dòng.
+    Như bạn có thể thấy, đây gần như là ngôn ngữ máy tính. Assembly cần đến 7 dòng code để làm điều mà Python có thể thực hiện trong duy nhất 1 dòng.
   </p>
 
   <definition xml:id="def-nnlt-bac-thap">
@@ -129,7 +129,7 @@ See the file COPYING for copying conditions.
       Trong quyển sách này, những ví dụ lập trình sẽ được viết bằng những ngôn ngữ bậc cao, phần lớn là <term>Python</term> và <term>SageMath</term>, giúp bạn dễ dàng theo dõi và thử nghiệm.
     </p>
     <p>
-      Vì vậy, các khái niệm tiếp theo sẽ được trình bày với cú pháp của Python và SageMath. Mỗi ngôn ngữ đều có một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó. Vì Python là một ngôn ngữ bậc cao và đa mục đích, cú pháp của nó rất thân thiện với người mới bắt đầu.
+      Mỗi ngôn ngữ đều có một tập hợp cú pháp riêng, được phát triển dựa trên mục đích của nó. Python là một ngôn ngữ bậc cao và đa mục đích.
     </p>
   </convention>
 
@@ -148,7 +148,7 @@ See the file COPYING for copying conditions.
       </li>
       <li>
         <p>
-          <term>SageMath</term> là một ngôn ngữ lập trình bậc cao, được xây dựng dựa trên Python, với mục đích quan trọng nhất là toán học, như cái tên nói lên.
+          <term>SageMath</term> là một ngôn ngữ lập trình bậc cao, được xây dựng dựa trên Numpy và những thư viện toán học khác.
         </p>
       </li>
     </ul>

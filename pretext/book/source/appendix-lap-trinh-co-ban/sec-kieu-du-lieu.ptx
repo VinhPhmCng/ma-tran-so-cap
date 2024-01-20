@@ -19,7 +19,7 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Mọi thứ trên thế giới này đều có thể được lưu trữ thành dữ liệu<mdash></mdash>từ số liệu, chữ cái đến thông tin về một học sinh hay một mẫu xe ô tô.
+    Hầu hết mọi thứ trên thế giới này đều có thể được lưu trữ thành dữ liệu<mdash></mdash>từ số liệu, chữ cái đến thông tin về một học sinh hay một mẫu xe ô tô.
   </p>
 
   <definition xml:id="def-kieu-du-lieu">
@@ -66,7 +66,7 @@ See the file COPYING for copying conditions.
 
   <note>
     <p>
-      Trong Python và SageMath, khi ta khai báo biến hay cập nhật biến, nó sẽ dựa vào giá trị đó mà <em>tự động quyết định</em> kiểu dữ liệu của mình. Dưới đây là ví dụ.
+      Trong Python và SageMath, khi ta khai báo biến hay cập nhật biến, nó sẽ dựa vào giá trị đó mà <em>tự động quyết định</em> kiểu dữ liệu của mình. Dưới đây là ví dụ:
     </p>
   </note>
 
@@ -99,7 +99,7 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (hoặc ngoặc kép đơn), nó sẽ có kiểu <c>str</c>, mặc dù nó cũng chứa con số <c>5</c>. Từ đó, ta có định nghĩa sau.
+    Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (hoặc ngoặc kép đơn), nó chắc chắn sẽ có kiểu <c>str</c>. Từ đó, ta có định nghĩa sau.
   </p>
 
   <definition xml:id="def-kdl-cu-phap">
@@ -110,7 +110,7 @@ See the file COPYING for copying conditions.
     </statement>
   </definition>
   
-  <p>Ví dụ giá trị của các kiểu dữ liệu chính.</p>
+  <p>Ví dụ giá trị của các kiểu dữ liệu chính:</p>
 
   <sage language="python">
     <input>
@@ -156,13 +156,13 @@ See the file COPYING for copying conditions.
         Kiểu dữ liệu quyết định <term>tương tác</term> có thể giữa các dữ liệu với nhau.
       </p>
       <p>
-        Có rất nhiều loại tương tác. Ví dụ như các phép toán cộng, trừ, nhân, chia, v.v., là một vài tương tác có thể xảy ra giữa hai hay nhiều dữ liệu.
+        Nói cách khác, có rất nhiều loại tương tác có thể xảy ra giữa các dữ liêu (phép toán, phép nối chuỗi, v.v.), và chúng thay đổi dựa vào kiểu dữ liệu.
       </p>
     </statement>
   </definition>
 
   <p>
-    Dưới đây là ví dụ.
+    Dưới đây là ví dụ:
   </p>
 
   <sage language="python">
@@ -191,7 +191,7 @@ See the file COPYING for copying conditions.
       Ta biết cả <c>a</c> và <c>b</c> đều có kiểu <c>int</c>. Vì vậy, ta được phép cộng hai dữ liệu ấy với nhau.
     </p>
     <p>
-      Tương tự, <c>c</c> và <c>d</c> là kiểu <c>float</c>, vì vậy phép cộng là được phép.
+      Tương tự, <c>c</c> và <c>d</c> là kiểu <c>float</c>, vì vậy phép cộng là hợp lệ.
     </p>
     <p>
       Dòng cuối cùng thú vị hơn một chút, vì ta vẫn có thể thực hiện phép cộng giữa <c>int</c> và <c>float</c>.
@@ -230,14 +230,8 @@ See the file COPYING for copying conditions.
     Nhưng ta hoàn toàn có thể cộng các <c>str</c> với nhau. Việc này ghép chúng lại thành một chuỗi mới.
   </p>  
 
-  <note>
-    <p>
-      Giá trị của một chuỗi ký tự là mọi ký tự ở giữa hai dấu ngoặc kép, kể cả các ký tự khoảng trắng.
-    </p>
-  </note>
-
   <p>
-    Dưới đây là ví dụ.
+    Dưới đây là ví dụ:
   </p>
 
   <sage language="python">
@@ -262,7 +256,7 @@ See the file COPYING for copying conditions.
       <c>s1 + s2</c> là một tương tác hợp lệ và sẽ ghép chúng lại thành một chuỗi mới. Tương tự với <c>s1 + s3</c>.
     </p>
     <p>
-      Ta thấy chuỗi <c>s3</c> khác với chuỗi <c>s1</c> ở chỗ nó có một ký tự khoảng trắng (space) ở trước <q>Lan</q>. Sự khác biệt này được làm rõ qua phép cộng chuỗi.
+      Ta thấy chuỗi <c>s3</c> khác với chuỗi <c>s1</c> ở chỗ nó có một ký tự khoảng trắng (space) ở đầu. Sự khác biệt này được làm rõ qua phép cộng chuỗi.
     </p>
   </investigation>
   

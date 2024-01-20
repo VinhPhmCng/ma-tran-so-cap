@@ -21,10 +21,10 @@ See the file COPYING for copying conditions.
   <definition xml:id="def-thuoc-tinh">
     <statement>
       <p>
-        <term>Thuộc tính</term> là biến chứa <em>thông tin miêu tả</em> của một dữ liệu to hơn. Một cách để dễ hiểu đối tượng này là cụm từ <q>biến của biến</q>.
+        <term>Thuộc tính</term> là biến có sẵn chứa <em>thông tin miêu tả</em> của một dữ liệu khác.
       </p>
       <p>
-        Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được <em>khai báo sẵn</em>.
+        Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được khai báo sẵn.
       </p>
       <p>
         Các thuộc tính của một dữ liệu sẽ <em>tự động cập nhật</em> khi dữ liệu đó được cập nhật.
@@ -39,7 +39,7 @@ See the file COPYING for copying conditions.
     </p>
   </technology>
 
-  <p>Dưới đây là ví dụ.</p>
+  <p>Dưới đây là ví dụ:</p>
 
   <sage language="python">
     <input>
@@ -70,7 +70,7 @@ See the file COPYING for copying conditions.
     </p>
   </investigation>
 
-  <p>
+<!--   <p>
     Bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>.
   </p>
 
@@ -96,7 +96,7 @@ See the file COPYING for copying conditions.
     <p>
       Dù ma trận trên không được chứa bởi biến nào, ta vẫn có thể truy cập thuộc tính <c>size</c> của nó.
     </p>
-  </investigation>
+  </investigation> -->
 
   <p>
     Nhưng kiểu dữ liệu <c>int</c> không có các thuộc tính trên.
