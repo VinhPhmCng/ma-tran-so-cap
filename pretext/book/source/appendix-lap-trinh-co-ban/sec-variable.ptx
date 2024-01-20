@@ -23,20 +23,17 @@ See the file COPYING for copying conditions.
   </p>
 
   <p>
-    Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như: <me>f(x) = x^2 + 2x + 1</me> Ở đây, <q>biến</q> có nghĩa là chưa xác định, hay nói cách khác <m>x</m> là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế <m>x</m> với những con số xác định.
     In mathematics, we often see the variable <m>x</m> in functions such as: <me>f(x) = x^2 + 2x + 1</me> Here <q>variable</q> means can be changed and is not fixed.
   </p>
 
-  <definition xml:id="def-bien">
+  <definition xml:id="def-variable">
     <statement>
       <p>
-        Trong lập trình, <term>biến</term> được dùng để lưu trữ một hay nhiều dữ liệu <term>xác định</term>.
-        In programming, <term>variables</term> are used to store data. (And they have a name?)
+        In programming, <term>variables</term> are used to store data.
       </p>
 
       <p>
-        Dữ liệu được chứa trong biến còn được gọi là <term>giá trị</term> của biến, và nó <em>thường xuyên được cập nhật</em> trong quá trình chương trình chạy.
-        The data stored inside a variable is called <term>value</term>, and it is <em>often updated</em> as new data needs to be stored.
+        The data stored inside a variable is called <term>value</term>, and it is <em>often updated</em> as new data need to be stored.
       </p>
 
       <p>
@@ -44,7 +41,7 @@ See the file COPYING for copying conditions.
       </p>
       
       <p>
-        To <term>assign</term> data to a variable is to <term>update</term> an existing variable with a that data.
+        To <term>assign</term> data to an existing variable is to <term>update</term> its value to that data.
       </p>
     </statement>
   </definition>
@@ -54,9 +51,8 @@ See the file COPYING for copying conditions.
     <p>
       To declare or assign values to a variable, we use the equal sign <c>=</c>: <me>{\color{blue} \text{name}} = \text{value}</me>.
     </p>
-    <!-- ADD THIS IN VN -->
     <p>
-      Therefore, the equal sign in programming should <em>never</em> be used for equality.
+      Therefore, the equal sign <c>=</c> in programming should <em>never</em> be used for equality.
     </p>
   </technology>
   
@@ -99,23 +95,15 @@ See the file COPYING for copying conditions.
       We then use the command <c>print()</c> to access and display their current values in the terminal.
     </p>
     <p>
-      Sau đó, ta gán cho <c>a</c> một giá trị mới, hay nói cách khác là cập nhật giá trị của <c>a</c>, thành <c>2</c>, nhưng ta không động đến <c>b</c>.
       Next, we assign <c>a</c> a new value of <c>2</c>, in other words update its value to <c>2</c>, but we do not touch <c>b</c>.
     </p>
 
     <p>
-      <alert>Chú ý</alert>: Nếu đến bước này bạn nghĩ rằng cả <c>a</c> và <c>b</c> đều có giá trị là <c>2</c>, thì bạn vẫn chưa thực sự hiểu hai khái niệm <term>khai báo</term> và <term>gán</term>, cũng như <term>tính xác định</term> của biến.
-      <alert>Note</alert>: If at this step you think that the values of <c>a</c> and <c>b</c> should be <c>2</c>, then you are still associating <c>=</c> with equality, which is not the case for programming.
+      <alert>Note</alert>: If at this step you think that the values of <c>a</c> and <c>b</c> should both be <c>2</c>, then you are still associating <c>=</c> with equality, which is not the case for programming.
     </p>
 
-<!--     <p>
-      A variable in programming differs from that in mathematics in that it is changed <em>khi và chỉ khi</em> ta gán cho nó một giá trị mới, sử dụng dấu <c>=</c>. (Bạn có thể tham khảo <xref ref="def-toan-tu-gan"/>.)
-      Biến trong lập trình khác với biến trong toán học ở chỗ nó thay đổi <em>khi và chỉ khi</em> ta gán cho nó một giá trị mới, sử dụng dấu <c>=</c>. (Bạn có thể tham khảo <xref ref="def-toan-tu-gan"/>.)
-    </p> -->
-
     <p>
-      Vì vậy, khi dùng <c>print()</c> để hiển thị giá trị của 2 biến ra terminal, ta nhận được <c>2</c> và <c>1</c>, chứ không phải <c>2</c> và <c>2</c>.
-      Now if we use <c>print()</c>, the outcomes are <c>2</c> and <c>1</c> and not <c>2</c> and <c>2</c>.
+      Now when we use <c>print()</c>, the outcomes are <c>2</c> and <c>1</c>, not <c>2</c> and <c>2</c>.
     </p>
   </investigation>
 
@@ -125,31 +113,10 @@ See the file COPYING for copying conditions.
 
   <insight>
     <p>
-      Ví dụ trên về biến dù đơn giản nhưng đã làm rối não rất nhiều người mới bắt đầu, đặc biệt là những người có bộ não toán học. Vì họ thấy <c>b = a</c> nên họ nghĩ đây là một biểu thức mang tính bao quát và luôn đúng trong chương trình. Nhưng lối suy nghĩ đó là <em>sai</em> đối với lập trình.
-      The above example, though simple, has confused many beginners, especially those with a mathematical brain. Because they see <c>b = a</c>, they think it is an equality that holds true throughout the program's lifecycle. That mindset does <em>not</em> apply to programming, where lines of code are run one after another.
-    </p>
-
-    <p>
-      Và nếu bạn đã thấu hiểu được ví dụ trên, thì xin chúc mừng<mdash></mdash>bạn đã vượt qua con boss đầu tiên! <!--  -->
-      And if you have grasped the example, then congratulations<mdash></mdash>you have conquered the first boss!
+      The above example, though simple, has confused many beginners, especially those with a mathematical brain. Because they see <c>b = a</c>, they think it is an equality that holds true throughout the program's lifecycle. That mindset does <em>not</em> apply to programming.
     </p>
   </insight>
 
-  <!-- "Free data" doesnt have a name in ENGLISH -->
-  <!-- Remove the definition? -->
-  <!-- Du lieu tu do (du lieu khong duoc chua trong bien) blah blah -->
-  <p>
-    Now we have a new simple definition.
-  </p>
-  <definition xml:id="def-du-lieu-tu-do">
-    <statement>
-      <p>
-        Dữ liệu không được chứa trong biến được được gọi là <term>dữ liệu tự do</term>.
-        Data that is not stored in a variable is called <term></term>.
-      </p>
-    </statement>
-  </definition>
-  
   <note>
     <title>Naming a variable</title>
     

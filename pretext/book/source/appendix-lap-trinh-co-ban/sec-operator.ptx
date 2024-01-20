@@ -18,29 +18,25 @@ See the file COPYING for copying conditions.
     </ol>
   </objectives>
 
-  <p>
-    In programming, an <term>operator</term> is a symbol that describes a specific assignment or a mathematical, relational, or logical operation.
-  </p>
-
-  <definition xml:id="def-toan-tu">
+  <definition xml:id="def-operator">
     <statement>
       <p>
-        <term>Operators</term> miêu tả tương tác giữa các dữ liệu.
-        <term>An operator</term> describes an interaction between data.
+        In programming, an <term>operator</term> is a symbol that describes a specific assignment or a mathematical, relational, or logical operation.
+      </p>
+      <p>
+        In other words, an operator describes an interaction between data.
       </p>
     </statement>
   </definition>
   
   <p>
-    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>. Ta cùng tìm hiểu những toán tử cơ bản nhé.
     Previously, the two operators <c>=</c> and <c>+</c> often show up in examples. Let's take a look at the most basic operators.
   </p>
 
-  <subsection xml:id="subsec-tt-so-hoc">
+  <subsection xml:id="subsec-op-arithmetic">
     <title>Arithmetic Operators</title>
 
     <p>
-      Bốn toán tử số học cơ bản.
       The four most basic arithmetic operators are:
     </p>
 
@@ -75,8 +71,7 @@ See the file COPYING for copying conditions.
     </investigation>
     
     <p>
-      Ta cũng có một vài toán tử khác ít được dùng hơn.
-      There are also less popular operators such as:
+      Some less popular operators are:
     </p>
 
     <sage language="python">
@@ -102,33 +97,24 @@ See the file COPYING for copying conditions.
 
     <!-- Translate ref and xml:id too -->
     <p>
-      Và một kiến thức quan trọng bạn phải nhớ là <xref ref="def-kdl-tuong-tac"/>.
-      And you should always keep in mind <xref ref="def-kdl-tuong-tac"/>.
+      And you should always keep in mind <xref ref="def-dtype-interaction"/>.
     </p>
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-gan">
+  <subsection xml:id="subsec-op-assignment">
     <title>Assignment Operators</title>
 
     <p>
-      Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
-      Previously, you've seen <c>=</c> being used frequently. This is the most important <term>assignment operator</term> that you need to know.
+      Previously, you've been shown that <c>=</c> is used frequently. This is the most important <term>assignment operator</term> that you need to know.
     </p>
 
-    <definition xml:id="def-toan-tu-gan">
+    <definition xml:id="def-op-assignment">
       <statement>
         <p>
           An <term>assignment operator</term> is used to declare or update a variable.
         </p>
-<!--         <p>
-          Việc sử dụng toán tử <c>=</c> để tạo ra một biến mới được gọi là <term>khai báo</term>.
-        </p>
         <p>
-          Việc sử dụng toán tử <c>=</c> để cập nhật giá trị của một biến đã tồn tại được gọi là <term>gán</term>. -->
-        </p>
-        <p>
-          Giá trị của một biến thay đổi <em>khi và chỉ khi</em> ta sử dụng toán tử gán.
           The value of a variable changes <em>if and only if</em> an assignment operator is used.
         </p>
       </statement>
@@ -175,7 +161,6 @@ See the file COPYING for copying conditions.
     </investigation>
     
     <p>
-      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em>gọn gàng hơn</em>, ví dụ như:
       Theoretically, <c>=</c> is the only assignment operator you need to know. But we also have others that serve as a short-hand:
     </p>
 
@@ -210,7 +195,7 @@ See the file COPYING for copying conditions.
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-quan-he">
+  <subsection xml:id="subsec-op-relational">
     <title>Relational Operators</title>
 
     <p>
@@ -271,7 +256,7 @@ See the file COPYING for copying conditions.
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-logic">
+  <subsection xml:id="subsec-op-logical">
     <title>Logical Operators</title>
     
     <p>
@@ -284,28 +269,24 @@ See the file COPYING for copying conditions.
         <li>
           <title><c>x and y</c></title>
           <p>
-            Returns <c>True</c> if both statements are ,<c>True</c>
+            Returns <c>True</c> if both statements are <c>True</c>
           </p>
           <p>
-            Trả lại <c>False</c> nếu ít nhất một trong hai biến bằng <c>False</c>
             Returns <c>False</c> if at least one statement is <c>False</c>
           </p>
         </li>
         <li>
           <title><c>x or y</c></title>
           <p>
-            Trả lại <c>True</c> nếu ít nhất một trong hai biến bằng <c>True</c>
             Returns <c>True</c> if at least one statement is <c>True</c>
           </p>
           <p>
-            Trả lại <c>False</c> nếu cả x và y đều bằng <c>False</c>
             Returns <c>False</c> if both statements are <c>False</c>
           </p>
         </li>
         <li>
           <title><c>not x</c></title>
           <p>
-            Đảo ngược boolean
             Reverses the Boolean
           </p>
           <p>

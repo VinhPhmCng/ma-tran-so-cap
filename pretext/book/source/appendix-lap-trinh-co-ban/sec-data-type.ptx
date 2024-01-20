@@ -22,10 +22,10 @@ See the file COPYING for copying conditions.
     Pretty much everything in existence can be stored as data<mdash></mdash>from numbers and letters to information about a student or a car model.
   </p>
 
-  <definition xml:id="def-kieu-du-lieu">
+  <definition xml:id="def-data-type">
     <statement>
       <p>
-        To <term>categorize</term> data, we make use of <term>data types</term>.
+        And to <term>categorize</term> data, we make use of <term>data types</term>.
       </p>
     </statement>
   </definition>
@@ -99,11 +99,10 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (hoặc ngoặc kép đơn), nó sẽ có kiểu <c>str</c>, mặc dù nó cũng chứa con số <c>5</c>. Từ đó, ta có định nghĩa sau.
-    To conclude, <c>a = "5"</c> differs from <c>a = 5</c>. If data is surrounded by (single) quotation marks, it is of type <c>str</c>. From that, we have the following definition:
+    To conclude, <c>a = "5"</c> differs from <c>a = 5</c>. If data is surrounded by (single) quotation marks, then it is of type <c>str</c>. From that, we have the following definition:
   </p>
 
-  <definition xml:id="def-kdl-cu-phap">
+  <definition xml:id="def-dtype-syntax">
     <statement>
       <p>
         Different data types have their own representation when declared, in other words different <term>syntax</term>.
@@ -111,7 +110,6 @@ See the file COPYING for copying conditions.
     </statement>
   </definition>
   
-  <p>Ví dụ giá trị của các kiểu dữ liệu chính.</p>
   <p>Some examples of the main data types:</p>
 
   <sage language="python">
@@ -153,14 +151,13 @@ See the file COPYING for copying conditions.
     Next, we have: 
   </p>
 
-  <definition xml:id="def-kdl-tuong-tac">
+  <definition xml:id="def-dtype-interaction">
     <statement>
       <p>
         Data type determine possible <term>interactions</term> between data.
       </p>
       <p>
-        Có rất nhiều loại tương tác. Ví dụ như các phép toán cộng, trừ, nhân, chia, v.v., là một vài tương tác có thể xảy ra giữa hai hay nhiều dữ liệu.
-        There are many possible interactions such as mathematical calculations or string concatenation.
+        In other words, there are many possible interactions between data (mathematical calculations, string concatenation, <etc></etc>), and what they are depends on the data type.
       </p>
     </statement>
   </definition>
@@ -192,11 +189,10 @@ See the file COPYING for copying conditions.
   <investigation>
     <p></p>
     <p>
-      Ta biết cả <c>a</c> và <c>b</c> đều có kiểu <c>int</c>. Vì vậy, ta được phép cộng hai dữ liệu ấy với nhau.
       We know both <c>a</c> and <c>b</c> are of type <c>int</c>. So, adding them together makes sense and is allowed.
     </p>
     <p>
-      Similarly, <c>c</c> and <c>d</c> are of type <c>float</c>, so addition is allowed.
+      Similarly, <c>c</c> and <c>d</c> are of type <c>float</c>, so addition is valid.
     </p>
     <p>
       The last line is a bit more interesting since we can still perform an addition between <c>int</c> and <c>float</c>.
@@ -204,7 +200,7 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    However, we <em>cannot</em> add <c>int</c> and <c>str</c>. That will result in an <term>error</term>.
+    However, we <em>cannot</em> add <c>int</c> and <c>str</c>, which will result in an <term>error</term>.
   </p>
 
   <sage language="python">
@@ -232,15 +228,8 @@ See the file COPYING for copying conditions.
   </investigation>
 
   <p>
-    Nhưng ta hoàn toàn có thể cộng các <c>str</c> với nhau. Việc này ghép chúng lại thành một chuỗi mới.
     But we can <q>add</q> two or more strings together, which results in a new string that is the concatenation of the component strings.
   </p>  
-
-  <note>
-    <p>
-      The value of a string is all characters in-between the quotation marks, including white-spaces.
-    </p>
-  </note>
 
   <p>
     For example:

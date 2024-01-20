@@ -19,8 +19,7 @@ See the file COPYING for copying conditions.
   </objectives>
   
   <p>
-    Ta lại gặp một khái niệm nữa rất thân thuộc trong toán học<mdash /><term>hHàm</term>. Và nó cũng đóng vai trò thiết yếu trong lập trình.
-    Again we are met with another familiar mathematical concept<mdash /><term>functions</term>, which also plays a big role in programming.
+    Again we are met with a familiar concept in mathematics<mdash /><term>functions</term>, which also plays a big role in programming.
   </p>
 
   <p>
@@ -33,7 +32,6 @@ See the file COPYING for copying conditions.
       <mrow>100^2 + 2 \cdot 100 + 1</mrow>
     </md>
 
-    Ta nhận ra chúng có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
     We realize they are all quadratics; therefore, we can shorten our representation using a function as follows:
 
     <md>
@@ -50,7 +48,7 @@ See the file COPYING for copying conditions.
     That is also the essence of <term>functions</term> in programming.
   </p>
 
-  <definition xml:id="def-ham">
+  <definition xml:id="def-function">
     <statement>
       <p>
         A <term>function</term> is a reusable block of code designed to perform a specific task.
@@ -64,7 +62,7 @@ See the file COPYING for copying conditions.
         A function can return zero, one, or more <term>outputs</term>, which is also called <term>return values</term>.
       </p>
       <p>
-        To <term>declare</term> a new function is to create a new one.
+        To <term>declare</term> a function is to create a new one.
       </p>
       <p>
         To <term>call</term> a function is to use an existing function.
@@ -79,7 +77,6 @@ See the file COPYING for copying conditions.
   <technology>
     <title>Calling a function</title>
     <p>
-      <em>Tùy vào từng hàm</em>, ta có hai cách: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
       <em>Depending on how a function is declared</em>, we have two ways to call it: <me>{\color{blue} \text{function's name}} \, \text{(input 1, input 2, ...)}</me> or <me>\text{input 1.} {\color{blue} \text{function's name}} \, \text{(input 2, input 3, ...)}</me>
     </p>
   </technology>
@@ -144,7 +141,7 @@ See the file COPYING for copying conditions.
   </investigation>
   
   <p>
-    So, <c>np.sqrt()</c> has more specifications than <c>print()</c>. You have to call it with exactly one input, which must be <em>numeric</em>. The following examples will return errors.
+    So, <c>np.sqrt()</c> has more specifications than <c>print()</c>. You have to call it with exactly one input, which must be <em>numeric</em>. The following examples will return errors:
   </p>
 
   <sage language="python">
@@ -191,8 +188,6 @@ See the file COPYING for copying conditions.
   </problem>
   <investigation>
     <p></p>
-    <!--  -->
-    <!-- Also, du lieu dau vao -> dau vao? -->
     <p>
       The input of <c>np.sqrt()</c> must be numeric.
     </p>
@@ -207,14 +202,14 @@ See the file COPYING for copying conditions.
 
   <sage language="python">
     <input>
-      s = "Xin chao!" 
+      s = "Hello friend!" 
 
       print(s.upper())
     </input>
   </sage>
   <problem>
     <pre>
-      XIN CHAO!
+      HELLO FRIEND!
     </pre>
   </problem>
   <investigation>
@@ -222,7 +217,6 @@ See the file COPYING for copying conditions.
   </investigation>
  
   <p>
-    Đây là một ví dụ có lỗi.
     The following example produces an error:
   </p>
 

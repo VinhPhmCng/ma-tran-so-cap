@@ -22,7 +22,7 @@ See the file COPYING for copying conditions.
     When coding, you might want to leave comments. They can be notes, explanations for some algorithm, or your stream of thoughts in the moment. Thus as the code expands and gets more complicated, comments provide you with sufficient context.
   </p>
 
-  <definition xml:id="def-ghi-chu">
+  <definition xml:id="def-comment">
     <statement>
       <p>
         To write a comment in Python or SageMath, use the number sign / hash <c>#</c>.

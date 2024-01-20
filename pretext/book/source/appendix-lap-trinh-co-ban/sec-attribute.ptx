@@ -18,19 +18,16 @@ See the file COPYING for copying conditions.
     </ol>
   </objectives>
   
-  <definition xml:id="def-thuoc-tinh">
+  <definition xml:id="def-attribute">
     <statement>
       <p>
-        <!--  -->
-        <term>Thuộc tính</term> là biến chứa <em>thông tin miêu tả</em> của một dữ liệu khác. Một cách để dễ hiểu đối tượng này là cụm từ <q>biến của biến</q>.
-        An <term>attribute</term> is a variable storing <em>descriptive information</em> regarding another piece of data.
+        An <term>attribute</term> is a built-in variable storing <em>descriptive information</em> regarding another piece of data.
       </p>
       <p>
-        Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được <em>khai báo sẵn</em>.
         Every data type has its own set of built-in attributes.
       </p>
       <p>
-        The attributes of a piece of data <em>automatically update</em> when that data is updated.
+        The attributes of a piece of data are <em>automatically updated</em> when that data is updated.
       </p>
     </statement>
   </definition>
@@ -72,36 +69,6 @@ See the file COPYING for copying conditions.
       <c>mat.shape</c> returns the number of rows and columns of <c>mat</c>.
     </p>
   </investigation>
-
-<!--   <p>
-    Bạn cũng có thể truy cập thuộc tính của một <term>dữ liệu tự do</term>.
-    You can also access the attributes of a piece of data that isn't stored by any variable.
-  </p>
-
-  <sage language="python">
-    <input>
-      import numpy as np # Use library Numpy
-
-      print(
-          np.matrix([
-              [1, 2, 3],
-              [2, 4, 6],
-          ]).size
-      )
-    </input>
-  </sage>
-  <problem>
-    <pre>
-      6
-    </pre>
-  </problem>
-  <investigation>
-    <p></p>
-    <p>
-      Dù ma trận trên không được chứa bởi biến nào, ta vẫn có thể truy cập thuộc tính <c>size</c> của nó.
-      Though the matrix isn't stored by a variable, we can still access its <c>size</c> của nó.
-    </p>
-  </investigation> -->
 
   <p>
     However, the data type <c>int</c> does not have such attributes.

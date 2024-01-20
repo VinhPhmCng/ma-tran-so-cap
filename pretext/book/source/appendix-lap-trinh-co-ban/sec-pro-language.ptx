@@ -65,7 +65,7 @@ See the file COPYING for copying conditions.
     You can easily see that there are <term>keywords</term> such as <c>while</c>, <c>print</c> <c>end</c>, <c>if</c>, and <c>else</c>. This means Python's syntax includes keywords and features that closely resemble the English language.
   </p>
 
-  <definition xml:id="def-nnlt-bac-cao">
+  <definition xml:id="def-prolang-high-level">
     <statement>
       <p>
         Python is called a <term>high-level</term> programming language because its syntax closely resembles human languages.
@@ -99,7 +99,7 @@ See the file COPYING for copying conditions.
     As you can see, this is almost fully computer language. Assembly needs 7 lines of code to do what Python can do with one.
   </p>
 
-  <definition xml:id="def-nnlt-bac-thap">
+  <definition xml:id="def-prolang-low-level">
     <statement>
       <p>
         So, Assembly is called a <term>low-level</term> programming language, since its syntax is closer to computer languages.
