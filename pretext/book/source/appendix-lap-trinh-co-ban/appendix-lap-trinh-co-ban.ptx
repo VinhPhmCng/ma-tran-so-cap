@@ -12,6 +12,9 @@ See the file COPYING for copying conditions.
 
   <introduction>
     <p>
+      Test.
+    </p>
+    <p>
       Trong quyển sách này, các đoạn code mang tính tương tác là giúp giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận. Một phần lí do cũng là vì ma trận là một đối tượng rất phổ biến trong lập trình và khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI). Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một kỹ năng có giá trị trong thế giới ngày nay.
     </p>
 

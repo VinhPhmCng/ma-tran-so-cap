@@ -1,5 +1,0 @@
-file:/D:/ma-tran-so-cap/pretext/book/source/main.ptx:27:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element biography, got colophon
-file:/D:/ma-tran-so-cap/pretext/book/source/main.ptx:12:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element shorttitle there
-file:/D:/ma-tran-so-cap/pretext/book/source/main.ptx:12:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got shorttitle
-file:/D:/ma-tran-so-cap/pretext/book/source/main.ptx:12:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got shorttitle
-file:/D:/ma-tran-so-cap/pretext/book/source/main.ptx:12:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element exercise, got shorttitle
