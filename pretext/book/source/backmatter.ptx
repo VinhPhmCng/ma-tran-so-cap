@@ -16,7 +16,7 @@ See the file COPYING for copying conditions.
   <title>Hậu Đề</title>
 
   <xi:include href="appendix-lap-trinh-co-ban/appendix-lap-trinh-co-ban.ptx"/>
-  <xi:include href="appendix-lap-trinh-mo-rong/appendix-lap-trinh-mo-rong.ptx"/>
+<!--   <xi:include href="appendix-lap-trinh-mo-rong/appendix-lap-trinh-mo-rong.ptx"/> -->
 
   <solutions divisional="hint"> <title>Selected Hints</title> </solutions>
 

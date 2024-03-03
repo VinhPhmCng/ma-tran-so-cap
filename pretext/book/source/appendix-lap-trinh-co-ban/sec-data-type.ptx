@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-data-type" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Kiểu Dữ Liệu</title>
+
+  <objectives>
+    <ul>
+      <li>Tìm hiểu các kiểu dữ liệu và cách dùng chúng.</li>
+      <li>Tìm hiểu các <term>tương tác</term> giữa các kiểu dữ liệu.</li>
+    </ul>
+  </objectives>
+  
+  <p>
+    Hầu hết mọi thứ trên thế giới này đều có thể được lưu trữ thành dữ liệu<mdash></mdash>từ số liệu và chữ cái đến thông tin về một mẫu xe ô tô.
+  </p>
+
+  <definition xml:id="def-data-type">
+    
+    <statement>
+      <p>
+        Và để <term>phân loại</term> các dữ liệu đó, ta cần đến các <term>kiểu dữ liệu</term>.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    
+    Hầu hết các ngôn ngữ lập trình hiện đại đều có các kiểu dữ liệu sau:
+    <dl>
+      <li>
+        <title>str</title>
+        <p>
+          <term>Chuỗi ký tự</term>. Được bao quanh bởi dấu ngoặc kép <c>""</c> hoặc dấu ngoặc kép đơn <c>''</c>.
+        </p>
+      </li>
+
+      <li>
+        <title>int</title>
+        <p>
+          <term>Số nguyên</term>. Là một số thực không có các chữ số thập phân.
+        </p>
+      </li>
+
+      <li>
+        <title>float</title>
+        <p>
+          <term>Số dấu phẩy động</term>. Là một số thực có một hoặc nhiều chữ số thập phân.
+        </p>
+      </li>
+
+      <li>
+        <title>bool</title>
+        <p>
+          <term>Boolean</term> chỉ chứa một trong hai giá trị <c>True</c> hoặc <c>False</c>. Được dùng chủ yếu trong những câu lệnh điều kiện.
+        </p>
+      </li>
+
+    </dl>
+  </p>
+
+  <aside>
+    <title>Có thể bạn sẽ hứng thú</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            
+            <url href="https://www.google.com/search?q=Python+is+dynamically+typed" visual="google.com/search?q=Python+is+dynamically+typed">"Python is dynamically typed"</url>
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p>
+            
+            <url href="https://stackoverflow.com/a/27791387/19779259" visual="stackoverflow.com/a/27791387/19779259">example of static vs dynamic typing</url>
+          </p>
+        </li>
+      </ul>
+    </p> 
+  </aside>
+
+  <note>
+    
+    <p>
+      Python là một ngôn ngữ dynamically typed. Điều này nghĩa là khi một biết được khai báo hoặc cập nhật, kiểu dữ liệu của nó được xác định, hoặc tái xác định, một cách <em>tự động</em>.
+    </p>
+  </note>
+
+  <p>
+    Ví dụ (nên dùng CodeLens):
+  </p>
+
+  <program language="python" interactive="activecode">
+    <input>
+      a = 5
+      b = type(a)
+      print(a, b)
+
+      a = "5"
+      b = type(a)
+      print(a, b) 
+    </input>
+  </program>
+  <problem>
+    <pre>
+      5 &lt;class 'int'&gt;
+      5 &lt;class 'str'&gt;
+    </pre>
+  </problem>
+  <investigation>
+    
+    
+    <p></p>
+    <p>
+      Lệnh <c>type(a)</c> cho kết quả là kiểu dữ liệu của biến <c>a</c>, được ghi trong dấu ngoặc kép đơn.
+    </p>
+    <p>
+      (Bạn không cần băn khoăn về từ khóa <c>class</c> ở đây. Bạn có thể hiểu nó đang viết tắt cho từ <q>classify</q>, nghĩa là <q>phân loại</q>. Nhưng chính xác hơn thì nó đang đề cập tới <term>Lớp</term>, một chủ đề nâng cao hơn.) 
+    </p>
+
+    <aside>
+      <title>Thí Nghiệm Vui</title>
+      
+      <p>
+        <c>5</c> có khác so với <c>5.0</c> không?
+      </p> 
+    </aside>
+
+    <p>
+      Vậy, khi khai báo <c>a = 5</c>, biến <c>a</c> có kiểu <c>int</c>.
+    </p>
+    <p>
+      Còn khi gán cho <c>a</c> giá trị mới là <c>"5"</c>, nó tự động cập nhật thành kiểu <c>str</c>.
+    </p>
+  </investigation>
+
+  <p>
+    Từ ví dụ trên, ta thấy <c>a = "5"</c> rất khác so với <c>a = 5</c>. Khi dữ liệu được bao quanh bởi hai dấu ngoặc kép (đơn), nó chắc chắn thuộc kiểu <c>str</c>. Từ đó, ta có định nghĩa sau:
+  </p>
+
+  <definition xml:id="def-dtype-syntax">
+    
+    <statement>
+      <p>
+        Kiểu dữ liệu khác nhau có <term>cú pháp</term> khác nhau.
+      </p>
+    </statement>
+  </definition>
+  
+  <p>Một vài ví dụ về các kiểu dữ liệu chính:</p>
+
+  <sage language="python">
+    <input>
+      a = 3
+      b = 3.0
+      c = "3.0"
+      d = True
+      
+      print(type(a))
+      print(type(b))
+      print(type(c))
+      print(type(d))
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      &lt;class 'int'&gt;
+      &lt;class 'float'&gt;
+      &lt;class 'str'&gt;
+      &lt;class 'bool'&gt;
+    </pre>
+  </problem>
+  <investigation>
+    
+    <p></p>
+    <p>
+      Giống như trên.
+    </p>
+    <p>
+      Một lần nữa, bạn chưa cần quan tấm đến <c>class</c>.
+    </p>
+  </investigation>
+
+  <p>
+    Tiếp theo, ta có:
+  </p>
+
+  <definition xml:id="def-dtype-interaction">
+    
+    <statement>
+      <p>
+        Kiểu dữ liệu quyết định các <term>tương tác</term> có thể giữa dữ liệu.
+      </p>
+      <p>
+        Nói cách khác, có rất nhiều loại tương tác có thể xảy ra giữa dữ liệu (phép toán, phép nối chuỗi, v.v.), và chúng thay đổi <em>dựa vào</em> kiểu dữ liệu.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    Ví dụ:
+  </p>
+
+  <sage language="python">
+    <input>
+      a = 5
+      b = -2
+      print(a + b)
+
+      c = 3.5
+      d = 5.6
+      print(c + d)
+
+      print(a + c)
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      3
+      9.1
+      8.5
+    </pre>
+  </problem>
+  <investigation>
+    
+    <p></p>
+    <p>
+      Ta biết cả <c>a</c> và <c>b</c> đều có kiểu <c>int</c>. Vì vậy, cộng chúng lại là có lý và được phép.
+    </p>
+    <p>
+      Tương tự, <c>c</c> và <c>d</c> đều là <c>float</c>, vì vậy phép cộng là hợp lệ.
+    </p>
+    <p>
+      Dòng cuối cùng thú vị hơn một chút, vì ta vẫn có thể thực hiện phép cộng giữa <c>int</c> và <c>float</c>.
+    </p>
+  </investigation>
+
+  <p>
+    Ta cũng có thể cộng hai hay nhiều <c>str</c> với nhau. Việc này ghép chúng lại thành một chuỗi mới. Ví dụ:
+  </p>  
+
+  <sage language="python">
+    <input>
+      s1 = "Hello"
+      s2 = "Jack"
+      s3 = " Jane"
+      
+      print(s1 + s2)
+      print(s1 + s3)
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      HelloJack
+      Hello Jane
+    </pre>
+  </problem>
+  <investigation>
+    
+    <p></p>
+    <p>
+      <c>s1 + s2</c> là một tương tác hợp lệ và sẽ ghép chúng lại thành một chuỗi mới. Tương tự với <c>s1 + s3</c>.
+    </p>
+    <p>
+      Ta thấy chuỗi <c>s2</c> và <c>s3</c> có một chi tiết khác nhau. Sự khác biệt này được làm rõ qua phép nối chuỗi.
+    </p>
+  </investigation>
+  
+  <p>
+    Nhưng ta <em>không thể</em> cộng <c>int</c> với <c>str</c>. Làm vậy sẽ xuất hiện <term>lỗi</term>:
+  </p>
+
+  <aside>
+    <title>Có thể bạn sẽ hứng thú</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            
+            <url href="https://www.google.com/search?q=Python+how+to+add+int+to+string" visual="google.com/search?q=Python+how+to+add+int+to+string">"Python how to add int to string"</url>
+          </p>
+        </li>
+      </ul>
+    </p> 
+  </aside>
+
+  <sage language="python">
+    <input>
+      a = 5
+      s = "string"
+      print(a + s)
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
+
+      ...
+
+      TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    </pre>
+  </problem>
+  <investigation>
+    
+    <p></p>
+    <p>
+      Phép <c>+</c> là một tương tác <em>không hợp lệ</em> cho hai kiểu dữ liệu <c>int</c> và <c>str</c>.
+    </p>
+  </investigation>
+
+  <p>
+    <cd>
+    </cd>
+  </p>
+
+  <exploration>
+    <title>Basic Programming <mdash /> Part 6: Data Types</title>
+    
+    
+    <video youtube="iMXToAm9a0c"/>
+      
+  </exploration>
+
+</section>

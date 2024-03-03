@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--*****************************************
-This is part of the Ma Trận Sơ Cấp
-Copyright (C) 2023-2024
-Phạm Công Vinh, Phạm Xuân Trung
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-ham" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-function" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Hàm</title>
 
   <objectives>
-    <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
-    </ol>
+    <ul>
+      <li>Tìm hiểu hàm và cách sử dụng chúng.</li>
+    </ul>
   </objectives>
   
   <p>
@@ -32,7 +30,7 @@ See the file COPYING for copying conditions.
       <mrow>100^2 + 2 \cdot 100 + 1</mrow>
     </md>
 
-    Ta nhận ra chúng có cùng một dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
+    Ta nhận ra chúng đều có dạng là đa thức bậc hai. Vậy, ta có thể rút gọn cách trình bày bằng hàm số như sau:
 
     <md>
       <mrow>f(x) = x^2 + 2 \cdot x + 1</mrow>
@@ -48,7 +46,8 @@ See the file COPYING for copying conditions.
     Đó cũng là cốt lõi của <term>hàm</term> trong lập trình.
   </p>
 
-  <definition xml:id="def-ham">
+  <definition xml:id="def-function">
+    
     <statement>
       <p>
         <term>Hàm</term> là một đoạn code có thể tái sử dụng được dùng để thực hiện một tác vụ nào đó.
@@ -68,19 +67,23 @@ See the file COPYING for copying conditions.
     </statement>
   </definition>
 
-  <p>
-    Ở phần này ta chưa đi sâu vào cú pháp khai báo hàm, mà ta sẽ chỉ tập trung vào việc sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện. Để biết thêm về cú pháp <term>khai báo hàm</term>, tham khảo <xref ref="sec-khai-bao-ham"/>.
-  </p>
+  <note>
+    
+    <p>
+      Ở phần này, ta sẽ không đi sâu vào cú pháp khai báo hàm, mà chỉ tập trung vào việc sử dụng những hàm có sẵn hoặc được cung cấp bởi thư viện.
+    </p>
+  </note>
 
-  <technology>
+  <technology xml:id="syntax-call-function">
     <title>Gọi hàm</title>
+    
     <p>
       <em>Tùy vào cách một hàm được khai báo</em>, ta có hai cách để gọi nó: <me>{\color{blue} \text{tên hàm}} \, \text{(đầu vào 1, đầu vào 2, ...)}</me> hoặc <me>\text{đầu vào 1.} {\color{blue} \text{tên hàm}} \, \text{(đầu vào 2, đầu vào 3, ...)}</me>
     </p>
   </technology>
   
   <p>
-    Một ví dụ thân thuộc là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào trong code, và với một tập hợp các dữ liệu đầu vào bất kỳ.
+    Một ví dụ thân thuộc là hàm <c>print()</c>. Nó có thể được gọi ở bất cứ nơi nào, và với một tập hợp các dữ liệu đầu vào bất kỳ. Và nó đưa dữ liệu ra terminal.
   </p>
 
   <sage language="python">
@@ -89,7 +92,6 @@ See the file COPYING for copying conditions.
       print()
       print(2, -2)
       print(1, "Hello World!", 5.5)
-
     </input>
   </sage>
   <problem>
@@ -101,120 +103,152 @@ See the file COPYING for copying conditions.
     </pre>
   </problem>
   <investigation>
+    
+    
     <p></p>
     <p>
-      Dòng 1: Ta truyền cho hàm <c>print()</c> một dữ liệu đầu vào là <c>5</c>.
+      Dòng 1: Ta gọi hàm <c>print()</c> với một dữ liệu đầu vào là <c>5</c>.
     </p>
     <p>
       Dòng 2: Ta không truyền dữ liệu đầu vào, nên <c>print()</c> xuất ra terminal một dòng trắng.
     </p>
     <p>
-      Dòng 3: Ta truyền cho nó hai dữ liệu đầu vào là <c>2</c> và <c>-2</c>.
+      Dòng 3: Ta cho nó hai dữ liệu đầu vào là <c>2</c> và <c>-2</c>.
     </p>
     <p>
-      Dòng 4: Ta truyền cho nó nhiều dữ liệu đầu vào, và chúng có các kiểu dữ liệu khác nhau.
+      Dòng 4: Ta truyền cho nó nhiều dữ liệu đầu vào thuộc các kiểu dữ liệu khác nhau.
     </p>
   </investigation>
 
   <p>
-    Một ví dụ nữa là hàm <c>np.sqrt()</c> của Numpy. Nó chấp nhận duy nhất một đầu vào, rồi tính toán và trả lại căn bậc hai.
+    Một ví dụ nữa là hàm <c>len()</c>. Nó chấp nhận duy nhất một đầu vào là một cấu trúc dữ liệu và trả lại số phần tử.
   </p>
+
+  <aside>
+    <title>Thí Nghiệm Vui</title>
+    
+    <p>
+      Does <c>len()</c> work with a string?
+      <c>len()</c> có hoạt động với <c>str</c> không?
+    </p> 
+  </aside>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy 
-
-      print(np.sqrt(9))
+      arr = [1, 2, 3, 4]
+      print(len(arr))
     </input>
   </sage>
   <problem>
     <pre>
-      3.0
+      4
     </pre>
   </problem>
   <investigation>
+    
+    
     <p>
-      Hàm <c>np.sqrt()</c> nhận một giá trị đầu vào và trả lại căn bậc hai.
+      Hàm <c>len()</c> nhận một cấu trúc dữ liệu và trả lại số phần tử.
     </p>
   </investigation>
   
   <p>
-    Vậy, hàm <c>np.sqrt()</c> có nhiều yêu cầu hơn <c>print()</c>. Bạn phải gọi hàm này với duy nhất một giá trị đầu vào, và giá trị đó phải là <em>số</em>. Hai ví dụ dưới đây sẽ xuất hiện lỗi:
+    Vậy, hàm <c>len()</c> có nhiều yêu cầu hơn <c>print()</c>. Bạn phải gọi hàm này với duy nhất một giá trị đầu vào, và giá trị đó phải là một cấu trúc dữ liệu. Hai ví dụ sau sẽ xuất hiện lỗi:
+  </p>
+
+  <aside>
+    <title>Thí Nghiệm Vui</title>
+    
+    <p>
+      Sửa lỗi.
+    </p>
+  </aside>
+
+  <sage language="python">
+    <input>
+      arr1 = [1, 2, 3]
+      arr2 = [4, 5, 6]
+      print(len(arr1, arr2))
+    </input>
+  </sage>
+  <problem>
+    <pre>
+      TypeError
+      Cell In [1], line 3
+
+      ...
+
+      TypeError: len() takes exactly one argument (2 given)
+    </pre>
+  </problem>
+  <investigation>
+    
+    
+    <p></p>
+    <p>Hàm <c>len()</c> nhận chính xác một giá trị đầu vào, nhưng lại nhận được hai.</p>
+  </investigation>
+
+  <p>
+    Ví dụ tiếp theo:
   </p>
 
   <sage language="python">
     <input>
-      import numpy as np # Su dung thu vien Numpy 
-
-      print(np.sqrt(9, 10))
+      a = 5
+      print(len(a))
     </input>
   </sage>
   <problem>
     <pre>
       TypeError
-      Cell In [1], line 3
+      Cell In [1], line 2
 
       ...
 
-      TypeError: return arrays must be of ArrayType
+      TypeError: object of type 'int' has no len()
     </pre>
   </problem>
   <investigation>
-    <p></p>
-    <p>Hàm <c>np.sqrt()</c> chỉ nhận duy nhất một dữ liệu đầu vào.</p>
-    <p>
-      Ta đang truyền cho nó nhiều hơn một đầu vào, nên hàm trả lại lỗi.
-    </p>
-  </investigation>
-
-  <sage language="python">
-    <input>
-      import numpy as np # Su dung thu vien Numpy 
-
-      print(np.sqrt("Hello World!"))
-    </input>
-  </sage>
-  <problem>
-    <pre>
-      TypeError
-      Cell In [1], line 3
-
-      ...
-
-      TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
-    </pre>
-  </problem>
-  <investigation>
+    
+    
     <p></p>
     <p>
-      Đầu vào của <c>np.sqrt()</c> phải là số.</p>
-    <p>
-      Ta đang truyền cho nó kiểu <c>str</c>, nên hàm trả lại lỗi.
+      Đầu vào của <c>len()</c> phải là một cấu trúc dữ liệu, nhưng nó lại dược gọi với một <c>int</c>.
     </p>
   </investigation>
 
   <p>
-    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Nó tuân theo cú pháp gọi hàm thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. Và nó trả lại một chuỗi mới với mọi ký tự đều được viết hoa.
+    Ví dụ cuối cùng của ta là hàm <c>upper()</c>. Nó tuân theo <xref ref="syntax-call-function" text="custom">cú pháp gọi hàm</xref> thứ hai, với <q>đầu vào 1</q> là một chuỗi ký tự. Và nó trả lại một chuỗi mới với mọi ký tự được viết hoa.
   </p>
+
+  <aside>
+    <title>Thí Nghiệm Vui</title>
+    
+    <p>
+      Đoán hàm có chức năng biến một chuỗi thành viết thường hết.
+    </p>
+  </aside>
 
   <sage language="python">
     <input>
-      s = "Xin chao!" 
+      s = "Hello friend!" 
 
       print(s.upper())
     </input>
   </sage>
   <problem>
     <pre>
-      XIN CHAO!
+      HELLO FRIEND!
     </pre>
   </problem>
   <investigation>
-    <p>Hàm <c>upper()</c> trả lại chuỗi ký tự đầu vào sau khi đã được viết hoa.</p>
+    
+    
+    <p>Hàm <c>upper()</c> trả lại một chuỗi viết hoa mới.</p>
   </investigation>
  
   <p>
-    Đây là một ví dụ có lỗi:
+    Ví dụ xuất hiện lỗi:
   </p>
 
   <sage language="python">
@@ -234,13 +268,28 @@ See the file COPYING for copying conditions.
     </pre>
   </problem>
   <investigation>
+    
+    
     <p></p>
     <p>
-      Hàm <c>upper()</c> chỉ nhận duy nhất một dữ liệu đầu vào có kiểu <c>str</c>.
+      Hàm <c>upper()</c> chỉ nhận duy nhất một dữ liệu đầu vào có kiểu <c>str</c>, nhưng lại nhận được kiểu <c>int</c>.
     </p>
     <p>
-      Dịch nôm na miêu tả của lỗi, ta được <q>int không có thuộc tính upper</q>.
+      Dịch nôm na miêu tả lỗi, ta được <q>int không có thuộc tính upper</q>.
     </p>
   </investigation>
+
+  <p>
+    <cd>
+    </cd>
+  </p>
+
+  <exploration>
+    <title>Basic Programming <mdash /> Part 10: Functions</title>
+    
+  
+    <video youtube="iMXToAm9a0c"/>
+    
+  </exploration>
 
 </section>

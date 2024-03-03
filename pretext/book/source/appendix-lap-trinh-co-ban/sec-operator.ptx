@@ -1,58 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--*****************************************
-This is part of the Ma Trận Sơ Cấp
-Copyright (C) 2023-2024
-Phạm Công Vinh, Phạm Xuân Trung
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
 See the file COPYING for copying conditions.
 ******************************************-->
 
-<section xml:id="sec-toan-tu" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-operator" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Toán Tử</title>
 
   <objectives>
-    <ol>
-      <li>Các mục tiêu của section.</li>
-      <li></li>
-      <li></li>
-    </ol>
+    <ul>
+      <li>Tìm hiểu bốn loại toán tử chính.</li>
+      <li>Hiểu rõ toán tử gán qua ví dụ.</li>
+    </ul>
   </objectives>
 
-  <p>
-    Trong toán học, ta có các phép toán cộng, trừ, nhân, chia, lũy thừa, khai căn, v.v. Đối với lập trình, ta có các <term>toán tử</term>.
-  </p>
+  <introduction>
 
-  <definition xml:id="def-toan-tu">
-    <statement>
-      <p>
-        Trong lập trình, một <term>toán tử</term> là ký tự miêu tả phép gán, phép toán, phép quan hệ, hoặc phép logic.
-      </p>
-      <p>
-        Nói cách khác, một toán tử miêu tả tương tác giữa các dữ liệu.
-      </p>
-    </statement>
-  </definition>
-  
-  <p>
-    Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>. Ta cùng tìm hiểu những toán tử cơ bản nhé.
-  </p>
+    <definition xml:id="def-operator">
+      
+      <statement>
+        <p>
+          Trong lập trình, <term>toán tử</term> là một ký tự miêu tả phép gán, phép toán, phép quan hệ, hoặc phép logic.
+        </p>
+        <p>
+          Nói cách khác, toán tử miêu tả một tương tác dữ liệu.
+        </p>
+      </statement>
+    </definition>
+    
+    <p>
+      Ở các phần trước, trong các ví dụ thường xuyên xuất hiện hai toán tử <c>=</c> và <c>+</c>. Ta cùng tìm hiểu những toán tử cơ bản nhé.
+    </p>
+  </introduction>
 
-  <subsection xml:id="subsec-tt-so-hoc">
+  <subsection xml:id="subsec-op-arithmetic">
     <title>Toán Tử Số Học</title>
 
     <p>
       Bốn toán tử số học cơ bản nhất là:
     </p>
 
+    <aside>
+      <title>Thí Nghiệm Vui</title>
+      
+      <p>
+        Trong bốn toán tử này, bạn nghĩ cái nào có thể hoạt động với các <xref ref="subsec-array" text="title" />?
+      </p> 
+    </aside>
+
     <sage language="python">
       <input>
-        print(5 + 3) # Cong
-        print(5 - 3) # Tru
-        print(5 * 3) # Nhan
-        print(5 / 3) # Chia
+        print(5 + 3) # Addition
+        print(5 - 3) # Subtraction
+        print(5 * 3) # Multiplication
+        print(5 / 3) # Division
 
-        # Noi chuoi (Concatenation)
-        print("chuoi 1 " + "chuoi 2")
+        # String concatenation
+        print("string 1 " + "string 2")
       </input>
     </sage>
     <problem>
@@ -61,13 +68,15 @@ See the file COPYING for copying conditions.
         2
         15
         1.6666666666666667
-        chuoi 1 chuoi 2
+        string 1 string 2
       </pre>
     </problem>
     <investigation>
+      
+      
       <p></p>
       <p>
-        Bốn dòng đầu là các phép tính toán như trong toán học.
+        Bốn dòng đầu là các phép tính như trong toán học.
       </p>
       <p>
         Ở dòng 7, toán tử <c>+</c> được dùng để ghép hai chuỗi ký tự với nhau.
@@ -75,14 +84,14 @@ See the file COPYING for copying conditions.
     </investigation>
     
     <p>
-      Ta cũng có một vài toán tử khác ít được dùng hơn như:
+      Ta cũng có một vài toán tử khác ít phổ biến hơn như:
     </p>
 
     <sage language="python">
       <input>        
-        print(5 // 3) # Chia lay phan nguyen
-        print(5 ** 3) # Luy thua
-        print(5 % 3) # Modulo
+        print(5 // 3) # Floor division
+        print(5 ** 3) # Exponentiation
+        print(5 % 3) # Modulus
       </input>
     </sage>
     <problem>
@@ -93,45 +102,48 @@ See the file COPYING for copying conditions.
       </pre>
     </problem>
     <investigation>
+      
       <p></p>
       <p>
-        Bạn có thể tra mạng những phép toán ít phổ biến hơn này nếu có hứng thú nhé.
+        Bạn có thể tra mạng để tìm hiểu thêm nhé.
       </p>
     </investigation>
 
     <p>
-      Và một kiến thức quan trọng bạn phải nhớ là <xref ref="def-kdl-tuong-tac"/>.
+      Và một kiến thức quan trọng bạn nên nhớ là <xref ref="def-dtype-interaction"/>.
     </p>
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-gan">
+  <subsection xml:id="subsec-op-assignment">
     <title>Toán Tử Gán</title>
 
     <p>
-      Ở những phần trước, bạn đã thấy toán tử <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
+      Bạn đã thấy <c>=</c> được sử dụng rất thường xuyên. Đây là <term>toán tử gán</term> <em>quan trọng nhất</em> mà bạn cần biết.
     </p>
 
-    <definition xml:id="def-tt-gan">
+    <definition xml:id="def-op-assignment">
+      
       <statement>
         <p>
-          <term>Toán tử gán</term> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.
+          <term>Toán tử gán</term> được dùng để khai báo biến hoặc cập nhật giá trị của biến.
         </p>
         <p>
           Giá trị của một biến thay đổi <em>khi và chỉ khi</em> ta sử dụng toán tử gán.
         </p>
       </statement>
     </definition>
-
+    
     <note>
+      
       <p>
         Trong lập trình, toán tử gán <c>=</c> không bao giờ mang nghĩa của đẳng thức.
       </p>
     </note>
 
-    <p>Dưới đây là ví dụ:</p>
+    <p>Ví dụ (nên dùng CodeLens):</p>
 
-    <sage language="python">
+    <program language="python" interactive="activecode">
       <input>
         a = 5
         print(a)
@@ -142,7 +154,7 @@ See the file COPYING for copying conditions.
         a = a + 1
         print(a)
       </input>
-    </sage>
+    </program>
     <problem>
       <pre>
         5
@@ -151,6 +163,9 @@ See the file COPYING for copying conditions.
       </pre>
     </problem>
     <investigation>
+      
+      
+      
       <p></p>
       <p>
         Đầu tiên, ta khai báo <c>a</c> có giá trị bằng <c>5</c>.
@@ -159,13 +174,22 @@ See the file COPYING for copying conditions.
         Ở dòng 4, ta có <c>a + 1</c>, nhưng khi ta truy cập giá trị của <c>a</c> ở dòng 5, kết quả vẫn là <c>5</c>.
       </p>
       <p>
-        Ở dòng 7, ta mới <em>cập nhật</em> biến với <c>a = a + 1</c>. Vì vậy ở dòng 8 biến <c>a</c> mới có giá trị bằng <c>6</c>.
+        Ở dòng 7, ta <em>cập nhật</em> biến với <c>a = a + 1</c>. Vì vậy, ở dòng 8 <c>a</c> mới có giá trị bằng <c>6</c>.
       </p>
     </investigation>
     
     <p>
-      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em>gọn gàng hơn</em>, ví dụ như:
+      
+      Về lý thuyết, <c>=</c> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp bạn viết nhanh phép gán:
     </p>
+
+    <aside>
+      <title>Thí Nghiệm Vui</title>
+      
+      <p>
+        Bạn thử dùng chúng nhé.
+      </p>
+    </aside>
 
     <p>
       <dl>
@@ -198,15 +222,30 @@ See the file COPYING for copying conditions.
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-quan-he">
+  <subsection xml:id="subsec-op-relational">
     <title>Toán Tử Quan Hệ</title>
 
     <p>
-      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
+      <term>Toán tử quan hệ</term> được sử dụng chủ yếu trong các câu lệnh điều kiện.
     </p>
 
+    <aside>
+      <title>Có thể bạn sẽ hứng thú</title>
+      <p>
+        <ul>
+          <li>
+            <p>
+              
+              <url href="https://www.google.com/search?q=Python+=+vs+==" visual="google.com/search?q=Python+=+vs+==">"Python = vs =="</url>
+            </p>
+          </li>
+        </ul>
+      </p> 
+    </aside>
+
     <p>
-      Dưới đây là tóm tắt sơ bộ:
+      
+      Tóm tắt sơ bộ:
 
       <dl>
         <li>
@@ -259,15 +298,16 @@ See the file COPYING for copying conditions.
     
   </subsection>
 
-  <subsection xml:id="subsec-tt-logic">
+  <subsection xml:id="subsec-op-logical">
     <title>Toán Tử Logic</title>
     
     <p>
-      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện, vì vậy nó sẽ được trình bày rõ hơn ở <xref provisional="cau-lenh-dieu-kien"/>.
+      <term>Toán tử logic</term> được sử dụng chủ yếu trong các câu lệnh điều kiện.
     </p>
 
     <p>
-      Dưới đây là tóm tắt sơ bộ:
+      
+      Tóm tắt sơ bộ:
       <dl>
         <li>
           <title><c>x and y</c></title>
@@ -300,5 +340,21 @@ See the file COPYING for copying conditions.
     </p>
     
   </subsection>
+
+  <conclusion>
+    <p>
+      <cd>
+      </cd>
+    </p>
+
+    <exploration>
+      <title>Basic Programming <mdash /> Part 8: Operators</title>
+      
+    
+      <video youtube="iMXToAm9a0c"/>
+      
+    </exploration>
+
+  </conclusion>
 
 </section>

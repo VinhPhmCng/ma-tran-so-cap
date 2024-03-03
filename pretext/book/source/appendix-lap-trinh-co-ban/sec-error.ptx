@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-error" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Lỗi</title>
+
+  <objectives>
+    <ul>
+      <li>Tìm hiểu lỗi và cách giải quyết chúng.</li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    
+    <p>
+      Xin chúc mừng! Bạn đã trang bị cho bản thân kha khá kiến thức cốt lõi về lập trình rồi đó.
+    </p>
+
+    <p>
+      Trước khi tiếp tục với những khái niệm khó hơn, bạn nên học cách giải quyết <term>lỗi</term>. Việc này giúp cải thiện quá trình và trải nghiệm của bạn. 
+    </p>
+
+    <note>
+      
+      <p>
+        Lỗi, nếu có, sẽ xuất hiện ở <term>terminal</term>. Một vài thông tin bổ sung đi kèm với lỗi bao gồm:
+
+        <ul>
+          <li>
+            <p>
+              Dòng phát hiện lỗi
+            </p>
+          </li>
+          <li>
+            <p>
+              Kiểu của lỗi
+            </p>
+          </li>
+          <li>
+            <p>
+              Miêu tả về lỗi
+            </p>
+          </li>
+          <li>
+            <p>
+              <etc></etc>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </note>
+
+    <p>
+      Dưới đây là một vài ví dụ:
+    </p>
+    
+    <aside>
+      <title>Thí Nghiệm Vui</title>
+      
+      <p>
+        Chạy các ví dụ và đọc lỗi.
+      </p> 
+      <p>
+        Sau đó, bạn thử sửa chúng nhé.
+      </p>
+    </aside>
+
+    <sage>
+      <input>
+        print("Hello world!")
+        print("This is a string.")
+        print("This is another string.) 
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        Cell In [1], line 3
+          print("This is another string.)
+                ^
+        SyntaxError: unterminated string literal (detected at line 3)
+      </pre>
+    </problem>
+    <investigation>
+      
+      <p></p>
+      <p>
+        Lỗi được phát hiện ở dòng 3, có kiểu <c>SyntaxError</c> (lỗi cú pháp).
+      </p>
+      <p>
+        Đọc miêu tả và nhìn lại dòng 3, ta dễ dàng thấy rằng ta đang thiếu mất một dấu ngoặc kép.
+      </p>
+    </investigation>
+
+    <p>
+      Ví dụ tiếp theo:
+    </p>
+
+    <sage language="python">
+      <input>
+        a = 5
+        s = "string"
+        print(a + s)
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        TypeError
+        Cell In [1], line 3
+
+        ...
+
+        TypeError: unsupported operand type(s) for +: 'int' and 'str'
+      </pre>
+    </problem>
+    <investigation>
+      
+      <p></p>
+      <p>
+        Một lỗi kiểu <c>TypeError</c> (lỗi về kiểu dữ liệu) được phát hiện ở dòng 3.
+      </p>
+      <p>
+        Dễ thấy miêu tả của lỗi nghĩa là phép cộng giữa số nguyên và chuỗi ký tự không được hỗ trợ. 
+      </p>
+    </investigation>
+
+    <p>
+      Ví dụ cuối cùng sử dụng hàm <c>sqrt()</c> được nhập từ thư viện ngoài Numpy. Nó tính toán và trả lại căn bậc hai. 
+    </p>
+
+    <sage language="python">
+      <input>
+        import numpy as np # Use library Numpy
+        print(np.sqrt("hello?"))
+      </input>
+    </sage>
+    <problem>
+      <pre>
+        TypeError
+        Cell In [1], line 2
+
+        ...
+
+        TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+      </pre>
+    </problem>
+    <investigation>
+      
+      <p></p>
+      <p>
+        Lỗi kiểu <c>TypeError</c> được phát hiện ở dòng 2.
+      </p>
+      <p>
+        Miêu tả có thể hơi dài dòng, nhưng về cơ bản nó đang nói rằng <q>một chuỗi ký tự không thể được truyền vào hàm sqrt</q>.
+      </p>
+    </investigation>
+
+    <p>
+      Vậy nếu bạn đọc lỗi nhưng vẫn cảm thấy khó hiểu và không biết cách sửa, thì bạn nên làm gì?
+    </p>
+
+  </introduction>
+
+  <subsection xml:id="subsec-fix-error">
+    <title>Cách Sửa Lỗi</title>
+
+    <p>
+      Không một lập trình viên nào, kỳ cựu đến mấy, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách sửa nó. Nhưng, một điều chắc chắn là kinh nghiệm của họ ngày càng tăng, và khả năng giải quyết lỗi ngày càng nhanh nhẹn và hiệu quả.
+    </p>
+
+    <p>
+      Tiếp đến là một vài những kinh nghiệm cá nhân của tôi khi gặp lỗi. Bạn có thể thử các cách tiếp cận sau:
+
+      <ol>
+        <li>
+          <p>
+            <term>Sửa lỗi</term><mdash />Trường hợp gặp lỗi dễ hiểu, bạn chỉ việc sửa nó. Nếu không, chuyển sang bước tiếp theo.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Tra trên mạng</term><mdash />Sao chép và dán miêu tả của lỗi lên Google.
+          </p>
+
+          <insight>
+            
+            <p>
+              Bạn nên kèm theo từ khóa là tên ngôn ngữ lập trình đang sử dụng để tăng hiệu quả. Ví dụ như <q>python unterminated string literal...</q>.
+            </p>
+          </insight>
+
+          <insight>
+            
+            <p>
+              Bạn có thể tham khảo tài liệu bằng tiếng Việt hoặc bất kì ngôn ngữ nào bạn muốn. Nhưng thông thường thì các tài liệu tiếng Anh có độ có sẵn và tính cập nhật cao nhất. 
+            </p>
+          </insight>
+
+          <p>
+            Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Bạn có thể nhanh chóng đọc những bài đăng bàn luận về và tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <term>Stack Overflow</term>, <term>Github</term>, <term>Stack Exchange</term>, <term>Reddit</term>. 
+          </p>
+          <p>
+            Đến đây, nếu bạn vẫn chưa giải quyết được, hoặc nếu lỗi mới xuất hiện, bạn có thể lặp lại quá trình, hoặc chuyển sang bước 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Tự miêu tả lỗi khi tra</term><mdash />Có vẻ nếu sử dụng miêu tả chi tiết của lỗi, những cách giải của người khác không có hiệu quả với bạn. Vậy thì ta thử tự mình miêu tả lỗi xem sao. Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào, với ngôn ngữ lập trình nào, v.v. Nếu vẫn chưa được, ta lại chuyển sang bước tiếp theo.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Sử dụng trí tuệ nhân tạo (AI)</term><mdash />Nếu có thể, bạn nên thử tận dụng trí tuệ nhân tạo như <term>ChatGPT</term> hoặc <term>Github Copilot</term>. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Đăng bài về lỗi</term><mdash />Khi mọi phương pháp trên đều đã thất bại, thì đã đến lúc bạn tìm kiếm sự giúp đỡ trực tiếp từ mọi người. Bạn có thể hỏi người quen, hoặc lên những diễn đàn công nghệ và đăng bài viết về vấn đề mình đang gặp phải.
+          </p>
+          <p>
+            
+            Hãy chắc chắn rằng bạn biết về các <term>văn hóa ứng xử trên mạng</term>. Vì bạn đang mong muốn sự giúp đỡ của người khác, một thái độ tôn trọng và văn minh là quan trọng thiết yếu.
+          </p>
+        </li>
+      </ol>
+    </p>
+    
+  </subsection>
+
+  <conclusion>
+    <p>
+      <cd>
+      </cd>
+    </p>
+
+    <exploration>
+      <title>Basic Programming <mdash /> Part 11: Errors &amp; How To Fix Them</title>
+      
+    
+      <video youtube="iMXToAm9a0c"/>
+      
+    </exploration>
+
+  </conclusion>
+</section>

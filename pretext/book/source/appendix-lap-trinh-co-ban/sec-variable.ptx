@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-variable" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Biến</title>
+
+  <objectives>
+    <ul>
+      <li>Tìm hiểu biến và cách dùng biến.</li>
+      <li>Hiểu rằng dấu bằng <c>=</c> không liên quan đến đẳng thức trong lập trình.</li>
+    </ul>
+  </objectives>
+  
+  <p>
+    <term>Biến</term> là một trong những khái niệm cơ bản và quan trọng nhất của lập trình.
+  </p>
+
+  <p>
+    Trong toán học, ta thường hay thấy biến số <m>x</m> trong các hàm số, ví dụ như: <me>f(x) = x^2 + 2x + 1</me> Ở đây, <q>biến</q> có nghĩa là có thể thay đổi và không cố định.
+  </p>
+
+  <definition xml:id="def-variable">
+    
+    <statement>
+      <p>
+        Trong lập trình, <term>biến</term> được dùng để lưu trữ dữ liệu.
+      </p>
+
+      <p>
+        Dữ liệu được chứa trong biến được gọi là <term>giá trị</term> của biến, và nó <em>thường xuyên được cập nhật</em> trong quá trình chương trình chạy.
+      </p>
+
+      <p>
+        Thuật ngữ để chỉ việc tạo ra một biến mới là <term>khai báo</term>.
+      </p>
+      
+      <p>
+        Thuật ngữ để chỉ việc <term>cập nhật</term> giá trị của một biến đã tồn tại là <term>gán</term>.
+      </p>
+    </statement>
+  </definition>
+
+  <technology>
+    <title>Khai bào và gán</title>
+    
+    
+    <p>
+      Để khai báo biến hoặc gán cho biết giá trị mới, ta đều sử dụng dấu <c>=</c>: <me>{\color{blue} \text{tên biến}} = \text{giá trị}</me>
+    </p>
+    <p>
+      Vì vậy, dấu bằng <c>=</c> trong lập trình <em>không bao giờ</em> được dùng theo nghĩa của đẳng thức.
+    </p>
+  </technology>
+  
+  <p>
+    Ví dụ (nên dùng CodeLens):
+  </p>
+
+  <program language="python" interactive="activecode">
+    <input>
+      a = 1
+      b = a
+      print(a)
+      print(b)
+
+      # Update variable
+      a = 2
+      print(a)
+      print(b)
+    </input>
+  </program>
+  <problem>
+    <pre>
+      1
+      1
+      2
+      1
+    </pre>
+  </problem>
+  <investigation>
+    
+    
+    <p></p>
+    <p>
+      Đầu tiên, ta khai báo biến <c>a</c> và gán cho nó giá trị là <c>1</c>.
+    </p>
+    <p>
+      Tiếp, ta khai báo <c>b</c> và gán cho nó giá trị bằng giá trị hiện tại của <c>a</c>, vậy <c>b</c> cũng có giá trị là <c>1</c>. 
+    </p>
+    <p>
+      Ta sử dụng lệnh <c>print()</c> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.
+    </p>
+    <p>
+      Sau đó, ta gán cho <c>a</c> giá trị mới là <c>2</c>, nhưng ta không động đến <c>b</c>.
+    </p>
+
+    <aside>
+      <title>Thí Nghiệm Vui</title>
+      
+      <p>
+        Nếu sau khi cập nhật biến <c>a</c>, ta muốn biến <c>b</c> lại có giá trị bằng <c>a</c>, thì ta phải cập nhật <c>b</c> một lần nữa.
+      </p> 
+    </aside>
+
+    <p>
+      
+      <alert>Chú ý</alert>: Nếu đến bước này bạn nghĩ rằng cả <c>a</c> và <c>b</c> đều có giá trị là <c>2</c>, thì bạn vẫn đang hiểu dấu bằng theo nghĩa của đẳng thức. Điều này là không đúng đối với lập trình.
+    </p>
+
+    <p>
+      Cuối cùng, ta lại dùng <c>print()</c> để quan sát sự khác biệt.
+    </p>
+  </investigation>
+
+  <insight>
+    
+    <p>
+      Ví dụ trên về biến, dù đơn giản, đã làm rối não nhiều người mới bắt đầu, đặc biệt là những ai có bộ não toán học. Vì họ thấy <c>b = a</c> nên họ nghĩ đây là một đẳng thức luôn đúng trong suốt vòng đời của chương trình. Nhưng lối suy nghĩ đó là <em>sai</em> đối với lập trình.
+    </p>
+  </insight>
+
+  <note>
+    <title>Đặt tên cho biến</title>
+    
+    
+
+    <aside>
+      <title>Có thể bạn sẽ hứng thú:</title>
+      <p>
+        <ul>
+          <li>
+            <p>
+              
+              <url href="https://www.google.com/search?q=what+variable+names+are+allowed+in+Python" visual="google.com/search?q=what+variable+names+are+allowed+in+Python">"what variable names are allowed in Python"</url>
+            </p>
+          </li>
+          <li>
+            <p>
+              
+              <url href="https://www.google.com/search?q=variable+naming+conventions+in+Python" visual="google.com/search?q=variable+naming+conventions+in+Python">"variable naming conventions in Python"</url>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </aside>
+    
+    <p>
+      Tên của một biến có một vài quy tắc. Những tên biến sau sẽ làm xuất hiện lỗi cú pháp:
+
+      <ul>
+        <li>
+          <c>my var = 5</c> (chứa khoảng trắng)
+        </li>
+        <li>
+          <c>#my_var = 5</c> (chứa ký tự đặc biệt)
+        </li>
+        <li>
+          <c>1st_var = 5</c> (bắt đầu với chữ số)
+        </li>
+        <li>
+          <c>print = 5</c> (trùng với một từ khóa có sẵn)
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Tránh những trường hợp trên, và bạn có thể đặt tên biến tùy thích. Vì vậy, tùy vào cá thể lập trình viên, tên biến sẽ rất đa dạng:
+      <ul>
+        <li>
+          house_address
+        </li>
+        <li>
+          houseAddress
+        </li>
+        <li>
+          HouseAddress
+        </li>
+        <li>
+          ha
+        </li>
+        <li>
+          hAddress
+        </li>
+        <li>
+          house_add
+        </li>
+        <li>
+          <etc></etc>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Trong thế giới lập trình, có rất nhiều quy ước khác nhau về cách đặt tên biến.
+    </p>
+    <p>
+      Đặt tên biến cho phù hợp là một kỹ năng, nhưng bài viết này sẽ không hướng dẫn việc đó. Tên biến trong các ví dụ code ưu tiên <em>sự ngắn gọn và dễ hiểu</em>.
+    </p>
+  </note>
+
+  <p>
+    <cd>
+    </cd>
+  </p>
+
+  <exploration>
+    <title>Basic Programming <mdash /> Part 5: Variables</title>
+    
+    
+    <video youtube="iMXToAm9a0c"/>
+      
+  </exploration>
+
+</section>

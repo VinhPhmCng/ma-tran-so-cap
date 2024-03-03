@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************
+This is part of Basic Programming
+Copyright (C) 2024
+Phạm Công Vinh
+See the file COPYING for copying conditions.
+******************************************-->
+
+<section xml:id="sec-comment" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Ghi Chú</title>
+
+  <objectives>
+    <ul>
+      <li>Nhận biết và sử dụng <term>ghi chú</term> trong code.</li>
+    </ul>
+  </objectives>
+  
+  <p>
+    Khi viết code, có những lúc bạn muốn sử dụng văn bản thường, thay vì code. Có thể bạn muốn để lại ghi chú hay giải thích cho một thuật toán nào đó, hay ghi chép lại luồng suy nghĩ bản thân khi đó. Khi code của bạn ngày càng dài và phức tạp hơn, những <q>ghi chú</q> này bổ sung ngữ cảnh cần thiết.
+  </p>
+
+  <definition xml:id="def-comment">
+    
+    <statement>
+      <p>
+        <term>Ghi chú</term> là những mẩu văn bản thường, không được chạy bởi trình biên dịch.
+      </p>
+      <p>
+        Để viết một ghi chú trong Python, sử dụng dấu thăng <c>#</c>. Những gì ở sau nó (trên cùng dòng) sẽ được coi là văn bản thô.
+      </p>
+    </statement>
+  </definition>
+
+  <aside>
+    <title>Có thể bạn sẽ hứng thú:</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            
+            <url href="https://www.google.com/search?q=comments+in+different+programming+language" visual="google.com/search?q=comments+in+different+programming+language">"comments in different programming languages"</url>
+          </p>
+        </li>
+        <li>
+          <p>
+            
+            <url href="https://www.google.com/search?q=multiline+comments" visual="google.com/search?q=multiline+comments">"multiline comments"</url>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </aside>
+
+  <insight>
+    
+    <p>
+      Ghi chú cũng được sử dụng để tạm thời <term>vô hiệu hóa</term> một dòng code.
+    </p>
+  </insight>
+
+  <p>
+    Ví dụ:
+  </p>
+
+  <sage language="python">
+    <input>
+      # This is a comment
+
+      print("This is code")
+
+      #print("This code will not run")
+
+      print("More code") # A comment can be after code
+    </input>
+  </sage>
+
+  <aside>
+    <title>Thí Nghiệm Vui</title>
+    
+    <p>
+      Xóa dấu <c>#</c> ở dòng 5 và chạy lại đoạn code.
+    </p>
+  </aside>
+
+  <problem>
+    <pre>
+      This is code
+      More code
+    </pre>
+  </problem>
+
+  <investigation>
+    
+    <p></p>
+    <p>
+      Dòng 1 là một ghi chú dùng để chú thích.
+    </p>
+    <p>
+      Dòng 3 và 7 là code bình thường.
+    </p>
+    <p>
+      Dòng 5 là một ghi chú dùng để <q>tắt</q> code.
+    </p>
+  </investigation>
+
+  <p>
+    <cd>
+    </cd>
+  </p>
+
+  <exploration>
+    <title>Basic Programming <mdash /> Part 4: Comments</title>
+    
+    
+    <video youtube="iMXToAm9a0c"/>
+      
+  </exploration>
+
+</section>
