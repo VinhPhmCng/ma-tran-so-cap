@@ -143,15 +143,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -361,18 +361,17 @@ eBookConfig.enable_chatcodes =  false;
 <article class="definition definition-like" id="def-toan-tu"><h3 class="heading">
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.7.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-toan-tu-1-1">
-<dfn class="terminology">Toán tử</dfn> miêu tả tương tác giữa các dữ liệu.</div></article><div class="para" id="sec-toan-tu-5">Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <code class="code-inline tex2jax_ignore">=</code> và <code class="code-inline tex2jax_ignore">+</code>. Ta cùng tìm hiểu những toán tử cơ bản nhé.</div>
+<div class="para" id="def-toan-tu-1-1">Trong lập trình, một <dfn class="terminology">toán tử</dfn> là ký tự miêu tả phép gán, phép toán, phép quan hệ, hoặc phép logic.</div> <div class="para" id="def-toan-tu-1-2">Nói cách khác, một toán tử miêu tả tương tác giữa các dữ liệu.</div></article><div class="para" id="sec-toan-tu-5">Ở các phần trước, trong những ví dụ đã thường xuyên xuất hiện hai toán tử <code class="code-inline tex2jax_ignore">=</code> và <code class="code-inline tex2jax_ignore">+</code>. Ta cùng tìm hiểu những toán tử cơ bản nhé.</div>
 <section class="subsection" id="subsec-tt-so-hoc"><h3 class="heading hide-type">
 <span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">A.7.1</span><span class="space"> </span><span class="title">Toán Tử Số Học</span>
 </h3>
-<div class="para" id="subsec-tt-so-hoc-2">Bốn toán tử số học cơ bản.</div>
+<div class="para" id="subsec-tt-so-hoc-2">Bốn toán tử số học cơ bản nhất là:</div>
 <pre id="subsec-tt-so-hoc-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage">print(5 + 3) # Cong
 print(5 - 3) # Tru
 print(5 * 3) # Nhan
 print(5 / 3) # Chia
 
-# Ta cung co the cong hai chuoi
+# Noi chuoi (Concatenation)
 print("chuoi 1 " + "chuoi 2")
 </script></pre>
 <details id="subsec-tt-so-hoc-4" class="problem example-like born-hidden-knowl"><summary><h4 class="heading">
@@ -385,7 +384,7 @@ chuoi 1 chuoi 2
 </pre></article></details><article class="investigation project-like" id="subsec-tt-so-hoc-5"><h4 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.7.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-tt-so-hoc-5-1"></div> <div class="para" id="subsec-tt-so-hoc-5-2">Bốn dòng đầu là các phép tính toán như trong toán học.</div> <div class="para" id="subsec-tt-so-hoc-5-3">Ở dòng 7, toán tử <code class="code-inline tex2jax_ignore">+</code> được dùng để ghép hai chuỗi ký tự với nhau.</div></article><div class="para" id="subsec-tt-so-hoc-6">Ta cũng có một vài toán tử khác ít được dùng hơn.</div>
+<div class="para" id="subsec-tt-so-hoc-5-1"></div> <div class="para" id="subsec-tt-so-hoc-5-2">Bốn dòng đầu là các phép tính toán như trong toán học.</div> <div class="para" id="subsec-tt-so-hoc-5-3">Ở dòng 7, toán tử <code class="code-inline tex2jax_ignore">+</code> được dùng để ghép hai chuỗi ký tự với nhau.</div></article><div class="para" id="subsec-tt-so-hoc-6">Ta cũng có một vài toán tử khác ít được dùng hơn như:</div>
 <pre id="subsec-tt-so-hoc-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">print(5 // 3) # Chia lay phan nguyen
 print(5 ** 3) # Luy thua
 print(5 % 3) # Modulo
@@ -402,12 +401,15 @@ print(5 % 3) # Modulo
 <span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">A.7.2</span><span class="space"> </span><span class="title">Toán Tử Gán</span>
 </h3>
 <div class="para" id="subsec-tt-gan-2">Ở những phần trước, bạn đã thấy toán tử <code class="code-inline tex2jax_ignore">=</code> được sử dụng rất thường xuyên. Đây là <dfn class="terminology">toán tử gán</dfn> <em class="emphasis">quan trọng nhất</em> mà bạn cần biết.</div>
-<article class="definition definition-like" id="def-toan-tu-gan"><h4 class="heading">
+<article class="definition definition-like" id="def-tt-gan"><h4 class="heading">
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.7.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="def-toan-tu-gan-1-1">
-<dfn class="terminology">Toán tử gán</dfn> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.</div> <div class="para" id="def-toan-tu-gan-1-2">Việc sử dụng toán tử <code class="code-inline tex2jax_ignore">=</code> để tạo ra một biến mới được gọi là <dfn class="terminology">khai báo</dfn>.</div> <div class="para" id="def-toan-tu-gan-1-3">Việc sử dụng toán tử <code class="code-inline tex2jax_ignore">=</code> để cập nhật giá trị của một biến đã tồn tại được gọi là <dfn class="terminology">gán</dfn>.</div> <div class="para" id="def-toan-tu-gan-1-4">Giá trị của một biến thay đổi <em class="emphasis">khi và chỉ khi</em> ta sử dụng toán tử gán.</div></article><div class="para" id="subsec-tt-gan-4">Dưới đây là ví dụ.</div>
-<pre id="subsec-tt-gan-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">a = 5
+<div class="para" id="def-tt-gan-1-1">
+<dfn class="terminology">Toán tử gán</dfn> được dùng khi tạo ra biến mới hoặc cập nhật giá trị của biến.</div> <div class="para" id="def-tt-gan-1-2">Giá trị của một biến thay đổi <em class="emphasis">khi và chỉ khi</em> ta sử dụng toán tử gán.</div></article><article class="note remark-like" id="subsec-tt-gan-4"><h4 class="heading">
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.7.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-tt-gan-4-1">Trong lập trình, toán tử gán <code class="code-inline tex2jax_ignore">=</code> không bao giờ mang nghĩa của đẳng thức.</div></article><div class="para" id="subsec-tt-gan-5">Dưới đây là ví dụ:</div>
+<pre id="subsec-tt-gan-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">a = 5
 print(a)
 
 a + 1
@@ -416,27 +418,27 @@ print(a)
 a = a + 1
 print(a)
 </script></pre>
-<details id="subsec-tt-gan-6" class="problem example-like born-hidden-knowl"><summary><h4 class="heading">
-<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.7.5</span><span class="period">.</span>
+<details id="subsec-tt-gan-7" class="problem example-like born-hidden-knowl"><summary><h4 class="heading">
+<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.7.6</span><span class="period">.</span>
 </h4></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">5
 5
 6
-</pre></article></details><article class="investigation project-like" id="subsec-tt-gan-7"><h4 class="heading">
+</pre></article></details><article class="investigation project-like" id="subsec-tt-gan-8"><h4 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.7.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-tt-gan-7-1"></div> <div class="para" id="subsec-tt-gan-7-2">Đầu tiên, ta khai báo <code class="code-inline tex2jax_ignore">a</code> có giá trị bằng <code class="code-inline tex2jax_ignore">5</code>.</div> <div class="para" id="subsec-tt-gan-7-3">Ở dòng 4, ta có <code class="code-inline tex2jax_ignore">a + 1</code>, nhưng khi ta truy cập giá trị của <code class="code-inline tex2jax_ignore">a</code> ở dòng 5, kết quả vẫn là <code class="code-inline tex2jax_ignore">5</code>.</div> <div class="para" id="subsec-tt-gan-7-4">Ở dòng 7, ta mới <em class="emphasis">cập nhật</em> biến với <code class="code-inline tex2jax_ignore">a = a + 1</code>. Vì vậy ở dòng 8 biến <code class="code-inline tex2jax_ignore">a</code> mới có giá trị bằng <code class="code-inline tex2jax_ignore">6</code>.</div></article><div class="para" id="subsec-tt-gan-8">Về lý thuyết, <code class="code-inline tex2jax_ignore">=</code> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em class="emphasis">gọn gàng hơn</em>, ví dụ như:</div>
-<div class="para logical" id="subsec-tt-gan-9"><dl class="description-list">
-<dt id="subsec-tt-gan-9-1-1"><code class="code-inline tex2jax_ignore">x += 5</code></dt>
-<dd><div class="para" id="subsec-tt-gan-9-1-1-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x + 5</code>
+<div class="para" id="subsec-tt-gan-8-1"></div> <div class="para" id="subsec-tt-gan-8-2">Đầu tiên, ta khai báo <code class="code-inline tex2jax_ignore">a</code> có giá trị bằng <code class="code-inline tex2jax_ignore">5</code>.</div> <div class="para" id="subsec-tt-gan-8-3">Ở dòng 4, ta có <code class="code-inline tex2jax_ignore">a + 1</code>, nhưng khi ta truy cập giá trị của <code class="code-inline tex2jax_ignore">a</code> ở dòng 5, kết quả vẫn là <code class="code-inline tex2jax_ignore">5</code>.</div> <div class="para" id="subsec-tt-gan-8-4">Ở dòng 7, ta mới <em class="emphasis">cập nhật</em> biến với <code class="code-inline tex2jax_ignore">a = a + 1</code>. Vì vậy ở dòng 8 biến <code class="code-inline tex2jax_ignore">a</code> mới có giá trị bằng <code class="code-inline tex2jax_ignore">6</code>.</div></article><div class="para" id="subsec-tt-gan-9">Về lý thuyết, <code class="code-inline tex2jax_ignore">=</code> là toán tử gán duy nhất bạn cần biết. Nhưng ta cũng có những toán tử gán khác giúp code của bạn trở nên <em class="emphasis">gọn gàng hơn</em>, ví dụ như:</div>
+<div class="para logical" id="subsec-tt-gan-10"><dl class="description-list">
+<dt id="subsec-tt-gan-10-1-1"><code class="code-inline tex2jax_ignore">x += 5</code></dt>
+<dd><div class="para" id="subsec-tt-gan-10-1-1-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x + 5</code>
 </div></dd>
-<dt id="subsec-tt-gan-9-1-2"><code class="code-inline tex2jax_ignore">x -= 5</code></dt>
-<dd><div class="para" id="subsec-tt-gan-9-1-2-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x - 5</code>
+<dt id="subsec-tt-gan-10-1-2"><code class="code-inline tex2jax_ignore">x -= 5</code></dt>
+<dd><div class="para" id="subsec-tt-gan-10-1-2-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x - 5</code>
 </div></dd>
-<dt id="subsec-tt-gan-9-1-3"><code class="code-inline tex2jax_ignore">x *= 5</code></dt>
-<dd><div class="para" id="subsec-tt-gan-9-1-3-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x * 5</code>
+<dt id="subsec-tt-gan-10-1-3"><code class="code-inline tex2jax_ignore">x *= 5</code></dt>
+<dd><div class="para" id="subsec-tt-gan-10-1-3-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x * 5</code>
 </div></dd>
-<dt id="subsec-tt-gan-9-1-4"><code class="code-inline tex2jax_ignore">x /= 5</code></dt>
-<dd><div class="para" id="subsec-tt-gan-9-1-4-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x / 5</code>
+<dt id="subsec-tt-gan-10-1-4"><code class="code-inline tex2jax_ignore">x /= 5</code></dt>
+<dd><div class="para" id="subsec-tt-gan-10-1-4-2">Tương đương với <code class="code-inline tex2jax_ignore">x = x / 5</code>
 </div></dd>
 </dl></div></section><section class="subsection" id="subsec-tt-quan-he"><h3 class="heading hide-type">
 <span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">A.7.3</span><span class="space"> </span><span class="title">Toán Tử Quan Hệ</span>
@@ -481,25 +483,22 @@ print(a)
 <dl class="description-list">
 <dt id="subsec-tt-logic-3-1-1"><code class="code-inline tex2jax_ignore">x and y</code></dt>
 <dd>
-<div class="para" id="subsec-tt-logic-3-1-1-2">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu cả x và y đều bằng <code class="code-inline tex2jax_ignore">True</code>
+<div class="para" id="subsec-tt-logic-3-1-1-2">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu cả hai biểu thức đều bằng <code class="code-inline tex2jax_ignore">True</code>
 </div>
-<div class="para" id="subsec-tt-logic-3-1-1-3">Trả lại <code class="code-inline tex2jax_ignore">False</code> nếu ít nhất một trong hai biến bằng <code class="code-inline tex2jax_ignore">False</code>
+<div class="para" id="subsec-tt-logic-3-1-1-3">Trả lại <code class="code-inline tex2jax_ignore">False</code> nếu ít nhất một trong hai biểu thức bằng <code class="code-inline tex2jax_ignore">False</code>
 </div>
 </dd>
 <dt id="subsec-tt-logic-3-1-2"><code class="code-inline tex2jax_ignore">x or y</code></dt>
 <dd>
-<div class="para" id="subsec-tt-logic-3-1-2-2">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu ít nhất một trong hai biến bằng <code class="code-inline tex2jax_ignore">True</code>
+<div class="para" id="subsec-tt-logic-3-1-2-2">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu ít nhất một trong hai biểu thức bằng <code class="code-inline tex2jax_ignore">True</code>
 </div>
-<div class="para" id="subsec-tt-logic-3-1-2-3">Trả lại <code class="code-inline tex2jax_ignore">False</code> nếu cả x và y đều bằng <code class="code-inline tex2jax_ignore">False</code>
+<div class="para" id="subsec-tt-logic-3-1-2-3">Trả lại <code class="code-inline tex2jax_ignore">False</code> nếu cả hai biểu thức đều bằng <code class="code-inline tex2jax_ignore">False</code>
 </div>
 </dd>
 <dt id="subsec-tt-logic-3-1-3"><code class="code-inline tex2jax_ignore">not x</code></dt>
 <dd>
-<div class="para" id="subsec-tt-logic-3-1-3-2">Đảo ngược boolean</div>
-<div class="para" id="subsec-tt-logic-3-1-3-3">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu x bằng <code class="code-inline tex2jax_ignore">False</code>
-</div>
-<div class="para" id="subsec-tt-logic-3-1-3-4">Trả lại <code class="code-inline tex2jax_ignore">False</code> nếu x bằng <code class="code-inline tex2jax_ignore">True</code>
-</div>
+<div class="para" id="subsec-tt-logic-3-1-3-2">Đảo ngược Boolean</div>
+<div class="para" id="subsec-tt-logic-3-1-3-3">Trả lại <code class="code-inline tex2jax_ignore">True</code> nếu x bằng <code class="code-inline tex2jax_ignore">False</code> và ngược lại.</div>
 </dd>
 </dl>
 </div></section></section></div>

@@ -143,15 +143,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -361,13 +361,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.8.1</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-thuoc-tinh-1-1">
-<dfn class="terminology">Thuộc tính</dfn> là biến chứa <em class="emphasis">thông tin miêu tả</em> của một dữ liệu to hơn. Một cách để dễ hiểu đối tượng này là cụm từ “biến của biến”.</div> <div class="para" id="def-thuoc-tinh-1-2">Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được <em class="emphasis">khai báo sẵn</em>.</div> <div class="para" id="def-thuoc-tinh-1-3">Các thuộc tính của một dữ liệu sẽ <em class="emphasis">tự động cập nhật</em> khi dữ liệu đó được cập nhật.</div></article><article class="technology computation-like" id="sec-thuoc-tinh-4"><h3 class="heading">
+<dfn class="terminology">Thuộc tính</dfn> là biến có sẵn chứa <em class="emphasis">thông tin miêu tả</em> của một dữ liệu khác.</div> <div class="para" id="def-thuoc-tinh-1-2">Mỗi kiểu dữ liệu đều có một tập hợp những thuộc tính được khai báo sẵn.</div> <div class="para" id="def-thuoc-tinh-1-3">Các thuộc tính của một dữ liệu sẽ <em class="emphasis">tự động cập nhật</em> khi dữ liệu đó được cập nhật.</div></article><article class="technology computation-like" id="sec-thuoc-tinh-4"><h3 class="heading">
 <span class="type">Cú Pháp</span><span class="space"> </span><span class="codenumber">A.8.2</span><span class="period">.</span><span class="space"> </span><span class="title">Truy cập thuộc tính.</span>
 </h3> <div class="para logical" id="sec-thuoc-tinh-4-2"><div class="displaymath process-math">
 \begin{equation*}
 \text{dữ liệu.} {\color{blue} \text{tên thuộc tính}}
 \end{equation*}
-</div></div></article><div class="para" id="sec-thuoc-tinh-5">Dưới đây là ví dụ.</div>
+</div></div></article><div class="para" id="sec-thuoc-tinh-5">Dưới đây là ví dụ:</div>
 <pre id="sec-thuoc-tinh-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 
 mat = np.matrix([
@@ -387,38 +387,22 @@ print(mat.shape)
 </h3>
 <div class="para" id="sec-thuoc-tinh-8-1"></div> <div class="para" id="sec-thuoc-tinh-8-2">
 <code class="code-inline tex2jax_ignore">mat.size</code> trả lại số phần tử của <code class="code-inline tex2jax_ignore">mat</code>.</div> <div class="para" id="sec-thuoc-tinh-8-3">
-<code class="code-inline tex2jax_ignore">mat.shape</code> trả lại số hàng và số cột của <code class="code-inline tex2jax_ignore">mat</code>.</div></article><div class="para" id="sec-thuoc-tinh-9">Bạn cũng có thể truy cập thuộc tính của một <dfn class="terminology">dữ liệu tự do</dfn>.</div>
-<pre id="sec-thuoc-tinh-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
-
-print(
-    np.matrix([
-        [1, 2, 3],
-        [2, 4, 6],
-    ]).size
-)
+<code class="code-inline tex2jax_ignore">mat.shape</code> trả lại số hàng và số cột của <code class="code-inline tex2jax_ignore">mat</code>.</div></article><div class="para" id="sec-thuoc-tinh-9">Nhưng kiểu dữ liệu <code class="code-inline tex2jax_ignore">int</code> không có các thuộc tính trên.</div>
+<pre id="sec-thuoc-tinh-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">a = 5
+print(a.size)
 </script></pre>
 <details id="sec-thuoc-tinh-11" class="problem example-like born-hidden-knowl"><summary><h3 class="heading">
 <span class="type">Output</span><span class="space"> </span><span class="codenumber">A.8.4</span><span class="period">.</span>
-</h3></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">6
-</pre></article></details><article class="investigation project-like" id="sec-thuoc-tinh-12"><h3 class="heading">
-<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.8.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="sec-thuoc-tinh-12-1"></div> <div class="para" id="sec-thuoc-tinh-12-2">Dù ma trận trên không được chứa bởi biến nào, ta vẫn có thể truy cập thuộc tính <code class="code-inline tex2jax_ignore">size</code> của nó.</div></article><div class="para" id="sec-thuoc-tinh-13">Nhưng kiểu dữ liệu <code class="code-inline tex2jax_ignore">int</code> không có các thuộc tính trên.</div>
-<pre id="sec-thuoc-tinh-14" class="ptx-sagecell sagecell-python"><script type="text/x-sage">a = 5
-print(a.size)
-</script></pre>
-<details id="sec-thuoc-tinh-15" class="problem example-like born-hidden-knowl"><summary><h3 class="heading">
-<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.8.5</span><span class="period">.</span>
 </h3></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">AttributeError
 Cell In [1], line 2
 
 ...
 
 AttributeError: 'int' object has no attribute 'size'
-</pre></article></details><article class="investigation project-like" id="sec-thuoc-tinh-16"><h3 class="heading">
-<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.8.3</span><span class="period">.</span>
+</pre></article></details><article class="investigation project-like" id="sec-thuoc-tinh-12"><h3 class="heading">
+<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.8.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-thuoc-tinh-16-1"></div> <div class="para" id="sec-thuoc-tinh-16-2">Lỗi xuất hiện ở dòng 2, dịch nôm na ra ta được “int không có thuộc tính size”.</div></article></section></div>
+<div class="para" id="sec-thuoc-tinh-12-1"></div> <div class="para" id="sec-thuoc-tinh-12-2">Lỗi xuất hiện ở dòng 2, dịch nôm na ra ta được “int không có thuộc tính size”.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-toan-tu.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ham.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -155,15 +155,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -375,11 +375,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Như đã đề cập đến, lỗi, nếu có, sẽ được thông báo ở <dfn class="terminology">terminal</dfn>. Một vài thông tin kèm theo lỗi bao gồm:</div>
 <ul class="disc">
 <li id="sec-loi-5-2-1"><div class="para" id="sec-loi-5-2-1-1">Dòng xảy ra lỗi</div></li>
-<li id="sec-loi-5-2-2"><div class="para" id="sec-loi-5-2-2-1">Kiểu lỗi</div></li>
-<li id="sec-loi-5-2-3"><div class="para" id="sec-loi-5-2-3-1">Miêu tả lỗi</div></li>
+<li id="sec-loi-5-2-2"><div class="para" id="sec-loi-5-2-2-1">Kiểu của lỗi</div></li>
+<li id="sec-loi-5-2-3"><div class="para" id="sec-loi-5-2-3-1">Miêu tả của lỗi</div></li>
 <li id="sec-loi-5-2-4"><div class="para" id="sec-loi-5-2-4-1">v.v.</div></li>
 </ul>
-<div class="para">Dưới đây là một vài ví dụ từ các phần trước.</div>
+<div class="para">Dưới đây là một vài ví dụ từ các phần trước:</div>
 </div>
 <pre id="sec-loi-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">print("Hello world!")
 print("This is a string.")
@@ -429,32 +429,32 @@ TypeError: ufunc 'sqrt' not supported for the input types, and the inputs could 
 <section class="subsection" id="subsec-cach-sua-loi"><h3 class="heading hide-type">
 <span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">A.10.1</span><span class="space"> </span><span class="title">Cách Sửa Lỗi</span>
 </h3>
-<div class="para" id="subsec-cach-sua-loi-2">Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó. Không vấn đề gì, càng ngày kinh nghiệm của họ càng tăng, và khả năng giải quyết lỗi của họ sẽ ngày càng nhanh nhẹn và hiệu quả.</div>
+<div class="para" id="subsec-cach-sua-loi-2">Không một lập trình viên nào, kể cả những người kỳ cựu nhất, có khả năng nhớ mọi lỗi có thể xảy ra. Có những lỗi họ đã gặp và sửa vài lần rồi, nhưng vẫn không thể nhớ hoàn toàn cách để sửa nó. Nhưng một điều chắc chắn là kinh nghiệm của họ ngày càng tăng, và khả năng giải quyết lỗi sẽ ngày càng nhanh nhẹn và hiệu quả.</div>
 <div class="para logical" id="subsec-cach-sua-loi-3">
-<div class="para">Hiện tượng trên là hoàn toàn bình thường. Vậy nên, dưới đây tôi sẽ chỉ cho bạn một vài <em class="emphasis">kinh nghiệm</em> trong việc sửa lỗi. Khi gặp bất kỳ lỗi nào, ta có thể lần lượt đi qua các bước sau.</div>
+<div class="para">Tiếp đến là một vài những kinh nghiệm cá nhân của tôi khi sửa lỗi. Bạn có thể thử các cách tiếp cận sau:</div>
 <ol class="decimal">
-<li id="subsec-cach-sua-loi-3-2-1"><div class="para" id="subsec-cach-sua-loi-3-2-1-1">
-<dfn class="terminology">Đọc hiểu lỗi</dfn>—Ta đọc lỗi hiển thị ở terminal và nếu nó đơn giản dễ hiểu, ta có thể nhanh chóng sửa lỗi. Nếu cảm thấy khó hiểu, ta chuyển sang bước tiếp theo.</div></li>
-<li id="subsec-cach-sua-loi-3-2-2">
-<div class="para" id="subsec-cach-sua-loi-3-2-2-1">
-<dfn class="terminology">Tra trên mạng</dfn>—Ta tra cứu lỗi trên mạng sử dụng kiểu và miêu tả của lỗi trong terminal.</div>
-<article class="note remark-like" id="subsec-cach-sua-loi-3-2-2-2"><h4 class="heading">
+<li id="subsec-cach-sua-loi-3-1-1"><div class="para" id="subsec-cach-sua-loi-3-1-1-1">
+<dfn class="terminology">Sửa lỗi</dfn>—Trong trường hợp ta gặp lỗi dễ hiểu, ta chỉ việc sửa nó. Nếu không, ta chuyển sang bước tiếp theo.</div></li>
+<li id="subsec-cach-sua-loi-3-1-2">
+<div class="para" id="subsec-cach-sua-loi-3-1-2-1">
+<dfn class="terminology">Tra trên mạng</dfn>—Ta tra cứu lỗi trên mạng bằng cách sao chép và dán miêu tả của nó lên Google.</div>
+<article class="note remark-like" id="subsec-cach-sua-loi-3-1-2-2"><h4 class="heading">
 <span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.10.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-cach-sua-loi-3-2-2-2-1">Bạn nên kèm theo tên ngôn ngữ lập trình bạn đang sử dụng làm từ khóa để tăng hiệu quả. Ví dụ như “python unterminated string literal...”.</div></article><article class="remark remark-like" id="subsec-cach-sua-loi-3-2-2-3"><h4 class="heading">
+<div class="para" id="subsec-cach-sua-loi-3-1-2-2-1">Bạn nên kèm theo tên ngôn ngữ lập trình đang sử dụng làm từ khóa để tăng hiệu quả. Ví dụ như “python unterminated string literal...”.</div></article><article class="remark remark-like" id="subsec-cach-sua-loi-3-1-2-3"><h4 class="heading">
 <span class="type">Nhận Xét</span><span class="space"> </span><span class="codenumber">A.10.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-cach-sua-loi-3-2-2-3-1">Bạn có thể tham khảo tài liệu tiếng Việt, nhưng nếu bạn biết Tiếng Anh thì lượng kiến thức và kinh nghiệm mà bạn có thể học hỏi sẽ tăng lên rất nhiều.</div></article><div class="para" id="subsec-cach-sua-loi-3-2-2-4">Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải, tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <dfn class="terminology">Stack Overflow</dfn>, <dfn class="terminology">Github</dfn>, <dfn class="terminology">Stack Exchange</dfn>, <dfn class="terminology">Reddit</dfn>, v.v.</div>
-<div class="para" id="subsec-cach-sua-loi-3-2-2-5">Đến đây, nếu lỗi vẫn tồn tại, hoặc nó chuyển thành một loại lỗi khác, ta có thể lặp lại quá trình, hoặc chuyển qua bước 3.</div>
+<div class="para" id="subsec-cach-sua-loi-3-1-2-3-1">Bạn có thể tham khảo tài liệu bằng tiếng Việt hoặc bất cứ ngôn ngữ nào bạn muốn. Nhưng thông thường thì các tài liệu tiếng Anh có độ có sẵn và tính cập nhật cao nhất.</div></article><div class="para" id="subsec-cach-sua-loi-3-1-2-4">Phần lớn các lỗi mà bạn có thể gặp phải đều đã có người trải qua trước đó rồi. Ta có thể nhanh chóng đọc những bài đăng bàn luận về lỗi mà ta đang gặp phải, tham khảo cách giải quyết của họ. Một vài diễn đàn phổ biến nhất là <dfn class="terminology">Stack Overflow</dfn>, <dfn class="terminology">Github</dfn>, <dfn class="terminology">Stack Exchange</dfn>, <dfn class="terminology">Reddit</dfn>.</div>
+<div class="para" id="subsec-cach-sua-loi-3-1-2-5">Đến đây, nếu lỗi vẫn tồn tại, hoặc nó chuyển thành một loại lỗi khác, ta có thể lặp lại quá trình, hoặc chuyển qua bước 3.</div>
 </li>
-<li id="subsec-cach-sua-loi-3-2-3"><div class="para" id="subsec-cach-sua-loi-3-2-3-1">
+<li id="subsec-cach-sua-loi-3-1-3"><div class="para" id="subsec-cach-sua-loi-3-1-3-1">
 <dfn class="terminology">Tự miêu tả lỗi khi tra</dfn>—Có vẻ nếu ta sử dụng miêu tả chi tiết của lỗi, những cách giải của người khác không có hiệu quả với mình. Vậy thì ta thử tự mình miêu tả lỗi xem sao. Ta miêu tả mình đang làm gì, với kiểu dữ liệu nào, lỗi gặp khi nào, với ngôn ngữ lập trình nào, v.v. Nếu vẫn không được, ta chuyển sang bước tiếp theo.</div></li>
-<li id="subsec-cach-sua-loi-3-2-4"><div class="para" id="subsec-cach-sua-loi-3-2-4-1">
-<dfn class="terminology">Sử dụng trí tuệ nhân tạo</dfn>—Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <dfn class="terminology">ChatGPT</dfn> hoặc <dfn class="terminology">Github Copilot</dfn>, v.v. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.</div></li>
-<li id="subsec-cach-sua-loi-3-2-5">
-<div class="para" id="subsec-cach-sua-loi-3-2-5-1">
-<dfn class="terminology">Đăng bài về lỗi</dfn>—Đây là bước cuối cùng, khi mọi phương pháp trên đều đã thất bại. Bạn có thể lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải.</div>
-<div class="para" id="subsec-cach-sua-loi-3-2-5-2">Hãy chắc chắn rằng bạn tham khảo những bài viết về <dfn class="terminology">quy tắc ứng xử</dfn> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.</div>
+<li id="subsec-cach-sua-loi-3-1-4"><div class="para" id="subsec-cach-sua-loi-3-1-4-1">
+<dfn class="terminology">Sử dụng trí tuệ nhân tạo (AI)</dfn>—Nếu có thể, bạn nên thử tìm đến những model trí tuệ nhân tạo như <dfn class="terminology">ChatGPT</dfn> hoặc <dfn class="terminology">Github Copilot</dfn>. Đây là một phương pháp phổ biến gần đây, mang tính hiệu quả cao.</div></li>
+<li id="subsec-cach-sua-loi-3-1-5">
+<div class="para" id="subsec-cach-sua-loi-3-1-5-1">
+<dfn class="terminology">Đăng bài về lỗi</dfn>—Khi mọi phương pháp trên đều đã thất bại, thì có lẽ bạn nên tìm kiếm sự giúp đỡ trực tiếp từ mọi người. Bạn có thể hỏi những lập trình viên mình biết, hoặc lên những diễn đàn công nghệ và đăng bài viết về lỗi mà mình đang gặp phải.</div>
+<div class="para" id="subsec-cach-sua-loi-3-1-5-2">Hãy chắc chắn rằng bạn tham khảo những bài viết về <dfn class="terminology">quy tắc ứng xử</dfn> trên những diễn đàn này. Vì bạn đang mong muốn sự giúp đỡ của người khác, văn minh trên mạng xã hội là quan trọng thiết yếu.</div>
 </li>
 </ol>
 </div></section></section></div>

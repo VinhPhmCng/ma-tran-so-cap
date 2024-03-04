@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>sagecell.makeSagecell({
+  "inputLocation": ".sage-interact",
+  "autoeval": true,
+  "hide": [
+    "editor",
+    "evalButton",
+    "permalink"
+  ]
+});
+</script><link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+</head>
+<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">import numpy as np
+
+def print_html(s):
+    pretty_print(html(s))
+    pretty_print("\n")
+        
+def tag(s, t):
+    return "<" + t + ">" + s + "</" + t + ">" 
+        
+def format_matrix(mat):
+    return mat
+    #def for_mat(x):
+    #    if x.is_zero():
+    #        return 0
+    #    return x
+        
+    #sage_mat = matrix(QQ, np_mat)
+    #new_mat = mat.apply_map(for_mat, R=QQ)
+    #return new_mat
+                
+def decom(mat):
+    m = 0 # Hang
+    n = 0 # Cot
+    i = 0
+    rank = 0
+    pairs = []
+    decoms = []
+        
+    while m < mat.nrows() and n < mat.ncols():
+        i += 1
+        row_m = mat.matrix_from_rows([m])
+        col_n = mat.matrix_from_columns([n])
+        
+        if m != 0 and n != 0:
+            print_html(tag("-> Duyệt tiếp hàng %s và cột %s." % (
+                    str(m+1), 
+                    str(n+1),
+                ), "h3"))
+                
+        print_html(tag("", "hr"))
+        print_html(tag("Duyệt lần %s" % str(i), "h2"))
+        
+        t = r''
+        if len(pairs) == 0:
+            t = r'$A = %s' % latex(format_matrix(mat))
+        else:
+            t = r'$A_{%s} = %s' % (
+                latex(len(pairs)), 
+                latex(format_matrix(mat)),
+            )
+        
+        if mat.is_zero():
+            t += r'$'
+            print_html(t)
+            break
+        
+        t += r'\ có \ C_{%s} = %s \ và \  R_{%s} = %s$' % (
+            latex(n+1), 
+            latex(format_matrix(col_n)), 
+            latex(m+1), 
+            latex(format_matrix(row_m)),
+        )
+        print_html(t)
+        
+        # Hang != 0 VA Cot != 0
+        if not row_m.is_zero() and not col_n.is_zero():
+            row_m = row_m / mat[m, n] # Chia hang
+            CnRm = col_n * row_m
+            rem = mat - CnRm
+                
+            print_html(tag("Nhận thấy: Hàng %s và cột %s đều KHÁC 0." % (
+                str(n+1), 
+                str(m+1),
+            ), "h3"))
+                    
+            CnRm_str = r''
+            if mat[m, n] == 1:
+                CnRm_str = r'C_{%s} \cdot R_{%s}' % (
+                    latex(n+1),
+                    latex(m+1),
+                )
+            else:
+                CnRm_str = r'{\displaystyle \frac{C_{%s} \cdot R_{%s}}{%s}}' % (
+                    latex(n+1),
+                    latex(m+1),
+                    latex(mat[m, n]),
+                )                
+                    
+            print_html(r'$\rightarrow %s = %s \cdot %s = %s$' % (
+                CnRm_str,
+                latex(format_matrix(col_n)),
+                latex(format_matrix(row_m)),
+                latex(format_matrix(CnRm)),
+            ))
+        
+            t = r""
+            if len(pairs) == 0:
+                t = r'$\rightarrow A - %s = %s' % (
+                    CnRm_str,
+                    latex(format_matrix(rem)),
+                )
+            else:
+                t = r'$\rightarrow A_{%s} - %s = %s' % (
+                    latex(len(pairs)), 
+                    CnRm_str,
+                    latex(format_matrix(rem)),
+                )
+            t += r'= A_{%s}$' % (len(pairs)+1)
+            print_html(t)
+        
+            pretty_print("\n")
+                
+            mat = rem
+            rank += 1
+            pairs.append([m, n])
+            decoms.append([row_m, col_n])
+                
+            m += 1
+            m = min(m, mat.nrows() - 1)
+            n += 1
+            n = min(n, mat.ncols() - 1)
+                
+        # Hang != 0 VA Cot == 0
+        elif not row_m.is_zero() and col_n.is_zero():
+            print_html(tag("Nhận thấy: Cột %s BẰNG 0, và hàng %s KHÁC 0." % (
+                str(n+1), 
+                str(m+1),
+            ), "h3"))
+            n += 1
+            n = min(n, mat.ncols() - 1)
+                
+        # Hang == 0 VA Cot != 0
+        elif row_m.is_zero() and not col_n.is_zero():
+            print_html(tag("Nhận thấy: Hàng %s BẰNG 0, và cột %s KHÁC 0." % (
+                str(m+1), 
+                str(n+1),
+            ), "h3"))
+            m += 1
+            m = min(m, mat.nrows() - 1)
+                
+        # Hang == 0 VA Cot == 0
+        else:
+            if mat.is_zero():
+                break
+            print_html(tag("Nhận thấy: Hàng %s và cột %s đều BẰNG 0." % (
+                str(n+1), 
+                str(m+1),
+            ), "h3"))
+        
+            m += 1
+            m = min(m, mat.nrows() - 1)
+            n += 1
+            n = min(n, mat.ncols() - 1)
+                    
+    print_html(tag("Nhận thấy: Ma trận không -> Phân rã hoàn tất!", "h3"))
+        
+    print_html(tag("", "hr"))
+    print_html(tag("Kết quả:", "h2"))
+        
+    #result = r""
+    #for i, pair in enumerate(pairs):
+    #    result += r"c_{%s} \cdot r_{%s}" % (
+    #        str(pair[1]+1), 
+    #        str(pair[0]+1),
+    #    )
+    #    if i != len(pairs) - 1:
+    #        result += r"+"
+    #result = r"$A = " + result + r"$"
+    #print_html(result)
+        
+    result = r""
+    for i, pair in enumerate(decoms):
+        result += r"%s \cdot %s" % (
+            latex(format_matrix(pair[1])), 
+            latex(format_matrix(pair[0])),
+        )
+        if i != len(decoms) - 1:
+            result += r"+"
+    result = r"$A = " + result + r"$"
+    print_html(result)
+            
+    print_html(r'$\Rightarrow Rank = %s$' % (latex(rank)))
+                
+###########################################
+@interact(layout=dict(top = [['m', 'n']]))
+def matrix_dimensions(
+    m = ('Số hàng', 3),
+    n = ('Số cột', 3),
+):
+    if not m in [2, 3, 4, 5]:
+        print('Số hàng phải là một số nguyên từ 2 đến 5')
+        return
+    if not n in [2, 3, 4, 5]:
+        print('Số cột phải là một số nguyên từ 2 đến 5')
+        return
+                
+    @interact(layout=dict(top = [['A']]))
+    def func1(
+        A = ('Ma trận A', matrix(
+            QQ,
+            nrows = m,
+            ncols = n,
+            entries = lambda i, j: i + j + 1,
+        )),
+    ):
+        if A.is_zero():
+            print('Ma trận đầu vào phải khác 0.')
+            return
+        
+        latex.matrix_delimiters("[", "]") # Hien thi ngoac vuong
+        decom(A)
+</script></pre></div></body>
+</html>

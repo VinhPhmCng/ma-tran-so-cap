@@ -143,15 +143,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -370,7 +370,7 @@ cp100 = 9801
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.6.1</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-ctdl-1-1">
-<dfn class="terminology">Cấu trúc dữ liệu</dfn> là những dữ liệu có khả năng chứa cùng một lúc nhiều dữ liệu khác.</div> <div class="para" id="def-ctdl-1-2">Các dữ liệu “con” của cấu trúc dữ liệu được gọi là <dfn class="terminology">phần tử</dfn>.</div> <div class="para" id="def-ctdl-1-3">Cấu trúc dữ liệu được xây dựng <em class="emphasis">dựa trên</em> kiểu dữ liệu, vì vậy những kiến thức ở <a href="sec-kieu-du-lieu.html" class="internal" title="Mục A.5: Kiểu Dữ Liệu">Mục A.5</a> có thể được áp dụng cho nó.</div></article><div class="para" id="sec-cau-truc-du-lieu-7">Dưới đây là một phiên bản khác của chương trình trên.</div>
+<dfn class="terminology">Cấu trúc dữ liệu</dfn> là dữ liệu có khả năng chứa cùng một lúc nhiều dữ liệu khác.</div> <div class="para" id="def-ctdl-1-2">Các dữ liệu “con” của cấu trúc dữ liệu được gọi là <dfn class="terminology">phần tử</dfn>.</div> <div class="para" id="def-ctdl-1-3">Cấu trúc dữ liệu được xây dựng <em class="emphasis">dựa trên</em> kiểu dữ liệu, vì vậy những kiến thức ở <a href="sec-kieu-du-lieu.html" class="internal" title="Mục A.5: Kiểu Dữ Liệu">Mục A.5</a> có thể được áp dụng cho nó.</div></article><div class="para" id="sec-cau-truc-du-lieu-7">Dưới đây là một phiên bản khác của chương trình trên:</div>
 <div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="program"><code class="language-py">import numpy as np # Su dung thu vien Numpy
 cp = np.array([0, 1, 4, 9, ..., 9801])
 </code></pre></div>
@@ -384,7 +384,7 @@ cp = np.array([0, 1, 4, 9, ..., 9801])
 <article class="definition definition-like" id="def-mang"><h4 class="heading">
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.6.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="def-mang-1-1">Cấu trúc dữ liệu <dfn class="terminology">mảng</dfn>, hay <dfn class="terminology">array</dfn>, có thể chứa cùng một lúc nhiều phần tử.</div> <div class="para" id="def-mang-1-2">Các phần tử của mảng phải có <em class="emphasis">cùng kiểu dữ liệu</em>.</div></article><div class="para" id="subsec-mang-3">Dưới đây là ví dụ.</div>
+<div class="para" id="def-mang-1-1">Cấu trúc dữ liệu <dfn class="terminology">mảng</dfn>, hay <dfn class="terminology">array</dfn>, có thể chứa cùng một lúc nhiều phần tử.</div> <div class="para" id="def-mang-1-2">Các phần tử của mảng phải có <em class="emphasis">cùng kiểu dữ liệu</em>.</div></article><div class="para" id="subsec-mang-3">Dưới đây là ví dụ:</div>
 <pre id="subsec-mang-4" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 
 arr = np.array([1, 2, 3])
@@ -396,7 +396,7 @@ print(arr, type(arr))
 </pre></article></details><article class="investigation project-like" id="subsec-mang-6"><h4 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.6.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-mang-6-1"></div> <div class="para" id="subsec-mang-6-2">Ta khai báo một mảng có 3 phần tử, và chúng đều thuộc kiểu <code class="code-inline tex2jax_ignore">int</code>.</div> <div class="para" id="subsec-mang-6-3">Lệnh <code class="code-inline tex2jax_ignore">type()</code> trả lại tên của kiểu dữ liệu là <code class="code-inline tex2jax_ignore">numpy.ndarray</code>, có thể hiểu là “array của Numpy”.</div></article><div class="para" id="subsec-mang-7">Nếu ta thử khai báo mảng có chứa lẫn cả phần tử số nguyên và số thập phân, mảng sẽ <em class="emphasis">tự động</em> chuyển đổi kiểu dữ liệu của tất cả các phần tử sao cho phù hợp.</div>
+<div class="para" id="subsec-mang-6-1"></div> <div class="para" id="subsec-mang-6-2">Ta khai báo một mảng có 3 phần tử là những số nguyên.</div> <div class="para" id="subsec-mang-6-3">Lệnh <code class="code-inline tex2jax_ignore">type()</code> trả lại tên của kiểu dữ liệu là <code class="code-inline tex2jax_ignore">numpy.ndarray</code>, có thể hiểu là “array của Numpy”.</div></article><div class="para" id="subsec-mang-7">Nếu ta thử khai báo mảng có chứa lẫn cả phần tử số nguyên và số thập phân, mảng sẽ <em class="emphasis">tự động</em> chuyển đổi kiểu dữ liệu của tất cả các phần tử sao cho phù hợp.</div>
 <pre id="subsec-mang-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 
 arr1 = np.array([1, 2.5, 3])
@@ -412,13 +412,13 @@ print(arr2)
 </pre></article></details><article class="investigation project-like" id="subsec-mang-10"><h4 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.6.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-mang-10-1"></div> <div class="para" id="subsec-mang-10-2">Mảng <code class="code-inline tex2jax_ignore">arr1</code> nhận ra phần tử <code class="code-inline tex2jax_ignore">2.5</code> là số thập phân nên nó tự động chuyển đổi kiểu dữ liệu của các phần tử số nguyên còn lại thành <code class="code-inline tex2jax_ignore">float</code>.</div> <div class="para" id="subsec-mang-10-3">Tương tự, mảng <code class="code-inline tex2jax_ignore">arr2</code> được khai báo với các giá trị gồm chuỗi ký tự và số nguyên, nên nó tự chuyển đổi tất cả các phần tử thành kiểu <code class="code-inline tex2jax_ignore">str</code>.</div></article></section><section class="subsection" id="subsec-ma-tran"><h3 class="heading hide-type">
+<div class="para" id="subsec-mang-10-1"></div> <div class="para" id="subsec-mang-10-2">Mảng <code class="code-inline tex2jax_ignore">arr1</code> nhận ra phần tử <code class="code-inline tex2jax_ignore">2.5</code> là số thập phân nên nó tự động chuyển đổi kiểu dữ liệu của các phần tử số nguyên còn lại thành <code class="code-inline tex2jax_ignore">float</code>.</div> <div class="para" id="subsec-mang-10-3">Tương tự, mảng <code class="code-inline tex2jax_ignore">arr2</code> tự chuyển đổi tất cả các phần tử thành kiểu <code class="code-inline tex2jax_ignore">str</code>.</div></article></section><section class="subsection" id="subsec-ma-tran"><h3 class="heading hide-type">
 <span class="type">Tiểu Mục</span><span class="space"> </span><span class="codenumber">A.6.2</span><span class="space"> </span><span class="title">Ma Trận</span>
 </h3>
 <article class="definition definition-like" id="def-ma-tran"><h4 class="heading">
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.6.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="def-ma-tran-1-1">Cấu trúc dữ liệu <dfn class="terminology">ma trận</dfn>, hay <dfn class="terminology">matrix</dfn>, có thể chứa cùng một lúc nhiều phần tử.</div> <div class="para" id="def-ma-tran-1-2">Ma trận có <dfn class="terminology">hai chiều</dfn>. Nói cách khác, các phần tử của một ma trận được sắp xếp thành các <dfn class="terminology">hàng</dfn> và <dfn class="terminology">cột</dfn>.</div> <div class="para" id="def-ma-tran-1-3">Các phần tử của ma trận phải có <em class="emphasis">cùng kiểu dữ liệu</em>.</div></article><div class="para" id="subsec-ma-tran-3">Dưới đây là ví dụ</div>
+<div class="para" id="def-ma-tran-1-1">Cấu trúc dữ liệu <dfn class="terminology">ma trận</dfn>, hay <dfn class="terminology">matrix</dfn>, có thể chứa cùng một lúc nhiều phần tử.</div> <div class="para" id="def-ma-tran-1-2">Ma trận có <dfn class="terminology">hai chiều</dfn>. Nói cách khác, các phần tử của một ma trận được sắp xếp thành các <dfn class="terminology">hàng</dfn> và <dfn class="terminology">cột</dfn>.</div> <div class="para" id="def-ma-tran-1-3">Các phần tử của ma trận phải có <em class="emphasis">cùng kiểu dữ liệu</em>.</div></article><div class="para" id="subsec-ma-tran-3">Dưới đây là ví dụ:</div>
 <pre id="subsec-ma-tran-4" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 
 mat = np.matrix([[1, 2, 3], [2, 4, 6]])
@@ -431,7 +431,7 @@ print(mat, type(mat))
 </pre></article></details><article class="investigation project-like" id="subsec-ma-tran-6"><h4 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.6.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="subsec-ma-tran-6-1"></div> <div class="para" id="subsec-ma-tran-6-2">Ta khai báo một ma trận có 6 phần tử thuộc kiểu <code class="code-inline tex2jax_ignore">int</code>. Hàng 1 gồm 3 phần tử <code class="code-inline tex2jax_ignore">1 2 3</code>, và hàng 2 gồm 3 phần tử <code class="code-inline tex2jax_ignore">2 4 6</code>. (Vậy đây là một ma trận có 2 hàng và 3 cột.)</div> <div class="para" id="subsec-ma-tran-6-3">Lệnh <code class="code-inline tex2jax_ignore">type()</code> cho thấy tên của kiểu dữ liệu là <code class="code-inline tex2jax_ignore">numpy.matrix</code>, có thể hiểu là “ma trận của Numpy”.</div></article><div class="para" id="subsec-ma-tran-7">Ta cũng có thể khai báo ma trận một cách dễ nhìn hơn như sau.</div>
+<div class="para" id="subsec-ma-tran-6-1"></div> <div class="para" id="subsec-ma-tran-6-2">Ta khai báo một ma trận có 6 phần tử thuộc kiểu <code class="code-inline tex2jax_ignore">int</code>. Hàng 1 gồm 3 phần tử <code class="code-inline tex2jax_ignore">1 2 3</code>, và hàng 2 gồm 3 phần tử <code class="code-inline tex2jax_ignore">2 4 6</code>. (Vậy đây là một ma trận có 2 hàng và 3 cột.)</div> <div class="para" id="subsec-ma-tran-6-3">Lệnh <code class="code-inline tex2jax_ignore">type()</code> cho thấy tên của kiểu dữ liệu là <code class="code-inline tex2jax_ignore">numpy.matrix</code>, có thể hiểu là “ma trận của Numpy”.</div></article><div class="para" id="subsec-ma-tran-7">Ta cũng có thể khai báo ma trận một cách dễ nhìn hơn như sau:</div>
 <pre id="subsec-ma-tran-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import numpy as np # Su dung thu vien Numpy
 
 mat = np.matrix(

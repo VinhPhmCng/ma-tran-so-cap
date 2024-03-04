@@ -143,15 +143,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -366,12 +366,12 @@ eBookConfig.enable_chatcodes =  false;
 f(x) = x^2 + 2x + 1
 \end{equation*}
 </div>
-<div class="para">Ở đây, “biến” có nghĩa là chưa xác định, hay nói cách khác <span class="process-math">\(x\)</span> là trừu tượng cho tất cả những kết quả của hàm số trên khi ta thay thế <span class="process-math">\(x\)</span> với những con số xác định.</div>
+<div class="para">Ở đây, “biến” có nghĩa là có thể thay đổi và không cố định.</div>
 </div>
 <article class="definition definition-like" id="def-bien"><h3 class="heading">
 <span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.4.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-bien-1-1">Trong lập trình, <dfn class="terminology">biến</dfn> được dùng để lưu trữ một hay nhiều dữ liệu <dfn class="terminology">xác định</dfn>.</div> <div class="para" id="def-bien-1-2">Dữ liệu được chứa trong biến còn được gọi là <dfn class="terminology">giá trị</dfn> của biến, và nó <em class="emphasis">thường xuyên được cập nhật</em> trong quá trình chương trình chạy.</div> <div class="para" id="def-bien-1-3">Thuật ngữ để chỉ việc tạo ra một biến mới là <dfn class="terminology">khai báo</dfn>.</div> <div class="para" id="def-bien-1-4">Thuật ngữ để chỉ việc cập nhật giá trị của một biến đã tồn tại là <dfn class="terminology">gán</dfn>.</div></article><article class="technology computation-like" id="sec-bien-6"><h3 class="heading">
+<div class="para" id="def-bien-1-1">Trong lập trình, <dfn class="terminology">biến</dfn> được dùng để lưu trữ dữ liệu.</div> <div class="para" id="def-bien-1-2">Dữ liệu được chứa trong biến còn được gọi là <dfn class="terminology">giá trị</dfn> của biến, và nó <em class="emphasis">thường xuyên được cập nhật</em> trong quá trình chương trình chạy.</div> <div class="para" id="def-bien-1-3">Thuật ngữ để chỉ việc tạo ra một biến mới là <dfn class="terminology">khai báo</dfn>.</div> <div class="para" id="def-bien-1-4">Thuật ngữ để chỉ việc <dfn class="terminology">cập nhật</dfn> giá trị của một biến đã tồn tại là <dfn class="terminology">gán</dfn>.</div></article><article class="technology computation-like" id="sec-bien-6"><h3 class="heading">
 <span class="type">Cú Pháp</span><span class="space"> </span><span class="codenumber">A.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Khai báo hoặc gán.</span>
 </h3> <div class="para logical" id="sec-bien-6-2">
 <div class="para">Để khai báo biến hoặc gán cho biết giá trị mới, ta đều sử dụng dấu <code class="code-inline tex2jax_ignore">=</code> như sau:</div>
@@ -380,7 +380,7 @@ f(x) = x^2 + 2x + 1
 {\color{blue} \text{tên biến}} = \text{giá trị}
 \end{equation*}
 </div>
-</div></article><div class="para" id="sec-bien-7">Dưới đây là ví dụ.</div>
+</div> <div class="para" id="sec-bien-6-3">Vì vậy, dấu bằng <code class="code-inline tex2jax_ignore">=</code> trong lập trình <em class="emphasis">không bao giờ</em> được dùng theo nghĩa của đẳng thức.</div></article><div class="para" id="sec-bien-7">Dưới đây là ví dụ:</div>
 <pre id="sec-bien-8" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">a = 1
 b = a
 print(a)
@@ -400,26 +400,22 @@ print(b)
 </pre></article></details><article class="investigation project-like" id="sec-bien-10"><h3 class="heading">
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.4.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-bien-10-1"></div> <div class="para" id="sec-bien-10-2">Đầu tiên, ta khai báo biến <code class="code-inline tex2jax_ignore">a</code> và gán cho nó giá trị là <code class="code-inline tex2jax_ignore">1</code>.</div> <div class="para" id="sec-bien-10-3">Ta khai báo <code class="code-inline tex2jax_ignore">b</code> và gán cho nó giá trị bằng giá trị hiện tại của <code class="code-inline tex2jax_ignore">a</code>, vậy <code class="code-inline tex2jax_ignore">b</code> cũng có giá trị là <code class="code-inline tex2jax_ignore">1</code>.</div> <div class="para" id="sec-bien-10-4">Ta sử dụng lệnh <code class="code-inline tex2jax_ignore">print()</code> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.</div> <div class="para" id="sec-bien-10-5">Sau đó, ta gán cho <code class="code-inline tex2jax_ignore">a</code> một giá trị mới, hay nói cách khác là cập nhật giá trị của <code class="code-inline tex2jax_ignore">a</code>, thành <code class="code-inline tex2jax_ignore">2</code>, nhưng ta không động đến <code class="code-inline tex2jax_ignore">b</code>.</div> <div class="para" id="sec-bien-10-6">
-<em class="alert">Chú ý</em>: Nếu đến bước này bạn nghĩ rằng cả <code class="code-inline tex2jax_ignore">a</code> và <code class="code-inline tex2jax_ignore">b</code> đều có giá trị là <code class="code-inline tex2jax_ignore">2</code>, thì bạn vẫn chưa thực sự hiểu hai khái niệm <dfn class="terminology">khai báo</dfn> và <dfn class="terminology">gán</dfn>, cũng như <dfn class="terminology">tính xác định</dfn> của biến.</div> <div class="para" id="sec-bien-10-7">Biến trong lập trình khác với biến trong toán học ở chỗ nó thay đổi <em class="emphasis">khi và chỉ khi</em> ta gán cho nó một giá trị mới, sử dụng dấu <code class="code-inline tex2jax_ignore">=</code>. (Bạn có thể tham khảo <a href="" class="xref" data-knowl="./knowl/xref/def-toan-tu-gan.html" title="Định Nghĩa A.7.4">Định Nghĩa A.7.4</a>.)</div> <div class="para" id="sec-bien-10-8">Vì vậy, khi dùng <code class="code-inline tex2jax_ignore">print()</code> để hiển thị giá trị của 2 biến ra terminal, ta nhận được <code class="code-inline tex2jax_ignore">2</code> và <code class="code-inline tex2jax_ignore">1</code>, chứ không phải <code class="code-inline tex2jax_ignore">2</code> và <code class="code-inline tex2jax_ignore">2</code>.</div></article><div class="para" id="sec-bien-11">Nếu sau khi cập nhật biến <code class="code-inline tex2jax_ignore">a</code>, ta lại muốn biến <code class="code-inline tex2jax_ignore">b</code> cũng có giá trị bằng <code class="code-inline tex2jax_ignore">a</code>, thì ta phải cập nhật biến <code class="code-inline tex2jax_ignore">b</code> một lần nữa. Bạn thử thêm <code class="code-inline tex2jax_ignore">b = a</code> vào dưới dòng 7 và chạy lại code xem điều này có đúng không nhé.</div>
+<div class="para" id="sec-bien-10-1"></div> <div class="para" id="sec-bien-10-2">Đầu tiên, ta khai báo biến <code class="code-inline tex2jax_ignore">a</code> và gán cho nó giá trị là <code class="code-inline tex2jax_ignore">1</code>.</div> <div class="para" id="sec-bien-10-3">Tiếp, ta khai báo <code class="code-inline tex2jax_ignore">b</code> và gán cho nó giá trị bằng giá trị hiện tại của <code class="code-inline tex2jax_ignore">a</code>, vậy <code class="code-inline tex2jax_ignore">b</code> cũng có giá trị là <code class="code-inline tex2jax_ignore">1</code>.</div> <div class="para" id="sec-bien-10-4">Ta sử dụng lệnh <code class="code-inline tex2jax_ignore">print()</code> để truy cập và hiển thị giá trị hiện tại của hai biến ra terminal.</div> <div class="para" id="sec-bien-10-5">Sau đó, ta gán cho <code class="code-inline tex2jax_ignore">a</code> một giá trị mới, hay nói cách khác là cập nhật giá trị của <code class="code-inline tex2jax_ignore">a</code>, thành <code class="code-inline tex2jax_ignore">2</code>, nhưng ta không động đến <code class="code-inline tex2jax_ignore">b</code>.</div> <div class="para" id="sec-bien-10-6">
+<em class="alert">Chú ý</em>: Nếu đến bước này bạn nghĩ rằng cả <code class="code-inline tex2jax_ignore">a</code> và <code class="code-inline tex2jax_ignore">b</code> đều có giá trị là <code class="code-inline tex2jax_ignore">2</code>, thì bạn vẫn đang hiểu dấu bằng theo nghĩa của đẳng thức. Điều này là không đúng đối với lập trình.</div> <div class="para" id="sec-bien-10-7">Vì vậy, khi dùng <code class="code-inline tex2jax_ignore">print()</code> để hiển thị giá trị của 2 biến ra terminal, ta nhận được <code class="code-inline tex2jax_ignore">2</code> và <code class="code-inline tex2jax_ignore">1</code>, chứ không phải <code class="code-inline tex2jax_ignore">2</code> và <code class="code-inline tex2jax_ignore">2</code>.</div></article><div class="para" id="sec-bien-11">Nếu sau khi cập nhật biến <code class="code-inline tex2jax_ignore">a</code>, ta lại muốn biến <code class="code-inline tex2jax_ignore">b</code> cũng có giá trị bằng <code class="code-inline tex2jax_ignore">a</code>, thì ta phải cập nhật biến <code class="code-inline tex2jax_ignore">b</code> một lần nữa. Bạn thử thêm <code class="code-inline tex2jax_ignore">b = a</code> vào dưới dòng 7 và chạy lại code xem điều này có đúng không nhé.</div>
 <article class="insight remark-like" id="sec-bien-12"><h3 class="heading">
 <span class="type">Chia Sẻ</span><span class="space"> </span><span class="codenumber">A.4.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-bien-12-1">Ví dụ trên về biến dù đơn giản nhưng đã làm rối não rất nhiều người mới bắt đầu, đặc biệt là những người có bộ não toán học. Vì họ thấy <code class="code-inline tex2jax_ignore">b = a</code> nên họ nghĩ đây là một biểu thức mang tính bao quát và luôn đúng trong chương trình. Nhưng lối suy nghĩ đó là <em class="emphasis">sai</em> đối với lập trình.</div> <div class="para" id="sec-bien-12-2">Và nếu bạn đã thấu hiểu được ví dụ trên, thì xin chúc mừng—bạn đã vượt qua con boss đầu tiên.</div></article><div class="para" id="sec-bien-13">Đến đây, ta có một khái niệm mới khá đơn giản.</div>
-<article class="definition definition-like" id="def-du-lieu-tu-do"><h3 class="heading">
-<span class="type">Định Nghĩa</span><span class="space"> </span><span class="codenumber">A.4.5</span><span class="period">.</span>
-</h3>
-<div class="para" id="def-du-lieu-tu-do-1-1">Dữ liệu không được chứa trong biến được được gọi là <dfn class="terminology">dữ liệu tự do</dfn>.</div></article><article class="note remark-like" id="sec-bien-15"><h3 class="heading">
-<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Đặt tên cho biến.</span>
-</h3> <div class="para" id="sec-bien-15-2">Tên của một biến có một vài yêu cầu, ví dụ như việc <em class="emphasis">không</em> được chứa ký tự khoảng trắng (space), cũng như một vài ký tự đặc biệt khác.</div> <div class="para logical" id="sec-bien-15-3">
-<div class="para">Chỉ cần tuân thủ chúng, bạn có thể đặt tên cho biến <dfn class="terminology">tùy thích</dfn> Vì vậy, tùy vào cá nhân lập trình viên, tên biến sẽ rất đa dạng:</div>
+<div class="para" id="sec-bien-12-1">Ví dụ trên về biến dù đơn giản nhưng đã làm rối não rất nhiều người mới bắt đầu, đặc biệt là những người có bộ não toán học. Vì họ thấy <code class="code-inline tex2jax_ignore">b = a</code> nên họ nghĩ đây là một đẳng thức luôn đúng trong suốt quá trình chạy. Nhưng lối suy nghĩ đó là <em class="emphasis">sai</em> đối với lập trình.</div></article><article class="note remark-like" id="sec-bien-13"><h3 class="heading">
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Đặt tên cho biến.</span>
+</h3> <div class="para" id="sec-bien-13-2">Tên của một biến có một vài yêu cầu, ví dụ như việc <em class="emphasis">không</em> được chứa ký tự khoảng trắng (space), cũng như một vài ký tự đặc biệt khác.</div> <div class="para logical" id="sec-bien-13-3">
+<div class="para">Chỉ cần tuân thủ chúng là bạn có thể đặt tên cho biến <em class="emphasis">tùy thích</em>. Vì vậy, tùy vào cá nhân lập trình viên, tên biến sẽ rất đa dạng, ví dụ như:</div>
 <ul class="disc">
-<li id="sec-bien-15-3-2-1"><div class="para" id="sec-bien-15-3-2-1-1">dia_chi_nha</div></li>
-<li id="sec-bien-15-3-2-2"><div class="para" id="sec-bien-15-3-2-2-1">diaChiNha</div></li>
-<li id="sec-bien-15-3-2-3"><div class="para" id="sec-bien-15-3-2-3-1">DiaChiNha</div></li>
-<li id="sec-bien-15-3-2-4"><div class="para" id="sec-bien-15-3-2-4-1">v.v.</div></li>
+<li id="sec-bien-13-3-2-1"><div class="para" id="sec-bien-13-3-2-1-1">dia_chi_nha</div></li>
+<li id="sec-bien-13-3-2-2"><div class="para" id="sec-bien-13-3-2-2-1">diaChiNha</div></li>
+<li id="sec-bien-13-3-2-3"><div class="para" id="sec-bien-13-3-2-3-1">DiaChiNha</div></li>
+<li id="sec-bien-13-3-2-4"><div class="para" id="sec-bien-13-3-2-4-1">v.v.</div></li>
 </ul>
-</div> <div class="para" id="sec-bien-15-4">Trong cộng đồng lập trình có rất nhiều những quy ước hay tiêu chuẩn giúp ta chọn cách đặt tên biến sao cho phù hợp.</div> <div class="para" id="sec-bien-15-5">Quyển sách này sẽ không nhắc tới vấn đề này. Tên biến trong những ví dụ code sẽ được đặt sao cho <em class="emphasis">đơn giản và ngắn gọn nhất</em>.</div></article></section></div>
+</div> <div class="para" id="sec-bien-13-4">Trong cộng đồng lập trình có rất nhiều những quy ước hay tiêu chuẩn giúp ta chọn cách đặt tên biến sao cho phù hợp.</div> <div class="para" id="sec-bien-13-5">Quyển sách này sẽ không hướng dẫn vấn đề này. Tên biến trong những ví dụ code sẽ được đặt sao cho <em class="emphasis">đơn giản và ngắn gọn nhất</em>.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ghi-chu.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-kieu-du-lieu.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

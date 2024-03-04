@@ -143,15 +143,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.9';
+eBookConfig.runestone_version = '7.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.9/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runtime.2438a8bdd6d43b5c.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.aeac7cf9ad5c07ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.12/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Đi đến nội dung chính</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -357,8 +357,8 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sec-moi-truong-lt-2-1-1"><div class="para" id="p-derived-sec-moi-truong-lt-2-1-1">Các mục tiêu của section.</div></li>
 <li id="sec-moi-truong-lt-2-1-2"><div class="para" id="p-derived-sec-moi-truong-lt-2-1-2"></div></li>
 <li id="sec-moi-truong-lt-2-1-3"><div class="para" id="p-derived-sec-moi-truong-lt-2-1-3"></div></li>
-</ol></article><div class="para" id="sec-moi-truong-lt-3">Để lập trình viết code, bạn cần một môi trường làm việc tương ứng. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào. Thay vào đó, ta sẽ sử dụng <dfn class="terminology">trình soạn thảo và biên dịch</dfn> dành cho lập trình.</div>
-<div class="para" id="sec-moi-truong-lt-4">Trong quyển sách này, trình soạn thảo và biên dịch của chúng ta (nếu bạn đang sử dụng phiên bản <dfn class="terminology">online</dfn> của quyển sách) sẽ chính là môi trường code như dưới đây.</div>
+</ol></article><div class="para" id="sec-moi-truong-lt-3">Để viết code, bạn cần một môi trường làm việc phù hợp. Chắc chắn là bạn sẽ không mở trình soạn thảo Word để lập trình rồi, phải không nào? Thay vào đó, ta sẽ sử dụng một <dfn class="terminology">trình soạn thảo và biên dịch code</dfn>.</div>
+<div class="para" id="sec-moi-truong-lt-4">Trong bản online của quyển sách này, trình soạn thảo và biên dịch của chúng ta nhìn như sau:</div>
 <pre id="sec-moi-truong-lt-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage">a = 3
 b = 5
 print(a + b)
@@ -370,41 +370,62 @@ print(a + b)
 <span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.1.1</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-moi-truong-lt-7-1"></div> <div class="para" id="sec-moi-truong-lt-7-2">Lệnh <code class="code-inline tex2jax_ignore">print()</code> có nhiệm vụ rất đơn giản là đưa dữ liệu ở bên trong hai dấu ngoặc đơn ra terminal. Ở đây, dữ liệu đó là kết quả của phép toán <code class="code-inline tex2jax_ignore">a + b</code>.</div></article><div class="para logical" id="sec-moi-truong-lt-8">
-<div class="para">Môi trường trên có 3 thành phần chính:</div>
+<div class="para">Môi trường trên có những thành phần sau:</div>
 <ol class="decimal">
 <li id="sec-moi-truong-lt-8-1-1"><div class="para" id="sec-moi-truong-lt-8-1-1-1">
 <dfn class="terminology">Ô soạn thảo</dfn>: Nơi viết code. Trên bản Online, bạn có thể chỉnh sửa và thí nghiệm với code.</div></li>
 <li id="sec-moi-truong-lt-8-1-2"><div class="para" id="sec-moi-truong-lt-8-1-2-1">
-<dfn class="terminology">Nút “Chạy Code”</dfn> (bản Online): Ấn để chạy chương trình, hay nói cách khác là chạy trình biên dịch code.</div></li>
+<dfn class="terminology">Nút “Chạy Code”</dfn> (bản Online): Ấn để chạy chương trình.</div></li>
 <li id="sec-moi-truong-lt-8-1-3"><div class="para" id="sec-moi-truong-lt-8-1-3-1">
 <dfn class="terminology">Terminal</dfn> (bản Online): Nơi hiển thị kết quả hoặc lỗi, nếu có, khi chạy đoạn code.</div></li>
 <li id="sec-moi-truong-lt-8-1-4"><div class="para" id="sec-moi-truong-lt-8-1-4-1">
-<dfn class="terminology">Output</dfn>: Nơi hiển thị kết quả <dfn class="terminology">tĩnh</dfn> cho bản cứng hoặc PDF. Nhưng cũng có ích với bản Online, ví dụ như khi thiết bị của bạn không có kết nối mạng nên không thể chạy code.</div></li>
+<dfn class="terminology">Output</dfn>: Nơi hiển thị kết quả <dfn class="terminology">tĩnh</dfn>. Được thiết kế cho bản cứng hoặc PDF, nhưng cũng có thể giúp người dùng bản Online, trong trường hợp trình biên dịch có vấn đề.</div></li>
+<li id="sec-moi-truong-lt-8-1-5"><div class="para" id="sec-moi-truong-lt-8-1-5-1">
+<dfn class="terminology">Giải Thích</dfn>: Nơi đưa ra lời giải thích cho ví dụ code.</div></li>
 </ol>
 </div>
-<article class="note remark-like" id="sec-moi-truong-lt-9"><h3 class="heading">
-<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Chỉnh sửa code trên bản Online.</span>
-</h3> <div class="para" id="sec-moi-truong-lt-9-2">Nếu bạn cập nhật code trong ô soạn thảo và chạy lại code, chỉ có kết quả trong terminal mới được cập nhật. Còn output tĩnh sẽ luôn giữ kết quả của đoạn code nguyên bản.</div></article><div class="para" id="sec-moi-truong-lt-10">Trong quyển sách này, môi trường lập trình của chúng ta sẽ được hạn chế xuống bốn thành phần đó. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng thú vị giúp lập trình viên sáng tạo vô vàn ứng dụng. Bạn có thể tìm hiểu thêm về thế giới lập trình bao la rộng lớn bên ngoài những tính năng cuốn sách này cung cấp.</div>
-<div class="para" id="sec-moi-truong-lt-11">Những đoạn code mà bạn sẽ tương tác ở đây hoàn toàn có thể được chạy ở môi trường lập trình ở ngoài, nhưng quyển sách này sẽ không hướng dẫn việc đó.</div>
-<article class="note remark-like" id="sec-moi-truong-lt-12"><h3 class="heading">
-<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Ô code nối tiếp.</span>
-</h3> <div class="para" id="sec-moi-truong-lt-12-2">Những ô code trong quyển sách này có thể nối tiếp những ô code ngay trước nó. Việc này giúp các ví dụ trở nên ngắn gọn hơn cũng như việc giải thích giữa các ví dụ liên quan dễ dàng hơn.</div></article><article class="convention remark-like" id="sec-moi-truong-lt-13"><h3 class="heading">
-<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">A.1.4</span><span class="period">.</span>
+<div class="para" id="sec-moi-truong-lt-9">Một phiên bản khác của ô code nhìn như sau:</div>
+<div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id=""><textarea data-lang="python" data-timelimit="25000" data-audio="" data-coach="true" style="visibility: hidden;" id="_editor" data-question_label="" data-codelens="true">a = 3
+b = 5
+print(a + b)
+</textarea></div></div></div>
+<details id="sec-moi-truong-lt-11" class="problem example-like born-hidden-knowl"><summary><h3 class="heading">
+<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.1.2</span><span class="period">.</span>
+</h3></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">8
+</pre></article></details><article class="investigation project-like" id="sec-moi-truong-lt-12"><h3 class="heading">
+<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.1.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-moi-truong-lt-13-1">Nếu một ô code là phần nối tiếp thì nó có dòng đầu tiên như sau:</div></article><pre id="sec-moi-truong-lt-14" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># ... 
+<div class="para" id="sec-moi-truong-lt-12-1">Giống như trên.</div></article><div class="para" id="sec-moi-truong-lt-13">Môi trường này chạy tương tự, nhưng nó bổ sung thêm hai chức năng. Thanh kéo cho phép bạn làm việc với các phiên bản khác nhau của code qua những lần chỉnh sửa. Và nút “CodeLens” kích hoạt một phần mềm cho phép bạn chạy code từng bước một, giúp bạn theo dõi các dữ liệu thay đổi.</div>
+<article class="insight remark-like" id="sec-moi-truong-lt-14"><h3 class="heading">
+<span class="type">Chia Sẻ</span><span class="space"> </span><span class="codenumber">A.1.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-moi-truong-lt-14-1">Tùy vào khái niệm đang nói đến, môi trường phù hợp hơn để trình bày nó sẽ được sử dụng.</div></article><aside class="aside aside-like" id="sec-moi-truong-lt-15"><h3 class="heading"><span class="title">Topic(s) you might be interested in:.</span></h3>
+<div class="para logical" id="sec-moi-truong-lt-15-2"><ul class="disc"><li id="sec-moi-truong-lt-15-2-1-1"><div class="para" id="sec-moi-truong-lt-15-2-1-1-1"> <a class="external" href="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-integrated-development-environment" target="_blank">stackoverflow’s 2023 survey on the most popular IDEs</a><a class="xref" id="sec-moi-truong-lt-15-2-1-1-1-3" href="" data-knowl="./knowl/fn/sec-moi-truong-lt-15-2-1-1-1-3.html" title="Cước Chú A.1.1"><sup> 1 </sup></a>
+</div></li></ul></div></aside><article class="note remark-like" id="sec-moi-truong-lt-16"><h3 class="heading">
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Chỉnh sửa code trên bản Online.</span>
+</h3> <div class="para" id="sec-moi-truong-lt-16-2">Nếu bạn cập nhật code trong ô soạn thảo và chạy lại code, chỉ có kết quả trong terminal mới được cập nhật. Còn output tĩnh sẽ luôn giữ kết quả của đoạn code nguyên bản.</div></article><div class="para" id="sec-moi-truong-lt-17">Trong quyển sách này, để đảm bảo <dfn class="terminology">sự đơn giản</dfn>, môi trường lập trình của chúng ta được hạn chế xuống những thành phần đó. Những môi trường lập trình phức tạp hơn sẽ có rất nhiều chức năng giúp các lập trình viên sáng tạo, nhưng đối với người mới bắt đầu, chúng là không cần thiết. Ngoài ra, cài đặt những công cụ nâng cao thường rất phức tạp, vì thế dễ làm bạn nản lòng.</div>
+<div class="para" id="sec-moi-truong-lt-18">Những đoạn code ví dụ được cung cấp có thể được chạy trực tiếp hoặc cắt, dán, và chạy ở các ô code trong <a href="appendix-lap-trinh-co-ban.html" class="internal" title="Phụ Lục A: Lập Trình Cơ Bản">Phụ Lục A</a>. Chúng cũng có thể được biên dịch và chạy ở những mỗi trường bên ngoài, nhưng quyển sách này sẽ không hướng dẫn việc đó.</div>
+<article class="note remark-like" id="sec-moi-truong-lt-19"><h3 class="heading">
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Ô code nối tiếp.</span>
+</h3> <div class="para" id="sec-moi-truong-lt-19-2">Những ô code trong quyển sách này có thể nối tiếp những ô code ngay trước nó. Việc này giúp một vài ví dụ trở nên ngắn gọn và việc giải thích thuận lợi hơn.</div></article><article class="convention remark-like" id="sec-moi-truong-lt-20"><h3 class="heading">
+<span class="type">Quy Ước</span><span class="space"> </span><span class="codenumber">A.1.6</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-moi-truong-lt-20-1">Nếu một ô code là phần nối tiếp thì nó có dòng đầu tiên như sau:</div></article><pre id="sec-moi-truong-lt-21" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># ... 
 
 print(a - b)
 </script></pre>
-<details id="sec-moi-truong-lt-15" class="problem example-like born-hidden-knowl"><summary><h3 class="heading">
-<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.1.5</span><span class="period">.</span>
+<details id="sec-moi-truong-lt-22" class="problem example-like born-hidden-knowl"><summary><h3 class="heading">
+<span class="type">Output</span><span class="space"> </span><span class="codenumber">A.1.7</span><span class="period">.</span>
 </h3></summary><article class="problem example-like"><pre class="code-block tex2jax_ignore">-2
-</pre></article></details><article class="investigation project-like" id="sec-moi-truong-lt-16"><h3 class="heading">
-<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.1.2</span><span class="period">.</span>
+</pre></article></details><article class="investigation project-like" id="sec-moi-truong-lt-23"><h3 class="heading">
+<span class="type">Giải Thích</span><span class="space"> </span><span class="codenumber">A.1.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-moi-truong-lt-16-1"></div> <div class="para" id="sec-moi-truong-lt-16-2">Tại sao <code class="code-inline tex2jax_ignore">a - b</code> lại có kết quả bằng <code class="code-inline tex2jax_ignore">-2</code>? Nếu bạn nhìn lên ô code đầu tiên, bạn sẽ thấy <code class="code-inline tex2jax_ignore">a = 3</code> và <code class="code-inline tex2jax_ignore">b = 5</code>. Vậy ô code này đang nối tiếp ô code phía trên.</div></article><article class="note remark-like" id="sec-moi-truong-lt-17"><h3 class="heading">
-<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.6</span><span class="period">.</span>
+<div class="para" id="sec-moi-truong-lt-23-1"></div> <div class="para" id="sec-moi-truong-lt-23-2">Tại sao <code class="code-inline tex2jax_ignore">a - b</code> lại có kết quả bằng <code class="code-inline tex2jax_ignore">-2</code>? Nếu bạn nhìn lên ô code đầu tiên, bạn sẽ thấy <code class="code-inline tex2jax_ignore">a = 3</code> và <code class="code-inline tex2jax_ignore">b = 5</code>. Vậy ô code này đang nối tiếp ô code phía trên.</div></article><article class="note remark-like" id="sec-moi-truong-lt-24"><h3 class="heading">
+<span class="type">Chú Ý</span><span class="space"> </span><span class="codenumber">A.1.8</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-moi-truong-lt-17-1">Vậy, khi bạn chạy một ô code bắt đầu với <code class="code-inline tex2jax_ignore"># ...</code> mà xuất hiện lỗi, thì khả năng cao là do bạn chưa chạy những ô code trước nó.</div></article></section></div>
+<div class="para" id="sec-moi-truong-lt-24-1">Vậy, khi bạn chạy một ô code bắt đầu với <code class="code-inline tex2jax_ignore"># ...</code> mà xuất hiện lỗi hoặc kết quả ngoài ý muốn, thì khả năng cao là do bạn chưa chạy những ô code trước nó.</div></article><article class="exploration project-like" id="sec-moi-truong-lt-25"><h3 class="heading">
+<span class="type">Khám Phá</span><span class="space"> </span><span class="codenumber">A.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Basic Programming — Part 2: Our Programming Environment.</span>
+</h3>  <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/iMXToAm9a0c?&amp;modestbranding=1&amp;rel=0" id="sec-moi-truong-lt-25-3"></iframe></div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="appendix-lap-trinh-co-ban.html" title="Trước"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Trc</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-ngon-ngu-lt.html" title="Tiếp"><span class="name">Tiếp</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
