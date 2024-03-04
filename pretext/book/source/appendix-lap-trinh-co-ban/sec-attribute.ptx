@@ -43,6 +43,14 @@ See the file COPYING for copying conditions.
     Ví dụ:
   </p>
 
+  <aside>
+    <title>Thí Nghiệm Vui</title>
+    
+    <p>
+      Thêm phần tử, hàng, hoặc cột vào ma trận và xem thuộc tính được cập nhật. 
+    </p> 
+  </aside>
+
   <sage language="python">
     <input>
       import numpy as np # Use library Numpy

@@ -167,7 +167,7 @@ See the file COPYING for copying conditions.
   <rename element='assemblage'>Assemblage</rename>
   <rename element='poem'>Thơ</rename>
   <!-- Objectives is the block, objective is a list item within -->
-  <rename element='objectives'>Các Mục Tiêu</rename>
+  <rename element='objectives'>Mục Tiêu</rename>
   <rename element='objective'>Mục Tiêu</rename>
   <!-- Outcomes is the block, outcome is a list item within (different) -->
   <!-- These two words need to be different, to avoid ambiguous cross-references -->

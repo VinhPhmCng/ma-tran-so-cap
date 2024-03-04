@@ -12,7 +12,7 @@ See the file COPYING for copying conditions.
 
   <introduction>
     <p>
-      Trong quyển sách này, các đoạn code mang tính tương tác là giúp giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận. Một phần lí do cũng là vì ma trận là một đối tượng rất phổ biến trong lập trình và khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI). Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một kỹ năng có giá trị trong thế giới ngày nay.
+      Trong quyển sách này, các đoạn code mang tính tương tác giúp giới thiệu cho bạn đọc những khái niệm liên quan đến ma trận. Ngoài ra, ma trận là một đối tượng rất phổ biến trong lập trình và khoa học máy tính, đặc biệt là trong công nghệ trí tuệ nhân tạo (AI). Vì vậy, việc hiểu được phần nào cách làm việc với ma trận trong lập trình là một kỹ năng có giá trị trong thế giới ngày nay.
     </p>
 
     <p>
@@ -20,7 +20,7 @@ See the file COPYING for copying conditions.
     </p>
 
     <p>
-      Những khái niệm dưới đây sẽ được trình bày theo cấu trúc như sau:
+      Những khái niệm mới sẽ được trình bày theo cấu trúc như sau:
       <ol>
         <li>
           <p>
@@ -39,7 +39,7 @@ See the file COPYING for copying conditions.
         </li>
       </ol>
 
-      <em>Khi chạy code ví dụ</em>, bạn hãy <term>song song</term> đọc lời giải thích để dễ dàng tiếp thu vấn đề.
+      <em>Khi chạy ví dụ code</em>, bạn hãy <term>song song</term> đọc lời giải thích để dễ dàng tiếp thu vấn đề.
     </p>
 
     <p>
@@ -47,7 +47,7 @@ See the file COPYING for copying conditions.
     </p>
 
     <p>
-      Nhưng, hãy hiểu rằng khả năng bạn có thể tự viết code sau phụ lục này là hạn chế, vì đó cũng không phải là mục đích. Nếu đó là mong muốn của bạn, thì một lần nữa, mạng Internet là nơi hoàn hảo để bắt đầu hành trình khám phá.
+      Nhưng, hãy hiểu rằng khả năng bạn có thể tự viết code sau phụ lục này là hạn chế, và đó cũng không phải là mục đích. Nếu đó là mong muốn của bạn, thì một lần nữa, mạng Internet là nơi hoàn hảo để bắt đầu khám phá.
     </p>
 
     <p>

@@ -128,7 +128,6 @@ See the file COPYING for copying conditions.
     <title>Thí Nghiệm Vui</title>
     
     <p>
-      Does <c>len()</c> work with a string?
       <c>len()</c> có hoạt động với <c>str</c> không?
     </p> 
   </aside>
@@ -160,7 +159,7 @@ See the file COPYING for copying conditions.
     <title>Thí Nghiệm Vui</title>
     
     <p>
-      Sửa lỗi.
+      Bạn thử sửa lỗi nhé.
     </p>
   </aside>
 
@@ -185,7 +184,7 @@ See the file COPYING for copying conditions.
     
     
     <p></p>
-    <p>Hàm <c>len()</c> nhận chính xác một giá trị đầu vào, nhưng lại nhận được hai.</p>
+    <p>Hàm <c>len()</c> chấp nhận chính xác một giá trị đầu vào, nhưng lại nhận được hai.</p>
   </investigation>
 
   <p>
@@ -225,7 +224,7 @@ See the file COPYING for copying conditions.
     <title>Thí Nghiệm Vui</title>
     
     <p>
-      Đoán hàm có chức năng biến một chuỗi thành viết thường hết.
+      Đoán hàm có chức năng biến một chuỗi thành in thường.
     </p>
   </aside>
 
@@ -244,7 +243,7 @@ See the file COPYING for copying conditions.
   <investigation>
     
     
-    <p>Hàm <c>upper()</c> trả lại một chuỗi viết hoa mới.</p>
+    <p>Hàm <c>upper()</c> trả lại một chuỗi mới được in hoa.</p>
   </investigation>
  
   <p>
